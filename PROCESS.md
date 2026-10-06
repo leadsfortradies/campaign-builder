@@ -27,6 +27,10 @@ comes through chat).
    but don't start Step 4/5 without the starred ones:
    - **Business name***
    - **Business logo***
+   - Business phone number (NZ number) - forwarded to later for lead
+     delivery, not used in Step 4/5 copy/landing pages
+   - Business email - forwarded to later for lead delivery, not used in
+     Step 4/5 copy/landing pages
    - Years of experience
    - Estimated number of completed projects
    - Certifications / qualifications
@@ -80,11 +84,32 @@ comes through chat).
    - deck staining near me (not relevant to deck *building*)
    - how to repair my deck (DIY)
    - how to build a deck (DIY)
-9. **Stop and present the categorized list for the user's review and
+9. **Every keyword excluded for being irrelevant/wrong-intent (step 8 above,
+   plus the "Standing classification rules" below - DIY, wrong trade/service,
+   design, security gate, farm/rural/ag fencing, cheap/affordable, product-
+   price-not-service-price, etc.) goes onto this account's own Negative
+   Keyword list** - added 2026-10-07, so this traffic gets blocked at the
+   account level instead of just silently not being bid on. This is **separate
+   from and in addition to** the standing cross-client list at
+   `data/global_negative_keywords.csv` (see Step 8) - that file is generic
+   terms that apply to every account regardless of trade (jobs/careers,
+   training/DIY, retailers, wrong location, etc.); this account-specific list
+   is the irrelevant terms that actually surfaced *for this business* during
+   this KWR pass. Don't add keywords dropped only for missing the 10/mo
+   search-volume floor (step 7) - that's a data-quality cutoff, not a sign the
+   query itself is irrelevant, so it doesn't belong in a negative list.
+   Judgement call on match type, same as the global CSV's convention: phrase
+   match (quoted) when several excluded keywords share one problem word/phrase
+   worth blocking broadly (e.g. "staining", "design", "security gate"), exact
+   match for a one-off irrelevant phrase that doesn't generalize. Save this
+   list alongside the rest of this step's output so Step 8 can pick it up.
+10. **Stop and present the categorized list for the user's review and
    approval before moving to Step 2.** Output includes a `note` column: blank
    for Bottom of Funnel / Price Discovery rows, filled in for every Manual
    Review row explaining why it needs a human decision (e.g. "includes patio,
-   which isn't a stated service", "repair intent, not new build").
+   which isn't a stated service", "repair intent, not new build"). The
+   account-specific negative keyword list from step 9 is included in this
+   review too.
 
 ### Bottom of Funnel: Priority 1 vs Priority 2 split (added 2026-10-06)
 
@@ -301,16 +326,17 @@ which case run step 2 as designed, it'll show real volume per town.
 
 ## Step 4 - Writing The Ad Copy — IMPLEMENTED
 
-1. Unless the user explicitly says otherwise, only write ad copy for **BOF -
+1. **Never use em-dashes or other classic AI-slop tell-tales** in ad copy.
+2. Unless the user explicitly says otherwise, only write ad copy for **BOF -
    Priority 1** - that's the campaign that actually launches first.
-2. Per ad group: 15 headlines (max 30 chars), 4 descriptions (max 90 chars),
+3. Per ad group: 15 headlines (max 30 chars), 4 descriptions (max 90 chars),
    2 display URL paths (max 15 chars).
-3. **3 of the 15 headlines are pinned to position 1** and written to be as
+4. **3 of the 15 headlines are pinned to position 1** and written to be as
    close to exact-match as possible against that ad group's keywords (for
    quality score and CTR) - e.g. trade term + "near me" / + the city name /
    + the region name, picked from the ad group's actual highest-volume
    keyword phrasing.
-4. **The other 12 headlines are benefit-oriented** and must come from real
+5. **The other 12 headlines are benefit-oriented** and must come from real
    input the user has given about the business (years trading, project
    count, review count/rating, insurance, press features, process
    differentiators, service area, etc.) - never invent a qualification,
@@ -321,9 +347,9 @@ which case run step 2 as designed, it'll show real volume per town.
    keyword); 1-2 per ad group can be swapped for a more specific real detail
    when the business has one for that service (e.g. "Rust Treated & Primed"
    for a roof-painting ad group instead of a generic prep line).
-5. **Every description must include at least one of that ad group's actual
+6. **Every description must include at least one of that ad group's actual
    keywords** (verbatim or very close to it), not just generic sales copy.
-6. Before writing any of this, get the real business facts from the user -
+7. Before writing any of this, get the real business facts from the user -
    check this project's `web/data/<project-id>/step0.json` (Step 0) first.
    If it's missing or incomplete on the starred fields (business name,
    logo, service areas), or thin on the optional ones (years trading,
@@ -331,7 +357,7 @@ which case run step 2 as designed, it'll show real volume per town.
    missing (or pull from the business's live website if the user points to
    one) rather than guessing or inventing it - then save the answer back to
    `step0.json` so it's there for Step 5 and any future ad-copy refresh.
-7. Source: checked against the live business website on the date of the
+8. Source: checked against the live business website on the date of the
    build - re-verify stats like review count against the business's current
    Google listing before reusing an older ad-copy build, since review counts
    and project counts climb over time.
@@ -355,6 +381,36 @@ which case run step 2 as designed, it'll show real volume per town.
    built, **and** they feed Step 6 (sitelinks) - Claude pulls specific pages
    off the same business website (About, Gallery, Service Areas, Contact,
    etc.) to build sitelink extensions from.
+5. **Never use em-dashes or other classic AI-slop tell-tales** in any
+   landing page copy.
+
+### "Build me a site + landing pages" path — NOT YET IMPLEMENTED
+
+The intended flow once this path gets built (currently just a disabled
+placeholder button in the web app, per item 2 above):
+
+1. Each site uses a specific template depending on the industry - ask the
+   user which template to use before starting.
+2. Create a new folder for the site under the Websites folder on the user's
+   Mac, named after the city + service (e.g. a deck/fence company in
+   Auckland -> "Auckland Decks & Fences").
+3. Duplicate the correct template into that new folder.
+4. **Work on the home page only first** - get the general copy right before
+   touching any landing page. Rewrite it to be specific to the new
+   location/business (years of experience, qualifications, images, logo,
+   service areas, etc.) using Step 0's `step0.json`.
+5. **Stop and get the user's approval on the home page before proceeding**
+   to the landing pages.
+6. Per landing page: use copy and images specific to that page's service
+   where appropriate - don't carry over copy about an unrelated service
+   (e.g. a roof-painting landing page shouldn't have interior-painting
+   copy). Update the **H1 and Title** above all else. Use images specific
+   to that service where available; fall back to other provided images only
+   when there aren't enough service-specific ones.
+7. Once every landing page is done, send the user the links for review and
+   approval.
+8. Feed the approved landing page links into the Step 4 ad copy as the
+   final URLs.
 
 ## Step 6 - Writing Sitelinks, Callouts & Structured Snippets Copy For Google Ads — NOT YET IMPLEMENTED
 
@@ -420,14 +476,23 @@ the landing page(s) from Step 5 are live on Netlify.
    domain (bare domain, no `https://`/`www.` - e.g. `canterburypainting.co.nz`,
    matching the convention of every existing row). Create one with just the
    `Name` field if missing; leave everything else blank.
-3. **Before creating a new automation, check if one already exists** for this
+3. **Client List table** - also create a record here (added 2026-10-07):
+   - `Name` -> business name.
+   - `Client Status` -> **Trial**.
+   - `Contact name` -> leave empty.
+   - `Contact email` -> business email (from Step 0).
+   - `Phone number` -> business phone number (from Step 0).
+   - `Website` -> linked to the Websites record created in item 2 above.
+   - `Cost per lead` -> leave empty.
+   - `Account owner` -> **Liam Emery**.
+4. **Before creating a new automation, check if one already exists** for this
    client (`list_automations` filtered to `genericWebhookReceived`) - the
    agency sometimes pre-creates the automation + wires the Netlify env var
    ahead of the rest of the build. Reuse it rather than creating a duplicate
    (caught during the first run of this step, 2026-10-06 - Canterbury
    Painters already had an undeployed automation and a Netlify
    `AIRTABLE_WEBHOOK_URL` env var pointing at it).
-4. New automation (if one doesn't already exist): trigger = **"When webhook
+5. New automation (if one doesn't already exist): trigger = **"When webhook
    received"** (`genericWebhookReceived`). `create_automation` requires at
    least one node to validate, so create it with a throwaway placeholder
    `createRecord` node, then `get_automation` to read the `webhookUrl`.
@@ -435,7 +500,7 @@ the landing page(s) from Step 5 are live on Netlify.
    that client's Netlify site (`netlify-project-services-updater`,
    `manage-env-vars`) - this is the variable the landing page's own code
    reads at build/runtime to know where to POST leads.
-5. **Send a real test submission** from one of the live landing pages before
+6. **Send a real test submission** from one of the live landing pages before
    building the Create Record field mapping - the webhook only infers its
    payload schema (`webhookSchema`/`webhookSchemaIsSet`) from an actual POST,
    and the exact field names vary per site (e.g. `phone` vs `Phone-number`,
@@ -444,7 +509,7 @@ the landing page(s) from Step 5 are live on Netlify.
    name "TEST LEAD - please ignore") rather than guessing the payload shape.
    The automation is undeployed/off at this point, so the POST only captures
    the schema - it does not create a real record or send real email yet.
-6. **Action 1 - Create Record**, in **All Leads**:
+7. **Action 1 - Create Record**, in **All Leads**:
    - `Website` -> linked to the Step 2 website record (static, this
      automation is one-per-domain).
    - `Billable?` -> **Yes**, `Lead Type` -> **Form Submission** (standing
@@ -457,11 +522,14 @@ the landing page(s) from Step 5 are live on Netlify.
      carries its own `source` field that doesn't obviously map to the
      `Lead Source` select options - that one turned out to be superseded by
      Action 4 below).
-7. **Action 2 - Gmail > Send Email** (new-lead notification), via the
+8. **Action 2 - Gmail > Send Email** (new-lead notification), via the
    **"LFT Lead Notifications"** connected Gmail account
    (`list_external_accounts` to get its `externalAccountId` - don't
    hardcode it, it can change):
-   - To: `liam@leadsfortradies.co.nz` (standing default while in testing).
+   - To: the business's own email from Step 0 (`step0.json`) if one was
+     collected, since that's the whole point of gathering it - leads forward
+     straight to the client. Falls back to `liam@leadsfortradies.co.nz` (the
+     standing default while in testing) if Step 0 doesn't have one yet.
    - From name: **"New Lead"** (standing rule for every client, confirmed
      2026-10-06 - missed on the first pass of this step, don't drop it
      again).
@@ -475,18 +543,18 @@ the landing page(s) from Step 5 are live on Netlify.
      Timeline / Budget) - **omit any line whose field isn't present for this
      particular site** (e.g. most sites don't have a Budget field - don't
      invent one).
-8. **Action 3 - Gmail > Send Email** (dispute window), same Gmail account:
+9. **Action 3 - Gmail > Send Email** (dispute window), same Gmail account:
    - To: `liam@leadsfortradies.co.nz`.
    - Subject: `LFT: Lead Dispute <Name>`.
    - Body: fixed dispute-instructions text + Name/Phone/Email, plus the
      **Lead ID** pulled from Action 1's `createRecord` output
      (`{"$ref":"<createRecordKey>","path":["id"]}`).
-9. **Action 4 - Conditional (final node)** sets `Lead Source` on the same
+10. **Action 4 - Conditional (final node)** sets `Lead Source` on the same
    record (`updateRecord`, `rowId` = Action 1's output id again): if the
    submitted landing-page URL **contains `/quote/`** -> `Google Ads`,
    else -> `SEO`. This is why Action 1 leaves `Lead Source` unset - this
    conditional is the only thing that sets it.
-10. `create_automation`/`update_automation` only ever save a **draft** - the
+11. `create_automation`/`update_automation` only ever save a **draft** - the
     automation stays off until the user turns it on themselves in the
     Airtable UI (a deliberate human-review gate). Always end this step by
     telling the user it's off and linking the `automationUrl` so they can
@@ -516,19 +584,71 @@ via Google Tag Manager.
 4. **Upload everything that's been prepared for the campaign(s) in scope** -
    keywords, ad groups, campaigns, ad copy, sitelinks, callouts, structured
    snippets. Not a partial upload.
-5. **Budget: $50/day.**
-6. **Location targeting** comes from Step 0 (service area/s). If it's
-   missing or ambiguous for this step, stop and ask the user to clarify
-   rather than guessing.
-7. **Disable Search Partners and Display Network** - search-only.
-8. **Do not enable EU political ads** - standing rule, this agency doesn't
+5. **Upload negative keywords - both lists, every build** (added
+   2026-10-07):
+   - This account's own negative list from Step 1 (step 9 there) - the
+     irrelevant/wrong-intent keywords that surfaced for this specific
+     business during KWR.
+   - The standing cross-client list at `data/global_negative_keywords.csv` in
+     this repo - generic junk (jobs/careers, training/DIY, retailers/
+     marketplaces, wrong-intent, wrong-location) that applies to every
+     account regardless of trade. Upload this file as-is for every client,
+     not just when something relevant turns up in Step 1.
+   - Both go into **one shared negative keyword list, attached to every
+     campaign in the account** so it behaves as "account-wide" even though
+     there's no true customer-level attachment for keyword-based negative
+     lists (confirmed live 2026-10-07 on painting-canterbury -
+     `CustomerNegativeCriterion.negative_keyword_list` exists in the API
+     schema but returns `NEGATIVE_KEYWORD_SHARED_SET_DOES_NOT_EXIST` even
+     against a confirmed-ENABLED shared set - matches the Ads UI, which also
+     only lets you attach a negative list to specific campaigns, never the
+     whole account directly). When a new campaign launches later (Priority
+     2 / Price Discovery), re-run the attach step so it picks up the same
+     shared list - it won't inherit it automatically.
+   - **Before uploading, check the global CSV's terms against this
+     account's own kept/approved keyword list for collisions** (a term
+     meant to be generic can still block a real wanted keyword for a given
+     trade - caught on painting-canterbury 2026-10-07: the global CSV had a
+     bare "hire" entry aimed at equipment-hire searches, but "hire" is also
+     a hiring-qualifier word per Step 1's Standing Classification Rules, so
+     it collided with legitimate "hire a painter near me"-style BOF
+     keywords - every client of this agency is itself a trade/service
+     business, so a bare "hire" negative was unsafe account-wide and got
+     removed from `data/global_negative_keywords.csv` rather than patched
+     per-client. Keep checking for this class of collision on every build
+     - `step8_upload_negatives.py --skip-terms` exists for a one-off case
+     that's unsafe for one specific account but still fine to keep in the
+     master file for everyone else; if a term is unsafe for every client
+     (like "hire" was), fix the master CSV instead, same as this one was).
+   - Only add a keyword to the project's own Step 1 negative list when
+     there's a concrete, identifiable reason it's off-topic (DIY, wrong
+     trade/service, product/brand browsing, wrong location, cheap/
+     affordable, job-seeking). A keyword that still carries a real hiring
+     signal (locality marker, business-entity word, trade noun) but simply
+     didn't make the original BOF/Price Discovery list isn't automatically
+     "irrelevant" - it may just be a close-variant duplicate that Google's
+     own matching already covers via an approved keyword. Flag anything
+     like that to the user instead of silently blocking it as a negative.
+6. **Budget: $50/day.**
+7. **Location targeting** is outlined in the setup phase (Step 0, service
+   area/s). If you don't have it or you're unsure, stop and get the user to
+   clarify rather than guessing. Set the location option to **Presence**
+   (people in or regularly in your targeted locations) - not "Presence or
+   interest".
+8. **Disable Search Partners and Display Network** - search-only.
+9. **Do not enable EU political ads** - standing rule, this agency doesn't
    run EU political advertising, every client, every build.
-9. **Bidding: Manual CPC.** All keywords can be set to first page CPC bids.
-10. **Conversion tracking setup (form submissions):**
+10. **Bidding: Manual CPC.** All keywords can be set to first page CPC bids.
+11. **Conversion tracking setup (form submissions):**
    1. Create a new conversion action in Google Ads for form submissions,
       method = **Google Tag**.
-   2. In Google Tag Manager (via the GTM MCP connection): create a new
-      **account** and **container**, both named after the client's domain.
+   2. Use the **Tag Manager API** for the GTM side (updated 2026-10-07 - the
+      API has no "create account" operation, so the user creates the GTM
+      **account** and **container** themselves, both named after the
+      client's domain, before this point - don't try to create them via the
+      GTM MCP tools). Everything downstream of that (snippet install, tags,
+      triggers, publish) is done through the Tag Manager API/MCP tools
+      against the account+container the user already created.
    3. Install the GTM snippet on every page of the site.
    4. Create a new **Google Tag** in GTM using the Tag ID Google Ads
       generates for this conversion action.
@@ -564,12 +684,94 @@ via Google Tag Manager.
        (2026-10-06) - the site's `public/_headers` CSP had a stock template
        `connect-src` that was missing these two hosts despite having them in
        `script-src`.
-11. **Call extension:** if the user has given a phone number for this
-    business, add it as an account-wide call extension. Always a New Zealand
-    number.
+12. **Call extension:** use the business phone number from Step 0
+    (`step0.json`) if one was collected, and add it as an account-wide call
+    extension. Always a New Zealand number.
+
+## Step 9 - Phone Number Creation In Delacon — NOT YET IMPLEMENTED
+
+Added 2026-10-07. Orders a NZ call-tracking number for this client in
+Delacon. Done in the Delacon web UI, no API/MCP integration yet.
+
+1. Click the dropdown top-left beneath the logo and go to **"Services"**.
+2. Top right: **"Order Number"**.
+3. Country: **New Zealand**.
+4. What the number is used for: **"Web"**.
+5. Number type: select the correct **location**.
+6. Quantity: leave as **1**.
+7. Call recording and call feedback survey: leave **disabled**.
+8. Rebilling: leave as **"assign later"**, then click next.
+9. Business name: the **domain**.
+10. Business category: **Google Ads**.
+11. Tracking type: **all references**.
+12. Business number and termination number: Liam's personal number for now
+    (`0278246725`) - this is only temporary, until call tracking is wired up
+    in Make.com (Step 10).
+13. Notification email: `liam@leadsfortradies.co.nz` (same as the
+    submission email).
+14. **Numbers aren't provisioned immediately.** Tell the user this step is
+    complete and wait for them to confirm the number has been provisioned
+    before moving on - don't assume it's ready right away.
+
+## Step 10 - Adding The Phone Number To The Website, Ad Account & Make.com — NOT YET IMPLEMENTED
+
+Added 2026-10-07. Once Delacon has provisioned the number (Step 9), there
+are manual steps the user does themselves, then one Airtable follow-up
+Claude does once those are confirmed.
+
+1. **Manual steps the user does** (not Claude):
+   1. Get the phone number from their email.
+   2. Install the dynamic number insertion code via Google Tag Manager.
+   3. Set up the call tracking webhook in Make.com.
+   4. Add the tracking number as a call extension in Google Ads.
+   5. Link Delacon and Google Ads so conversion data uploads.
+2. **Once the user confirms all of the above is done**, Claude's follow-up:
+   1. In Airtable, go to the **Phone Call Dispute Emails** automation.
+   2. Add another conditional action: if `Lead Type` = **Phone Call** and
+      `Client name` matches the client just created, send the lead dispute
+      email (copy the email body from Step 7's dispute-email action) - just
+      update the **To** address to that client's email from the **Client
+      List** table.
+
+## Step 11 - Trello Task Creation & Manual Review — NOT YET IMPLEMENTED
+
+Added 2026-10-07. Final step of the build - creates the human QA checklist.
+
+1. Create a new Trello task on the **"Sales"** board, if one doesn't already
+   exist for this business. Name it `<Business Name>`.
+2. Add a checklist to the card with the following items:
+   1. Confirm the budget.
+   2. Confirm the keywords are good and appropriate max CPCs are set.
+   3. Confirm the location is correct and it's set to Presence in.
+   4. Confirm the bidding strategy.
+   5. Confirm negative keywords have been added.
+   6. Confirm sitelinks are added.
+   7. Confirm structured snippets are added.
+   8. Confirm callouts are added.
+   9. Confirm call extensions are added.
+   10. Confirm conversion tracking for forms has been added.
+   11. Confirm conversion tracking for phone calls has been added.
+   12. Confirm ad copy looks good.
+   13. Confirm ads are going to the correct landing pages.
+   14. Confirm form submissions are going to the business owner email.
+   15. Confirm phone calls are going to the business owner phone.
+   16. Confirm each of the landing pages has the right content.
+   17. Confirm the dynamic number insertion is working on the landing page.
 
 ## Current build status
 
+- Steps 9-11 (Delacon phone number, wiring it up across site/Ads/Make.com,
+  Trello QA checklist) added to this doc 2026-10-07 - chat/manual process
+  only, nothing scripted yet. Step 9 is done in the Delacon web UI, Step 10
+  is mostly manual steps the user does themselves plus one Airtable
+  conditional Claude adds afterward, Step 11 is a Trello checklist Claude
+  creates via the Trello MCP/API once everything else above is done.
+- `data/global_negative_keywords.csv` added 2026-10-07 - the standing
+  cross-client negative keyword list (jobs/careers, training/DIY, retailers/
+  marketplaces, wrong-intent, wrong-location terms), uploaded account-wide
+  for every client per Step 8 item 5. Keyword column already carries Google
+  Ads match-type syntax (quoted = phrase match), so upload as-is rather than
+  reformatting.
 - Step 0 (business info) added 2026-10-06 - chat-only, no web app UI.
   `scripts/lib/webapp_export.py`'s `write_step0_business_info()` persists
   whatever's been collected to `web/data/<project-id>/step0.json`; image
@@ -634,7 +836,35 @@ via Google Tag Manager.
   mutate (campaign budget, campaign, location criterion, ad groups, exact-
   match keywords with first-page bid data pulled from step1/step2, RSAs,
   per-ad-group sitelinks, account-wide callouts, campaign-level structured
-  snippet). Only the campaign itself uploads as PAUSED - ad groups,
+  snippet). **Negative keyword upload (Step 8 item 5) is scripted
+  separately** - `scripts/step8_upload_negatives.py <project-id> <customer_id>
+  [--skip-terms "term1,term2"] [--validate-only]` (added 2026-10-07, first
+  real run on painting-canterbury) - reads
+  `output/<project-id>/step1_negative_keywords.csv` plus
+  `data/global_negative_keywords.csv`, creates one shared NEGATIVE_KEYWORDS
+  set named `"<project-id> - Negative Keywords"`, adds every keyword to it as
+  a `SharedCriterion`, then attaches that set to every campaign currently in
+  the account via `CampaignSharedSet` (`CustomerNegativeCriterion` looks like
+  the account-wide path in the API schema but doesn't actually work - see
+  Step 8 item 5 above for the confirmed-live finding). Two **sequential**
+  atomic mutates, not one - attaching the set in the same mutate that
+  creates it is rejected
+  (`NEGATIVE_KEYWORD_SHARED_SET_DOES_NOT_EXIST`) even under
+  `--validate-only`, and there's also real backend lag afterward (a few
+  minutes on painting-canterbury's first run, for ~1000 criteria) before the
+  second mutate can see the set - the script retries the attach step with
+  backoff, and `--attach-only <shared_set_resource_name>` lets you re-run
+  just that step without recreating the list if the retries still aren't
+  enough or the process got interrupted between the two mutates. Not folded
+  into `step8_upload_campaign.py`'s mutate - run as a separate script after
+  it. `--skip-terms` drops specific literal keyword text from both source
+  files before upload - use it for a term that's only unsafe for one
+  specific account (the global CSV's bare "hire" entry turned out to be
+  unsafe for every account, since every client here is a trade/service
+  business where "hire" is a hiring-qualifier word - that one got fixed in
+  `data/global_negative_keywords.csv` itself instead, see Step 8 item 5
+  above). Always run with `--validate-only` first. Only the campaign itself
+  uploads as PAUSED - ad groups,
   keywords, and ads upload as ENABLED (updated 2026-10-07, see Step 8 item
   2 above). CPC bid micros must be rounded to the nearest cent
   (`micros()` helper) or the API rejects non-multiple-of-billable-unit

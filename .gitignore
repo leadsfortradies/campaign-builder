@@ -12,6 +12,9 @@ __pycache__/
 # output
 output/
 *.csv
+# ...except standing reference assets meant to be versioned (used by every
+# build, not a disposable per-project intermediate - see PROCESS.md Step 8).
+!data/*.csv
 
 # netlify
 web/.netlify/
