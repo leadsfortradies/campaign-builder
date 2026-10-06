@@ -1,0 +1,3041 @@
+{
+  "project_id": "deck-fence-auckland",
+  "step": "step3",
+  "label": "Deck & Fence Builder - Auckland",
+  "group_label": "Campaign \u2014 Ad Group",
+  "rows": [
+    {
+      "group": "Bottom of Funnel \u2014 Aluminium Fencing",
+      "keyword": "aluminium fence installation",
+      "avg_monthly_searches": 20,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "material scope + generic 'installation' phrasing ambiguous DIY vs hire"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Aluminium Fencing",
+      "keyword": "aluminum fence installation",
+      "avg_monthly_searches": 20,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "material scope + generic 'installation' phrasing ambiguous DIY vs hire"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Aluminium Fencing",
+      "keyword": "aluminium fence builders",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "material scope - confirm business works with aluminium"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Colorbond Fences",
+      "keyword": "colorbond fence contractors",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Colorbond Fences",
+      "keyword": "colorbond fencing installation near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Composite Decks",
+      "keyword": "composite decking installation",
+      "avg_monthly_searches": 20,
+      "competition": "MEDIUM",
+      "low_bid": 0.81,
+      "high_bid": 4.97,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Composite Decks",
+      "keyword": "composite deck builder",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Composite Decks",
+      "keyword": "composite decking installers near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Composite Decks",
+      "keyword": "composite decking installation near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Composite Decks",
+      "keyword": "composite decking companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Composite Decks",
+      "keyword": "composite deck companies",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Composite Decks",
+      "keyword": "composite decking company near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Composite Decks",
+      "keyword": "composite decking installer near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Composite Decks",
+      "keyword": "composite deck experts",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck & Fence Combo",
+      "keyword": "deck and fence company",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck & Fence Combo",
+      "keyword": "deck and fence company near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck & Fence Combo",
+      "keyword": "fence and deck company near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck & Fence Combo",
+      "keyword": "deck and fence builders near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck & Fence Combo",
+      "keyword": "fence and deck builders near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck & Fence Combo",
+      "keyword": "deck and fencing companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck & Fence Combo",
+      "keyword": "deck and fence builders",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck & Fence Combo",
+      "keyword": "fencing and deck companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck & Fence Combo",
+      "keyword": "deck & fence company",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck & Fence Combo",
+      "keyword": "fence and deck companies",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck & Fence Combo",
+      "keyword": "decking and fencing companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck & Fence Combo",
+      "keyword": "deck and fence installers near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck & Fence Combo",
+      "keyword": "deck and fencing company near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck & Fence Combo",
+      "keyword": "fence and deck builders",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck & Fence Combo",
+      "keyword": "patio deck fence builders",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "mixes patio (not a stated service) with deck/fence"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck + Outdoor Living (Patio/Pergola)",
+      "keyword": "deck and patio contractors near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "includes patio, which isn't a stated service"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck + Outdoor Living (Patio/Pergola)",
+      "keyword": "deck and patio builders near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "includes patio, which isn't a stated service"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck + Outdoor Living (Patio/Pergola)",
+      "keyword": "patio and deck builders near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "includes patio, which isn't a stated service"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck + Outdoor Living (Patio/Pergola)",
+      "keyword": "patio and deck contractors near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "includes patio, which isn't a stated service"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck + Outdoor Living (Patio/Pergola)",
+      "keyword": "deck and pergola builders near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "pergola isn't a stated service"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck + Outdoor Living (Patio/Pergola)",
+      "keyword": "deck and patio contractors",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "includes patio, which isn't a stated service"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck + Outdoor Living (Patio/Pergola)",
+      "keyword": "patio deck contractors near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "includes patio, which isn't a stated service"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck + Outdoor Living (Patio/Pergola)",
+      "keyword": "patio decking installers near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "includes patio, which isn't a stated service"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck + Outdoor Living (Patio/Pergola)",
+      "keyword": "deck and porch contractors near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "porch (US term) isn't a stated service"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck + Outdoor Living (Patio/Pergola)",
+      "keyword": "deck patio builders",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "mixes patio (not a stated service) with deck"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "deck builder",
+      "avg_monthly_searches": 480,
+      "competition": "MEDIUM",
+      "low_bid": 1.83,
+      "high_bid": 9.94,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "deck builder near me",
+      "avg_monthly_searches": 90,
+      "competition": "MEDIUM",
+      "low_bid": 4.92,
+      "high_bid": 8.83,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "deck contractors near me",
+      "avg_monthly_searches": 90,
+      "competition": "MEDIUM",
+      "low_bid": 4.92,
+      "high_bid": 8.83,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "deck building companies near me",
+      "avg_monthly_searches": 90,
+      "competition": "MEDIUM",
+      "low_bid": 4.92,
+      "high_bid": 8.83,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "deck installation",
+      "avg_monthly_searches": 40,
+      "competition": "MEDIUM",
+      "low_bid": 0.5,
+      "high_bid": 5.77,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "deck building company",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "deck companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 5.56,
+      "high_bid": 26.43,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "deck installation near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "deck construction near me",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "deck contractors",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 6.07,
+      "high_bid": 13.82,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "affordable deck builders near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 7.93,
+      "high_bid": 22.81,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "best deck builders near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "local deck builders",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "deck builders in my area",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "custom deck builders near me",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "deck contractors in my area",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "deck building contractors near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "outdoor deck builders near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "custom decks near me",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "deck construction companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "decking specialists near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 4.41,
+      "high_bid": 16.02,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "deck installation companies",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "local deck builders near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "deck installation companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "decking builders",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "deck experts near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "best deck companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "build a deck near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "outdoor deck installers near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "contractors for decks near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "deck makers near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "deck installers in my area",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "small deck builders near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "decking companies in my area",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "build me a deck",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "best deck builders",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "home deck builders",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "deck construction company",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "local deck contractors near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "affordable deck builders",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "deck builders around me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "deck places near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "deck building contractor",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "professional deck builders near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "deck construction contractors",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 6.07,
+      "high_bid": 13.82,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "custom deck builder",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "deck installation service",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "local deck builder near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "new deck builder",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "deck installation contractor",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Builder - General",
+      "keyword": "outdoor deck installation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "generic 'installation' phrasing - ambiguous DIY vs hire intent"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Features & Add-ons",
+      "keyword": "deck and stair builders near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "stairs-specific - unclear if sold as a standalone service"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Features & Add-ons",
+      "keyword": "outdoor stairs installation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "component-only, ambiguous DIY vs hire intent"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Replacement & Renovation",
+      "keyword": "deck replacement contractors",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "replacement/repair work, not a new build"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Replacement & Renovation",
+      "keyword": "deck replacement contractors near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "replacement/repair work, not a new build"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Replacement & Renovation",
+      "keyword": "handyman deck builders",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "'handyman' signals lower-budget/DIY-adjacent lead quality"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Replacement & Renovation",
+      "keyword": "deck remodeling contractors near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "remodel/repair work, not new build"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Replacement & Renovation",
+      "keyword": "deck remodeling contractors",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "remodel/repair work, not new build"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Deck Replacement & Renovation",
+      "keyword": "deck builders and repair near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "mixes new-build intent with repair work"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "fencing contractors near me",
+      "avg_monthly_searches": 70,
+      "competition": "MEDIUM",
+      "low_bid": 3.84,
+      "high_bid": 10.26,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "fencing co near me",
+      "avg_monthly_searches": 70,
+      "competition": "MEDIUM",
+      "low_bid": 3.84,
+      "high_bid": 10.26,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "fencing business near me",
+      "avg_monthly_searches": 70,
+      "competition": "MEDIUM",
+      "low_bid": 3.84,
+      "high_bid": 10.26,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "fencing contractors",
+      "avg_monthly_searches": 50,
+      "competition": "HIGH",
+      "low_bid": 3.99,
+      "high_bid": 8.78,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "fence company near me",
+      "avg_monthly_searches": 40,
+      "competition": "MEDIUM",
+      "low_bid": 2.69,
+      "high_bid": 13.03,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "fence co near me",
+      "avg_monthly_searches": 40,
+      "competition": "MEDIUM",
+      "low_bid": 2.69,
+      "high_bid": 13.03,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "fence companies close to me",
+      "avg_monthly_searches": 40,
+      "competition": "MEDIUM",
+      "low_bid": 2.69,
+      "high_bid": 13.03,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "fence builder",
+      "avg_monthly_searches": 30,
+      "competition": "MEDIUM",
+      "low_bid": 2.69,
+      "high_bid": 8.51,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "fence builders",
+      "avg_monthly_searches": 30,
+      "competition": "MEDIUM",
+      "low_bid": 2.69,
+      "high_bid": 8.51,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "fence co",
+      "avg_monthly_searches": 30,
+      "competition": "MEDIUM",
+      "low_bid": 2.61,
+      "high_bid": 9.09,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "fence fence companies",
+      "avg_monthly_searches": 30,
+      "competition": "MEDIUM",
+      "low_bid": 2.61,
+      "high_bid": 9.09,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "fence builder near me",
+      "avg_monthly_searches": 20,
+      "competition": "HIGH",
+      "low_bid": 4.74,
+      "high_bid": 16.6,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "fencing company",
+      "avg_monthly_searches": 20,
+      "competition": "MEDIUM",
+      "low_bid": 4.0,
+      "high_bid": 9.08,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "fence installation near me",
+      "avg_monthly_searches": 20,
+      "competition": "HIGH",
+      "low_bid": 4.74,
+      "high_bid": 16.6,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "fence contractors near me",
+      "avg_monthly_searches": 20,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "fencing services",
+      "avg_monthly_searches": 20,
+      "competition": "HIGH",
+      "low_bid": 3.35,
+      "high_bid": 9.47,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "fencing co",
+      "avg_monthly_searches": 20,
+      "competition": "MEDIUM",
+      "low_bid": 4.0,
+      "high_bid": 9.08,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "best fence company near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "local fence companies",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "local fencing companies",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "residential fence company near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "best fencing companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "local fence installers",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "fence installation companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "premier fence company",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "fence companies in my area",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "affordable fence company",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "cheap fence company near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "top rated fence companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "highest rated fence companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "good fencing companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "best fencing company",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "quality fencing company",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "local fencing company near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "reliable fence company near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "residential fencing companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "backyard fencing companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "home fencing companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "custom fences near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "local fence builders",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "local fence builders near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "fencing builders near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Fence Builder - General",
+      "keyword": "fencing builders",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Garden & Boundary Fencing",
+      "keyword": "garden fencing companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Garden & Boundary Fencing",
+      "keyword": "garden fence company near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "style-specific (garden/decorative fencing) - confirm in scope"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Garden & Boundary Fencing",
+      "keyword": "garden fencing contractors near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "style-specific (garden/decorative fencing) - confirm in scope"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Garden & Boundary Fencing",
+      "keyword": "garden fence contractors near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "style-specific (garden/decorative fencing) - confirm in scope"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Garden & Boundary Fencing",
+      "keyword": "boundary fencing contractors",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "confirm this means residential property-line fencing, not rural boundary work"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Garden & Boundary Fencing",
+      "keyword": "boundary fence contractors",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "confirm this means residential property-line fencing, not rural boundary work"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Picket Fencing",
+      "keyword": "picket fence company",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "style-specific - confirm business builds this style"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Picket Fencing",
+      "keyword": "picket fence builder",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "style-specific - confirm business builds this style"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Pool Decks",
+      "keyword": "pool deck installers near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "niche (pool decks specifically) - confirm in scope"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Pool Decks",
+      "keyword": "pool deck contractors",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "niche (pool decks specifically) - confirm in scope"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Pool Decks",
+      "keyword": "pool deck builders",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "niche (pool decks specifically) - confirm in scope"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Pool Decks",
+      "keyword": "pool deck companies",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "niche (pool decks specifically) - confirm in scope"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Pool Fencing",
+      "keyword": "pool fence installation",
+      "avg_monthly_searches": 20,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "generic 'installation' phrasing ambiguous DIY vs hire (pool fencing itself is a real NZ service)"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Pool Fencing",
+      "keyword": "pool safety fence installation",
+      "avg_monthly_searches": 20,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "generic 'installation' phrasing ambiguous DIY vs hire"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Pool Fencing",
+      "keyword": "swimming pool fence installation",
+      "avg_monthly_searches": 20,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "generic 'installation' phrasing ambiguous DIY vs hire"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Pool Fencing",
+      "keyword": "pool fence company",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Pool Fencing",
+      "keyword": "pool fencing company",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Pool Fencing",
+      "keyword": "pool fence builder",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Pool Fencing",
+      "keyword": "pool fencing contractors",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Pool Fencing",
+      "keyword": "pool fence contractors",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Pool Fencing",
+      "keyword": "pool fencing contractors near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Pool Fencing",
+      "keyword": "pool fence contractors near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Pool Fencing",
+      "keyword": "pool fencing installers near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Pool Fencing",
+      "keyword": "glass pool fence installation",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "different material/trade - glass fencing is often subcontracted"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Pool Fencing",
+      "keyword": "glass fence installation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "different material/trade - glass fencing is often subcontracted"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Pool Fencing",
+      "keyword": "glass pool fencing installation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "different material/trade - glass fencing is often subcontracted"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Pool Fencing",
+      "keyword": "best pool safety fence",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "product-research intent, not clearly a hire-a-builder search"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Timber & Wood Fences",
+      "keyword": "wood fence company near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Timber & Wood Fences",
+      "keyword": "wood fence builders near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Timber & Wood Fences",
+      "keyword": "wood fence builders",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Timber & Wood Fences",
+      "keyword": "wood fence builder",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Timber & Wood Fences",
+      "keyword": "timber fence company",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Timber & Wood Fences",
+      "keyword": "timber fencing contractors near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Timber & Wood Fences",
+      "keyword": "timber fencing contractors",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Timber & Wood Fences",
+      "keyword": "timber fence contractors near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Timber & Wood Fences",
+      "keyword": "timber fence contractors",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Timber Decks",
+      "keyword": "timber deck builder",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Timber Decks",
+      "keyword": "wood deck builders near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Timber Decks",
+      "keyword": "wood deck contractors near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Timber Decks",
+      "keyword": "wood deck installers near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Timber Decks",
+      "keyword": "timber decking contractors",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 10.19,
+      "high_bid": 25.42,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Timber Decks",
+      "keyword": "timber decking installers near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Timber Decks",
+      "keyword": "timber decking installation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "generic 'installation' phrasing - ambiguous DIY vs hire intent"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Timber Decks",
+      "keyword": "kwila decking installation",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "NZ-relevant brand but 'installation' phrasing is ambiguous DIY vs hire intent"
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Timber Decks",
+      "keyword": "wood deck installation",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "generic 'installation' phrasing - ambiguous DIY vs hire intent"
+    },
+    {
+      "group": "Price Discovery \u2014 Aluminium Fencing",
+      "keyword": "aluminum fence cost calculator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Aluminium Fencing",
+      "keyword": "average cost of aluminum fence",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Colorbond Fences",
+      "keyword": "cost of colorbond fence per metre",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Colorbond Fences",
+      "keyword": "cost of colorbond fencing per metre",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Colorbond Fences",
+      "keyword": "colorbond fencing prices per metre",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Colorbond Fences",
+      "keyword": "colorbond fence price calculator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Colorbond Fences",
+      "keyword": "colorbond fencing cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Colorbond Fences",
+      "keyword": "colorbond fence installation cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Colorbond Fences",
+      "keyword": "colorbond fence cost calculator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Colorbond Fences",
+      "keyword": "colorbond fencing calculator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Composite Decks",
+      "keyword": "composite deck cost calculator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Composite Decks",
+      "keyword": "composite decking per m2",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Composite Decks",
+      "keyword": "composite decking price calculator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Composite Decks",
+      "keyword": "composite deck estimate",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Composite Decks",
+      "keyword": "estimate composite deck cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Composite Decks",
+      "keyword": "how much does it cost for composite decking",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Composite Decks",
+      "keyword": "how much does it cost for a composite deck",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Composite Decks",
+      "keyword": "how much does it cost to install composite decking",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Composite Decks",
+      "keyword": "price per square foot composite decking",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "how much does it cost to build a deck",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 1.49,
+      "high_bid": 4.65,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "deck cost calculator",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "deck cost estimator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "labor cost to build a deck calculator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "deck price calculator",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "how much is it to build a deck",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.88,
+      "high_bid": 2.81,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "cost to build a deck calculator",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "how much does it cost to have a deck built",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "how much it cost to build a deck",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.88,
+      "high_bid": 2.81,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "deck building estimator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "how much does it cost to get a deck built",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "how much does it cost to build a small deck",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "cost of a new deck calculator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "how much does it cost to install a deck",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "how much does it cost to build a new deck",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "deck price estimator",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "deck estimate near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "how much will it cost to build a deck",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 1.49,
+      "high_bid": 4.65,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "how much does it cost to make a deck",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 1.49,
+      "high_bid": 4.65,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "deck installation cost calculator",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "decking estimate cost calculator",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "floating deck cost calculator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "estimated cost to build a deck",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "how much does it cost for a new deck",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "deck building price calculator",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "deck construction cost estimator",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "how much does it cost for decking",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "how much do it cost to build a deck",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "how expensive is it to build a deck",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "how much it cost to build deck",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "cost estimate deck construction",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "decking costs per square foot",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "how much should it cost to build a deck",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 1.49,
+      "high_bid": 4.65,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "deck price per m2",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "how much does it cost to do a deck",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "how much does it cost to have a deck installed",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "how does it cost to build a deck",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "how much does it cost to build a 6x6 deck",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "new deck cost calculator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "how much does it cost to build an outdoor deck",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "how much does it cost to build a front deck",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "how much does it cost to get decking done",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "how much does it cost for decking to be installed",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "how much would it cost to build a small deck",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "how much does it cost to put a deck in",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "how much does it cost to have deck built",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "how much does it cost to do decking",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "deck construction cost calculator",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Builder - General",
+      "keyword": "concrete deck cost calculator",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Features & Add-ons",
+      "keyword": "how much does it cost to build a covered deck",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "covered/roofed deck is a different structure scope - confirm offered"
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Features & Add-ons",
+      "keyword": "covered deck cost calculator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Features & Add-ons",
+      "keyword": "deck railing cost calculator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Features & Add-ons",
+      "keyword": "deck railing estimator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Features & Add-ons",
+      "keyword": "deck stairs cost calculator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Replacement & Renovation",
+      "keyword": "how much does it cost to replace a deck",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "replacement pricing, not a new build"
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Replacement & Renovation",
+      "keyword": "how much does it cost to replace an existing deck",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "replacement pricing, not a new build"
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Replacement & Renovation",
+      "keyword": "how much does it cost to rebuild a deck",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "rebuild/renovation pricing, not a new build"
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Replacement & Renovation",
+      "keyword": "how much does it cost to redo a deck",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "rebuild/renovation pricing, not a new build"
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Replacement & Renovation",
+      "keyword": "how much does it cost to renovate a deck",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "renovation pricing, not a new build"
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Replacement & Renovation",
+      "keyword": "how much does it cost to extend a deck",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "extension/modification pricing, not a new build"
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Replacement & Renovation",
+      "keyword": "deck repair cost calculator",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Replacement & Renovation",
+      "keyword": "deck replacement cost calculator",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Replacement & Renovation",
+      "keyword": "deck replacement cost estimator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "fence cost calculator",
+      "avg_monthly_searches": 20,
+      "competition": "LOW",
+      "low_bid": 0.85,
+      "high_bid": 3.52,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "fence price calculator",
+      "avg_monthly_searches": 20,
+      "competition": "LOW",
+      "low_bid": 0.85,
+      "high_bid": 3.52,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "fence price estimator",
+      "avg_monthly_searches": 20,
+      "competition": "LOW",
+      "low_bid": 0.85,
+      "high_bid": 3.52,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "how much does it cost to build a fence",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "fencing cost calculator",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "fence installation cost",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 1.05,
+      "high_bid": 2.99,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "fence cost estimator",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "fencing cost",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 1.05,
+      "high_bid": 3.55,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "how much does it cost to put up a fence",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "how much does it cost to install a fence",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.65,
+      "high_bid": 4.97,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "how much does it cost to fence a yard",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "average fence cost",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "cost to install fence per foot",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "how much does it cost to get a fence installed",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "how much does it cost to have a fence installed",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "how much is it to build a fence",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "how much is it to put up a fence",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "how much is it to install a fence",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "how much does it cost for a fence",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "how much does it cost to put in a fence",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "build a fence cost",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "cost to put up a fence",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "cost to put in a fence",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 1.05,
+      "high_bid": 2.99,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "how much would it cost to build a fence",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "how much does it cost to get a fence built",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "cost of fences and installation",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 1.05,
+      "high_bid": 2.99,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "fence installation price",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "fence installation quote",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "fencing quote calculator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "fencing price calculator",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "fencing price estimator",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "online fence quote calculator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "free fence estimate",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "online fence estimator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "estimate for fence installation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "how much does it cost to have a fence built",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "cost to have fence installed",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "average cost of fencing per foot",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "average cost of fencing per metre",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "average price for fence installation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "typical fence cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "typical price for fence installation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "average cost to build fence",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "average cost to install privacy fence",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "average price of fence",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "average cost of new fence",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "fence replacement cost calculator",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Builder - General",
+      "keyword": "average cost to replace a fence",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "replacement pricing, not a new build"
+    },
+    {
+      "group": "Price Discovery \u2014 Paling Fencing",
+      "keyword": "timber paling fence calculator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Paling Fencing",
+      "keyword": "paling fence calculator",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Paling Fencing",
+      "keyword": "pailing fence calculator",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Picket Fencing",
+      "keyword": "picket fence cost",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Pool Fencing",
+      "keyword": "pool fencing cost",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Pool Fencing",
+      "keyword": "pool fencing cost per metre installed",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Pool Fencing",
+      "keyword": "pool safety fence cost",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Pool Fencing",
+      "keyword": "pool fence installation cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Timber & Wood Fences",
+      "keyword": "wood fence cost calculator",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Timber & Wood Fences",
+      "keyword": "wood fence installation cost",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Timber & Wood Fences",
+      "keyword": "wood fence cost",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.98,
+      "high_bid": 1.85,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Timber & Wood Fences",
+      "keyword": "wood fence prices",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.98,
+      "high_bid": 1.85,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Timber & Wood Fences",
+      "keyword": "timber fence cost calculator",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Timber & Wood Fences",
+      "keyword": "timber fencing calculator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Timber & Wood Fences",
+      "keyword": "how much does it cost to build a wooden fence",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Timber & Wood Fences",
+      "keyword": "how much does it cost for a wooden fence",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Timber & Wood Fences",
+      "keyword": "average cost of wood fence",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Timber & Wood Fences",
+      "keyword": "average cost to install wood fence",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Timber Decks",
+      "keyword": "wood deck price calculator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Timber Decks",
+      "keyword": "deck wood cost calculator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Timber Decks",
+      "keyword": "timber decking cost calculator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    }
+  ]
+}

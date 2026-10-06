@@ -1,0 +1,139 @@
+{
+  "project_id": "painting-canterbury",
+  "step": "step4",
+  "label": "House Painting Company - Canterbury",
+  "ad_groups": [
+    {
+      "name": "Exterior Painting",
+      "final_url": "https://www.canterburypainting.co.nz/quote/exterior-painting",
+      "headlines_pinned": [
+        "Exterior Painters Near Me",
+        "Exterior Painter Christchurch",
+        "Exterior Painting Contractors"
+      ],
+      "headlines_benefit": [
+        "24+ Years Experience",
+        "250+ Projects Completed",
+        "Fully Insured Painters",
+        "5-Star Rated, 11 Reviews",
+        "Free Quote, Fixed Price",
+        "Fixed Price In Writing",
+        "Featured In Abode Mag",
+        "Christchurch To Ashburton",
+        "Wash, Scrape & Prime First",
+        "Tidy Site, Every Day",
+        "Same Painter Start-Finish",
+        "Satisfaction Guaranteed"
+      ],
+      "descriptions": [
+        "Exterior painting contractors Canterbury trusts. 24 years' experience, fully insured.",
+        "Free measure up & a fixed price in writing for exterior home painting - no surprises.",
+        "Exterior painter Christchurch, 5-star rated (11 reviews). Prep done right, every job.",
+        "Exterior painting company servicing Christchurch to Ashburton. Free quote today."
+      ],
+      "paths": [
+        "Exterior",
+        "Free-Quote"
+      ]
+    },
+    {
+      "name": "Interior Painting",
+      "final_url": "https://www.canterburypainting.co.nz/quote/interior-painting",
+      "headlines_pinned": [
+        "Interior Painter Christchurch",
+        "Interior Painters Near Me",
+        "Interior Painting Company"
+      ],
+      "headlines_benefit": [
+        "24+ Years Experience",
+        "250+ Projects Completed",
+        "Fully Insured Painters",
+        "5-Star Rated, 11 Reviews",
+        "Free Quote, Fixed Price",
+        "Fixed Price In Writing",
+        "Featured In Abode Mag",
+        "Christchurch To Ashburton",
+        "Low-Odour Paint Systems",
+        "Tidy Site, Every Day",
+        "Same Painter Start-Finish",
+        "Satisfaction Guaranteed"
+      ],
+      "descriptions": [
+        "Interior painting company Christchurch homeowners trust. 24 years' experience.",
+        "Free fixed-price quote for interior house painters - walls, ceilings, trims & doors.",
+        "Interior painting services near me - 5-star rated on Google (11 reviews).",
+        "Interior painter Christchurch, servicing to Ashburton. Low-odour paint, free quote."
+      ],
+      "paths": [
+        "Interior",
+        "Free-Quote"
+      ]
+    },
+    {
+      "name": "Painting - General",
+      "final_url": "https://www.canterburypainting.co.nz/quote/painting",
+      "headlines_pinned": [
+        "Painter Christchurch",
+        "Painter Near Me",
+        "House Painters Near Me"
+      ],
+      "headlines_benefit": [
+        "24+ Years Experience",
+        "250+ Projects Completed",
+        "Fully Insured Painters",
+        "5-Star Rated, 11 Reviews",
+        "Free Quote, Fixed Price",
+        "Fixed Price In Writing",
+        "Featured In Abode Mag",
+        "Christchurch To Ashburton",
+        "No Shortcuts, Proper Prep",
+        "Tidy Site, Every Day",
+        "Same Painter Start-Finish",
+        "Satisfaction Guaranteed"
+      ],
+      "descriptions": [
+        "Painter Christchurch homeowners recommend. 24 years' experience, fully insured.",
+        "House painters near me offering a fixed price in writing - no surprise invoices.",
+        "Painting company Christchurch, 5-star rated on Google (11 reviews). No shortcuts.",
+        "Home painters near me, servicing Christchurch to Ashburton. Free quote today."
+      ],
+      "paths": [
+        "House-Paint",
+        "Free-Quote"
+      ]
+    },
+    {
+      "name": "Roof Painting",
+      "final_url": "https://www.canterburypainting.co.nz/quote/roof-painting",
+      "headlines_pinned": [
+        "Roof Painting Near Me",
+        "Roof Painters Christchurch",
+        "Roof Painting Company"
+      ],
+      "headlines_benefit": [
+        "24+ Years Experience",
+        "250+ Projects Completed",
+        "Fully Insured Painters",
+        "5-Star Rated, 11 Reviews",
+        "Free Quote, Fixed Price",
+        "Fixed Price In Writing",
+        "Featured In Abode Mag",
+        "Christchurch To Ashburton",
+        "Rust Treated & Primed",
+        "Tidy Site, Every Day",
+        "Same Painter Start-Finish",
+        "Satisfaction Guaranteed"
+      ],
+      "descriptions": [
+        "Roof painting company for iron & Decramastic roofs. 24 years' experience, insured.",
+        "Roof painting near me - free fixed-price quote, rust treated, primed, 2 coats.",
+        "Roof painters near me, 5-star rated on Google (11 reviews). Tidy site every day.",
+        "Roof painting contractors servicing Christchurch to Ashburton. Free quote today."
+      ],
+      "paths": [
+        "Roof-Paint",
+        "Free-Quote"
+      ]
+    }
+  ]
+}

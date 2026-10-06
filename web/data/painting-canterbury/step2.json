@@ -1,0 +1,71 @@
+{
+  "project_id": "painting-canterbury",
+  "step": "step2",
+  "label": "House Painting Company - Canterbury",
+  "group_label": "Location",
+  "rows": [
+    {
+      "group": "christchurch",
+      "keyword": "painter christchurch",
+      "avg_monthly_searches": 590,
+      "competition": "LOW",
+      "low_bid": 3.88,
+      "high_bid": 13.44,
+      "note": ""
+    },
+    {
+      "group": "christchurch",
+      "keyword": "interior painter christchurch",
+      "avg_monthly_searches": 590,
+      "competition": "LOW",
+      "low_bid": 3.88,
+      "high_bid": 13.44,
+      "note": ""
+    },
+    {
+      "group": "christchurch",
+      "keyword": "painting company christchurch",
+      "avg_monthly_searches": 70,
+      "competition": "LOW",
+      "low_bid": 3.75,
+      "high_bid": 16.91,
+      "note": ""
+    },
+    {
+      "group": "christchurch",
+      "keyword": "exterior painter christchurch",
+      "avg_monthly_searches": 50,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "lincoln",
+      "keyword": "painter lincoln",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "ashburton",
+      "keyword": "painter ashburton",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "amberley",
+      "keyword": "painter amberley",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+# secrets - never commit these
+google-ads.yaml
+client_secret*.json
+*.pdf
+.env
+
+# python
+venv/
+__pycache__/
+*.pyc
+
+# output
+output/
+*.csv
+
+# netlify
+web/.netlify/
+
+# local review server state
+web/approvals/
+
+# os
+.DS_Store

@@ -1,0 +1,73 @@
+[
+  {
+    "id": "deck-fence-auckland",
+    "label": "Deck & Fence Builder - Auckland",
+    "steps": {
+      "step1": {
+        "status": "approved",
+        "file": "data/deck-fence-auckland/step1.json",
+        "step_label": "Step 1: Keyword Research",
+        "row_count": 360,
+        "approved_count": 337
+      },
+      "step2": {
+        "status": "skipped",
+        "note": "Auckland is a single large metro - suburb-level keywords tested at near-zero volume (16 suburbs x 7 terms = 109 phrases, only 1 had measurable volume). Relying on Step 1's city-wide + near-me terms instead; suburb reach handled via Google Ads location-targeting settings.",
+        "step_label": "Step 2: Location Keywords"
+      },
+      "step3": {
+        "status": "approved",
+        "file": "data/deck-fence-auckland/step3.json",
+        "step_label": "Step 3: Ad Groups",
+        "row_count": 337,
+        "approved_count": 336
+      }
+    }
+  },
+  {
+    "id": "painting-canterbury",
+    "label": "House Painting Company - Canterbury",
+    "steps": {
+      "step1": {
+        "status": "approved",
+        "file": "data/painting-canterbury/step1.json",
+        "step_label": "Step 1: Keyword Research",
+        "row_count": 527,
+        "approved_count": 489
+      },
+      "step2": {
+        "status": "approved",
+        "file": "data/painting-canterbury/step2.json",
+        "step_label": "Step 2: Location Keywords",
+        "row_count": 7,
+        "approved_count": 7
+      },
+      "step3": {
+        "status": "approved",
+        "file": "data/painting-canterbury/step3.json",
+        "step_label": "Step 3: Ad Groups",
+        "row_count": 496,
+        "approved_count": 496
+      },
+      "step4": {
+        "status": "approved",
+        "file": "data/painting-canterbury/step4.json",
+        "step_label": "Step 4: Ad Copy",
+        "row_count": 84
+      },
+      "step5": {
+        "status": "approved",
+        "file": "data/painting-canterbury/step5.json",
+        "step_label": "Step 5: Landing Pages",
+        "row_count": 4
+      },
+      "step6": {
+        "status": "approved",
+        "file": "data/painting-canterbury/step6.json",
+        "step_label": "Step 6: Sitelinks, Callouts & Snippets",
+        "row_count": 33,
+        "approved_count": 33
+      }
+    }
+  }
+]

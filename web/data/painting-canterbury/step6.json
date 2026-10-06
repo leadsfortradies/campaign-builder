@@ -1,0 +1,187 @@
+{
+  "project_id": "painting-canterbury",
+  "step": "step6",
+  "label": "House Painting Company - Canterbury",
+  "ad_groups": [
+    {
+      "name": "Exterior Painting",
+      "sitelinks": [
+        {
+          "text": "Free Measure & Quote",
+          "description_1": "100% Obligation Free",
+          "description_2": "Fixed Price In Writing",
+          "url": "https://www.canterburypainting.co.nz/quote/exterior-painting#quote"
+        },
+        {
+          "text": "5-Star Rated",
+          "description_1": "11 Reviews On Google",
+          "description_2": "Trusted By Locals",
+          "url": "https://www.canterburypainting.co.nz/quote/exterior-painting#reviews"
+        },
+        {
+          "text": "See Our Work",
+          "description_1": "250+ Projects Done",
+          "description_2": "Browse Our Gallery",
+          "url": "https://www.canterburypainting.co.nz/quote/exterior-painting#gallery"
+        },
+        {
+          "text": "24 Years Experience",
+          "description_1": "Painting Since 2002",
+          "description_2": "Same Painter Throughout",
+          "url": "https://www.canterburypainting.co.nz/quote/exterior-painting#about"
+        },
+        {
+          "text": "Fully Insured",
+          "description_1": "Peace Of Mind Cover",
+          "description_2": "Satisfaction Guaranteed",
+          "url": "https://www.canterburypainting.co.nz/quote/exterior-painting#guarantee"
+        },
+        {
+          "text": "Service Areas",
+          "description_1": "Canterbury Wide",
+          "description_2": "Local Painting Experts",
+          "url": "https://www.canterburypainting.co.nz/quote/exterior-painting#service-area"
+        }
+      ]
+    },
+    {
+      "name": "Interior Painting",
+      "sitelinks": [
+        {
+          "text": "Free Measure & Quote",
+          "description_1": "100% Obligation Free",
+          "description_2": "Fixed Price In Writing",
+          "url": "https://www.canterburypainting.co.nz/quote/interior-painting#quote"
+        },
+        {
+          "text": "5-Star Rated",
+          "description_1": "11 Reviews On Google",
+          "description_2": "Trusted By Locals",
+          "url": "https://www.canterburypainting.co.nz/quote/interior-painting#reviews"
+        },
+        {
+          "text": "See Our Work",
+          "description_1": "250+ Projects Done",
+          "description_2": "Browse Our Gallery",
+          "url": "https://www.canterburypainting.co.nz/quote/interior-painting#gallery"
+        },
+        {
+          "text": "24 Years Experience",
+          "description_1": "Painting Since 2002",
+          "description_2": "Same Painter Throughout",
+          "url": "https://www.canterburypainting.co.nz/quote/interior-painting#about"
+        },
+        {
+          "text": "Fully Insured",
+          "description_1": "Peace Of Mind Cover",
+          "description_2": "Satisfaction Guaranteed",
+          "url": "https://www.canterburypainting.co.nz/quote/interior-painting#guarantee"
+        },
+        {
+          "text": "Service Areas",
+          "description_1": "Canterbury Wide",
+          "description_2": "Local Painting Experts",
+          "url": "https://www.canterburypainting.co.nz/quote/interior-painting#service-area"
+        }
+      ]
+    },
+    {
+      "name": "Painting - General",
+      "sitelinks": [
+        {
+          "text": "Free Measure & Quote",
+          "description_1": "100% Obligation Free",
+          "description_2": "Fixed Price In Writing",
+          "url": "https://www.canterburypainting.co.nz/quote/painting#quote"
+        },
+        {
+          "text": "5-Star Rated",
+          "description_1": "11 Reviews On Google",
+          "description_2": "Trusted By Locals",
+          "url": "https://www.canterburypainting.co.nz/quote/painting#reviews"
+        },
+        {
+          "text": "See Our Work",
+          "description_1": "250+ Projects Done",
+          "description_2": "Browse Our Gallery",
+          "url": "https://www.canterburypainting.co.nz/quote/painting#gallery"
+        },
+        {
+          "text": "24 Years Experience",
+          "description_1": "Painting Since 2002",
+          "description_2": "Same Painter Throughout",
+          "url": "https://www.canterburypainting.co.nz/quote/painting#about"
+        },
+        {
+          "text": "Fully Insured",
+          "description_1": "Peace Of Mind Cover",
+          "description_2": "Satisfaction Guaranteed",
+          "url": "https://www.canterburypainting.co.nz/quote/painting#guarantee"
+        },
+        {
+          "text": "Service Areas",
+          "description_1": "Canterbury Wide",
+          "description_2": "Local Painting Experts",
+          "url": "https://www.canterburypainting.co.nz/quote/painting#service-area"
+        }
+      ]
+    },
+    {
+      "name": "Roof Painting",
+      "sitelinks": [
+        {
+          "text": "Free Measure & Quote",
+          "description_1": "100% Obligation Free",
+          "description_2": "Fixed Price In Writing",
+          "url": "https://www.canterburypainting.co.nz/quote/roof-painting#quote"
+        },
+        {
+          "text": "5-Star Rated",
+          "description_1": "11 Reviews On Google",
+          "description_2": "Trusted By Locals",
+          "url": "https://www.canterburypainting.co.nz/quote/roof-painting#reviews"
+        },
+        {
+          "text": "See Our Work",
+          "description_1": "250+ Projects Done",
+          "description_2": "Browse Our Gallery",
+          "url": "https://www.canterburypainting.co.nz/quote/roof-painting#gallery"
+        },
+        {
+          "text": "24 Years Experience",
+          "description_1": "Painting Since 2002",
+          "description_2": "Same Painter Throughout",
+          "url": "https://www.canterburypainting.co.nz/quote/roof-painting#about"
+        },
+        {
+          "text": "Fully Insured",
+          "description_1": "Peace Of Mind Cover",
+          "description_2": "Satisfaction Guaranteed",
+          "url": "https://www.canterburypainting.co.nz/quote/roof-painting#guarantee"
+        },
+        {
+          "text": "Service Areas",
+          "description_1": "Canterbury Wide",
+          "description_2": "Local Painting Experts",
+          "url": "https://www.canterburypainting.co.nz/quote/roof-painting#service-area"
+        }
+      ]
+    }
+  ],
+  "callouts": [
+    "24+ Years Experience",
+    "Fully Insured Painters",
+    "5-Star Rated, 11 Reviews",
+    "Free Quote, Fixed Price",
+    "250+ Projects Completed",
+    "Featured In Abode Mag"
+  ],
+  "structured_snippets": {
+    "header": "Service Catalog",
+    "values": [
+      "Exterior Painting",
+      "Interior Painting",
+      "Roof Painting"
+    ]
+  }
+}

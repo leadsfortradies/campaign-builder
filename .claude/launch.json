@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "lftcampaignbuilder-local",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-c", "cd '/Users/liamemery/Desktop/Work Shit/Google Ads Campaign Builder' && exec venv/bin/python scripts/local_server.py --port 8787"],
+      "port": 8787
+    }
+  ]
+}

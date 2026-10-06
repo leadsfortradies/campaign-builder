@@ -1,0 +1,655 @@
+# Campaign Build Process
+
+This is the process to follow when asked to "build a Google Ads campaign for
+<business>". Work through the steps in order; stop for review/approval where
+noted. The user interacts in plain business language only — never ask them
+for technical IDs or API parameters; resolve those internally.
+
+**Scope discipline:** only research/include services the user explicitly
+states for that business. Never add an "obviously adjacent" trade on your own
+judgment (e.g. gates for a fence builder, retaining walls for a deck/fence
+builder, staining/repair for a builder) unless the user names it. A keyword
+that mixes a named service with an unstated one (e.g. "fence and gate
+company") gets excluded too, not kept because half the phrase matches. Each
+client gets their own Ads account, so scope creep here means wasted spend on
+services that client can't fulfil.
+
+## Step 0 - Setup (business info) — IMPLEMENTED
+
+Collected entirely in chat - no web app UI for this step (decided
+2026-10-06: the image assets involved make a browser upload form more
+effort than it's worth, so everything, including the logo and photos,
+comes through chat).
+
+1. Before kicking off a build, get as much of the following as possible -
+   it feeds Step 4 (ad copy) and Step 5 (landing pages) later. Items marked
+   with a star are compulsory; keep going if the rest aren't available yet,
+   but don't start Step 4/5 without the starred ones:
+   - **Business name***
+   - **Business logo***
+   - Years of experience
+   - Estimated number of completed projects
+   - Certifications / qualifications
+   - Photos of completed work
+   - Other useful photos (e.g. team members)
+   - **Service area/s***
+   - Any other info that gives consumers a reason to pick this business over
+     a competitor (guarantees, awards, press, reviews, process, etc.)
+2. The user can hand all of this over in one go, or piecemeal across the
+   conversation - there's no form to fill in, so just keep track of what's
+   been given and what's still missing.
+3. Any image file (logo, work photos, team photos) the user shares in chat
+   gets copied into `web/data/<project-id>/assets/` (not left wherever the
+   user originally dropped it) so it's still there when Step 4/5 need it.
+4. Persist everything collected so far with
+   `scripts/lib/webapp_export.py`'s `write_step0_business_info()` (or via
+   `scripts/webapp_sync.py step0 <project-id> "<label>" <info.json>`) -
+   writes `web/data/<project-id>/step0.json`. Safe to call repeatedly as
+   more info comes in; re-run it to fill in gaps rather than overwriting
+   with incomplete data.
+5. Don't re-ask for anything already sitting in `step0.json` - read it
+   first. If the starred fields are still missing when Step 4 or Step 5
+   comes up, that's the point to ask, not before (no need to interrupt
+   Step 1-3's keyword work for info that isn't needed yet).
+
+## Step 1 - Keyword Research (Keyword Planner) — IMPLEMENTED
+
+1. User describes the business: what services it offers, and where (e.g. "a
+   deck/fence/retaining wall builder in Auckland").
+2. Derive seed keywords per service and run them through Keyword Planner
+   (`scripts/keyword_research.py`, via `scripts/lib/keyword_planner.py`).
+   Find high-intent, bottom-of-funnel keywords, e.g.:
+   - deck builder near me
+   - deck building company auckland
+   - fence builder near me
+3. Split these into **"BOF - Priority 1"** and **"BOF - Priority 2"** (see
+   "Bottom of Funnel: Priority 1 vs Priority 2 split" below) rather than one
+   flat "Bottom of Funnel" bucket.
+4. Also find price-discovery keywords, e.g.:
+   - how much does it cost to build a deck
+   - deck build cost calculator
+5. Label these **"Price Discovery"**.
+6. Anything else worth including that doesn't fit cleanly goes in a separate
+   **"Manual Review"** bucket. Campaigns must stay focused and relevant to the
+   specific business — exclude top-of-funnel/educational keywords (e.g. "how
+   to build my own deck", "bunnings decking timber").
+7. Minimum 10 average monthly searches to keep a keyword
+   (`--min-searches 10`).
+8. Exclude keywords that are irrelevant to the core service or clearly DIY,
+   e.g.:
+   - deck staining near me (not relevant to deck *building*)
+   - how to repair my deck (DIY)
+   - how to build a deck (DIY)
+9. **Stop and present the categorized list for the user's review and
+   approval before moving to Step 2.** Output includes a `note` column: blank
+   for Bottom of Funnel / Price Discovery rows, filled in for every Manual
+   Review row explaining why it needs a human decision (e.g. "includes patio,
+   which isn't a stated service", "repair intent, not new build").
+
+### Bottom of Funnel: Priority 1 vs Priority 2 split (added 2026-10-06)
+
+Local-service BOF keyword lists blow out to 200-300+ entries, almost all
+long-tail wording variants sitting at the 10/mo search-volume floor. That's
+unnecessary bloat, especially since Google Ads exact match already matches
+close variants - an exact-match keyword "house painter" already triggers for
+"house painter near me" and similar phrasing, so keeping both as separate
+keywords adds no incremental reach, just campaign clutter. Nothing gets
+deleted though - every BOF keyword that clears the normal Step 1 bar still
+ends up in the final list, just split into two priority tiers instead of one
+flat bucket:
+
+- **BOF - Priority 1** - the core, highest-intent set. Launched first.
+- **BOF - Priority 2** - every other real BOF keyword. Launched later, once
+  Priority 1 is proven, to pick up additional volume.
+
+This split is a judgment call made while reading the raw Keyword Planner
+data, the same way Bottom of Funnel vs Price Discovery vs Manual Review
+classification already is - not a rigid scoring script. Apply this rubric:
+
+1. **Group by service.** Use the services the user actually stated for the
+   business (e.g. house painting / interior / exterior / roof). A keyword
+   that doesn't name a specific sub-service (e.g. "painting companies near
+   me") counts toward the general/umbrella service.
+2. **Collapse close-variant clusters before ranking.** Keywords that differ
+   only by a locality synonym ("near me" / "in my area" / "nearby" / "close
+   to me" / "local"), pluralization, word order, or a minor function word are
+   the same underlying query intent - Google's close-variant matching
+   already bridges them. Only the best-volume phrasing in a cluster competes
+   for Priority 1; the rest of the cluster falls to Priority 2 rather than
+   being kept as separate near-duplicate Priority 1 entries.
+3. **Score the survivors by intent tier:**
+   - **Tier A** (strongest): locality marker *and* a business-entity word
+     ("company/companies/contractor(s)/services") both present - e.g.
+     "painting companies near me".
+   - **Tier B**: trade noun + one of (locality marker OR business-entity
+     word) - e.g. "roof painters near me", "painting company".
+   - **Tier C**: bare trade noun or a hiring qualifier only ("professional
+     painter", "house painter").
+4. **Rank Tier A > B > C within a service, except volume can override
+   tier** when the gap is large (roughly 3x+) - e.g. "house painter" (300
+   searches/mo) beats "house painter near me" (10 searches/mo) despite
+   scoring a lower tier.
+5. **Fill Priority 1 per service**, floor of 5 keywords minimum. Beyond the
+   floor there's no hard cap - use judgment on where genuine hiring-intent
+   quality tapers off into redundant/low-value long tail. As a rough
+   starting guideline this tends to land around 10-12 per service, but let
+   actual data quality decide rather than forcing a number; a business with
+   more stated services naturally ends up with a larger Priority 1 set in
+   total, not squeezed to fit a fixed ceiling.
+6. **Everything else stays Bottom of Funnel but goes to Priority 2** -
+   never dropped, never moved to Manual Review or Excluded for this reason
+   alone.
+
+### Review happens in the web app, not raw CSV
+
+Review happens in a **local-only** web app (switched from Netlify to a local
+Python server 2026-10-06 - no more deploy credits burned per update, no more
+Netlify MCP round-trip to read an approval). Run it with
+`venv/bin/python scripts/local_server.py` (default port 8787) and open
+`http://localhost:8787`. It's a **multi-project app**:
+
+- `index.html` - Projects list. Each card is one business/campaign, with a
+  status badge per step (not started / pending_review / approved / skipped).
+- `project.html?id=<project-id>&step=<step>` - a project's detail page, with
+  tabs across whichever steps have data. Same grouped-review-table UI is
+  reused for Step 1 (grouped by category) and Step 3 (grouped by ad group) -
+  `web/js/review.js` is the generic renderer, driven by a `group` field in
+  the row data so neither step needed its own UI code. A skipped step (e.g.
+  Step 2 for a big metro) shows a plain note card instead of a table.
+- User clicks X to exclude keywords, then **"Approve this step"**, which
+  POSTs the kept list as JSON to `/approve` on the local server.
+
+**To pick up an approval:** `scripts/local_server.py` writes each approval
+straight to `web/approvals/<project-id>__<step>__<timestamp>.json` - just
+read that file directly (`project_id` / `step` say which project/step,
+`kept_keywords` is the approved list). No MCP calls, no jq workaround.
+Delete or move the file once picked up so it doesn't get re-processed.
+
+**To push a new or updated step's results into the web app:**
+`venv/bin/python scripts/webapp_sync.py step1 <project-id> "<label>" <csv>`
+(or `step2`/`step3`, or `skip <project-id> "<label>" <step> "<note>"`) - this
+writes `web/data/<project-id>/<step>.json` and updates `web/projects.json`.
+Nothing to deploy - the local server reads straight off disk, so a browser
+refresh picks up the change immediately.
+
+### Standing classification rules (apply every run, don't re-ask)
+
+- **Cost/price calculators and estimators are always Price Discovery**, never
+  Manual Review - any keyword containing "calculator" or "estimator" where
+  the subject is cost/price/budget/quote (e.g. "deck railing cost
+  calculator", "fence replacement cost estimator").
+- **Exclude anything about "design"/"designer"** (e.g. "deck designers near
+  me", "composite deck designer") - not relevant to a builder.
+- **Exclude security gate / security fencing terms** - not a stated service
+  unless the user names security fencing explicitly.
+- **Exclude farm / rural / agricultural / livestock fencing terms** - wrong
+  customer segment for an urban residential fence/deck builder. Boundary
+  fencing is fine to keep (applies to residential properties too), it's only
+  the farm/rural/ag/livestock-specific terms that go.
+- **Exclude niche/unfamiliar product-brand install terms** unless the brand
+  is mainstream and NZ-relevant (keep Modwood, Kwila, Colorbond; drop things
+  like "Millboard installers" - unclear relevance, delete rather than
+  Manual Review).
+- These rules came from user corrections on the first test run (deck/fence
+  builder, Auckland, 2026-10-05) - see git history / PROCESS.md changes for
+  context, but apply them going forward without re-litigating.
+- **Bottom of Funnel requires an explicit hiring/business signal in the
+  keyword itself** - the trade noun ("painter(s)", "builder(s)"), a
+  business-entity word ("company/companies/contractor(s)/services"), a
+  locality marker ("near me/in my area/nearby/local"), an explicit
+  request-to-have-it-done phrasing ("paint my house", "get your house
+  painted"), or a hiring qualifier ("hire", "professional", "handyman",
+  "reputable", "0800", etc - but NOT "cheap"/"affordable", see below). A
+  bare "activity + surface/
+  material" description with **none** of these (e.g. "painting brick
+  homes", "interior house painting", "repaint brick house", "roof
+  respray") is top-of-funnel/exploratory by default - it reads as the
+  searcher researching the topic, not ready to hire - and gets Excluded,
+  not Bottom of Funnel. Don't default-include a generic head term just
+  because it's on-topic; the signal word has to actually be present. Caught
+  on the painting/Canterbury test run (2026-10-05) after wrongly bucketing
+  "painting brick homes" and "painting walls white" as Bottom of Funnel.
+- **"Near me" / "company" / "services" etc. don't override the scope
+  rule** - a keyword can carry a hiring signal and still be excluded if the
+  service itself isn't stated (e.g. "kitchen cabinet painters near me",
+  "floor painters near me", "epoxy painters near me", "drywall and painting
+  contractor near me", "paint stripping companies near me" for a painting
+  company that was only described as doing exterior/interior/roof work).
+  Check scope before counting the hiring signal.
+- **Never include "cheap" / "affordable" / "cheapest" / "budget" /
+  "low cost" price-positioning terms, in any category, for any trade.**
+  Exclude outright (e.g. "cheap house painters", "affordable roof
+  painting", "affordable exterior painters near me") rather than treating
+  the hiring signal (painter/company/near me) as enough to keep them.
+  Standing rule from 2026-10-05 - don't re-ask, applies to every future
+  build regardless of trade.
+- **Distinguish paint product pricing from service pricing.** "cost to
+  paint X" / "X painting cost" / "quote for painting X" = Price Discovery.
+  Bare "<material> paint price/prices" (e.g. "roof paint price", "metal
+  roof paint price", "5l roof paint price") is someone pricing the tin of
+  paint, not the job - exclude it as a product query, not Price Discovery.
+
+## Step 2 - Location-Based Keywords — IMPLEMENTED
+
+1. For each main service offering, identify the 2-5 keywords responsible for
+   the bulk of search volume (e.g. "deck builders near me" -> base term
+   "deck builder").
+2. Identify the specific locations within the target region (resolve via
+   `scripts/resolve_location.py` - user gives plain place names, Claude
+   derives the actual list and IDs, doesn't ask the user for IDs).
+3. Build location-specific keyword variants (e.g. "deck builders palmerston
+   north") and pull **exact-phrase** search volume via
+   `scripts/step2_location_keywords.py` (uses
+   `GenerateKeywordHistoricalMetrics`, not idea-expansion, since we already
+   know the exact phrases we want - `lib/keyword_planner.py`'s
+   `get_keyword_historical_metrics`). Max 10 geo_target_constants per API
+   call and metrics aggregate across whatever locations are passed together,
+   so the script calls once per location to get a true per-location
+   breakdown.
+
+### Big single metro vs. distinct towns (decided 2026-10-05, Auckland test run)
+
+Suburb-level exact-phrase keywords return near-zero volume for a single big
+metro (tested: 16 Auckland suburbs x 7 base terms = 109 phrases, only 1 had
+any measurable volume). This isn't a bug - people searching locally mostly
+type "deck builder near me" or just the city name, not "deck builder
+albany". The Manawatu example in this doc works because those are
+**separate, distinct towns/cities** (Palmerston North, Feilding, Ashhurst),
+not suburbs of one metro - people do type the town name there.
+
+**Rule:** before running step 2's suburb/location expansion, judge whether
+the target area is (a) a single large metro (Auckland, Wellington,
+Christchurch) - in which case **skip suburb-keyword expansion entirely**.
+Rely on the city-wide + "near me" terms already produced by Step 1, and
+handle suburb-level reach through the Google Ads campaign's own
+location-targeting settings (not keyword text) when the account gets built.
+Or (b) a region made up of genuinely separate towns (like Manawatu) - in
+which case run step 2 as designed, it'll show real volume per town.
+
+## Step 3 - Organise Keywords into Ad Groups (STAGs) — IMPLEMENTED
+
+1. **There are three campaigns: BOF - Priority 1, BOF - Priority 2, and
+   Price Discovery** (updated 2026-10-06 - was two campaigns before the
+   Priority 1/2 split existed). Campaigns are the top-level container in
+   Google Ads, above ad groups - a single ad group cannot belong to more
+   than one. Every STAG theme therefore splits into up to three versions
+   based on each keyword's actual category from Step 1, even though they
+   share the same theme name (e.g. "Timber Decks" can exist as its own ad
+   group under *all three* campaigns, scoped separately - that's normal, ad
+   groups are scoped within their parent campaign so there's no naming
+   conflict). **Do not merge keywords from different campaigns into one ad
+   group** - this was a real mistake caught by the user on 2026-10-05, see
+   `scripts/compile_step3_adgroups.py`'s `assign_campaign()`. The intent
+   behind three campaigns instead of one Bottom-of-Funnel campaign: launch
+   Priority 1 first (core, highest-intent keywords), then Priority 2 once
+   Priority 1 is proven out, then Price Discovery - cheapest/highest-intent
+   keywords first, broaden from there.
+2. Within each campaign: Single Themed Ad Groups (STAGs) - one tightly-scoped
+   theme per ad group. E.g. "Timber Decks" ad group: timber deck builder,
+   timber decks near me. "Composite Decks" ad group: composite decking
+   installation, composite deck builder.
+3. Keywords originally labeled "BOF - Priority 1" / "BOF - Priority 2" /
+   "Price Discovery" in Step 1 map straight to their matching campaign. Kept
+   "Manual Review" keywords were never given any of those labels, so each
+   needs individual judgment: default to **BOF - Priority 2** (most are
+   service/hiring intent, but weren't confirmed as core Priority 1 keywords),
+   explicit cost-questions go to Price Discovery - see
+   `MANUAL_REVIEW_TO_PRICE_DISCOVERY` in the script for the exact list and
+   reasoning.
+4. Every keyword from Steps 1-2 must end up assigned to an ad group (within
+   the correct campaign).
+
+## Step 4 - Writing The Ad Copy — IMPLEMENTED
+
+1. Unless the user explicitly says otherwise, only write ad copy for **BOF -
+   Priority 1** - that's the campaign that actually launches first.
+2. Per ad group: 15 headlines (max 30 chars), 4 descriptions (max 90 chars),
+   2 display URL paths (max 15 chars).
+3. **3 of the 15 headlines are pinned to position 1** and written to be as
+   close to exact-match as possible against that ad group's keywords (for
+   quality score and CTR) - e.g. trade term + "near me" / + the city name /
+   + the region name, picked from the ad group's actual highest-volume
+   keyword phrasing.
+4. **The other 12 headlines are benefit-oriented** and must come from real
+   input the user has given about the business (years trading, project
+   count, review count/rating, insurance, press features, process
+   differentiators, service area, etc.) - never invent a qualification,
+   credential, or stat. The only headlines that can be invented are generic,
+   unverifiable ones like "Satisfaction Guaranteed" or "Free No-Obligation
+   Quote". Business-level trust signals like these are shared across all ad
+   groups in the campaign (they're facts about the business, not the
+   keyword); 1-2 per ad group can be swapped for a more specific real detail
+   when the business has one for that service (e.g. "Rust Treated & Primed"
+   for a roof-painting ad group instead of a generic prep line).
+5. **Every description must include at least one of that ad group's actual
+   keywords** (verbatim or very close to it), not just generic sales copy.
+6. Before writing any of this, get the real business facts from the user -
+   check this project's `web/data/<project-id>/step0.json` (Step 0) first.
+   If it's missing or incomplete on the starred fields (business name,
+   logo, service areas), or thin on the optional ones (years trading,
+   review count, credentials, guarantees), ask the user directly for what's
+   missing (or pull from the business's live website if the user points to
+   one) rather than guessing or inventing it - then save the answer back to
+   `step0.json` so it's there for Step 5 and any future ad-copy refresh.
+7. Source: checked against the live business website on the date of the
+   build - re-verify stats like review count against the business's current
+   Google listing before reusing an older ad-copy build, since review counts
+   and project counts climb over time.
+
+## Step 5 - Landing Pages — IMPLEMENTED
+
+1. Covers whichever campaign's ad groups currently have ad copy (currently
+   **BOF - Priority 1**, same scope as Step 4 - expand to Priority 2 / Price
+   Discovery once those campaigns launch).
+2. The web app's Step 5 tab presents two options per project:
+   - **"I'll provide the URLs"** - a text input per ad group for that ad
+     group's landing page URL.
+   - **"Build me a site + landing pages"** - placeholder only, not built
+     yet. The button exists in the UI but is disabled/non-functional - don't
+     implement anything behind it until asked.
+3. When the user gives Claude the landing page URLs directly in chat (rather
+   than typing them into the web app), Claude stores them straight into
+   `web/data/<project-id>/step5.json` itself - no need to wait for a web
+   approval round-trip for that path.
+4. These URLs do double duty: they're the final URLs used when the ads are
+   built, **and** they feed Step 6 (sitelinks) - Claude pulls specific pages
+   off the same business website (About, Gallery, Service Areas, Contact,
+   etc.) to build sitelink extensions from.
+
+## Step 6 - Writing Sitelinks, Callouts & Structured Snippets Copy For Google Ads — NOT YET IMPLEMENTED
+
+Uses the landing page URLs stored in Step 5 (plus browsing the business's own
+site) to write sitelink, callout, and structured snippet ad extension copy.
+Not built yet - revisit once Step 5 has real URLs to work from.
+
+### Sitelinks
+
+1. Each ad group gets its own set of 6 sitelinks. In general the sitelink
+   copy itself can stay the same across ad groups within a campaign - it's
+   the **Final URL** that needs to differ, linking to that ad group's
+   specific landing page (from Step 5).
+2. Per sitelink:
+   - **Sitelink text**: 35 characters max.
+   - **2 descriptions**: 25 characters max each.
+   - **Final URL**: that ad group's Step 5 landing page with an anchor
+     appended (e.g. `#reviews`, `#gallery`, `#contact`).
+3. Style examples to follow (use judgment for better CTR ideas too):
+   - Fences That Last
+   - 5-Star Rated
+   - See Our Work
+   - 100% Free Quotes
+   - Free Measure & Quote
+   - Fully Licensed
+   - Fully Insured
+4. **Stop and wait for the user to review and approve the sitelinks before
+   moving on** (to callouts/structured snippets, or the next step).
+
+### Callouts
+
+6. Write 6 callouts, account-wide (shared across every campaign/ad group).
+   25 characters max each. Focus on benefits - use judgment for ideas beyond
+   the examples below if they'd lift CTR:
+   - Affordable Pricing
+   - Locally Owned & Operated
+   - 10+ Years Experience
+   - Many Happy Customers
+   - 5-Star Rated
+   - 332 Reviews
+   - Free Measure & Quote
+
+### Structured Snippets
+
+7. Add one structured snippet with header **"Service Catalog"**, filled in
+   with the business's actual stated services (scope discipline from the top
+   of this doc still applies - only list services the user named). E.g. for a
+   concrete company:
+   - Concrete Driveways
+   - Concrete Patios
+   - Concrete Paths
+   - (and so on, per the business's actual stated services)
+
+## Step 7 - Lead Capture (Airtable Webhook + Automation) — IMPLEMENTED
+
+Wires a client's live landing page(s) to the agency's "Pay Per Lead" Airtable
+base so form submissions land as leads automatically. Done per-domain, once
+the landing page(s) from Step 5 are live on Netlify.
+
+1. Base: **"Pay Per Lead"** (`search_bases`/`list_tables_for_base` via the
+   Airtable MCP tools - don't hardcode the base ID, look it up).
+2. **Websites table** - check for an existing record matching the current
+   domain (bare domain, no `https://`/`www.` - e.g. `canterburypainting.co.nz`,
+   matching the convention of every existing row). Create one with just the
+   `Name` field if missing; leave everything else blank.
+3. **Before creating a new automation, check if one already exists** for this
+   client (`list_automations` filtered to `genericWebhookReceived`) - the
+   agency sometimes pre-creates the automation + wires the Netlify env var
+   ahead of the rest of the build. Reuse it rather than creating a duplicate
+   (caught during the first run of this step, 2026-10-06 - Canterbury
+   Painters already had an undeployed automation and a Netlify
+   `AIRTABLE_WEBHOOK_URL` env var pointing at it).
+4. New automation (if one doesn't already exist): trigger = **"When webhook
+   received"** (`genericWebhookReceived`). `create_automation` requires at
+   least one node to validate, so create it with a throwaway placeholder
+   `createRecord` node, then `get_automation` to read the `webhookUrl`.
+   Add/confirm that URL as the Netlify env var **`AIRTABLE_WEBHOOK_URL`** on
+   that client's Netlify site (`netlify-project-services-updater`,
+   `manage-env-vars`) - this is the variable the landing page's own code
+   reads at build/runtime to know where to POST leads.
+5. **Send a real test submission** from one of the live landing pages before
+   building the Create Record field mapping - the webhook only infers its
+   payload schema (`webhookSchema`/`webhookSchemaIsSet`) from an actual POST,
+   and the exact field names vary per site (e.g. `phone` vs `Phone-number`,
+   whether a `Message`/`Budget` field exists at all). Use the built-in
+   browser to fill and submit the real form with obviously-fake data (e.g.
+   name "TEST LEAD - please ignore") rather than guessing the payload shape.
+   The automation is undeployed/off at this point, so the POST only captures
+   the schema - it does not create a real record or send real email yet.
+6. **Action 1 - Create Record**, in **All Leads**:
+   - `Website` -> linked to the Step 2 website record (static, this
+     automation is one-per-domain).
+   - `Billable?` -> **Yes**, `Lead Type` -> **Form Submission** (standing
+     rule for every client, confirmed 2026-10-06).
+   - `Lead Source` -> left for Action 4's conditional (don't set it here).
+   - Everything else maps straight off the captured webhook payload by name
+     (Name, Email, Phone Number, Project Type, Timeline, Landing Page, etc.)
+     - only map fields that actually exist in that site's payload. Ask the
+     user rather than guess when a mapping is ambiguous (e.g. the payload
+     carries its own `source` field that doesn't obviously map to the
+     `Lead Source` select options - that one turned out to be superseded by
+     Action 4 below).
+7. **Action 2 - Gmail > Send Email** (new-lead notification), via the
+   **"LFT Lead Notifications"** connected Gmail account
+   (`list_external_accounts` to get its `externalAccountId` - don't
+   hardcode it, it can change):
+   - To: `liam@leadsfortradies.co.nz` (standing default while in testing).
+   - From name: **"New Lead"** (standing rule for every client, confirmed
+     2026-10-06 - missed on the first pass of this step, don't drop it
+     again).
+   - Reply-To: the form's submitted email, so replying goes straight to the
+     lead.
+   - Subject: `New Lead - <Business Name>` (plain business name, not the
+     domain or legal suffix - e.g. "AMS Decorators", not
+     "AMS Decorators Ltd" or "canterburypainting.co.nz").
+   - Body: plain HTML, one `<br>`-separated line per field that exists in
+     this site's payload (Name / Phone number / Email / Project Type /
+     Timeline / Budget) - **omit any line whose field isn't present for this
+     particular site** (e.g. most sites don't have a Budget field - don't
+     invent one).
+8. **Action 3 - Gmail > Send Email** (dispute window), same Gmail account:
+   - To: `liam@leadsfortradies.co.nz`.
+   - Subject: `LFT: Lead Dispute <Name>`.
+   - Body: fixed dispute-instructions text + Name/Phone/Email, plus the
+     **Lead ID** pulled from Action 1's `createRecord` output
+     (`{"$ref":"<createRecordKey>","path":["id"]}`).
+9. **Action 4 - Conditional (final node)** sets `Lead Source` on the same
+   record (`updateRecord`, `rowId` = Action 1's output id again): if the
+   submitted landing-page URL **contains `/quote/`** -> `Google Ads`,
+   else -> `SEO`. This is why Action 1 leaves `Lead Source` unset - this
+   conditional is the only thing that sets it.
+10. `create_automation`/`update_automation` only ever save a **draft** - the
+    automation stays off until the user turns it on themselves in the
+    Airtable UI (a deliberate human-review gate). Always end this step by
+    telling the user it's off and linking the `automationUrl` so they can
+    review and enable it - never assume it's live.
+
+## Step 8 - Upload The Campaign Into Google Ads — NOT YET IMPLEMENTED
+
+Takes the approved Step 1-6 output and actually builds the live (paused)
+campaign in the client's Google Ads account, including conversion tracking
+via Google Tag Manager.
+
+1. **Get the correct Google Ads account ID from the user first** - never
+   guess or reuse another client's account.
+2. **Always upload the campaign paused.** Never let it go live during this
+   step. "Paused" applies to the **campaign entity only** - ad groups,
+   keywords, and ads underneath it get uploaded as **ENABLED**. The paused
+   campaign already stops everything from serving, so there's no need to
+   also pause every child entity; this way the account is ready to go the
+   moment the user unpauses the campaign, instead of needing every ad
+   group/keyword/ad individually enabled first.
+3. **Only ever upload BOF - Priority 1, unless the user explicitly says
+   otherwise.** If ad copy/sitelinks/etc. have also been prepared for BOF -
+   Priority 2 and/or Price Discovery (i.e. Step 4-6 were run for them too),
+   it's fine to ask the user whether they want those uploaded as well this
+   time - but default to Priority 1 only, don't assume the others should go
+   up just because they exist.
+4. **Upload everything that's been prepared for the campaign(s) in scope** -
+   keywords, ad groups, campaigns, ad copy, sitelinks, callouts, structured
+   snippets. Not a partial upload.
+5. **Budget: $50/day.**
+6. **Location targeting** comes from Step 0 (service area/s). If it's
+   missing or ambiguous for this step, stop and ask the user to clarify
+   rather than guessing.
+7. **Disable Search Partners and Display Network** - search-only.
+8. **Do not enable EU political ads** - standing rule, this agency doesn't
+   run EU political advertising, every client, every build.
+9. **Bidding: Manual CPC.** All keywords can be set to first page CPC bids.
+10. **Conversion tracking setup (form submissions):**
+   1. Create a new conversion action in Google Ads for form submissions,
+      method = **Google Tag**.
+   2. In Google Tag Manager (via the GTM MCP connection): create a new
+      **account** and **container**, both named after the client's domain.
+   3. Install the GTM snippet on every page of the site.
+   4. Create a new **Google Tag** in GTM using the Tag ID Google Ads
+      generates for this conversion action.
+   5. Publish the GTM container, then verify the tag install in Google Ads.
+   6. Google Ads then issues a **conversion ID and conversion label** for
+      form submissions - capture both.
+   7. In GTM, create a **Form Submission trigger** (or a custom trigger that
+      detects form submissions, if that's a better fit for the site's form).
+   8. Create a **Google Ads Conversion Tracking tag** in GTM using that
+      conversion ID/label, firing on the trigger above.
+   9. Create a **Conversion Linker tag** in GTM.
+   10. Publish, then run a live test to confirm the conversion tag actually
+       fires on a real form submission.
+   11. Confirm the conversion action shows as working/verified in Google
+       Ads.
+   12. **Tell the user it's complete and that you've verified it's working**
+       - don't report this step done without that verification.
+   13. **If the site has a CSP (`Content-Security-Policy`) header** (check
+       `public/_headers`, `netlify.toml`, or a response header), the
+       `connect-src` directive needs `https://www.googleadservices.com` and
+       `https://googleads.g.doubleclick.net` or the conversion ping request
+       is silently dropped by the browser (CSP violation, no console error
+       visible to page JS) even though `gtm.js` itself loads fine and
+       `script-src` already allows those hosts - the gap is specifically in
+       `connect-src`. Symptom: GTM's Form Submission trigger never pushes
+       `gtm.formSubmit` to `dataLayer` and the "Google Tag" entity's own
+       `gtag/js` request never fires either, so it initially looks like a
+       GTM config problem rather than a CSP one. Verify with
+       `performance.getEntriesByType('resource')` in the browser looking for
+       `googleadservices.com`/`doubleclick.net` request entries after a real
+       test submission - don't trust an absence of console errors as proof
+       nothing's blocked. Caught on the Canterbury Painters test run
+       (2026-10-06) - the site's `public/_headers` CSP had a stock template
+       `connect-src` that was missing these two hosts despite having them in
+       `script-src`.
+11. **Call extension:** if the user has given a phone number for this
+    business, add it as an account-wide call extension. Always a New Zealand
+    number.
+
+## Current build status
+
+- Step 0 (business info) added 2026-10-06 - chat-only, no web app UI.
+  `scripts/lib/webapp_export.py`'s `write_step0_business_info()` persists
+  whatever's been collected to `web/data/<project-id>/step0.json`; image
+  assets (logo, work photos, team photos) get copied into
+  `web/data/<project-id>/assets/`. Step 4 and Step 5 read this instead of
+  asking the user cold.
+- Google Cloud project has Basic access (post Sept 2026 developer-token
+  sunset - access level lives on the Cloud project, not a developer token;
+  see README.md).
+- OAuth + credentials working end-to-end (`google-ads.yaml`).
+- `scripts/keyword_research.py` - pulls real Keyword Planner data (seed
+  keywords and/or URL, locations, min search volume filter).
+- `scripts/resolve_location.py` - resolves plain place names to geo target
+  IDs internally.
+- Classification into BOF - Priority 1 / BOF - Priority 2 / Price Discovery /
+  Manual Review / Excluded is a judgment call Claude makes by reading the raw
+  results against the rules above - not automated in code.
+- Review happens on a deployed web app (lftcampaignbuilder.netlify.app,
+  password-protected) with per-keyword exclude buttons; approval is
+  submitted via a Netlify Form and read back through the Netlify MCP tools -
+  see "Review happens in the web app" above.
+- `scripts/step2_location_keywords.py` - step 2's location-keyword pull,
+  exact-phrase volume via historical metrics. Judgment call before running it:
+  skip for single big metros (see "Big single metro vs. distinct towns"
+  above), run it for regions of genuinely separate towns.
+- `scripts/compile_step3_adgroups.py` - organizes an approved Step 1 list
+  into STAGs. Theme assignment is a judgment call (like Step 1's
+  classification) made by reading the keywords - the script just joins that
+  judgment onto the real numbers and errors out if any approved keyword
+  didn't get assigned anywhere.
+- Web app (`web/`) is a multi-project app as of 2026-10-05: projects list +
+  per-project step tabs, generic review-table UI shared across Step 1/3,
+  approvals via Netlify Form. See "Review happens in the web app" above.
+  `scripts/webapp_sync.py` pushes a step's CSV output into it.
+- Step 4 (ad copy) is a judgment call Claude makes by reading the approved
+  Step 3 ad groups plus real business facts (from the user or their live
+  site) - not automated in code. Output saved as
+  `output/<project-id>/step4_ad_copy.csv`. No web app review step built for
+  it yet - reviewed directly in chat.
+- Step 5 (landing pages) added 2026-10-06 -
+  `web/js/landingpages.js` + `scripts/lib/webapp_export.py`'s
+  `write_step5_landing_pages()`. Web app tab offers "I'll provide the URLs"
+  (per-ad-group URL inputs, ad group list seeded from Step 4) vs. "Build me
+  a site + landing pages" (placeholder button, disabled, not implemented).
+  Claude can also write URLs straight into
+  `web/data/<project-id>/step5.json` when given them in chat, bypassing the
+  web approval round-trip. Feeds Step 6 (sitelinks, not yet implemented).
+- Step 7 (lead capture) added 2026-10-06 - not scripted, done directly
+  through the Airtable and Netlify MCP tools per client/domain. No code in
+  this repo; see "Step 7 - Lead Capture" above for the full per-domain
+  procedure (Websites record, webhook automation, Netlify env var, test
+  submission, Create Record + 2 Gmail actions + Lead Source conditional).
+  First real run: canterburypainting.co.nz (Canterbury Painters - Form Subs
+  automation in the "Pay Per Lead" base) - built on top of an automation +
+  env var the user had already partially set up, which is why step 3 above
+  (check for an existing automation first) exists.
+- Step 8 (upload campaign to Google Ads + GTM conversion tracking) -
+  IMPLEMENTED 2026-10-06, first real run on painting-canterbury. Campaign
+  upload is scripted: `scripts/step8_upload_campaign.py <project-id>
+  <customer_id> --geo-target-id <id> [--daily-budget 50] [--validate-only]`
+  - reads the approved step1-6 JSON, builds one atomic GoogleAdsService
+  mutate (campaign budget, campaign, location criterion, ad groups, exact-
+  match keywords with first-page bid data pulled from step1/step2, RSAs,
+  per-ad-group sitelinks, account-wide callouts, campaign-level structured
+  snippet). Only the campaign itself uploads as PAUSED - ad groups,
+  keywords, and ads upload as ENABLED (updated 2026-10-07, see Step 8 item
+  2 above). CPC bid micros must be rounded to the nearest cent
+  (`micros()` helper) or the API rejects non-multiple-of-billable-unit
+  values. Always run with `--validate-only` first. GTM setup (account
+  creation, container, tags, triggers, publish) is NOT scripted - the GTM
+  API has no "create account" operation (confirmed via the MCP tool's
+  action enum: get/list/update only), so a GTM account must be created by
+  the user in the tagmanager.google.com UI first; everything downstream
+  (container, Google Tag, Form Submission trigger, Google Ads Conversion
+  Tracking tag, Conversion Linker, publish) can be done through the GTM
+  UI in the browser pane once that account exists. The GTM API's daily
+  query quota is easy to exhaust mid-build (ran out during this first run)
+  - if that happens, fall back to driving tagmanager.google.com directly in
+  the browser pane rather than waiting on API quota reset. See item 13
+  under "Conversion tracking setup" above for the CSP `connect-src` gotcha
+  that silently breaks conversion firing even after everything else is
+  configured correctly - verify with real network requests, not just
+  "no console errors".

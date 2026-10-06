@@ -1,0 +1,24 @@
+{
+  "project_id": "painting-canterbury",
+  "step": "step5",
+  "label": "House Painting Company - Canterbury",
+  "mode": "urls",
+  "ad_groups": [
+    {
+      "name": "Exterior Painting",
+      "url": "https://www.canterburypainting.co.nz/quote/exterior-painting"
+    },
+    {
+      "name": "Interior Painting",
+      "url": "https://www.canterburypainting.co.nz/quote/interior-painting"
+    },
+    {
+      "name": "Painting - General",
+      "url": "https://www.canterburypainting.co.nz/quote/painting"
+    },
+    {
+      "name": "Roof Painting",
+      "url": "https://www.canterburypainting.co.nz/quote/roof-painting"
+    }
+  ]
+}
