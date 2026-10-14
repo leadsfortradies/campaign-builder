@@ -539,8 +539,9 @@ re-skinned with the client's existing branding.
    button and heading styles. Pull the logo and images from the site unless
    the user has already supplied them. **Don't stop for approval of the
    design system** - go straight to building.
-3. Build the landing pages on the **layout/template of the site template**
-   (repo above), swapping the template's styling for the extracted design
+3. Build the landing pages on the **layout of the `/quote/` page in the site
+   template** (the `/quote/` folder of the repo above - that page is the
+   landing page layout), swapping the template's styling for the extracted design
    system. Copy per page follows the same rules as Option 1 item 6, using
    Step 0's `step0.json`.
 4. Create a **new GitHub repo** and a **new Netlify project** for these pages
