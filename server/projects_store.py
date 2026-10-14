@@ -46,3 +46,19 @@ def next_step(step):
         if i + 1 < len(STEP_ORDER):
             return STEP_ORDER[i + 1]
     return None
+
+
+def create_project(project_id, label, **fields):
+    with _lock:
+        projects = load()
+        if any(p["id"] == project_id for p in projects):
+            raise ValueError(f"Project {project_id} already exists")
+        projects.append({"id": project_id, "label": label, "steps": {}, **fields})
+        _save(projects)
+
+
+def get(project_id):
+    for p in load():
+        if p["id"] == project_id:
+            return p
+    return None

@@ -69,6 +69,13 @@ async function init() {
       return;
     }
 
+    // Step is being worked on (or stuck) and has no reviewable data yet.
+    if (!info.file || ["queued", "running", "blocked", "failed"].includes(info.status)) {
+      toolbar.hidden = true;
+      await renderJobStatus(activeStep);
+      return;
+    }
+
     toolbar.hidden = false;
     const dataRes = await fetch(info.file);
     const stepData = await dataRes.json();
@@ -88,6 +95,21 @@ async function init() {
       },
     });
     view.render();
+
+    const warned = (stepData.ad_groups || []).filter((g) => g.warnings && g.warnings.length);
+    if (warned.length) {
+      const w = document.createElement("div");
+      w.className = "warn-list";
+      w.innerHTML = "<strong>Check these before approving:</strong>";
+      const ul = document.createElement("ul");
+      for (const g of warned) for (const msg of g.warnings) {
+        const li = document.createElement("li");
+        li.textContent = `${g.name}: ${msg}`;
+        ul.appendChild(li);
+      }
+      w.appendChild(ul);
+      content.prepend(w);
+    }
 
     document.getElementById("reset-btn").onclick = () => view.resetExclusions();
     document.getElementById("export-btn").onclick = () => view.exportCSV();
@@ -125,6 +147,57 @@ async function init() {
     e.target.disabled = false;
     showJobs();
   };
+
+  async function renderJobStatus(step) {
+    let job = null;
+    try {
+      const r = await fetch(`/api/jobs?project_id=${encodeURIComponent(project.id)}&limit=20`);
+      if (r.ok) job = (await r.json()).find((j) => j.step === step);
+      if (job) job = await (await fetch(`/api/jobs/${job.id}`)).json();
+    } catch (e) { /* ignore */ }
+    const status = job ? job.status : info_status(step);
+    const heading = {
+      queued: "Queued, starting shortly…", running: "Working on it…",
+      blocked: "Needs you", failed: "Something went wrong", done: "Finished",
+    }[status] || status;
+    const div = document.createElement("div");
+    div.className = "step-status";
+    div.innerHTML = `<strong>${heading}</strong>`;
+    if (job && job.error) {
+      const p = document.createElement("p");
+      p.textContent = job.error.split("\n")[0];
+      div.appendChild(p);
+    }
+    if (job && job.log) {
+      const pre = document.createElement("pre");
+      pre.textContent = job.log;
+      div.appendChild(pre);
+    }
+    if (["blocked", "failed"].includes(status)) {
+      const btn = document.createElement("button");
+      btn.className = "primary";
+      btn.textContent = "Retry this step";
+      btn.onclick = async () => {
+        btn.disabled = true;
+        await fetch("/api/retry", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ project_id: project.id, step }),
+        });
+        location.reload();
+      };
+      div.appendChild(btn);
+    }
+    content.innerHTML = "";
+    content.appendChild(div);
+    if (["queued", "running"].includes(status)) {
+      setTimeout(() => location.reload(), 8000);
+    }
+  }
+
+  function info_status(step) {
+    return (project.steps[step] || {}).status;
+  }
 
   async function showJobs() {
     const el = document.getElementById("job-msg");

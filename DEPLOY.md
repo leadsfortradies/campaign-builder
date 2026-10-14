@@ -10,7 +10,12 @@
    - `SESSION_SECRET`  any long random string
    - `NTFY_TOPIC`  long random string; subscribe to it in the ntfy phone app
    - `PUBLIC_URL`  the service's public URL (Settings -> Networking -> Generate Domain)
-   - (later phases) `ANTHROPIC_API_KEY`, Google Ads / GTM credentials
+   - `ANTHROPIC_API_KEY`  from console.anthropic.com -> API Keys
+   - `GOOGLE_ADS_CLIENT_ID`, `GOOGLE_ADS_CLIENT_SECRET`, `GOOGLE_ADS_REFRESH_TOKEN`,
+     `GOOGLE_ADS_LOGIN_CUSTOMER_ID`  copy the matching values out of the local
+     `google-ads.yaml` (client_id, client_secret, refresh_token, login_customer_id)
+   - optional: `PROJECT_TOKEN_CAP` (default 4,000,000 Claude tokens per campaign),
+     `DEFAULT_MODEL`, `GOOGLE_ADS_CUSTOMER_ID` (Keyword Planner account)
 5. Open the public URL, sign in, check projects appear.
 
 Local run: `ALLOW_NO_AUTH=1 venv/bin/python -m uvicorn server.app:app --port 8788`

@@ -5,16 +5,19 @@ Run locally:  ALLOW_NO_AUTH=1 venv/bin/python -m uvicorn server.app:app --port 8
 
 import json
 import os
+import re
 import shutil
 import time
 from contextlib import asynccontextmanager
 from urllib.parse import parse_qs, urlparse
 
-from fastapi import FastAPI, HTTPException, Request
+from fastapi import FastAPI, File, Form, HTTPException, Request, UploadFile
 from fastapi.responses import FileResponse, HTMLResponse, JSONResponse, RedirectResponse
 
 from . import auth, config, db, jobs, projects_store
 from .notify import notify
+from .steps import step1, step2, step3, step4  # noqa: F401 - registers step handlers
+from .steps import store
 
 FAILED_LOGINS = {}  # ip -> (count, window_start)
 
@@ -163,15 +166,111 @@ async def request_changes(request: Request):
     return {"ok": True, "job_id": job_id}
 
 
+# ---------- new campaign (Step 0) ----------
+
+IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp", ".gif", ".svg", ".heic"}
+MAX_IMAGE_BYTES = 15 * 1024 * 1024
+
+
+def _slug(text):
+    return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")[:60] or "project"
+
+
+def _lines(text):
+    return [l.strip() for l in re.split(r"[\n,]", text or "") if l.strip()]
+
+
+async def _save_image(project_id, upload, name):
+    ext = os.path.splitext(upload.filename or "")[1].lower()
+    if ext not in IMAGE_EXTS:
+        raise HTTPException(400, f"{upload.filename}: only image files are allowed")
+    data = await upload.read()
+    if len(data) > MAX_IMAGE_BYTES:
+        raise HTTPException(400, f"{upload.filename}: over 15MB")
+    assets = os.path.join(store.data_dir(project_id), "assets")
+    os.makedirs(assets, exist_ok=True)
+    fname = f"{name}{ext}"
+    with open(os.path.join(assets, fname), "wb") as f:
+        f.write(data)
+    return f"data/{project_id}/assets/{fname}"
+
+
+@app.post("/api/projects")
+async def create_project(
+    business_name: str = Form(...),
+    trade: str = Form(...),
+    services: str = Form(...),
+    service_areas: str = Form(...),
+    business_phone: str = Form(""),
+    business_email: str = Form(""),
+    years_experience: str = Form(""),
+    completed_projects: str = Form(""),
+    certifications: str = Form(""),
+    scope_notes: str = Form(""),
+    other_info: str = Form(""),
+    start_now: str = Form("1"),
+    logo: UploadFile = File(...),
+    work_photos: list[UploadFile] = File(default=[]),
+    team_photos: list[UploadFile] = File(default=[]),
+):
+    areas = _lines(service_areas)
+    if not areas or not _lines(services):
+        raise HTTPException(400, "Services and service area are required")
+    base = _slug(f"{trade}-{areas[0]}")
+    existing = {p["id"] for p in projects_store.load()}
+    project_id, n = base, 2
+    while project_id in existing:
+        project_id, n = f"{base}-{n}", n + 1
+    label = f"{business_name.strip()} - {areas[0]}"
+    projects_store.create_project(project_id, label)
+
+    info = {
+        "project_id": project_id, "step": "step0", "label": label,
+        "business_name": business_name.strip(),
+        "trade": trade.strip(),
+        "services": _lines(services),
+        "service_areas": areas,
+        "business_phone": business_phone.strip(),
+        "business_email": business_email.strip(),
+        "years_experience": years_experience.strip(),
+        "completed_projects": completed_projects.strip(),
+        "certifications": [l.strip() for l in certifications.splitlines() if l.strip()],
+        "scope_notes": scope_notes.strip(),
+        "other_info": other_info.strip(),
+        "business_logo_path": await _save_image(project_id, logo, "logo"),
+        "work_photo_paths": [await _save_image(project_id, f, f"work{i + 1}")
+                             for i, f in enumerate(work_photos) if f.filename],
+        "team_photo_paths": [await _save_image(project_id, f, f"team{i + 1}")
+                             for i, f in enumerate(team_photos) if f.filename],
+    }
+    store.write(project_id, "step0", info)
+    projects_store.update_step(project_id, "step0", status="approved",
+                               file=f"data/{project_id}/step0.json", step_label=store.STEP_LABELS["step0"])
+    db.log_event("project_created", project_id, "step0", label)
+    job_id = db.add_job(project_id, "step1", "run_step") if start_now == "1" else None
+    return {"ok": True, "project_id": project_id, "job_id": job_id}
+
+
+@app.post("/api/retry")
+async def retry(request: Request):
+    body = await request.json()
+    project_id, step = body.get("project_id"), body.get("step")
+    if not projects_store.get(project_id) or step not in projects_store.STEP_ORDER:
+        raise HTTPException(400, "Unknown project or step")
+    job_id = db.add_job(project_id, step, "run_step", {"retry": True})
+    projects_store.update_step(project_id, step, status="queued")
+    return {"ok": True, "job_id": job_id}
+
+
 # ---------- read API ----------
 
 @app.get("/api/jobs")
 def list_jobs(project_id: str = "", limit: int = 50):
     if project_id:
-        rows = db.query("SELECT id,project_id,step,kind,status,model,error,created_at,finished_at FROM jobs "
+        rows = db.query("SELECT id,project_id,step,kind,status,model,error,input_tokens,output_tokens,created_at,finished_at FROM jobs "
                         "WHERE project_id=? ORDER BY id DESC LIMIT ?", (project_id, limit))
     else:
-        rows = db.query("SELECT id,project_id,step,kind,status,model,error,created_at,finished_at FROM jobs "
+        rows = db.query("SELECT id,project_id,step,kind,status,model,error,input_tokens,output_tokens,created_at,finished_at FROM jobs "
                         "ORDER BY id DESC LIMIT ?", (limit,))
     return rows
 

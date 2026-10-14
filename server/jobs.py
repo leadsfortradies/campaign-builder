@@ -17,6 +17,7 @@ they're built. A run_step job for a step with no handler is marked
 """
 
 import json
+import os
 import threading
 import time
 import traceback
@@ -25,7 +26,25 @@ from . import db, projects_store
 from .notify import notify
 
 HANDLERS = {}
-STEP_HANDLERS = {}  # (step) -> handler, used for run_step / revise_step
+
+
+class Blocked(Exception):
+    """Raise from a handler when it can't continue without the user (e.g.
+    missing business info). The job is marked blocked and the user notified."""
+
+
+# Hard ceiling on Claude tokens per project, so a bug can't drain credit.
+PROJECT_TOKEN_CAP = int(os.environ.get("PROJECT_TOKEN_CAP", "4000000"))
+STEP_HANDLERS = {}
+
+
+class Blocked(Exception):
+    """Raise from a handler when it can't continue without the user (e.g.
+    missing business info). The job is marked blocked and the user notified."""
+
+
+# Hard ceiling on Claude tokens per project, so a bug can't drain credit.
+PROJECT_TOKEN_CAP = int(os.environ.get("PROJECT_TOKEN_CAP", "4000000"))  # (step) -> handler, used for run_step / revise_step
 
 
 def register(kind):
@@ -58,6 +77,18 @@ class Ctx:
         self._lines.append(f"[{time.strftime('%H:%M:%S')}] {msg}")
         db.execute("UPDATE jobs SET log=? WHERE id=?", ("\n".join(self._lines), self.job["id"]))
 
+    def add_usage(self, tin, tout):
+        db.execute("UPDATE jobs SET input_tokens=input_tokens+?, output_tokens=output_tokens+? WHERE id=?",
+                   (tin, tout, self.job["id"]))
+        used = db.query("SELECT COALESCE(SUM(input_tokens+output_tokens),0) AS t FROM jobs WHERE project_id=?",
+                        (self.project_id,))[0]["t"]
+        if used > PROJECT_TOKEN_CAP:
+            raise Blocked(f"This campaign has used {used:,} Claude tokens, over the {PROJECT_TOKEN_CAP:,} cap. "
+                          "Raise PROJECT_TOKEN_CAP in Railway to continue.")
+
+    def queue_next(self, step):
+        db.add_job(self.project_id, step, "run_step", {"after": self.step})
+
     def set_step(self, **fields):
         return projects_store.update_step(self.project_id, self.step, **fields)
 
@@ -84,10 +115,20 @@ def _run(job):
             db.log_event("blocked", job["project_id"], job["step"], msg)
             notify(f"Needs you: {job['project_id']}", msg, f"/project.html?id={job['project_id']}")
             return
+        if job["kind"] != "selftest":
+            ctx.set_step(status="running")
         handler(ctx)
         db.execute("UPDATE jobs SET status='done', finished_at=? WHERE id=?", (time.time(), job["id"]))
+    except Blocked as exc:
+        db.execute("UPDATE jobs SET status='blocked', error=?, finished_at=? WHERE id=?",
+                   (str(exc), time.time(), job["id"]))
+        ctx.set_step(status="blocked")
+        db.log_event("blocked", job["project_id"], job["step"], str(exc))
+        notify(f"Needs you: {job['project_id']}", str(exc)[:300], f"/project.html?id={job['project_id']}")
     except Exception as exc:  # noqa: BLE001
         tb = traceback.format_exc()
+        if job["kind"] != "selftest":
+            ctx.set_step(status="failed")
         db.execute("UPDATE jobs SET status='failed', error=?, finished_at=? WHERE id=?",
                    (f"{exc}\n{tb}", time.time(), job["id"]))
         db.log_event("failed", job["project_id"], job["step"], str(exc))

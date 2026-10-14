@@ -67,6 +67,9 @@ def conn():
             cols = [r[1] for r in _conn.execute("PRAGMA table_info(jobs)").fetchall()]
             if "model" not in cols:
                 _conn.execute("ALTER TABLE jobs ADD COLUMN model TEXT NOT NULL DEFAULT ''")
+            for col in ("input_tokens", "output_tokens"):
+                if col not in cols:
+                    _conn.execute(f"ALTER TABLE jobs ADD COLUMN {col} INTEGER NOT NULL DEFAULT 0")
             _conn.commit()
         return _conn
 
