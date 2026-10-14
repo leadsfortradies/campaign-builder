@@ -4,8 +4,9 @@
    - If a previous project in the same trade has an approved Step 1, reuse its
      keywords (minus that project's own place names) plus fresh seeds, and get
      real volume for THIS location via exact-phrase historical metrics.
-   - Otherwise expand Claude-written seeds through Keyword Planner (NZ-wide is
-     fine for a trade's first pass).
+   - Otherwise expand Claude-written seeds through Keyword Planner for the
+     service area only. Never NZ-wide unless the user explicitly asks for it
+     (nz_wide flag, or "nz wide"/"nationwide" in the scope notes).
 2. Hard excludes in code (cheap/affordable/free, DIY, jobs) so they can never
    slip through.
 3. Claude classifies the rest (B / PD / MR / X, tier, service, negatives).
@@ -60,6 +61,13 @@ def _cluster_key(kw):
     return " ".join(sorted(toks))
 
 
+def _wants_nz_wide(ctx, s0):
+    """NZ-wide research happens only on an explicit request."""
+    text = f"{s0.get('scope_notes', '')} {ctx.payload.get('note', '')}".lower()
+    return bool(s0.get("nz_wide") or ctx.payload.get("nz_wide")
+                or re.search(r"\bnz[\s-]?wide\b|\bnationwide\b|\bnation[\s-]wide\b|\ball of (nz|new zealand)\b", text))
+
+
 def _gather(ctx, s0):
     services = s0["services"]
     areas = s0["service_areas"]
@@ -81,8 +89,17 @@ services. Return JSON: {{"seeds": {{"<service>": ["seed", ...]}}}}""", max_token
     geo_ids = [g for g in (gads.resolve_location(a) for a in areas) if g]
     ctx.log(f"Service area geo targets: {geo_ids or 'none resolved'}")
 
+    nz_wide = _wants_nz_wide(ctx, s0)
+    if not geo_ids and not nz_wide:
+        raise Blocked("I couldn't match the service area to a location for keyword research, and I only go "
+                      "NZ-wide when you ask me to. Check the spelling of the service area under 'Business "
+                      "info' (or tell me to go NZ-wide) and this step will restart.")
+    if nz_wide:
+        geo_ids = [gads.NZ_GEO_ID]
+        ctx.log("NZ-wide research (you asked for this)")
+
     prior = _prior_keywords(ctx, s0)
-    if prior and geo_ids:
+    if prior and not nz_wide:
         candidates = sorted(set(prior) | set(seed_list))
         ctx.log(f"Reusing {len(prior)} keywords from earlier {s0.get('trade')} projects; "
                 f"looking up local volume for {len(candidates)} candidates")
@@ -90,9 +107,10 @@ services. Return JSON: {{"seeds": {{"<service>": ["seed", ...]}}}}""", max_token
                if r["avg_monthly_searches"] >= MIN_SEARCHES]
         source = "prior-research + local volume"
     else:
-        ctx.log("No earlier project in this trade - expanding seeds NZ-wide")
-        raw = gads.keyword_ideas(seed_list, [gads.NZ_GEO_ID], MIN_SEARCHES)
-        source = "NZ-wide idea expansion"
+        ctx.log("No earlier project in this trade - expanding seeds for the service area only"
+                if not nz_wide else "Expanding seeds NZ-wide")
+        raw = gads.keyword_ideas(seed_list, geo_ids, MIN_SEARCHES)
+        source = "NZ-wide idea expansion" if nz_wide else "service-area idea expansion"
     ctx.log(f"{len(raw)} keywords at {MIN_SEARCHES}+ searches/month ({source})")
     if len(raw) > MAX_KEYWORDS:
         raw = sorted(raw, key=lambda r: -r["avg_monthly_searches"])[:MAX_KEYWORDS]

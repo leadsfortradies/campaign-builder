@@ -347,10 +347,12 @@ refresh picks up the change immediately.
   the new location" above. These examples came from a nationwide NZ pull
   for a small town (Taupo) specifically because the broad semantic expansion
   surfaces things a tight, prior-research-reused candidate list wouldn't.
-  Running nationwide isn't inherently wrong (it's still fine for the first
-  KWR pass in a given trade, same as Auckland/Canterbury), but **scrutinize
-  classification harder** when the result set is nationwide rather than
-  tightly scoped, since more junk will be mixed in with genuine signal.
+  **Never go nationwide unless the user explicitly asks for it** (the web
+  app only does so if the scope notes/change request say "NZ-wide" or
+  "nationwide"; otherwise it researches the service area only and blocks if
+  the area can't be matched to a location). When it is asked for,
+  **scrutinize classification harder**, since more junk will be mixed in
+  with genuine signal.
 - **Distinguish paint product pricing from service pricing.** "cost to
   paint X" / "X painting cost" / "quote for painting X" = Price Discovery.
   Bare "<material> paint price/prices" (e.g. "roof paint price", "metal
