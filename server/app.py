@@ -16,7 +16,7 @@ from fastapi.responses import FileResponse, HTMLResponse, JSONResponse, Redirect
 
 from . import auth, config, db, jobs, llm, projects_store
 from .notify import notify
-from .steps import campaigns, step1, step2, step3, step4  # noqa: F401 - registers step handlers
+from .steps import campaigns, step1, step2, step3, step4, step6  # noqa: F401 - registers step handlers
 from .steps import store
 from . import chat as chat_edit
 
