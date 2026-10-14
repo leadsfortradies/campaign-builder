@@ -19,6 +19,18 @@ function promotedStorageKey(projectId, step) {
   return `lft-promoted::${projectId}::${step}`;
 }
 
+function regroupKey(projectId, step) {
+  return `lft-regroup::${projectId}::${step}`;
+}
+
+function loadRegrouped(projectId, step) {
+  try {
+    return JSON.parse(localStorage.getItem(regroupKey(projectId, step)) || "{}") || {};
+  } catch (e) {
+    return {};
+  }
+}
+
 function loadExcluded(projectId, step) {
   try {
     const raw = localStorage.getItem(storageKey(projectId, step));
@@ -57,6 +69,7 @@ class ReviewView {
     this.onApproved = onApproved;
     this.excluded = loadExcluded(stepData.project_id, stepData.step);
     this.promoted = loadPromoted(stepData.project_id, stepData.step);
+    this.regrouped = loadRegrouped(stepData.project_id, stepData.step);
   }
 
   saveExcluded() {
@@ -82,6 +95,7 @@ class ReviewView {
   }
 
   effectiveGroup(row) {
+    if (this.regrouped[row.keyword]) return this.regrouped[row.keyword];
     return row.group === PROMOTE_FROM && this.promoted.has(row.keyword) ? PROMOTE_TO : row.group;
   }
 
@@ -231,14 +245,20 @@ class ReviewView {
   }
 
   // Applied from the chat box: exclude / restore a list of keywords at once.
-  applyChat(exclude, restore) {
+  applyChat(exclude, restore, move) {
     exclude.forEach((k) => this.excluded.add(k));
     restore.forEach((k) => this.excluded.delete(k));
+    (move || []).forEach((m) => { this.regrouped[m.keyword] = m.group; });
+    try {
+      localStorage.setItem(regroupKey(this.data.project_id, this.data.step), JSON.stringify(this.regrouped));
+    } catch (e) { /* ignore */ }
     this.saveExcluded();
     this.render();
   }
 
   resetExclusions() {
+    this.regrouped = {};
+    try { localStorage.removeItem(regroupKey(this.data.project_id, this.data.step)); } catch (e) { /* ignore */ }
     this.excluded = new Set();
     this.saveExcluded();
     this.render();

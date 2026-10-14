@@ -77,7 +77,8 @@ class Handler(SimpleHTTPRequestHandler):
             sys.path.insert(0, os.path.dirname(WEB_ROOT))
             from server import chat
             model = os.environ.get("CHAT_MODEL", "claude-sonnet-5-5")
-            reply(200, chat.suggest(rows, body["message"], body.get("excluded") or [], model))
+            reply(200, chat.suggest(rows, body["message"], body.get("excluded") or [], model,
+                                           body.get("regrouped") or {}))
         except Exception as exc:  # noqa: BLE001 - shown to the user in the chat box
             reply(502, {"detail": str(exc)})
 

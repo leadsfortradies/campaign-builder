@@ -178,7 +178,8 @@ async def chat(request: Request):
         raise HTTPException(400, "project_id, step and message required")
     try:
         return chat_edit.suggest((store.read(project_id, step) or {}).get("rows") or [],
-                                 message, body.get("excluded") or [], db.current_model())
+                                 message, body.get("excluded") or [], db.current_model(),
+                                 body.get("regrouped") or {})
     except llm.LLMError as exc:
         raise HTTPException(502, str(exc))
 

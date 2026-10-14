@@ -153,15 +153,16 @@ async function init() {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             project_id: project.id, step: activeStep, message,
-            excluded: [...view.excluded],
+            excluded: [...view.excluded], regrouped: view.regrouped || {},
           }),
         });
         if (!r.ok) throw new Error((await r.json().catch(() => ({}))).detail || `HTTP ${r.status}`);
         const out = await r.json();
-        view.applyChat(out.exclude, out.restore);
+        view.applyChat(out.exclude, out.restore, out.move);
         const bits = [];
         if (out.exclude.length) bits.push(`excluded ${out.exclude.length}`);
         if (out.restore.length) bits.push(`restored ${out.restore.length}`);
+        if ((out.move || []).length) bits.push(`moved ${out.move.length}`);
         chatReply.textContent = [out.reply, bits.length ? `(${bits.join(", ")})` : ""].filter(Boolean).join(" ");
         chatReply.className = "status-msg ok";
         input.value = "";
