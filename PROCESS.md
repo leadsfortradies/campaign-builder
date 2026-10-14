@@ -502,29 +502,31 @@ which case run step 2 as designed, it'll show real volume per town.
 (Legacy mode name `build_site` is read as `build_template`.) Template:
 Netlify project `lft-site-template`
 (https://app.netlify.com/projects/lft-site-template/overview), GitHub repo
-https://github.com/leadsfortradies/site-template.
+https://github.com/leadsfortradies/site-template. The landing page layout is
+the template's `/quote/` page.
 
-1. Each site uses a specific template depending on the industry - ask the
-   user which template to use before starting.
+Uses the template **exactly** - only the client's logo, images and content
+change. **Typography and colours stay untouched.**
+
+1. Ask the user which template to use if there's more than one for the
+   industry.
 2. Create a new folder for the site under the Websites folder on the user's
    Mac, named after the city + service (e.g. a deck/fence company in
-   Auckland -> "Auckland Decks & Fences").
-3. Duplicate the correct template into that new folder.
-4. **Work on the home page only first** - get the general copy right before
-   touching any landing page. Rewrite it to be specific to the new
-   location/business (years of experience, qualifications, images, logo,
-   service areas, etc.) using Step 0's `step0.json`.
-5. **Stop and get the user's approval on the home page before proceeding**
-   to the landing pages.
-6. Per landing page: use copy and images specific to that page's service
+   Auckland -> "Auckland Decks & Fences"), and duplicate the template into
+   it.
+3. Swap in the client's logo and images, and rewrite the content to be
+   specific to the new location/business (years of experience,
+   qualifications, service areas, etc.) using Step 0's `step0.json`. Don't
+   change fonts, colours or layout.
+4. Per landing page: use copy and images specific to that page's service
    where appropriate - don't carry over copy about an unrelated service
    (e.g. a roof-painting landing page shouldn't have interior-painting
    copy). Update the **H1 and Title** above all else. Use images specific
    to that service where available; fall back to other provided images only
    when there aren't enough service-specific ones.
-7. Once every landing page is done, send the user the links for review and
+5. Once every landing page is done, send the user the links for review and
    approval.
-8. Feed the approved landing page links into the Step 4 ad copy as the
+6. Feed the approved landing page links into the Step 4 ad copy as the
    final URLs.
 
 ### Option 3: build landing pages with an existing site's design system
