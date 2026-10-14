@@ -62,3 +62,13 @@ def get(project_id):
         if p["id"] == project_id:
             return p
     return None
+
+
+def set_label(project_id, label):
+    with _lock:
+        projects = load()
+        for p in projects:
+            if p["id"] == project_id:
+                p["label"] = label
+                _save(projects)
+                return

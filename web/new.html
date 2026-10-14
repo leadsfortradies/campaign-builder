@@ -9,16 +9,16 @@
 <body>
 <header>
   <a href="index.html" class="back-link">← All projects</a>
-  <h1>New campaign</h1>
-  <p class="muted">Starred fields are required. Everything else makes the ad copy better. Only list services the business actually offers.</p>
+  <h1 id="page-title">New campaign</h1>
+  <p class="muted">Starred fields are. Everything else makes the ad copy better. Only list services the business actually offers.</p>
 </header>
 <main>
   <form id="new-form" class="new-form">
-    <label>Business name *<input name="business_name" required></label>
-    <label>Trade * <small>e.g. Painter, Deck builder, Concreter</small><input name="trade" required></label>
-    <label>Services * <small>one per line, only what they actually do</small><textarea name="services" rows="4" required></textarea></label>
-    <label>Service area * <small>one per line, e.g. Palmerston North, Feilding</small><textarea name="service_areas" rows="2" required></textarea></label>
-    <label>Logo *<input type="file" name="logo" accept="image/*" required></label>
+    <label>Business name<input name="business_name"></label>
+    <label>Trade <small>e.g. Painter, Deck builder, Concreter</small><input name="trade"></label>
+    <label>Services <small>one per line, only what they actually do</small><textarea name="services" rows="4"></textarea></label>
+    <label>Service area <small>one per line, e.g. Palmerston North, Feilding</small><textarea name="service_areas" rows="2"></textarea></label>
+    <label>Logo <small>can be added later</small><input type="file" name="logo" accept="image/*"></label>
     <label>Scope notes <small>e.g. residential only, no roof painting</small><textarea name="scope_notes" rows="2"></textarea></label>
     <label>Years of experience<input name="years_experience" inputmode="numeric"></label>
     <label>Completed projects (estimate)<input name="completed_projects"></label>
@@ -28,33 +28,63 @@
     <label>Email<input name="business_email" type="email"></label>
     <label>Photos of completed work<input type="file" name="work_photos" accept="image/*" multiple></label>
     <label>Team / other photos<input type="file" name="team_photos" accept="image/*" multiple></label>
-    <label class="check"><input type="checkbox" name="start_now" value="1" checked> Start keyword research straight away</label>
+    <label class="check" id="start-row"><input type="checkbox" name="start_now" value="1" checked> Start keyword research straight away</label>
     <button type="submit" class="primary">Create campaign</button>
     <p id="form-msg" class="status-msg" hidden></p>
   </form>
 </main>
 <script src="js/model.js?v=1"></script>
 <script>
+const editId = new URLSearchParams(location.search).get("id");
+const form = document.getElementById("new-form");
+(async function setupEdit() {
+  if (!editId) return;
+  document.getElementById("page-title").textContent = "Business info";
+  document.getElementById("intro").textContent =
+    "Add or change anything here. Blank fields keep what's already saved, and any step that was waiting on missing info restarts when you save.";
+  document.getElementById("start-row").hidden = true;
+  form.querySelector("button[type=submit]").textContent = "Save";
+  document.querySelector(".back-link").href = `project.html?id=${encodeURIComponent(editId)}`;
+  document.querySelector(".back-link").textContent = "← Back to project";
+  try {
+    const d = await (await fetch(`data/${encodeURIComponent(editId)}/step0.json`)).json();
+    const set = (n, v) => { if (v && form[n]) form[n].value = Array.isArray(v) ? v.join("\n") : v; };
+    ["business_name","trade","services","service_areas","scope_notes","years_experience",
+     "completed_projects","certifications","other_info","business_phone","business_email"].forEach((n) => set(n, d[n]));
+    const have = [];
+    if (d.business_logo_path) have.push("logo saved");
+    if ((d.work_photo_paths || []).length) have.push(`${d.work_photo_paths.length} work photos saved`);
+    if ((d.team_photo_paths || []).length) have.push(`${d.team_photo_paths.length} team photos saved`);
+    if (have.length) {
+      const p = document.createElement("p");
+      p.className = "muted";
+      p.textContent = "Already saved: " + have.join(", ") + ". New photos are added to these.";
+      form.prepend(p);
+    }
+  } catch (e) { /* new/empty project */ }
+})();
+
 document.getElementById("new-form").addEventListener("submit", async (e) => {
   e.preventDefault();
   const form = e.target;
   const btn = form.querySelector("button[type=submit]");
   const msg = document.getElementById("form-msg");
   const data = new FormData(form);
-  if (!form.start_now.checked) data.set("start_now", "0");
+  if (!editId && !form.start_now.checked) data.set("start_now", "0");
   btn.disabled = true;
   btn.textContent = "Uploading…";
   try {
-    const r = await fetch("/api/projects", { method: "POST", body: data });
+    const url = editId ? `/api/projects/${encodeURIComponent(editId)}/info` : "/api/projects";
+    const r = await fetch(url, { method: "POST", body: data });
     const body = await r.json().catch(() => ({}));
     if (!r.ok) throw new Error(body.detail || `HTTP ${r.status}`);
-    location.href = `project.html?id=${encodeURIComponent(body.project_id)}`;
+    location.href = `project.html?id=${encodeURIComponent(body.project_id || editId)}`;
   } catch (err) {
     msg.textContent = "Couldn't create it: " + err.message;
     msg.className = "status-msg err";
     msg.hidden = false;
     btn.disabled = false;
-    btn.textContent = "Create campaign";
+    btn.textContent = editId ? "Save" : "Create campaign";
   }
 });
 </script>

@@ -21,24 +21,24 @@ Collected entirely in chat - no web app UI for this step (decided
 effort than it's worth, so everything, including the logo and photos,
 comes through chat).
 
-1. Before kicking off a build, get as much of the following as possible -
-   it feeds Step 4 (ad copy) and Step 5 (landing pages) later. Items marked
-   with a star are compulsory; keep going if the rest aren't available yet,
-   but don't start Step 4/5 without the starred ones:
-   - **Business name***
-   - **Business logo***
-   - Business phone number (NZ number) - forwarded to later for lead
-     delivery, not used in Step 4/5 copy/landing pages
-   - Business email - forwarded to later for lead delivery, not used in
-     Step 4/5 copy/landing pages
-   - Years of experience
-   - Estimated number of completed projects
-   - Certifications / qualifications
-   - Photos of completed work
-   - Other useful photos (e.g. team members)
-   - **Service area/s***
-   - Any other info that gives consumers a reason to pick this business over
-     a competitor (guarantees, awards, press, reviews, process, etc.)
+1. Collect as much of the following as is available. **Nothing is
+   compulsory at intake** (changed 2026-10-15 - the user is often on their
+   phone without a logo or business details to hand, and a build should still
+   start). Missing items block only the step that actually needs them, and the
+   user is told which one and why:
+   - **Services** and **service area/s** - needed for Step 1 keyword research
+     (a build can't start without them).
+   - **Business name** plus real details (years of experience, estimated
+     number of completed projects, certifications, guarantees, reviews,
+     awards, other reasons to choose them) - needed for Step 4 ad copy, which
+     must never invent facts. If missing when Step 4 is reached, stop and
+     tell the user the ad copy can't be written without the business info.
+   - **Business logo** and **photos** (completed work, team) - needed to
+     finish Step 5 landing pages. Landing pages can still be built without
+     them, but flag clearly that they're incomplete until the logo/photos
+     are added.
+   - Business phone number and email (NZ number) - used for lead delivery
+     later, not Step 4/5 copy.
 2. The user can hand all of this over in one go, or piecemeal across the
    conversation - there's no form to fill in, so just keep track of what's
    been given and what's still missing.

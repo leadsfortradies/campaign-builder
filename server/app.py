@@ -195,12 +195,53 @@ async def _save_image(project_id, upload, name):
     return f"data/{project_id}/assets/{fname}"
 
 
+def _real_files(files):
+    return [f for f in (files or []) if f is not None and getattr(f, "filename", "")]
+
+
+async def _apply_info(project_id, existing, form, logo, work_photos, team_photos):
+    """Merge submitted business info into step0.json. Nothing is compulsory:
+    a blank field never overwrites something already saved."""
+    info = dict(existing)
+    for key in ("business_name", "trade", "business_phone", "business_email", "years_experience",
+                "completed_projects", "scope_notes", "other_info"):
+        val = (form.get(key) or "").strip()
+        if val:
+            info[key] = val
+    if _lines(form.get("services")):
+        info["services"] = _lines(form["services"])
+    if _lines(form.get("service_areas")):
+        info["service_areas"] = _lines(form["service_areas"])
+    certs = [l.strip() for l in (form.get("certifications") or "").splitlines() if l.strip()]
+    if certs:
+        info["certifications"] = certs
+    if logo:
+        info["business_logo_path"] = await _save_image(project_id, logo, "logo")
+    for field, files, prefix in (("work_photo_paths", work_photos, "work"), ("team_photo_paths", team_photos, "team")):
+        paths = list(info.get(field, []))
+        for f in files:
+            paths.append(await _save_image(project_id, f, f"{prefix}{len(paths) + 1}"))
+        if paths:
+            info[field] = paths
+    return info
+
+
+def _label_for(info):
+    name = info.get("business_name") or info.get("trade") or "New campaign"
+    areas = info.get("service_areas") or []
+    return f"{name} - {areas[0]}" if areas else name
+
+
+FORM_FIELDS = ("business_name", "trade", "services", "service_areas", "business_phone", "business_email",
+               "years_experience", "completed_projects", "certifications", "scope_notes", "other_info")
+
+
 @app.post("/api/projects")
 async def create_project(
-    business_name: str = Form(...),
-    trade: str = Form(...),
-    services: str = Form(...),
-    service_areas: str = Form(...),
+    business_name: str = Form(""),
+    trade: str = Form(""),
+    services: str = Form(""),
+    service_areas: str = Form(""),
     business_phone: str = Form(""),
     business_email: str = Form(""),
     years_experience: str = Form(""),
@@ -209,46 +250,74 @@ async def create_project(
     scope_notes: str = Form(""),
     other_info: str = Form(""),
     start_now: str = Form("1"),
-    logo: UploadFile = File(...),
+    logo: UploadFile = File(None),
     work_photos: list[UploadFile] = File(default=[]),
     team_photos: list[UploadFile] = File(default=[]),
 ):
+    form = {k: v for k, v in locals().items() if k in FORM_FIELDS}
     areas = _lines(service_areas)
-    if not areas or not _lines(services):
-        raise HTTPException(400, "Services and service area are required")
-    base = _slug(f"{trade}-{areas[0]}")
+    base = _slug(f"{trade}-{areas[0]}") if (trade and areas) else _slug(trade or business_name or "new-campaign")
     existing = {p["id"] for p in projects_store.load()}
     project_id, n = base, 2
     while project_id in existing:
         project_id, n = f"{base}-{n}", n + 1
-    label = f"{business_name.strip()} - {areas[0]}"
-    projects_store.create_project(project_id, label)
 
-    info = {
-        "project_id": project_id, "step": "step0", "label": label,
-        "business_name": business_name.strip(),
-        "trade": trade.strip(),
-        "services": _lines(services),
-        "service_areas": areas,
-        "business_phone": business_phone.strip(),
-        "business_email": business_email.strip(),
-        "years_experience": years_experience.strip(),
-        "completed_projects": completed_projects.strip(),
-        "certifications": [l.strip() for l in certifications.splitlines() if l.strip()],
-        "scope_notes": scope_notes.strip(),
-        "other_info": other_info.strip(),
-        "business_logo_path": await _save_image(project_id, logo, "logo"),
-        "work_photo_paths": [await _save_image(project_id, f, f"work{i + 1}")
-                             for i, f in enumerate(work_photos) if f.filename],
-        "team_photo_paths": [await _save_image(project_id, f, f"team{i + 1}")
-                             for i, f in enumerate(team_photos) if f.filename],
-    }
+    probe = {"business_name": business_name.strip(), "trade": trade.strip(), "service_areas": areas}
+    projects_store.create_project(project_id, _label_for(probe))
+    info = await _apply_info(project_id, {}, form, logo if _real_files([logo]) else None,
+                             _real_files(work_photos), _real_files(team_photos))
+    label = _label_for(info)
+    info.update({"project_id": project_id, "step": "step0", "label": label})
     store.write(project_id, "step0", info)
+    projects_store.set_label(project_id, label)
     projects_store.update_step(project_id, "step0", status="approved",
                                file=f"data/{project_id}/step0.json", step_label=store.STEP_LABELS["step0"])
     db.log_event("project_created", project_id, "step0", label)
     job_id = db.add_job(project_id, "step1", "run_step") if start_now == "1" else None
     return {"ok": True, "project_id": project_id, "job_id": job_id}
+
+
+@app.post("/api/projects/{project_id}/info")
+async def update_info(
+    project_id: str,
+    business_name: str = Form(""),
+    trade: str = Form(""),
+    services: str = Form(""),
+    service_areas: str = Form(""),
+    business_phone: str = Form(""),
+    business_email: str = Form(""),
+    years_experience: str = Form(""),
+    completed_projects: str = Form(""),
+    certifications: str = Form(""),
+    scope_notes: str = Form(""),
+    other_info: str = Form(""),
+    logo: UploadFile = File(None),
+    work_photos: list[UploadFile] = File(default=[]),
+    team_photos: list[UploadFile] = File(default=[]),
+):
+    """Add or change business info at any point. Steps that stopped because
+    info was missing are queued again automatically."""
+    if not projects_store.get(project_id):
+        raise HTTPException(404, "Unknown project")
+    form = {k: v for k, v in locals().items() if k in FORM_FIELDS}
+    existing = store.read(project_id, "step0") or {}
+    info = await _apply_info(project_id, existing, form, logo if _real_files([logo]) else None,
+                             _real_files(work_photos), _real_files(team_photos))
+    info.update({"project_id": project_id, "step": "step0", "label": _label_for(info)})
+    store.write(project_id, "step0", info)
+    projects_store.set_label(project_id, info["label"])
+    projects_store.update_step(project_id, "step0", status="approved",
+                               file=f"data/{project_id}/step0.json", step_label=store.STEP_LABELS["step0"])
+    db.log_event("info_updated", project_id, "step0")
+
+    resumed = []
+    project = projects_store.get(project_id)
+    for step, sinfo in (project.get("steps") or {}).items():
+        if sinfo.get("status") == "blocked":
+            db.add_job(project_id, step, "run_step", {"after": "info_updated"})
+            projects_store.update_step(project_id, step, status="queued")
+            resumed.append(step)
+    return {"ok": True, "resumed": resumed}
 
 
 @app.post("/api/retry")

@@ -183,7 +183,8 @@ def _split_priority(bof_rows):
 def run(ctx):
     s0 = store.read(ctx.project_id, "step0") or {}
     if not s0.get("services") or not s0.get("service_areas"):
-        raise Blocked("Step 1 needs the business's services and service area - add them on the project's setup.")
+        raise Blocked("I can't start keyword research yet - I need the services the business offers and "
+                      "where it works. Add them under 'Business info' and this step will restart automatically.")
     note = ctx.payload.get("note", "")
 
     raw = store.read(ctx.project_id, "step1_raw") if ctx.job["kind"] == "revise_step" else None

@@ -14,7 +14,6 @@ from ..jobs import Blocked, register_step
 from . import rules, store
 
 CAMPAIGN = "BOF - Priority 1"
-REQUIRED = ("business_name", "business_logo_path", "service_areas")
 FACT_FIELDS = ("business_name", "trade", "services", "service_areas", "years_experience",
                "completed_projects", "certifications", "other_info", "scope_notes")
 BANNED = re.compile(r"[—–]|\b(cheap|affordable|budget)\b", re.I)
@@ -100,10 +99,14 @@ Return JSON: {{"headlines_pinned": [3], "headlines_benefit": [12], "descriptions
 
 def run(ctx):
     s0 = store.read(ctx.project_id, "step0") or {}
-    missing = [f for f in REQUIRED if not s0.get(f)]
-    if missing:
-        raise Blocked("Ad copy needs " + ", ".join(m.replace("_", " ").replace(" path", "") for m in missing)
-                      + " - add it on the project's setup, then retry.")
+    # Ad copy needs real facts about the business - never invented. The logo
+    # isn't needed here (that's for landing pages).
+    detail_fields = ("years_experience", "completed_projects", "certifications", "other_info")
+    if not s0.get("business_name") or not any(s0.get(f) for f in detail_fields):
+        raise Blocked(
+            "I can't write the ad copy yet - I need the business information (business name plus "
+            "real details like years trading, jobs completed, reviews, guarantees or certifications). "
+            "Add it under 'Business info' and this step will restart automatically.")
     facts = {k: s0[k] for k in FACT_FIELDS if s0.get(k)}
     note = ctx.payload.get("note", "")
 

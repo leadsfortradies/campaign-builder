@@ -10,6 +10,28 @@ function setTab(step) {
   history.replaceState(null, "", url);
 }
 
+async function showMissingInfo(projectId) {
+  const el = document.getElementById("info-line");
+  let d = {};
+  try {
+    const r = await fetch(`data/${encodeURIComponent(projectId)}/step0.json`);
+    if (r.ok) d = await r.json();
+  } catch (e) { /* none yet */ }
+  const missing = [];
+  if (!(d.services || []).length || !(d.service_areas || []).length) {
+    missing.push("services / service area (needed for keyword research)");
+  }
+  if (!d.business_name || !["years_experience", "completed_projects", "certifications", "other_info"].some((f) => d[f] && d[f].length)) {
+    missing.push("business details (needed for ad copy)");
+  }
+  if (!d.business_logo_path) missing.push("logo (needed to finish landing pages)");
+  if (!(d.work_photo_paths || []).length) missing.push("work photos (needed to finish landing pages)");
+  const link = `<a href="new.html?id=${encodeURIComponent(projectId)}">${missing.length ? "Add business info" : "Edit business info"}</a>`;
+  el.innerHTML = missing.length
+    ? `Still missing: ${missing.join("; ")}. ${link}`
+    : link;
+}
+
 async function init() {
   const projectId = qs("id");
   const content = document.getElementById("content");
@@ -31,6 +53,7 @@ async function init() {
   }
 
   titleEl.textContent = project.label;
+  showMissingInfo(project.id);
 
   const availableSteps = STEP_ORDER.filter((s) => project.steps?.[s]);
   const tabsEl = document.getElementById("tabs");
@@ -172,6 +195,13 @@ async function init() {
       const pre = document.createElement("pre");
       pre.textContent = job.log;
       div.appendChild(pre);
+    }
+    if (status === "blocked") {
+      const a = document.createElement("a");
+      a.href = `new.html?id=${encodeURIComponent(project.id)}`;
+      a.textContent = "Add business info";
+      a.className = "new-btn";
+      div.appendChild(a);
     }
     if (["blocked", "failed"].includes(status)) {
       const btn = document.createElement("button");
