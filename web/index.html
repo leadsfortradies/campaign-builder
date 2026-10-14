@@ -13,21 +13,9 @@
   <a href="new.html" class="primary new-btn button">+ New campaign</a>
 </header>
 
-<p class="muted"><a href="#" id="test-notify">Send a test notification to my phone</a> <span id="test-notify-msg"></span></p>
-
 <main id="project-list" class="project-list"></main>
 
 <script src="js/model.js?v=1"></script>
 <script src="js/projects.js?v=4"></script>
-<script>
-document.getElementById("test-notify").addEventListener("click", async (e) => {
-  e.preventDefault();
-  const msg = document.getElementById("test-notify-msg");
-  try {
-    const r = await fetch("/api/test-notify", { method: "POST" });
-    msg.textContent = r.ok ? "Sent - check your phone." : "Failed (is NTFY_TOPIC set?)";
-  } catch (err) { msg.textContent = "Not available here."; }
-});
-</script>
 </body>
 </html>
