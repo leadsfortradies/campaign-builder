@@ -207,14 +207,18 @@ def write_step4_adcopy_csv(project_id, label, csv_path, status="pending_review")
     print(f"Wrote {len(ad_groups)} ad groups ({item_count} items) to {out_path}; updated {PROJECTS_PATH}")
 
 
-def write_step5_landing_pages(project_id, label, mode=None, urls=None, status="pending_review"):
+def write_step5_landing_pages(project_id, label, mode=None, urls=None, status="pending_review", design_source_url=None):
     """Seeds/updates web/data/<project_id>/step5.json.
 
     ad_groups are seeded from the project's step4.json (same ad groups that
     already have written copy) the first time this runs; later calls merge
     in `urls` (a dict of {ad_group_name: url}) and keep whatever was already
-    stored for ad groups not mentioned. `mode` is "urls" or "build_site" -
-    pass None to leave whatever is already stored (or unset, pre-choice).
+    stored for ad groups not mentioned. `mode` is "urls", "build_template"
+    (new pages from the site template) or "build_designed" (site template
+    layout re-skinned with an existing site's design system; pass that
+    site's link as `design_source_url`) - pass None to leave whatever is
+    already stored (or unset, pre-choice). Legacy "build_site" is read as
+    "build_template".
 
     Used both by the web app's own /approve round-trip and directly by
     Claude when the user pastes landing page URLs into chat instead of
@@ -231,6 +235,8 @@ def write_step5_landing_pages(project_id, label, mode=None, urls=None, status="p
         ad_groups = existing.get("ad_groups", [])
         if mode is None:
             mode = existing.get("mode")
+        if design_source_url is None:
+            design_source_url = existing.get("design_source_url")
     else:
         ad_groups = []
         if os.path.exists(step4_path):
@@ -248,6 +254,7 @@ def write_step5_landing_pages(project_id, label, mode=None, urls=None, status="p
         "step": "step5",
         "label": label,
         "mode": mode,
+        "design_source_url": design_source_url,
         "ad_groups": list(by_name.values()),
     }
     with open(step5_path, "w", encoding="utf-8") as f:

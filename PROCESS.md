@@ -478,12 +478,14 @@ which case run step 2 as designed, it'll show real volume per town.
 1. Covers whichever campaign's ad groups currently have ad copy (currently
    **BOF - Priority 1**, same scope as Step 4 - expand to Priority 2 / Price
    Discovery once those campaigns launch).
-2. The web app's Step 5 tab presents two options per project:
-   - **"I'll provide the URLs"** - a text input per ad group for that ad
-     group's landing page URL.
-   - **"Build me a site + landing pages"** - placeholder only, not built
-     yet. The button exists in the UI but is disabled/non-functional - don't
-     implement anything behind it until asked.
+2. The web app's Step 5 tab presents three options per project:
+   - **"Build new landing pages from scratch"** (`build_template`) - Claude
+     builds them from the site template. See the build flow below.
+   - **"Landing pages already exist"** (`urls`) - a text input per ad group
+     for that ad group's landing page URL.
+   - **"Build with an existing site's design"** (`build_designed`) - for
+     managed-ads clients who already have a site. Always shown as an option
+     for now. See the design-system flow below.
 3. When the user gives Claude the landing page URLs directly in chat (rather
    than typing them into the web app), Claude stores them straight into
    `web/data/<project-id>/step5.json` itself - no need to wait for a web
@@ -495,10 +497,12 @@ which case run step 2 as designed, it'll show real volume per town.
 5. **Never use em-dashes or other classic AI-slop tell-tales** in any
    landing page copy.
 
-### "Build me a site + landing pages" path — NOT YET IMPLEMENTED
+### Option 1: build new landing pages from the site template — NOT YET AUTOMATED
 
-The intended flow once this path gets built (currently just a disabled
-placeholder button in the web app, per item 2 above):
+(Legacy mode name `build_site` is read as `build_template`.) Template:
+Netlify project `lft-site-template`
+(https://app.netlify.com/projects/lft-site-template/overview), GitHub repo
+https://github.com/leadsfortradies/site-template.
 
 1. Each site uses a specific template depending on the industry - ask the
    user which template to use before starting.
@@ -522,6 +526,29 @@ placeholder button in the web app, per item 2 above):
    approval.
 8. Feed the approved landing page links into the Step 4 ad copy as the
    final URLs.
+
+### Option 3: build landing pages with an existing site's design system
+
+For managed-ads clients who already have a website. Builds **landing pages
+only** (no home page, no full site) using the layout of the site template
+re-skinned with the client's existing branding.
+
+1. Ask the user for the link to the client's existing site (the web app tab
+   has an input for it, saved as `design_source_url` in `step5.json`).
+2. Visit that site and build a design system from it: logo, fonts, colours,
+   button and heading styles. Pull the logo and images from the site unless
+   the user has already supplied them. **Don't stop for approval of the
+   design system** - go straight to building.
+3. Build the landing pages on the **layout/template of the site template**
+   (repo above), swapping the template's styling for the extracted design
+   system. Copy per page follows the same rules as Option 1 item 6, using
+   Step 0's `step0.json`.
+4. Create a **new GitHub repo** and a **new Netlify project** for these pages
+   (never reuse the template's or another client's). They are served from a
+   **subdomain** of the client's domain.
+5. Send the user the landing page links for review and approval, then feed
+   the approved links into the Step 4 ad copy as the final URLs (and store
+   them in `step5.json`).
 
 ## Step 6 - Writing Sitelinks, Callouts & Structured Snippets Copy For Google Ads — NOT YET IMPLEMENTED
 
@@ -927,8 +954,9 @@ Added 2026-10-07. Final step of the build - creates the human QA checklist.
 - Step 5 (landing pages) added 2026-10-06 -
   `web/js/landingpages.js` + `scripts/lib/webapp_export.py`'s
   `write_step5_landing_pages()`. Web app tab offers "I'll provide the URLs"
-  (per-ad-group URL inputs, ad group list seeded from Step 4) vs. "Build me
-  a site + landing pages" (placeholder button, disabled, not implemented).
+  (per-ad-group URL inputs, ad group list seeded from Step 4) vs. build from the site
+  template vs. build with an existing site's design system (2026-10-15: now
+  three options; see Step 5 above).
   Claude can also write URLs straight into
   `web/data/<project-id>/step5.json` when given them in chat, bypassing the
   web approval round-trip. Feeds Step 6 (sitelinks, not yet implemented).

@@ -1,8 +1,10 @@
 // Step 5 view - {project_id, step: "step5", label, mode: "urls"|"build_site"|null,
-// ad_groups: [{name, url}]}. Two modes, chosen with a toggle at the top:
-//   - "urls": one text input per ad group for its landing page URL.
-//   - "build_site": placeholder only - button is disabled, nothing wired up
-//     behind it yet.
+// design_source_url, ad_groups: [{name, url}]}. Three modes, chosen at the top:
+//   - "build_template": Claude builds new landing pages from the site template.
+//   - "urls": one text input per ad group for its existing landing page URL.
+//   - "build_designed": Claude builds landing pages on the site template's
+//     layout using the design system (logo, fonts, colours) of an existing
+//     site, whose link is entered here (design_source_url). Managed ads.
 // Mode choice + in-progress URL edits are drafted to localStorage (same
 // pattern as loadExcluded() in review.js) until "Approve this step" submits
 // them for real.
@@ -11,14 +13,22 @@ function landingPagesDraftKey(projectId, step) {
   return `lft-lp-draft::${projectId}::${step}`;
 }
 
+function normMode(m) {
+  return m === "build_site" ? "build_template" : m || null;
+}
+
 function loadLandingPagesDraft(projectId, step, data) {
   try {
     const raw = localStorage.getItem(landingPagesDraftKey(projectId, step));
-    if (!raw) return { mode: data.mode || null, urls: {} };
+    if (!raw) return { mode: normMode(data.mode), urls: {}, designUrl: data.design_source_url || "" };
     const parsed = JSON.parse(raw);
-    return { mode: parsed.mode || data.mode || null, urls: parsed.urls || {} };
+    return {
+      mode: normMode(parsed.mode || data.mode),
+      urls: parsed.urls || {},
+      designUrl: parsed.designUrl != null ? parsed.designUrl : data.design_source_url || "",
+    };
   } catch (e) {
-    return { mode: data.mode || null, urls: {} };
+    return { mode: normMode(data.mode), urls: {}, designUrl: data.design_source_url || "" };
   }
 }
 
@@ -60,19 +70,19 @@ class LandingPagesView {
     const modeRow = document.createElement("div");
     modeRow.className = "lp-mode-row";
 
-    const urlsCard = document.createElement("button");
-    urlsCard.type = "button";
-    urlsCard.className = "lp-mode-card" + (this.draft.mode === "urls" ? " selected" : "");
-    urlsCard.innerHTML = `<strong>I'll provide the URLs</strong><span>Paste a landing page link for each ad group below.</span>`;
-    urlsCard.addEventListener("click", () => this.setMode("urls"));
-    modeRow.appendChild(urlsCard);
-
-    const buildCard = document.createElement("button");
-    buildCard.type = "button";
-    buildCard.className = "lp-mode-card" + (this.draft.mode === "build_site" ? " selected" : "");
-    buildCard.innerHTML = `<strong>Build me a site + landing pages</strong><span class="lp-soon">Coming soon - not built yet</span>`;
-    buildCard.disabled = true;
-    modeRow.appendChild(buildCard);
+    const options = [
+      ["build_template", "Build new landing pages from scratch", "Claude builds them using the site template."],
+      ["urls", "Landing pages already exist", "Paste a landing page link for each ad group."],
+      ["build_designed", "Build with an existing site's design", "Site template layout, styled to match a client's existing site. Managed ads."],
+    ];
+    for (const [value, title, blurb] of options) {
+      const card = document.createElement("button");
+      card.type = "button";
+      card.className = "lp-mode-card" + (this.draft.mode === value ? " selected" : "");
+      card.innerHTML = `<strong>${title}</strong><span>${blurb}</span>`;
+      card.addEventListener("click", () => this.setMode(value));
+      modeRow.appendChild(card);
+    }
 
     this.mountEl.appendChild(modeRow);
 
@@ -118,10 +128,32 @@ class LandingPagesView {
 
       group.appendChild(body);
       this.mountEl.appendChild(group);
-    } else if (this.draft.mode === "build_site") {
+    } else if (this.draft.mode === "build_template") {
       const note = document.createElement("div");
       note.className = "skip-note";
-      note.innerHTML = `<strong>Not built yet.</strong> Site + landing page creation isn't implemented - tell Claude in chat and it'll either build this out or switch you back to providing URLs.`;
+      note.innerHTML = `<strong>Approve this step and tell Claude in chat.</strong> It will build the landing pages from the site template and fill in the URLs once they're live.`;
+      this.mountEl.appendChild(note);
+    } else if (this.draft.mode === "build_designed") {
+      const wrap = document.createElement("div");
+      wrap.className = "lp-row";
+      const label = document.createElement("span");
+      label.className = "lp-label";
+      label.textContent = "Existing site link";
+      wrap.appendChild(label);
+      const input = document.createElement("input");
+      input.type = "url";
+      input.className = "lp-input";
+      input.placeholder = "https://clientsite.co.nz";
+      input.value = this.draft.designUrl || "";
+      input.addEventListener("input", () => {
+        this.draft.designUrl = input.value;
+        this.saveDraft();
+      });
+      wrap.appendChild(input);
+      this.mountEl.appendChild(wrap);
+      const note = document.createElement("div");
+      note.className = "skip-note";
+      note.innerHTML = `<strong>Approve this step and tell Claude in chat.</strong> It will pull the logo, fonts and colours from that site, build the landing pages on the site template layout (new Netlify project + GitHub repo, subdomain), and fill in the URLs once live.`;
       this.mountEl.appendChild(note);
     } else {
       const note = document.createElement("div");
@@ -145,7 +177,7 @@ class LandingPagesView {
   }
 
   resetExclusions() {
-    this.draft = { mode: this.data.mode || null, urls: {} };
+    this.draft = { mode: normMode(this.data.mode), urls: {}, designUrl: this.data.design_source_url || "" };
     this.saveDraft();
     this.render();
   }
@@ -186,6 +218,9 @@ class LandingPagesView {
     } else if (!this.draft.mode) {
       this.showStatus("Pick an option above first.", false);
       return;
+    } else if (this.draft.mode === "build_designed" && !(this.draft.designUrl || "").trim()) {
+      this.showStatus("Add the existing site link first.", false);
+      return;
     }
 
     const adGroups = this.data.ad_groups.map((g) => ({ name: g.name, url: this.urlFor(g) }));
@@ -195,6 +230,7 @@ class LandingPagesView {
       dataset_label: this.data.label,
       submitted_at: new Date().toISOString(),
       mode: this.draft.mode,
+      design_source_url: this.draft.mode === "build_designed" ? this.draft.designUrl.trim() : null,
       ad_groups: adGroups,
     };
 
