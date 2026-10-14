@@ -17,6 +17,7 @@
 
 import json
 import re
+from concurrent.futures import ThreadPoolExecutor
 
 from .. import gads, llm, projects_store
 from ..jobs import Blocked, register_step
@@ -24,6 +25,7 @@ from . import rules, store
 
 MIN_SEARCHES = 10
 BATCH = 200
+PARALLEL = 5
 
 HARD_EXCLUDES = [
     (re.compile(r"\b(cheap|cheapest|affordable|budget|low cost|free)\b"), "price-positioning term (cheap/affordable/free) - standing exclude", "phrase"),
@@ -120,8 +122,9 @@ def _classify(ctx, s0, keywords, note):
     services = s0["services"]
     system = rules.STEP1_RULES
     results = {}
-    for start in range(0, len(keywords), BATCH):
-        batch = keywords[start:start + BATCH]
+    batches = [keywords[i:i + BATCH] for i in range(0, len(keywords), BATCH)]
+
+    def classify_batch(batch):
         listing = "\n".join(f"{i}|{r['keyword']}|{r['avg_monthly_searches']}" for i, r in enumerate(batch))
         user = f"""\
 Business: {s0.get('business_name')} ({s0.get('trade', '')}), service area {json.dumps(s0['service_areas'])}, New Zealand.
@@ -135,19 +138,26 @@ Classify each keyword (format: index|keyword|monthly searches):
 Return JSON: {{"r": [[index, "B"|"PD"|"MR"|"X", tier "A"|"B"|"C"|"", service (one of the stated services, or "General"), note_or_reason, negative_term_or_empty, "phrase"|"exact"|""], ...]}}
 Every index must appear exactly once. note_or_reason is empty for B/PD."""
         out = llm.complete_json(ctx, system, user, max_tokens=16000)["r"]
+        got = {}
         for row in out:
             try:
                 i = int(row[0])
             except (ValueError, TypeError, IndexError):
                 continue
             if 0 <= i < len(batch):
-                results[batch[i]["keyword"]] = row
-        missing = [r["keyword"] for r in batch if r["keyword"] not in results]
-        if missing:
+                got[batch[i]["keyword"]] = row
+        for r in batch:
             # Never silently drop: anything Claude skipped goes to Manual Review.
-            for kw in missing:
-                results[kw] = [0, "MR", "", "General", "not classified automatically - please check", "", ""]
-        ctx.log(f"Classified {min(start + BATCH, len(keywords))}/{len(keywords)}")
+            got.setdefault(r["keyword"], [0, "MR", "", "General", "not classified automatically - please check", "", ""])
+        return got
+
+    done = 0
+    # Batches are independent, so run several Claude calls at once.
+    with ThreadPoolExecutor(max_workers=PARALLEL) as pool:
+        for got in pool.map(classify_batch, batches):
+            results.update(got)
+            done += 1
+            ctx.log(f"Classified {min(done * BATCH, len(keywords))}/{len(keywords)}")
     return results
 
 
