@@ -26,6 +26,7 @@ from . import rules, store
 MIN_SEARCHES = 10
 BATCH = 200
 PARALLEL = 5
+MAX_KEYWORDS = 2500  # keep the highest-volume keywords; the long tail is near-zero volume
 
 HARD_EXCLUDES = [
     (re.compile(r"\b(cheap|cheapest|affordable|budget|low cost|free)\b"), "price-positioning term (cheap/affordable/free) - standing exclude", "phrase"),
@@ -93,6 +94,10 @@ services. Return JSON: {{"seeds": {{"<service>": ["seed", ...]}}}}""", max_token
         raw = gads.keyword_ideas(seed_list, [gads.NZ_GEO_ID], MIN_SEARCHES)
         source = "NZ-wide idea expansion"
     ctx.log(f"{len(raw)} keywords at {MIN_SEARCHES}+ searches/month ({source})")
+    if len(raw) > MAX_KEYWORDS:
+        raw = sorted(raw, key=lambda r: -r["avg_monthly_searches"])[:MAX_KEYWORDS]
+        ctx.log(f"Keeping the {MAX_KEYWORDS} highest-volume keywords "
+                f"(lowest kept: {raw[-1]['avg_monthly_searches']} searches/month)")
     return {"source": source, "seeds": seeds, "geo_ids": geo_ids, "keywords": raw}
 
 
