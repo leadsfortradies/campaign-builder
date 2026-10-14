@@ -22,7 +22,7 @@ def _get_client():
         if not os.environ.get("ANTHROPIC_API_KEY"):
             raise LLMError("ANTHROPIC_API_KEY isn't set on the server.")
         import anthropic
-        _client = anthropic.Anthropic()
+        _client = anthropic.Anthropic(timeout=180.0, max_retries=1)
     return _client
 
 

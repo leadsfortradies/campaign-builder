@@ -51,7 +51,7 @@ def generate_keyword_ideas(
     else:
         request.keyword_seed.keywords.extend(keywords)
 
-    response = keyword_plan_idea_service.generate_keyword_ideas(request=request)
+    response = keyword_plan_idea_service.generate_keyword_ideas(request=request, timeout=120)
 
     results = []
     for idea in response:
@@ -106,7 +106,7 @@ def get_keyword_historical_metrics(
     )
 
     response = keyword_plan_idea_service.generate_keyword_historical_metrics(
-        request=request
+        request=request, timeout=120
     )
 
     results = []
@@ -136,7 +136,7 @@ def resolve_locations(client: GoogleAdsClient, location_names, locale="en", coun
     request.country_code = country_code
     request.location_names.names.extend(location_names)
 
-    response = geo_target_constant_service.suggest_geo_target_constants(request=request)
+    response = geo_target_constant_service.suggest_geo_target_constants(request=request, timeout=60)
 
     results = []
     for suggestion in response.geo_target_constant_suggestions:

@@ -38,13 +38,6 @@ PROJECT_TOKEN_CAP = int(os.environ.get("PROJECT_TOKEN_CAP", "4000000"))
 STEP_HANDLERS = {}
 
 
-class Blocked(Exception):
-    """Raise from a handler when it can't continue without the user (e.g.
-    missing business info). The job is marked blocked and the user notified."""
-
-
-# Hard ceiling on Claude tokens per project, so a bug can't drain credit.
-PROJECT_TOKEN_CAP = int(os.environ.get("PROJECT_TOKEN_CAP", "4000000"))  # (step) -> handler, used for run_step / revise_step
 
 
 def register(kind):
@@ -75,6 +68,7 @@ class Ctx:
 
     def log(self, msg):
         self._lines.append(f"[{time.strftime('%H:%M:%S')}] {msg}")
+        print(f"[job {self.job['id']} {self.project_id}/{self.step}] {msg}", flush=True)
         db.execute("UPDATE jobs SET log=? WHERE id=?", ("\n".join(self._lines), self.job["id"]))
 
     def add_usage(self, tin, tout):
@@ -125,7 +119,7 @@ def _run(job):
         ctx.set_step(status="blocked")
         db.log_event("blocked", job["project_id"], job["step"], str(exc))
         notify(f"Needs you: {job['project_id']}", str(exc)[:300], f"/project.html?id={job['project_id']}")
-    except Exception as exc:  # noqa: BLE001
+    except BaseException as exc:  # noqa: BLE001 - incl. SystemExit from a library; must never kill the runner
         tb = traceback.format_exc()
         if job["kind"] != "selftest":
             ctx.set_step(status="failed")
@@ -142,7 +136,15 @@ def _loop(stop):
     while not stop.is_set():
         rows = db.query("SELECT * FROM jobs WHERE status='queued' ORDER BY id LIMIT 1")
         if rows:
-            _run(rows[0])
+            try:
+                _run(rows[0])
+            except BaseException as exc:  # noqa: BLE001 - keep the runner alive no matter what
+                print(f"[jobs] runner error on job {rows[0]['id']}: {exc!r}", flush=True)
+                try:
+                    db.execute("UPDATE jobs SET status='failed', error=?, finished_at=? WHERE id=?",
+                               (f"runner error: {exc!r}", time.time(), rows[0]["id"]))
+                except Exception:  # noqa: BLE001
+                    time.sleep(2)
         else:
             stop.wait(2)
 
