@@ -33,7 +33,9 @@ STEP_LABELS = {
     "step6": "Step 6: Sitelinks, Callouts & Snippets",
 }
 
-STEP0_REQUIRED_FIELDS = ("business_name", "business_logo_path", "service_areas")
+# Nothing is compulsory at intake (PROCESS.md Step 0, 2026-10-15); the step that
+# needs a missing item is what blocks, not Step 0 itself.
+STEP0_REQUIRED_FIELDS = ()
 
 
 def load_projects():

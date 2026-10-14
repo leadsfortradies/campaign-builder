@@ -16,10 +16,10 @@ services that client can't fulfil.
 
 ## Step 0 - Setup (business info) — IMPLEMENTED
 
-Collected entirely in chat - no web app UI for this step (decided
-2026-10-06: the image assets involved make a browser upload form more
-effort than it's worth, so everything, including the logo and photos,
-comes through chat).
+Collected through the web app's "New campaign" form (new.html, added
+2026-10-15 for phone use - logo/photos upload from the phone's camera roll)
+and editable any time from the project page's "Business info" link. The
+older chat-based route below still works.
 
 1. Collect as much of the following as is available. **Nothing is
    compulsory at intake** (changed 2026-10-15 - the user is often on their
