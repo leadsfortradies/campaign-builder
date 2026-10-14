@@ -16,8 +16,8 @@
   <form id="new-form" class="new-form">
     <label>Business name<input name="business_name"></label>
     <label>Trade <small>e.g. Painter, Deck builder, Concreter</small><input name="trade"></label>
-    <label>Services <small>one per line, only what they actually do</small><textarea name="services" rows="4"></textarea></label>
-    <label>Service area <small>one per line, e.g. Palmerston North, Feilding</small><textarea name="service_areas" rows="2"></textarea></label>
+    <label>Services * <small>one per line, only what they actually do</small><textarea name="services" rows="4" required></textarea></label>
+    <label>Service area * <small>one per line, e.g. Palmerston North, Feilding</small><textarea name="service_areas" rows="2" required></textarea></label>
     <label>Logo <small>can be added later</small><input type="file" name="logo" accept="image/*"></label>
     <label>Scope notes <small>e.g. residential only, no roof painting</small><textarea name="scope_notes" rows="2"></textarea></label>
     <label>Years of experience<input name="years_experience" inputmode="numeric"></label>
@@ -43,6 +43,7 @@ const form = document.getElementById("new-form");
   document.getElementById("intro").textContent =
     "Add or change anything here. Blank fields keep what's already saved, and any step that was waiting on missing info restarts when you save.";
   document.getElementById("start-row").hidden = true;
+  form.querySelectorAll("[required]").forEach((el) => { el.required = false; });
   form.querySelector("button[type=submit]").textContent = "Save";
   document.querySelector(".back-link").href = `project.html?id=${encodeURIComponent(editId)}`;
   document.querySelector(".back-link").textContent = "← Back to project";

@@ -21,11 +21,12 @@ Collected through the web app's "New campaign" form (new.html, added
 and editable any time from the project page's "Business info" link. The
 older chat-based route below still works.
 
-1. Collect as much of the following as is available. **Nothing is
-   compulsory at intake** (changed 2026-10-15 - the user is often on their
-   phone without a logo or business details to hand, and a build should still
-   start). Missing items block only the step that actually needs them, and the
-   user is told which one and why:
+1. Collect as much of the following as is available. **Only services and
+   service area are required to start a build** (decided 2026-10-15 - the user
+   is often on their phone without a logo or business details to hand, and a
+   build should still start without them). Everything else is optional; a
+   missing item blocks only the step that actually needs it, and the user is
+   told which one and why:
    - **Services** and **service area/s** - needed for Step 1 keyword research
      (a build can't start without them).
    - **Business name** plus real details (years of experience, estimated

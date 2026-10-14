@@ -256,6 +256,8 @@ async def create_project(
 ):
     form = {k: v for k, v in locals().items() if k in FORM_FIELDS}
     areas = _lines(service_areas)
+    if not _lines(services) or not areas:
+        raise HTTPException(400, "Add at least the services and the service area to start a campaign.")
     base = _slug(f"{trade}-{areas[0]}") if (trade and areas) else _slug(trade or business_name or "new-campaign")
     existing = {p["id"] for p in projects_store.load()}
     project_id, n = base, 2
