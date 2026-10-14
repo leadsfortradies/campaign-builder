@@ -16,6 +16,16 @@ rows = list(csv.DictReader(open(f"{D}/step1_categorized.csv")))
 
 DROP = re.compile(r"\bdeck(ing)?\b|\bkwila\b|\btool sheds?\b|\bgarden (storage |tool )?sheds?\b|\btimber deck\b|\bdecks?\b")
 
+# Fencing: only through post and rail, or rural/farm/lifestyle fencing (user,
+# 2026-10-15). General "fencing near me" / "fence supplies" / generic fence
+# posts and palings stay out.
+KEEP_FENCE = re.compile(
+    r"post (and|&|n) rail|post ?& ?rail|\bthrough post\b|\bmorticed\b|half round rails?|\brail fenc|"
+    r"\brural\b|\bfarm\b|\blifestyle\b|\bagri|\bag fencing\b|\bhorse\b|\bcow\b|\bcattle\b|\bstock\b|\bsheep\b|\bpaddock\b|\bfield fenc"
+)
+def fence_ok(r):
+    return bool(KEEP_FENCE.search(r["keyword"]))
+
 kept = []
 dropped = Counter()
 for r in rows:
@@ -25,7 +35,22 @@ for r in rows:
     if r["service"] == "Decking Timber" or DROP.search(r["keyword"]):
         dropped["decking / tool shed / garden shed"] += 1
         continue
+    if r["service"] == "Post & Rail Fencing" and not fence_ok(r):
+        dropped["general fencing (not post & rail / rural / farm / lifestyle)"] += 1
+        continue
     kept.append(r)
+
+# Rural/lifestyle fencing terms the Step 1 classifier dropped as "no signal" or
+# via the colour/species descriptor rule ("cattle"), re-added on the user's
+# explicit rural/farm/lifestyle fencing scope (2026-10-15).
+READD = ["lifestyle block fencing", "rural and lifestyle fencing", "cattle farm fence"]
+have = {r["keyword"] for r in kept}
+for r in csv.DictReader(open(f"{D}/merged.csv")):
+    if r["keyword"] in READD and r["keyword"] not in have:
+        kept.append({"category": "BOF - Priority 1", "service": "Post & Rail Fencing", "keyword": r["keyword"],
+                     "avg_monthly_searches": r["avg_monthly_searches"], "competition": r["competition"],
+                     "low_top_of_page_bid": r["low_top_of_page_bid"], "high_top_of_page_bid": r["high_top_of_page_bid"],
+                     "note": "re-added: rural/lifestyle fencing scope"})
 
 # ---- step 2: location keywords with real volume (per-location geo OR NZ-wide exact) ----
 loc = {}
@@ -36,7 +61,7 @@ for fn in ("step2_location_keywords.csv", "step2_nz_exact.csv"):
                 loc[r["keyword"]] = r
     except FileNotFoundError:
         pass
-loc = {k: v for k, v in loc.items() if not re.search(r"timber|deck", k)}  # timber out for now
+loc = {k: v for k, v in loc.items() if not re.search(r"timber|deck|fenc|post", k)}  # timber out for now
 step2_rows = sorted(loc.values(), key=lambda r: -int(r["avg_monthly_searches"]))
 with open(f"{D}/step2_filtered.csv", "w", newline="") as f:
     w = csv.writer(f)
@@ -56,9 +81,8 @@ GROUPS = [  # (ad group, regex) - first match wins, per service
         ("Large Sheds", r".*"),
     ]),
     ("Post & Rail Fencing", [
-        ("Rural & Farm Fencing", r"\bfarm\b|\brural\b|\bagri|\bag fencing\b|\bhorse\b|\bcow\b|\bfield\b|\bstock\b|\bsheep\b|\bpaddock\b|\blifestyle\b|\bcattle\b|\bdeer\b"),
-        ("Post & Rail Fencing", r"\brails?\b|\bpost (and|&) rail\b|\bhalf round\b"),
-        ("Fence Posts", r".*"),
+        ("Post & Rail Fencing", r"\brails?\b|\bpost (and|&|n) rail\b|\bhalf round\b|\bthrough post\b|\bmorticed\b"),
+        ("Rural & Farm Fencing", r"\bfarm\b|\brural\b|\bagri|\bag fencing\b|\bhorse\b|\bcow\b|\bfield\b|\bstock\b|\bsheep\b|\bpaddock\b|\blifestyle\b|\bcattle\b"),
     ]),
     ("Made to Order & Custom Builds", [
         ("Chicken Coops", r"\bchicken\b|\bhen\b|\bchook\b|\bcoops?\b|\bpoultry\b"),

@@ -24,36 +24,9 @@
     },
     {
       "group": "hastings",
-      "keyword": "fencing supplies hastings",
-      "avg_monthly_searches": 10,
-      "competition": "UNSPECIFIED",
-      "low_bid": 0.0,
-      "high_bid": 0.0,
-      "note": ""
-    },
-    {
-      "group": "hastings",
       "keyword": "chicken coop hastings",
       "avg_monthly_searches": 10,
       "competition": "UNSPECIFIED",
-      "low_bid": 0.0,
-      "high_bid": 0.0,
-      "note": ""
-    },
-    {
-      "group": "wellington",
-      "keyword": "fence posts wellington",
-      "avg_monthly_searches": 10,
-      "competition": "HIGH",
-      "low_bid": 0.0,
-      "high_bid": 0.0,
-      "note": ""
-    },
-    {
-      "group": "wellington",
-      "keyword": "fencing supplies wellington",
-      "avg_monthly_searches": 10,
-      "competition": "HIGH",
       "low_bid": 0.0,
       "high_bid": 0.0,
       "note": ""
@@ -65,15 +38,6 @@
       "competition": "HIGH",
       "low_bid": 0.28,
       "high_bid": 2.24,
-      "note": ""
-    },
-    {
-      "group": "manawatu",
-      "keyword": "fence posts manawatu",
-      "avg_monthly_searches": 10,
-      "competition": "UNSPECIFIED",
-      "low_bid": 0.0,
-      "high_bid": 0.0,
       "note": ""
     },
     {
@@ -90,15 +54,6 @@
       "keyword": "sleepout manawatu",
       "avg_monthly_searches": 10,
       "competition": "UNSPECIFIED",
-      "low_bid": 0.0,
-      "high_bid": 0.0,
-      "note": ""
-    },
-    {
-      "group": "taranaki",
-      "keyword": "fence posts taranaki",
-      "avg_monthly_searches": 10,
-      "competition": "LOW",
       "low_bid": 0.0,
       "high_bid": 0.0,
       "note": ""

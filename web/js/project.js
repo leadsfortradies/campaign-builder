@@ -182,6 +182,9 @@ async function init() {
     document.getElementById("changes-panel").hidden = true;
     document.getElementById("reset-btn").onclick = () => view.resetExclusions && view.resetExclusions();
     document.getElementById("export-btn").onclick = () => view.exportCSV && view.exportCSV();
+    const pdfBtn = document.getElementById("pdf-btn");
+    pdfBtn.hidden = typeof view.exportPDF !== "function";
+    pdfBtn.onclick = () => view.exportPDF();
     const copyBtn = document.getElementById("copy-btn");
     copyBtn.hidden = typeof view.copyKeywords !== "function" || activeStep === "campaigns";
     copyBtn.onclick = () => view.copyKeywords(copyBtn);

@@ -304,19 +304,19 @@
         "status": "pending_review",
         "file": "data/timber-supplies-lni/step1.json",
         "step_label": "Step 1: Keyword Research",
-        "row_count": 1060
+        "row_count": 564
       },
       "step2": {
         "status": "pending_review",
         "file": "data/timber-supplies-lni/step2.json",
         "step_label": "Step 2: Location Keywords",
-        "row_count": 20
+        "row_count": 15
       },
       "step3": {
         "status": "pending_review",
         "file": "data/timber-supplies-lni/step3.json",
         "step_label": "Step 3: Ad Groups",
-        "row_count": 1080
+        "row_count": 579
       }
     }
   }
