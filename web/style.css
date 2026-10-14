@@ -186,6 +186,7 @@ thead th {
 }
 
 .col-x { text-align: center; width: 40px; }
+.col-promote { text-align: center; width: 56px; }
 
 tbody tr {
   border-bottom: 1px solid var(--border);
@@ -238,6 +239,28 @@ tr.excluded .x-btn {
   background: var(--excluded);
   border-color: var(--excluded);
   color: var(--text);
+}
+
+.promote-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.76rem;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.promote-btn:hover {
+  border-color: var(--bof);
+  color: var(--bof);
+}
+
+.promote-btn.active {
+  background: var(--bof);
+  border-color: var(--bof);
+  color: #0f1115;
 }
 
 /* --- Projects list page --- */
@@ -602,4 +625,29 @@ tr.excluded .x-btn {
   color: var(--muted);
   font-size: 0.9rem;
   line-height: 1.5;
+}
+
+.badge.needs_approval,
+.badge.changes_requested,
+.badge.running {
+  background: rgba(255, 184, 79, 0.15);
+  color: #ffb84f;
+}
+
+.model-picker {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: flex-end;
+  font-size: 13px;
+  color: var(--muted, #9aa1ac);
+  margin-bottom: 8px;
+}
+.model-picker select {
+  font: inherit;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  border: 1px solid rgba(128, 128, 128, 0.4);
 }

@@ -1,0 +1,806 @@
+{
+  "project_id": "rowdy-builders-manawatu",
+  "step": "step6",
+  "label": "Rowdy Builders - Manawatu (rebuild)",
+  "ad_groups": [
+    {
+      "name": "Deck Builders",
+      "sitelinks": [
+        {
+          "text": "Free On-Site Quote",
+          "description_1": "Written Within 48 Hours",
+          "description_2": "One Fixed Price",
+          "url": "https://www.palmydecksandfences.co.nz/quote/decks#quote"
+        },
+        {
+          "text": "5-Star Rated",
+          "description_1": "Real Customer Reviews",
+          "description_2": "Trusted By Palmy Locals",
+          "url": "https://www.palmydecksandfences.co.nz/quote/decks#reviews"
+        },
+        {
+          "text": "See Our Work",
+          "description_1": "100+ Projects Completed",
+          "description_2": "Browse Recent Jobs",
+          "url": "https://www.palmydecksandfences.co.nz/quote/decks#work"
+        },
+        {
+          "text": "Fully Insured",
+          "description_1": "10+ Years Experience",
+          "description_2": "Whoever Quotes, Builds",
+          "url": "https://www.palmydecksandfences.co.nz/quote/decks#why-us"
+        },
+        {
+          "text": "How It Works",
+          "description_1": "Quote, Build, Clean Up",
+          "description_2": "Old Materials Removed",
+          "url": "https://www.palmydecksandfences.co.nz/quote/decks#how-it-works"
+        },
+        {
+          "text": "Service Areas",
+          "description_1": "Palmy & Manawat\u016b Wide",
+          "description_2": "Feilding To Levin",
+          "url": "https://www.palmydecksandfences.co.nz/quote/decks#service-area"
+        }
+      ]
+    },
+    {
+      "name": "Composite Decks",
+      "sitelinks": [
+        {
+          "text": "Free On-Site Quote",
+          "description_1": "Written Within 48 Hours",
+          "description_2": "One Fixed Price",
+          "url": "https://www.palmydecksandfences.co.nz/quote/decks#quote"
+        },
+        {
+          "text": "5-Star Rated",
+          "description_1": "Real Customer Reviews",
+          "description_2": "Trusted By Palmy Locals",
+          "url": "https://www.palmydecksandfences.co.nz/quote/decks#reviews"
+        },
+        {
+          "text": "See Our Work",
+          "description_1": "100+ Projects Completed",
+          "description_2": "Browse Recent Jobs",
+          "url": "https://www.palmydecksandfences.co.nz/quote/decks#work"
+        },
+        {
+          "text": "Fully Insured",
+          "description_1": "10+ Years Experience",
+          "description_2": "Whoever Quotes, Builds",
+          "url": "https://www.palmydecksandfences.co.nz/quote/decks#why-us"
+        },
+        {
+          "text": "How It Works",
+          "description_1": "Quote, Build, Clean Up",
+          "description_2": "Old Materials Removed",
+          "url": "https://www.palmydecksandfences.co.nz/quote/decks#how-it-works"
+        },
+        {
+          "text": "Service Areas",
+          "description_1": "Palmy & Manawat\u016b Wide",
+          "description_2": "Feilding To Levin",
+          "url": "https://www.palmydecksandfences.co.nz/quote/decks#service-area"
+        }
+      ]
+    },
+    {
+      "name": "Timber Decks",
+      "sitelinks": [
+        {
+          "text": "Free On-Site Quote",
+          "description_1": "Written Within 48 Hours",
+          "description_2": "One Fixed Price",
+          "url": "https://www.palmydecksandfences.co.nz/quote/decks#quote"
+        },
+        {
+          "text": "5-Star Rated",
+          "description_1": "Real Customer Reviews",
+          "description_2": "Trusted By Palmy Locals",
+          "url": "https://www.palmydecksandfences.co.nz/quote/decks#reviews"
+        },
+        {
+          "text": "See Our Work",
+          "description_1": "100+ Projects Completed",
+          "description_2": "Browse Recent Jobs",
+          "url": "https://www.palmydecksandfences.co.nz/quote/decks#work"
+        },
+        {
+          "text": "Fully Insured",
+          "description_1": "10+ Years Experience",
+          "description_2": "Whoever Quotes, Builds",
+          "url": "https://www.palmydecksandfences.co.nz/quote/decks#why-us"
+        },
+        {
+          "text": "How It Works",
+          "description_1": "Quote, Build, Clean Up",
+          "description_2": "Old Materials Removed",
+          "url": "https://www.palmydecksandfences.co.nz/quote/decks#how-it-works"
+        },
+        {
+          "text": "Service Areas",
+          "description_1": "Palmy & Manawat\u016b Wide",
+          "description_2": "Feilding To Levin",
+          "url": "https://www.palmydecksandfences.co.nz/quote/decks#service-area"
+        }
+      ]
+    },
+    {
+      "name": "Deck & Fence Builders",
+      "sitelinks": [
+        {
+          "text": "Free On-Site Quote",
+          "description_1": "Written Within 48 Hours",
+          "description_2": "One Fixed Price",
+          "url": "https://www.palmydecksandfences.co.nz/#quote"
+        },
+        {
+          "text": "5-Star Rated",
+          "description_1": "Real Customer Reviews",
+          "description_2": "Trusted By Palmy Locals",
+          "url": "https://www.palmydecksandfences.co.nz/#reviews"
+        },
+        {
+          "text": "See Our Work",
+          "description_1": "100+ Projects Completed",
+          "description_2": "Browse Recent Jobs",
+          "url": "https://www.palmydecksandfences.co.nz/#work"
+        },
+        {
+          "text": "Fully Insured",
+          "description_1": "10+ Years Experience",
+          "description_2": "Whoever Quotes, Builds",
+          "url": "https://www.palmydecksandfences.co.nz/#why-us"
+        },
+        {
+          "text": "How It Works",
+          "description_1": "Quote, Build, Clean Up",
+          "description_2": "Old Materials Removed",
+          "url": "https://www.palmydecksandfences.co.nz/#how-it-works"
+        },
+        {
+          "text": "Service Areas",
+          "description_1": "Palmy & Manawat\u016b Wide",
+          "description_2": "Feilding To Levin",
+          "url": "https://www.palmydecksandfences.co.nz/#service-area"
+        }
+      ]
+    },
+    {
+      "name": "Fence Builders",
+      "sitelinks": [
+        {
+          "text": "Free On-Site Quote",
+          "description_1": "Written Within 48 Hours",
+          "description_2": "One Fixed Price",
+          "url": "https://www.palmydecksandfences.co.nz/quote/fences#quote"
+        },
+        {
+          "text": "5-Star Rated",
+          "description_1": "Real Customer Reviews",
+          "description_2": "Trusted By Palmy Locals",
+          "url": "https://www.palmydecksandfences.co.nz/quote/fences#reviews"
+        },
+        {
+          "text": "See Our Work",
+          "description_1": "100+ Projects Completed",
+          "description_2": "Browse Recent Jobs",
+          "url": "https://www.palmydecksandfences.co.nz/quote/fences#work"
+        },
+        {
+          "text": "Fully Insured",
+          "description_1": "10+ Years Experience",
+          "description_2": "Whoever Quotes, Builds",
+          "url": "https://www.palmydecksandfences.co.nz/quote/fences#why-us"
+        },
+        {
+          "text": "How It Works",
+          "description_1": "Quote, Build, Clean Up",
+          "description_2": "Old Materials Removed",
+          "url": "https://www.palmydecksandfences.co.nz/quote/fences#how-it-works"
+        },
+        {
+          "text": "Service Areas",
+          "description_1": "Palmy & Manawat\u016b Wide",
+          "description_2": "Feilding To Levin",
+          "url": "https://www.palmydecksandfences.co.nz/quote/fences#service-area"
+        }
+      ]
+    },
+    {
+      "name": "Fencing Palmerston North",
+      "sitelinks": [
+        {
+          "text": "Free On-Site Quote",
+          "description_1": "Written Within 48 Hours",
+          "description_2": "One Fixed Price",
+          "url": "https://www.palmydecksandfences.co.nz/quote/fences#quote"
+        },
+        {
+          "text": "5-Star Rated",
+          "description_1": "Real Customer Reviews",
+          "description_2": "Trusted By Palmy Locals",
+          "url": "https://www.palmydecksandfences.co.nz/quote/fences#reviews"
+        },
+        {
+          "text": "See Our Work",
+          "description_1": "100+ Projects Completed",
+          "description_2": "Browse Recent Jobs",
+          "url": "https://www.palmydecksandfences.co.nz/quote/fences#work"
+        },
+        {
+          "text": "Fully Insured",
+          "description_1": "10+ Years Experience",
+          "description_2": "Whoever Quotes, Builds",
+          "url": "https://www.palmydecksandfences.co.nz/quote/fences#why-us"
+        },
+        {
+          "text": "How It Works",
+          "description_1": "Quote, Build, Clean Up",
+          "description_2": "Old Materials Removed",
+          "url": "https://www.palmydecksandfences.co.nz/quote/fences#how-it-works"
+        },
+        {
+          "text": "Service Areas",
+          "description_1": "Palmy & Manawat\u016b Wide",
+          "description_2": "Feilding To Levin",
+          "url": "https://www.palmydecksandfences.co.nz/quote/fences#service-area"
+        }
+      ]
+    },
+    {
+      "name": "Fencing Manawatu, Levin & Marton",
+      "sitelinks": [
+        {
+          "text": "Free On-Site Quote",
+          "description_1": "Written Within 48 Hours",
+          "description_2": "One Fixed Price",
+          "url": "https://www.palmydecksandfences.co.nz/quote/fences#quote"
+        },
+        {
+          "text": "5-Star Rated",
+          "description_1": "Real Customer Reviews",
+          "description_2": "Trusted By Palmy Locals",
+          "url": "https://www.palmydecksandfences.co.nz/quote/fences#reviews"
+        },
+        {
+          "text": "See Our Work",
+          "description_1": "100+ Projects Completed",
+          "description_2": "Browse Recent Jobs",
+          "url": "https://www.palmydecksandfences.co.nz/quote/fences#work"
+        },
+        {
+          "text": "Fully Insured",
+          "description_1": "10+ Years Experience",
+          "description_2": "Whoever Quotes, Builds",
+          "url": "https://www.palmydecksandfences.co.nz/quote/fences#why-us"
+        },
+        {
+          "text": "How It Works",
+          "description_1": "Quote, Build, Clean Up",
+          "description_2": "Old Materials Removed",
+          "url": "https://www.palmydecksandfences.co.nz/quote/fences#how-it-works"
+        },
+        {
+          "text": "Service Areas",
+          "description_1": "Palmy & Manawat\u016b Wide",
+          "description_2": "Feilding To Levin",
+          "url": "https://www.palmydecksandfences.co.nz/quote/fences#service-area"
+        }
+      ]
+    },
+    {
+      "name": "Brick Fences",
+      "sitelinks": [
+        {
+          "text": "Free On-Site Quote",
+          "description_1": "Written Within 48 Hours",
+          "description_2": "One Fixed Price",
+          "url": "https://www.palmydecksandfences.co.nz/quote/fences#quote"
+        },
+        {
+          "text": "5-Star Rated",
+          "description_1": "Real Customer Reviews",
+          "description_2": "Trusted By Palmy Locals",
+          "url": "https://www.palmydecksandfences.co.nz/quote/fences#reviews"
+        },
+        {
+          "text": "See Our Work",
+          "description_1": "100+ Projects Completed",
+          "description_2": "Browse Recent Jobs",
+          "url": "https://www.palmydecksandfences.co.nz/quote/fences#work"
+        },
+        {
+          "text": "Fully Insured",
+          "description_1": "10+ Years Experience",
+          "description_2": "Whoever Quotes, Builds",
+          "url": "https://www.palmydecksandfences.co.nz/quote/fences#why-us"
+        },
+        {
+          "text": "How It Works",
+          "description_1": "Quote, Build, Clean Up",
+          "description_2": "Old Materials Removed",
+          "url": "https://www.palmydecksandfences.co.nz/quote/fences#how-it-works"
+        },
+        {
+          "text": "Service Areas",
+          "description_1": "Palmy & Manawat\u016b Wide",
+          "description_2": "Feilding To Levin",
+          "url": "https://www.palmydecksandfences.co.nz/quote/fences#service-area"
+        }
+      ]
+    },
+    {
+      "name": "Timber Fences",
+      "sitelinks": [
+        {
+          "text": "Free On-Site Quote",
+          "description_1": "Written Within 48 Hours",
+          "description_2": "One Fixed Price",
+          "url": "https://www.palmydecksandfences.co.nz/quote/timber-fences#quote"
+        },
+        {
+          "text": "5-Star Rated",
+          "description_1": "Real Customer Reviews",
+          "description_2": "Trusted By Palmy Locals",
+          "url": "https://www.palmydecksandfences.co.nz/quote/timber-fences#reviews"
+        },
+        {
+          "text": "See Our Work",
+          "description_1": "100+ Projects Completed",
+          "description_2": "Browse Recent Jobs",
+          "url": "https://www.palmydecksandfences.co.nz/quote/timber-fences#work"
+        },
+        {
+          "text": "Fully Insured",
+          "description_1": "10+ Years Experience",
+          "description_2": "Whoever Quotes, Builds",
+          "url": "https://www.palmydecksandfences.co.nz/quote/timber-fences#why-us"
+        },
+        {
+          "text": "How It Works",
+          "description_1": "Quote, Build, Clean Up",
+          "description_2": "Old Materials Removed",
+          "url": "https://www.palmydecksandfences.co.nz/quote/timber-fences#how-it-works"
+        },
+        {
+          "text": "Service Areas",
+          "description_1": "Palmy & Manawat\u016b Wide",
+          "description_2": "Feilding To Levin",
+          "url": "https://www.palmydecksandfences.co.nz/quote/timber-fences#service-area"
+        }
+      ]
+    },
+    {
+      "name": "Aluminium & Metal Fences",
+      "sitelinks": [
+        {
+          "text": "Free On-Site Quote",
+          "description_1": "Written Within 48 Hours",
+          "description_2": "One Fixed Price",
+          "url": "https://www.palmydecksandfences.co.nz/quote/aluminium-fences#quote"
+        },
+        {
+          "text": "5-Star Rated",
+          "description_1": "Real Customer Reviews",
+          "description_2": "Trusted By Palmy Locals",
+          "url": "https://www.palmydecksandfences.co.nz/quote/aluminium-fences#reviews"
+        },
+        {
+          "text": "See Our Work",
+          "description_1": "100+ Projects Completed",
+          "description_2": "Browse Recent Jobs",
+          "url": "https://www.palmydecksandfences.co.nz/quote/aluminium-fences#work"
+        },
+        {
+          "text": "Fully Insured",
+          "description_1": "10+ Years Experience",
+          "description_2": "Whoever Quotes, Builds",
+          "url": "https://www.palmydecksandfences.co.nz/quote/aluminium-fences#why-us"
+        },
+        {
+          "text": "How It Works",
+          "description_1": "Quote, Build, Clean Up",
+          "description_2": "Old Materials Removed",
+          "url": "https://www.palmydecksandfences.co.nz/quote/aluminium-fences#how-it-works"
+        },
+        {
+          "text": "Service Areas",
+          "description_1": "Palmy & Manawat\u016b Wide",
+          "description_2": "Feilding To Levin",
+          "url": "https://www.palmydecksandfences.co.nz/quote/aluminium-fences#service-area"
+        }
+      ]
+    },
+    {
+      "name": "Pergolas",
+      "sitelinks": [
+        {
+          "text": "Free On-Site Quote",
+          "description_1": "Written Within 48 Hours",
+          "description_2": "One Fixed Price",
+          "url": "https://www.palmydecksandfences.co.nz/quote/pergolas#quote"
+        },
+        {
+          "text": "5-Star Rated",
+          "description_1": "Real Customer Reviews",
+          "description_2": "Trusted By Palmy Locals",
+          "url": "https://www.palmydecksandfences.co.nz/quote/pergolas#reviews"
+        },
+        {
+          "text": "See Our Work",
+          "description_1": "100+ Projects Completed",
+          "description_2": "Browse Recent Jobs",
+          "url": "https://www.palmydecksandfences.co.nz/quote/pergolas#work"
+        },
+        {
+          "text": "Fully Insured",
+          "description_1": "10+ Years Experience",
+          "description_2": "Whoever Quotes, Builds",
+          "url": "https://www.palmydecksandfences.co.nz/quote/pergolas#why-us"
+        },
+        {
+          "text": "How It Works",
+          "description_1": "Quote, Build, Clean Up",
+          "description_2": "Old Materials Removed",
+          "url": "https://www.palmydecksandfences.co.nz/quote/pergolas#how-it-works"
+        },
+        {
+          "text": "Service Areas",
+          "description_1": "Palmy & Manawat\u016b Wide",
+          "description_2": "Feilding To Levin",
+          "url": "https://www.palmydecksandfences.co.nz/quote/pergolas#service-area"
+        }
+      ]
+    },
+    {
+      "name": "Pool Fencing",
+      "sitelinks": [
+        {
+          "text": "Free On-Site Quote",
+          "description_1": "Written Within 48 Hours",
+          "description_2": "One Fixed Price",
+          "url": "https://www.palmydecksandfences.co.nz/quote/pool-fencing#quote"
+        },
+        {
+          "text": "5-Star Rated",
+          "description_1": "Real Customer Reviews",
+          "description_2": "Trusted By Palmy Locals",
+          "url": "https://www.palmydecksandfences.co.nz/quote/pool-fencing#reviews"
+        },
+        {
+          "text": "See Our Work",
+          "description_1": "100+ Projects Completed",
+          "description_2": "Browse Recent Jobs",
+          "url": "https://www.palmydecksandfences.co.nz/quote/pool-fencing#work"
+        },
+        {
+          "text": "Fully Insured",
+          "description_1": "10+ Years Experience",
+          "description_2": "Whoever Quotes, Builds",
+          "url": "https://www.palmydecksandfences.co.nz/quote/pool-fencing#why-us"
+        },
+        {
+          "text": "How It Works",
+          "description_1": "Quote, Build, Clean Up",
+          "description_2": "Old Materials Removed",
+          "url": "https://www.palmydecksandfences.co.nz/quote/pool-fencing#how-it-works"
+        },
+        {
+          "text": "Service Areas",
+          "description_1": "Palmy & Manawat\u016b Wide",
+          "description_2": "Feilding To Levin",
+          "url": "https://www.palmydecksandfences.co.nz/quote/pool-fencing#service-area"
+        }
+      ]
+    },
+    {
+      "name": "Deck Costs",
+      "sitelinks": [
+        {
+          "text": "Free On-Site Quote",
+          "description_1": "Written Within 48 Hours",
+          "description_2": "One Fixed Price",
+          "url": "https://www.palmydecksandfences.co.nz/quote/decks#quote"
+        },
+        {
+          "text": "5-Star Rated",
+          "description_1": "Real Customer Reviews",
+          "description_2": "Trusted By Palmy Locals",
+          "url": "https://www.palmydecksandfences.co.nz/quote/decks#reviews"
+        },
+        {
+          "text": "See Our Work",
+          "description_1": "100+ Projects Completed",
+          "description_2": "Browse Recent Jobs",
+          "url": "https://www.palmydecksandfences.co.nz/quote/decks#work"
+        },
+        {
+          "text": "Fully Insured",
+          "description_1": "10+ Years Experience",
+          "description_2": "Whoever Quotes, Builds",
+          "url": "https://www.palmydecksandfences.co.nz/quote/decks#why-us"
+        },
+        {
+          "text": "How It Works",
+          "description_1": "Quote, Build, Clean Up",
+          "description_2": "Old Materials Removed",
+          "url": "https://www.palmydecksandfences.co.nz/quote/decks#how-it-works"
+        },
+        {
+          "text": "Service Areas",
+          "description_1": "Palmy & Manawat\u016b Wide",
+          "description_2": "Feilding To Levin",
+          "url": "https://www.palmydecksandfences.co.nz/quote/decks#service-area"
+        }
+      ]
+    },
+    {
+      "name": "Fence Costs",
+      "sitelinks": [
+        {
+          "text": "Free On-Site Quote",
+          "description_1": "Written Within 48 Hours",
+          "description_2": "One Fixed Price",
+          "url": "https://www.palmydecksandfences.co.nz/quote/fences#quote"
+        },
+        {
+          "text": "5-Star Rated",
+          "description_1": "Real Customer Reviews",
+          "description_2": "Trusted By Palmy Locals",
+          "url": "https://www.palmydecksandfences.co.nz/quote/fences#reviews"
+        },
+        {
+          "text": "See Our Work",
+          "description_1": "100+ Projects Completed",
+          "description_2": "Browse Recent Jobs",
+          "url": "https://www.palmydecksandfences.co.nz/quote/fences#work"
+        },
+        {
+          "text": "Fully Insured",
+          "description_1": "10+ Years Experience",
+          "description_2": "Whoever Quotes, Builds",
+          "url": "https://www.palmydecksandfences.co.nz/quote/fences#why-us"
+        },
+        {
+          "text": "How It Works",
+          "description_1": "Quote, Build, Clean Up",
+          "description_2": "Old Materials Removed",
+          "url": "https://www.palmydecksandfences.co.nz/quote/fences#how-it-works"
+        },
+        {
+          "text": "Service Areas",
+          "description_1": "Palmy & Manawat\u016b Wide",
+          "description_2": "Feilding To Levin",
+          "url": "https://www.palmydecksandfences.co.nz/quote/fences#service-area"
+        }
+      ]
+    },
+    {
+      "name": "Timber Fence Costs",
+      "sitelinks": [
+        {
+          "text": "Free On-Site Quote",
+          "description_1": "Written Within 48 Hours",
+          "description_2": "One Fixed Price",
+          "url": "https://www.palmydecksandfences.co.nz/quote/timber-fences#quote"
+        },
+        {
+          "text": "5-Star Rated",
+          "description_1": "Real Customer Reviews",
+          "description_2": "Trusted By Palmy Locals",
+          "url": "https://www.palmydecksandfences.co.nz/quote/timber-fences#reviews"
+        },
+        {
+          "text": "See Our Work",
+          "description_1": "100+ Projects Completed",
+          "description_2": "Browse Recent Jobs",
+          "url": "https://www.palmydecksandfences.co.nz/quote/timber-fences#work"
+        },
+        {
+          "text": "Fully Insured",
+          "description_1": "10+ Years Experience",
+          "description_2": "Whoever Quotes, Builds",
+          "url": "https://www.palmydecksandfences.co.nz/quote/timber-fences#why-us"
+        },
+        {
+          "text": "How It Works",
+          "description_1": "Quote, Build, Clean Up",
+          "description_2": "Old Materials Removed",
+          "url": "https://www.palmydecksandfences.co.nz/quote/timber-fences#how-it-works"
+        },
+        {
+          "text": "Service Areas",
+          "description_1": "Palmy & Manawat\u016b Wide",
+          "description_2": "Feilding To Levin",
+          "url": "https://www.palmydecksandfences.co.nz/quote/timber-fences#service-area"
+        }
+      ]
+    },
+    {
+      "name": "Aluminium, Brick & Colorbond Fence Costs",
+      "sitelinks": [
+        {
+          "text": "Free On-Site Quote",
+          "description_1": "Written Within 48 Hours",
+          "description_2": "One Fixed Price",
+          "url": "https://www.palmydecksandfences.co.nz/quote/aluminium-fences#quote"
+        },
+        {
+          "text": "5-Star Rated",
+          "description_1": "Real Customer Reviews",
+          "description_2": "Trusted By Palmy Locals",
+          "url": "https://www.palmydecksandfences.co.nz/quote/aluminium-fences#reviews"
+        },
+        {
+          "text": "See Our Work",
+          "description_1": "100+ Projects Completed",
+          "description_2": "Browse Recent Jobs",
+          "url": "https://www.palmydecksandfences.co.nz/quote/aluminium-fences#work"
+        },
+        {
+          "text": "Fully Insured",
+          "description_1": "10+ Years Experience",
+          "description_2": "Whoever Quotes, Builds",
+          "url": "https://www.palmydecksandfences.co.nz/quote/aluminium-fences#why-us"
+        },
+        {
+          "text": "How It Works",
+          "description_1": "Quote, Build, Clean Up",
+          "description_2": "Old Materials Removed",
+          "url": "https://www.palmydecksandfences.co.nz/quote/aluminium-fences#how-it-works"
+        },
+        {
+          "text": "Service Areas",
+          "description_1": "Palmy & Manawat\u016b Wide",
+          "description_2": "Feilding To Levin",
+          "url": "https://www.palmydecksandfences.co.nz/quote/aluminium-fences#service-area"
+        }
+      ]
+    },
+    {
+      "name": "Pergola Costs",
+      "sitelinks": [
+        {
+          "text": "Free On-Site Quote",
+          "description_1": "Written Within 48 Hours",
+          "description_2": "One Fixed Price",
+          "url": "https://www.palmydecksandfences.co.nz/quote/pergolas#quote"
+        },
+        {
+          "text": "5-Star Rated",
+          "description_1": "Real Customer Reviews",
+          "description_2": "Trusted By Palmy Locals",
+          "url": "https://www.palmydecksandfences.co.nz/quote/pergolas#reviews"
+        },
+        {
+          "text": "See Our Work",
+          "description_1": "100+ Projects Completed",
+          "description_2": "Browse Recent Jobs",
+          "url": "https://www.palmydecksandfences.co.nz/quote/pergolas#work"
+        },
+        {
+          "text": "Fully Insured",
+          "description_1": "10+ Years Experience",
+          "description_2": "Whoever Quotes, Builds",
+          "url": "https://www.palmydecksandfences.co.nz/quote/pergolas#why-us"
+        },
+        {
+          "text": "How It Works",
+          "description_1": "Quote, Build, Clean Up",
+          "description_2": "Old Materials Removed",
+          "url": "https://www.palmydecksandfences.co.nz/quote/pergolas#how-it-works"
+        },
+        {
+          "text": "Service Areas",
+          "description_1": "Palmy & Manawat\u016b Wide",
+          "description_2": "Feilding To Levin",
+          "url": "https://www.palmydecksandfences.co.nz/quote/pergolas#service-area"
+        }
+      ]
+    },
+    {
+      "name": "Pool Fencing Costs",
+      "sitelinks": [
+        {
+          "text": "Free On-Site Quote",
+          "description_1": "Written Within 48 Hours",
+          "description_2": "One Fixed Price",
+          "url": "https://www.palmydecksandfences.co.nz/quote/pool-fencing#quote"
+        },
+        {
+          "text": "5-Star Rated",
+          "description_1": "Real Customer Reviews",
+          "description_2": "Trusted By Palmy Locals",
+          "url": "https://www.palmydecksandfences.co.nz/quote/pool-fencing#reviews"
+        },
+        {
+          "text": "See Our Work",
+          "description_1": "100+ Projects Completed",
+          "description_2": "Browse Recent Jobs",
+          "url": "https://www.palmydecksandfences.co.nz/quote/pool-fencing#work"
+        },
+        {
+          "text": "Fully Insured",
+          "description_1": "10+ Years Experience",
+          "description_2": "Whoever Quotes, Builds",
+          "url": "https://www.palmydecksandfences.co.nz/quote/pool-fencing#why-us"
+        },
+        {
+          "text": "How It Works",
+          "description_1": "Quote, Build, Clean Up",
+          "description_2": "Old Materials Removed",
+          "url": "https://www.palmydecksandfences.co.nz/quote/pool-fencing#how-it-works"
+        },
+        {
+          "text": "Service Areas",
+          "description_1": "Palmy & Manawat\u016b Wide",
+          "description_2": "Feilding To Levin",
+          "url": "https://www.palmydecksandfences.co.nz/quote/pool-fencing#service-area"
+        }
+      ]
+    },
+    {
+      "name": "Covered Deck Costs",
+      "sitelinks": [
+        {
+          "text": "Free On-Site Quote",
+          "description_1": "Written Within 48 Hours",
+          "description_2": "One Fixed Price",
+          "url": "https://www.palmydecksandfences.co.nz/quote/covered-decks#quote"
+        },
+        {
+          "text": "5-Star Rated",
+          "description_1": "Real Customer Reviews",
+          "description_2": "Trusted By Palmy Locals",
+          "url": "https://www.palmydecksandfences.co.nz/quote/covered-decks#reviews"
+        },
+        {
+          "text": "See Our Work",
+          "description_1": "100+ Projects Completed",
+          "description_2": "Browse Recent Jobs",
+          "url": "https://www.palmydecksandfences.co.nz/quote/covered-decks#work"
+        },
+        {
+          "text": "Fully Insured",
+          "description_1": "10+ Years Experience",
+          "description_2": "Whoever Quotes, Builds",
+          "url": "https://www.palmydecksandfences.co.nz/quote/covered-decks#why-us"
+        },
+        {
+          "text": "How It Works",
+          "description_1": "Quote, Build, Clean Up",
+          "description_2": "Old Materials Removed",
+          "url": "https://www.palmydecksandfences.co.nz/quote/covered-decks#how-it-works"
+        },
+        {
+          "text": "Service Areas",
+          "description_1": "Palmy & Manawat\u016b Wide",
+          "description_2": "Feilding To Levin",
+          "url": "https://www.palmydecksandfences.co.nz/quote/covered-decks#service-area"
+        }
+      ]
+    }
+  ],
+  "callouts": [
+    "Free On-Site Quotes",
+    "Written Quote In 48 Hours",
+    "Fixed Price In Writing",
+    "Fully Insured",
+    "100+ Projects Completed",
+    "10+ Years Experience"
+  ],
+  "structured_snippets": {
+    "header": "Service Catalog",
+    "values": [
+      "Decks",
+      "Fences",
+      "Pergolas",
+      "Pool Fencing",
+      "Covered Decks",
+      "Timber Fences",
+      "Colorbond Fences"
+    ]
+  }
+}

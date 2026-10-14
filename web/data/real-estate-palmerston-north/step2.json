@@ -1,0 +1,35 @@
+{
+  "project_id": "real-estate-palmerston-north",
+  "step": "step2",
+  "label": "Real Estate Agent - Palmerston North",
+  "group_label": "Location",
+  "rows": [
+    {
+      "group": "palmerston north",
+      "keyword": "real estate agent palmerston north",
+      "avg_monthly_searches": 90,
+      "competition": "MEDIUM",
+      "low_bid": 2.67,
+      "high_bid": 11.54,
+      "note": ""
+    },
+    {
+      "group": "palmerston north",
+      "keyword": "property valuation palmerston north",
+      "avg_monthly_searches": 20,
+      "competition": "HIGH",
+      "low_bid": 2.62,
+      "high_bid": 7.86,
+      "note": ""
+    },
+    {
+      "group": "palmerston north",
+      "keyword": "house valuation palmerston north",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 3.86,
+      "high_bid": 9.4,
+      "note": ""
+    }
+  ]
+}

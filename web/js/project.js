@@ -91,11 +91,62 @@ async function init() {
 
     document.getElementById("reset-btn").onclick = () => view.resetExclusions();
     document.getElementById("export-btn").onclick = () => view.exportCSV();
-    document.getElementById("approve-btn").onclick = (e) => view.submitApproval(e.target, "tell Claude you're ready and it'll pick this up");
+    const copyBtn = document.getElementById("copy-btn");
+    copyBtn.hidden = typeof view.copyKeywords !== "function";
+    copyBtn.onclick = () => view.copyKeywords(copyBtn);
+    document.getElementById("approve-btn").onclick = (e) => view.submitApproval(e.target, "the next step is queued");
+  }
+
+  document.getElementById("changes-btn").onclick = () => {
+    const panel = document.getElementById("changes-panel");
+    panel.hidden = !panel.hidden;
+  };
+  document.getElementById("changes-send").onclick = async (e) => {
+    const note = document.getElementById("changes-note").value.trim();
+    const statusMsg = document.getElementById("status-msg");
+    if (!note) return;
+    e.target.disabled = true;
+    try {
+      const r = await fetch("/api/request-changes", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ project_id: project.id, step: activeStep, note }),
+      });
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      statusMsg.textContent = "Change request sent.";
+      statusMsg.className = "status-msg ok";
+      document.getElementById("changes-note").value = "";
+      document.getElementById("changes-panel").hidden = true;
+    } catch (err) {
+      statusMsg.textContent = "Couldn't send changes: " + err.message;
+      statusMsg.className = "status-msg err";
+    }
+    statusMsg.hidden = false;
+    e.target.disabled = false;
+    showJobs();
+  };
+
+  async function showJobs() {
+    const el = document.getElementById("job-msg");
+    try {
+      const r = await fetch(`/api/jobs?project_id=${encodeURIComponent(project.id)}&limit=1`);
+      if (!r.ok) return;
+      const [job] = await r.json();
+      if (!job || job.status === "done") { el.hidden = true; return; }
+      const text = {
+        queued: "Queued", running: "Running",
+        blocked: job.error || "Waiting on you", failed: "Failed: " + (job.error || "").split("\n")[0],
+      }[job.status] || job.status;
+      el.textContent = `Latest job (${job.step}): ${text}`;
+      el.className = "status-msg " + (job.status === "failed" ? "err" : "ok");
+      el.hidden = false;
+    } catch (e) { /* old local server has no jobs API */ }
   }
 
   renderTabs();
   renderContent();
+  showJobs();
+  setInterval(showJobs, 5000);
 }
 
 init();

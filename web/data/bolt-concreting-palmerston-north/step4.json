@@ -1,0 +1,733 @@
+{
+  "project_id": "bolt-concreting-palmerston-north",
+  "step": "step4",
+  "label": "Bolt Concreting - Palmerston North (rebuild)",
+  "ad_groups": [
+    {
+      "name": "Driveway Replacement",
+      "final_url": "https://www.palmerstonnorthconcreting.co.nz/quote/driveway",
+      "headlines_pinned": [
+        "Driveway Replacement",
+        "Replace Concrete Driveway",
+        "New Concrete Driveway"
+      ],
+      "headlines_benefit": [
+        "12+ Years Experience",
+        "200+ Projects Completed",
+        "Free On-Site Quotes",
+        "Quote Within 48 Hours",
+        "One Firm Price In Writing",
+        "No Surprise Extras",
+        "Owner Does The Work",
+        "Falls Set To Drain Away",
+        "Old Driveway Carted Away",
+        "Workmanship Guaranteed",
+        "5-Star Rated On Facebook",
+        "We Pour New Concrete"
+      ],
+      "descriptions": [
+        "Concrete driveway replacement in Palmerston North. Old surface broken out and carted away.",
+        "Replace driveway with new concrete. Free on-site quote, firm written price in 48 hours.",
+        "New driveway poured by the owner, not a subcontracted crew. 12+ years laying concrete.",
+        "Replace driveway the right way: correct base, mesh and falls. Workmanship guaranteed."
+      ],
+      "paths": [
+        "Driveways",
+        "Replacement"
+      ]
+    },
+    {
+      "name": "Driveway Contractors",
+      "final_url": "https://www.palmerstonnorthconcreting.co.nz/quote/driveway",
+      "headlines_pinned": [
+        "Concrete Driveway Contractors",
+        "Driveway Contractors Near Me",
+        "Concrete Driveway Installers"
+      ],
+      "headlines_benefit": [
+        "12+ Years Experience",
+        "200+ Projects Completed",
+        "Free On-Site Quotes",
+        "Quote Within 48 Hours",
+        "One Firm Price In Writing",
+        "No Surprise Extras",
+        "Owner Does The Work",
+        "Old Surface Carted Away",
+        "Falls Set To Drain Away",
+        "Workmanship Guaranteed",
+        "5-Star Rated On Facebook",
+        "We Pour New Concrete"
+      ],
+      "descriptions": [
+        "Concrete driveway contractors in Palmerston North. Free on-site quote, price in 48 hours.",
+        "Driveway contractors near me: plain, coloured and exposed aggregate. One firm price.",
+        "Concrete driveway installers with 200+ projects completed. The owner does the work.",
+        "New concrete driveway installation done properly. 5-star rated on Facebook."
+      ],
+      "paths": [
+        "Driveways",
+        "Palmerston-Nth"
+      ]
+    },
+    {
+      "name": "Concrete Patios",
+      "final_url": "https://www.palmerstonnorthconcreting.co.nz/quote/concrete-patios",
+      "headlines_pinned": [
+        "Concrete Patio Contractors",
+        "Concrete Patio Near Me",
+        "Concrete Patio Installers"
+      ],
+      "headlines_benefit": [
+        "12+ Years Experience",
+        "200+ Projects Completed",
+        "Free On-Site Quotes",
+        "Quote Within 48 Hours",
+        "One Firm Price In Writing",
+        "No Surprise Extras",
+        "Owner Does The Work",
+        "Joins Your Existing Concrete",
+        "Levels And Falls Set Right",
+        "Workmanship Guaranteed",
+        "5-Star Rated On Facebook",
+        "We Pour New Concrete"
+      ],
+      "descriptions": [
+        "Concrete patio contractors in Palmerston North. Free on-site quote, price in 48 hours.",
+        "Concrete patio installers near me. Broom, coloured or exposed aggregate finishes.",
+        "New concrete patio installation joined cleanly to your house. One firm price in writing.",
+        "Concrete patio installation by the owner, not a subcontracted crew. 200+ projects."
+      ],
+      "paths": [
+        "Patios",
+        "Palmerston-Nth"
+      ]
+    },
+    {
+      "name": "Concrete Paths",
+      "final_url": "https://www.palmerstonnorthconcreting.co.nz/quote/concrete-paths",
+      "headlines_pinned": [
+        "Concrete Path Installation",
+        "Concrete Path Palmerston North",
+        "Concrete Pathway Installation"
+      ],
+      "headlines_benefit": [
+        "12+ Years Experience",
+        "200+ Projects Completed",
+        "Free On-Site Quotes",
+        "Quote Within 48 Hours",
+        "One Firm Price In Writing",
+        "No Surprise Extras",
+        "Owner Does The Work",
+        "Old Path Carted Away",
+        "Safe Grip Broom Finish",
+        "Workmanship Guaranteed",
+        "5-Star Rated On Facebook",
+        "We Pour New Concrete"
+      ],
+      "descriptions": [
+        "Concrete path installation in Palmerston North. Free on-site quote, price in 48 hours.",
+        "Concrete pathway installation that drains properly through wet Manawat\u016b winters.",
+        "Concrete path installation by the owner. One firm price in writing, no surprise extras.",
+        "Concrete paths Palmerston North: neat edges, correct falls. Workmanship guaranteed."
+      ],
+      "paths": [
+        "Concrete-Paths",
+        "Palmerston-Nth"
+      ]
+    },
+    {
+      "name": "Concrete Slabs & Pads",
+      "final_url": "https://www.palmerstonnorthconcreting.co.nz/quote/concrete-slabs",
+      "headlines_pinned": [
+        "Concrete Slab Contractors",
+        "Concrete Slab Installation",
+        "Concrete Pad Contractors"
+      ],
+      "headlines_benefit": [
+        "12+ Years Experience",
+        "200+ Projects Completed",
+        "Free On-Site Quotes",
+        "Quote Within 48 Hours",
+        "One Firm Price In Writing",
+        "No Surprise Extras",
+        "Owner Does The Work",
+        "Sub-Base Done Properly",
+        "Correct Mesh And Thickness",
+        "Workmanship Guaranteed",
+        "5-Star Rated On Facebook",
+        "We Pour New Concrete"
+      ],
+      "descriptions": [
+        "Concrete slab contractors in Palmerston North. Free on-site quote, price in 48 hours.",
+        "Concrete slab installation for sheds, garages and sleepouts. One firm price in writing.",
+        "Concrete pad contractors near me. Boxed, meshed and poured by the owner.",
+        "Concrete slab installation on a proper base. 200+ projects completed, 12+ years."
+      ],
+      "paths": [
+        "Concrete-Slabs",
+        "Palmerston-Nth"
+      ]
+    },
+    {
+      "name": "Concrete Floors",
+      "final_url": "https://www.palmerstonnorthconcreting.co.nz/quote/concrete-floors",
+      "headlines_pinned": [
+        "Concrete Floor Contractors",
+        "Concrete Floor Installation",
+        "Floor Contractors Near Me"
+      ],
+      "headlines_benefit": [
+        "12+ Years Experience",
+        "200+ Projects Completed",
+        "Free On-Site Quotes",
+        "Quote Within 48 Hours",
+        "One Firm Price In Writing",
+        "No Surprise Extras",
+        "Owner Does The Work",
+        "Sub-Base Done Properly",
+        "Level, Even Slab Finish",
+        "Workmanship Guaranteed",
+        "5-Star Rated On Facebook",
+        "We Pour New Concrete"
+      ],
+      "descriptions": [
+        "Concrete floor contractors in Palmerston North. Free on-site quote, price in 48 hours.",
+        "Concrete floor installation for garages, sheds and workshops. One firm written price.",
+        "Concrete floor contractors near me: new floors poured and finished by the owner.",
+        "Concrete floor installation on a proper base. 12+ years experience, guaranteed."
+      ],
+      "paths": [
+        "Concrete-Floors",
+        "Palmerston-Nth"
+      ]
+    },
+    {
+      "name": "Concrete Layers & Placers",
+      "final_url": "https://www.palmerstonnorthconcreting.co.nz/quote/concrete-contractor",
+      "headlines_pinned": [
+        "Concrete Layers Near Me",
+        "Concrete Placers",
+        "Concrete Finishers Near Me"
+      ],
+      "headlines_benefit": [
+        "12+ Years Experience",
+        "200+ Projects Completed",
+        "Free On-Site Quotes",
+        "Quote Within 48 Hours",
+        "One Firm Price In Writing",
+        "No Surprise Extras",
+        "Owner Does The Work",
+        "Crisp Edges, Clean Site",
+        "Boxed, Meshed And Poured",
+        "Workmanship Guaranteed",
+        "5-Star Rated On Facebook",
+        "We Pour New Concrete"
+      ],
+      "descriptions": [
+        "Concrete layers near me in Palmerston North. Free on-site quote, price in 48 hours.",
+        "Concrete placers and finishers for driveways, paths, patios and slabs. One firm price.",
+        "Concrete finishers near me. The person who quotes your job pours and finishes it.",
+        "Local concrete layers with 200+ projects completed. Workmanship guaranteed."
+      ],
+      "paths": [
+        "Concrete-Layers",
+        "Palmerston-Nth"
+      ]
+    },
+    {
+      "name": "Concreters Palmerston North",
+      "final_url": "https://www.palmerstonnorthconcreting.co.nz/quote/concrete-contractor",
+      "headlines_pinned": [
+        "Concrete Palmerston North",
+        "Concrete Contractors Palmy",
+        "Concrete Feilding"
+      ],
+      "headlines_benefit": [
+        "12+ Years Experience",
+        "200+ Projects Completed",
+        "Free On-Site Quotes",
+        "Quote Within 48 Hours",
+        "One Firm Price In Writing",
+        "No Surprise Extras",
+        "Owner Does The Work",
+        "Feilding And Manawat\u016b Too",
+        "Palmerston North Concrete Pros",
+        "Workmanship Guaranteed",
+        "5-Star Rated On Facebook",
+        "We Pour New Concrete"
+      ],
+      "descriptions": [
+        "Concrete Palmerston North: driveways, paths, patios and slabs. Free on-site quote.",
+        "Concrete contractors Palmerston North, 12+ years experience. Price within 48 hours.",
+        "Concrete Feilding and Manawat\u016b. The owner quotes it and does the work. One firm price.",
+        "Concrete services Palmerston North: 200+ projects completed, 5-star rated on Facebook."
+      ],
+      "paths": [
+        "Concrete",
+        "Palmerston-Nth"
+      ]
+    },
+    {
+      "name": "Concrete Contractors",
+      "final_url": "https://www.palmerstonnorthconcreting.co.nz/quote/concrete-contractor",
+      "headlines_pinned": [
+        "Concrete Contractors Near Me",
+        "Concrete Company Near Me",
+        "Concreters Near Me"
+      ],
+      "headlines_benefit": [
+        "12+ Years Experience",
+        "200+ Projects Completed",
+        "Free On-Site Quotes",
+        "Quote Within 48 Hours",
+        "One Firm Price In Writing",
+        "No Surprise Extras",
+        "Owner Does The Work",
+        "Boutique Local Team",
+        "Driveways, Paths & Patios",
+        "Workmanship Guaranteed",
+        "5-Star Rated On Facebook",
+        "We Pour New Concrete"
+      ],
+      "descriptions": [
+        "Concrete contractors near me in Palmerston North. Free on-site quote, price in 48 hours.",
+        "Concrete company near me: driveways, paths, patios and slabs. One firm written price.",
+        "Concreters near me who turn up and do the job properly. 5-star rated on Facebook.",
+        "Concrete contractors with 12+ years experience. New concrete only, no repairs."
+      ],
+      "paths": [
+        "Concrete",
+        "Contractors"
+      ]
+    },
+    {
+      "name": "Exposed Aggregate",
+      "final_url": "https://www.palmerstonnorthconcreting.co.nz/quote/driveway",
+      "headlines_pinned": [
+        "Exposed Aggregate Driveways",
+        "Aggregate Concrete Driveway",
+        "Exposed Aggregate Patio"
+      ],
+      "headlines_benefit": [
+        "12+ Years Experience",
+        "200+ Projects Completed",
+        "Free On-Site Quotes",
+        "Quote Within 48 Hours",
+        "One Firm Price In Writing",
+        "No Surprise Extras",
+        "Owner Does The Work",
+        "Sharp, Low-Maintenance Look",
+        "Exposed Aggregate Finish",
+        "Workmanship Guaranteed",
+        "5-Star Rated On Facebook",
+        "We Pour New Concrete"
+      ],
+      "descriptions": [
+        "Exposed aggregate driveways in Palmerston North. Free on-site quote, price in 48 hours.",
+        "Exposed aggregate patio and path finishes that hide marks. One firm written price.",
+        "Aggregate concrete driveway poured and finished by the owner. 200+ projects completed.",
+        "Exposed aggregate driveway installers with 12+ years experience. Workmanship guaranteed."
+      ],
+      "paths": [
+        "Aggregate",
+        "Driveways"
+      ]
+    },
+    {
+      "name": "Coloured Concrete",
+      "final_url": "https://www.palmerstonnorthconcreting.co.nz/quote/driveway",
+      "headlines_pinned": [
+        "Coloured Concrete Driveways",
+        "Coloured Concrete Patio",
+        "Coloured Driveways"
+      ],
+      "headlines_benefit": [
+        "12+ Years Experience",
+        "200+ Projects Completed",
+        "Free On-Site Quotes",
+        "Quote Within 48 Hours",
+        "One Firm Price In Writing",
+        "No Surprise Extras",
+        "Owner Does The Work",
+        "Samples Shown At Quote",
+        "Coloured Concrete Options",
+        "Workmanship Guaranteed",
+        "5-Star Rated On Facebook",
+        "We Pour New Concrete"
+      ],
+      "descriptions": [
+        "Coloured concrete driveways in Palmerston North. Free on-site quote, price in 48 hours.",
+        "Coloured concrete patio and path options. We show you examples at the on-site quote.",
+        "Coloured driveways poured and finished by the owner. One firm price in writing.",
+        "Coloured concrete driveway installers. 200+ projects completed, 5-star rated."
+      ],
+      "paths": [
+        "Coloured",
+        "Concrete"
+      ]
+    },
+    {
+      "name": "Foundations",
+      "final_url": "https://www.palmerstonnorthconcreting.co.nz/quote/concrete-slabs",
+      "headlines_pinned": [
+        "Concrete Foundations",
+        "Concrete Foundations Near Me",
+        "Concrete Slab Foundation"
+      ],
+      "headlines_benefit": [
+        "12+ Years Experience",
+        "200+ Projects Completed",
+        "Free On-Site Quotes",
+        "Quote Within 48 Hours",
+        "One Firm Price In Writing",
+        "No Surprise Extras",
+        "Owner Does The Work",
+        "Correct Mesh And Thickness",
+        "Sub-Base Done Properly",
+        "Workmanship Guaranteed",
+        "5-Star Rated On Facebook",
+        "We Pour New Concrete"
+      ],
+      "descriptions": [
+        "Concrete foundations in Palmerston North. Free on-site quote, firm price in 48 hours.",
+        "Concrete foundations near me: formed, meshed and poured by the owner. 12+ years.",
+        "Concrete slab foundation work with a firm written price. No surprise extras.",
+        "Concrete foundation contractors with 200+ projects completed. Guaranteed."
+      ],
+      "paths": [
+        "Foundations",
+        "Palmerston-Nth"
+      ]
+    },
+    {
+      "name": "Carports & Garage Slabs",
+      "final_url": "https://www.palmerstonnorthconcreting.co.nz/quote/concrete-slabs",
+      "headlines_pinned": [
+        "Concrete Carport Slab",
+        "Concrete Carport",
+        "Concrete Slab For Garage"
+      ],
+      "headlines_benefit": [
+        "12+ Years Experience",
+        "200+ Projects Completed",
+        "Free On-Site Quotes",
+        "Quote Within 48 Hours",
+        "One Firm Price In Writing",
+        "No Surprise Extras",
+        "Owner Does The Work",
+        "Sub-Base Done Properly",
+        "Garage And Carport Slabs",
+        "Workmanship Guaranteed",
+        "5-Star Rated On Facebook",
+        "We Pour New Concrete"
+      ],
+      "descriptions": [
+        "Concrete carport slab in Palmerston North. Free on-site quote, price in 48 hours.",
+        "Concrete slab for garage: boxed, meshed and poured properly. One firm written price.",
+        "Concrete carport slabs poured by the owner, not a subcontracted crew. 12+ years.",
+        "Concrete carport and garage slab work. 200+ projects completed, workmanship guaranteed."
+      ],
+      "paths": [
+        "Carport-Slabs",
+        "Palmerston-Nth"
+      ]
+    },
+    {
+      "name": "Concrete Steps",
+      "final_url": "https://www.palmerstonnorthconcreting.co.nz/quote/concrete-steps",
+      "headlines_pinned": [
+        "Concrete Garden Steps",
+        "Concrete Outdoor Steps",
+        "Concrete Path Steps"
+      ],
+      "headlines_benefit": [
+        "12+ Years Experience",
+        "200+ Projects Completed",
+        "Free On-Site Quotes",
+        "Quote Within 48 Hours",
+        "One Firm Price In Writing",
+        "No Surprise Extras",
+        "Owner Does The Work",
+        "Formed And Finished By Hand",
+        "Even Rises, Crisp Edges",
+        "Workmanship Guaranteed",
+        "5-Star Rated On Facebook",
+        "We Pour New Concrete"
+      ],
+      "descriptions": [
+        "Concrete garden steps in Palmerston North. Free on-site quote, price in 48 hours.",
+        "Concrete outdoor steps with even rises and a safe, grippy finish. One firm written price.",
+        "Concrete path steps formed and finished by hand by the owner. 200+ projects completed.",
+        "Concrete garden steps built to join your existing path or patio. Workmanship guaranteed."
+      ],
+      "paths": [
+        "Concrete-Steps",
+        "Palmerston-Nth"
+      ]
+    },
+    {
+      "name": "Driveway Costs",
+      "final_url": "https://www.palmerstonnorthconcreting.co.nz/quote/driveway",
+      "headlines_pinned": [
+        "Get A Price For Your Driveway",
+        "Need A Price For A Driveway?",
+        "Get Your Driveway Priced"
+      ],
+      "headlines_benefit": [
+        "12+ Years Experience",
+        "200+ Projects Completed",
+        "Free On-Site Quotes",
+        "Quote Within 48 Hours",
+        "One Firm Price In Writing",
+        "No Surprise Extras",
+        "Owner Does The Work",
+        "No Subcontracted Crews",
+        "Priced By Size And Finish",
+        "Workmanship Guaranteed",
+        "5-Star Rated On Facebook",
+        "We Pour New Concrete"
+      ],
+      "descriptions": [
+        "Concrete driveway cost depends on size, base and finish. We price yours on site, free.",
+        "How much does a concrete driveway cost? Get a firm written price within 48 hours.",
+        "Concrete driveway cost per m2 varies with access and finish. One firm price, no extras.",
+        "Cost of a concrete driveway in Palmerston North, in writing. 200+ projects completed."
+      ],
+      "paths": [
+        "Driveway",
+        "Cost"
+      ]
+    },
+    {
+      "name": "Driveway Replacement Costs",
+      "final_url": "https://www.palmerstonnorthconcreting.co.nz/quote/driveway",
+      "headlines_pinned": [
+        "Price To Replace A Driveway",
+        "Need Your Driveway Replaced?",
+        "Replacement Driveway Price"
+      ],
+      "headlines_benefit": [
+        "12+ Years Experience",
+        "200+ Projects Completed",
+        "Free On-Site Quotes",
+        "Quote Within 48 Hours",
+        "One Firm Price In Writing",
+        "No Surprise Extras",
+        "Owner Does The Work",
+        "No Subcontracted Crews",
+        "Old Driveway Carted Away",
+        "Workmanship Guaranteed",
+        "5-Star Rated On Facebook",
+        "We Pour New Concrete"
+      ],
+      "descriptions": [
+        "Cost to replace driveway concrete includes breaking out and cartage. Priced on site.",
+        "Concrete driveway replacement cost in writing, free and with no obligation.",
+        "Cost to replace a driveway depends on size and access. Firm price within 48 hours.",
+        "Driveway replacement cost for Palmerston North homes. One firm price, no surprise extras."
+      ],
+      "paths": [
+        "Driveway",
+        "Replace-Cost"
+      ]
+    },
+    {
+      "name": "Exposed Aggregate Costs",
+      "final_url": "https://www.palmerstonnorthconcreting.co.nz/quote/driveway",
+      "headlines_pinned": [
+        "Get An Exposed Aggregate Price",
+        "Aggregate Driveway Price?",
+        "Get Your Aggregate Priced"
+      ],
+      "headlines_benefit": [
+        "12+ Years Experience",
+        "200+ Projects Completed",
+        "Free On-Site Quotes",
+        "Quote Within 48 Hours",
+        "One Firm Price In Writing",
+        "No Surprise Extras",
+        "Owner Does The Work",
+        "No Subcontracted Crews",
+        "Exposed Aggregate Finish",
+        "Workmanship Guaranteed",
+        "5-Star Rated On Facebook",
+        "We Pour New Concrete"
+      ],
+      "descriptions": [
+        "Exposed aggregate driveway cost depends on size and finish. We price yours on site.",
+        "Cost of exposed aggregate concrete in writing within 48 hours. Free, no obligation.",
+        "Exposed aggregate driveway price in Palmerston North. One firm price, no extras.",
+        "Aggregate driveway cost from a builder with 200+ projects completed. Free quote."
+      ],
+      "paths": [
+        "Aggregate",
+        "Cost"
+      ]
+    },
+    {
+      "name": "Path Costs",
+      "final_url": "https://www.palmerstonnorthconcreting.co.nz/quote/concrete-paths",
+      "headlines_pinned": [
+        "Get A Price For Your Path",
+        "Need A Price For A Path?",
+        "Get Your Concrete Path Priced"
+      ],
+      "headlines_benefit": [
+        "12+ Years Experience",
+        "200+ Projects Completed",
+        "Free On-Site Quotes",
+        "Quote Within 48 Hours",
+        "One Firm Price In Writing",
+        "No Surprise Extras",
+        "Owner Does The Work",
+        "No Subcontracted Crews",
+        "Priced By Length And Width",
+        "Workmanship Guaranteed",
+        "5-Star Rated On Facebook",
+        "We Pour New Concrete"
+      ],
+      "descriptions": [
+        "Concrete path cost depends on length, width and access. We price yours on site, free.",
+        "Concrete path cost in Palmerston North, in writing within 48 hours.",
+        "Concrete pathway cost with one firm price and no surprise extras. Free on-site quote.",
+        "Cost of concrete path from a 5-star rated Palmy concreter. Get a firm written price."
+      ],
+      "paths": [
+        "Concrete-Path",
+        "Cost"
+      ]
+    },
+    {
+      "name": "Patio Costs",
+      "final_url": "https://www.palmerstonnorthconcreting.co.nz/quote/concrete-patios",
+      "headlines_pinned": [
+        "Get A Price For Your Patio",
+        "Need A Price For A Patio?",
+        "Get Your Concrete Patio Priced"
+      ],
+      "headlines_benefit": [
+        "12+ Years Experience",
+        "200+ Projects Completed",
+        "Free On-Site Quotes",
+        "Quote Within 48 Hours",
+        "One Firm Price In Writing",
+        "No Surprise Extras",
+        "Owner Does The Work",
+        "No Subcontracted Crews",
+        "Priced By Size And Finish",
+        "Workmanship Guaranteed",
+        "5-Star Rated On Facebook",
+        "We Pour New Concrete"
+      ],
+      "descriptions": [
+        "Concrete patio cost depends on size, access and finish. We price yours on site, free.",
+        "Cost of a concrete patio in Palmerston North, in writing within 48 hours.",
+        "Concrete patio cost with one firm price and no surprise extras. Free on-site quote.",
+        "Cost to concrete a patio from a builder with 200+ projects completed. No obligation."
+      ],
+      "paths": [
+        "Concrete-Patio",
+        "Cost"
+      ]
+    },
+    {
+      "name": "Slab & Pad Costs",
+      "final_url": "https://www.palmerstonnorthconcreting.co.nz/quote/concrete-slabs",
+      "headlines_pinned": [
+        "Get A Price For Your Slab",
+        "Need A Price For A Slab?",
+        "Get Your Concrete Pad Priced"
+      ],
+      "headlines_benefit": [
+        "12+ Years Experience",
+        "200+ Projects Completed",
+        "Free On-Site Quotes",
+        "Quote Within 48 Hours",
+        "One Firm Price In Writing",
+        "No Surprise Extras",
+        "Owner Does The Work",
+        "No Subcontracted Crews",
+        "Priced By Size And Thickness",
+        "Workmanship Guaranteed",
+        "5-Star Rated On Facebook",
+        "We Pour New Concrete"
+      ],
+      "descriptions": [
+        "Concrete slab cost depends on size, thickness and access. We price yours on site, free.",
+        "Concrete pad cost for sheds, garages and sleepouts, in writing within 48 hours.",
+        "Cost of a concrete slab in Palmerston North with one firm price and no extras.",
+        "How much for a concrete slab? Free on-site quote from a 5-star rated Palmy concreter."
+      ],
+      "paths": [
+        "Concrete-Slab",
+        "Cost"
+      ]
+    },
+    {
+      "name": "Concrete Floor Costs",
+      "final_url": "https://www.palmerstonnorthconcreting.co.nz/quote/concrete-floors",
+      "headlines_pinned": [
+        "Get A Price For Your Floor",
+        "Need A Concrete Floor Price?",
+        "Get Your Floor Priced"
+      ],
+      "headlines_benefit": [
+        "12+ Years Experience",
+        "200+ Projects Completed",
+        "Free On-Site Quotes",
+        "Quote Within 48 Hours",
+        "One Firm Price In Writing",
+        "No Surprise Extras",
+        "Owner Does The Work",
+        "No Subcontracted Crews",
+        "Priced By Size And Thickness",
+        "Workmanship Guaranteed",
+        "5-Star Rated On Facebook",
+        "We Pour New Concrete"
+      ],
+      "descriptions": [
+        "Concrete floor cost depends on size, thickness and access. We price yours on site, free.",
+        "Concrete garage floor cost in writing within 48 hours. Free, no obligation.",
+        "Concrete floor slab cost with one firm price and no surprise extras. Palmerston North.",
+        "Concrete floor cost from a builder with 12+ years experience. Free on-site quote."
+      ],
+      "paths": [
+        "Concrete-Floor",
+        "Cost"
+      ]
+    },
+    {
+      "name": "Concrete Costs",
+      "final_url": "https://www.palmerstonnorthconcreting.co.nz/quote/concrete-contractor",
+      "headlines_pinned": [
+        "Get A Price For Your Concrete",
+        "Need A Concrete Price?",
+        "Get Your Concrete Job Priced"
+      ],
+      "headlines_benefit": [
+        "12+ Years Experience",
+        "200+ Projects Completed",
+        "Free On-Site Quotes",
+        "Quote Within 48 Hours",
+        "One Firm Price In Writing",
+        "No Surprise Extras",
+        "Owner Does The Work",
+        "No Subcontracted Crews",
+        "Priced By Size And Finish",
+        "Workmanship Guaranteed",
+        "5-Star Rated On Facebook",
+        "We Pour New Concrete"
+      ],
+      "descriptions": [
+        "Concrete cost per m2 depends on the job, base and finish. We price yours on site, free.",
+        "Concrete laying cost for driveways, paths, patios and slabs. Firm price in 48 hours.",
+        "Cost to pour concrete in Palmerston North, in writing. One firm price, no extras.",
+        "Concrete quote from the owner, not a subcontracted crew. 200+ projects completed."
+      ],
+      "paths": [
+        "Concrete",
+        "Cost"
+      ]
+    }
+  ]
+}

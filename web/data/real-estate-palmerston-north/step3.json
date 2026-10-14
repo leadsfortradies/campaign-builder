@@ -1,0 +1,4724 @@
+{
+  "project_id": "real-estate-palmerston-north",
+  "step": "step3",
+  "label": "Real Estate Agent - Palmerston North",
+  "group_label": "Campaign \u2014 Ad Group",
+  "rows": [
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "house appraisal",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "free house appraisal",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "property appraisal",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 2.17,
+      "high_bid": 19.84,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "home appraisal",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "home appraisers near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "real estate appraiser",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "free home appraisal",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "how to appraise a house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "real estate appraisers near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "house appraisal estimate",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "free property appraisal",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "home appraisal estimate",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "how to get my house appraised",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "appraisers",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "free appraisal real estate",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "market appraisal",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "free market appraisal",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "get house appraised",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "market appraisal for property",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "get an appraisal on my house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "home appraisal companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "appraisal services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "how can i get an appraisal on my house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "free house appraisal near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "get appraisal on home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "home appraisal estimates by address",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 1.49,
+      "high_bid": 5.04,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "get my home appraised",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "property appraisal estimate",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "estate appraisers",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "what is an appraisal on a house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "what is a home appraisal",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "real estate appraisal companies",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "real estate appraisal companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "how can i get my home appraised",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "home appraisal services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "home appraisal by address",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 1.49,
+      "high_bid": 5.04,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "the appraisal of real estate",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "what is a home appraisal based on",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "what is a house appraisal based on",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "house appraisal by address",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 1.49,
+      "high_bid": 5.04,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "real estate appraisal services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "sales appraisal",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "getting appraisal on house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "home property appraisal",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "house appraisal services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "free home value appraisal",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "property valuation appraisal",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "what is house appraisal based on",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "whats a home appraisal",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "real estate appraised value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "what is appraisal value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "having house appraised",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "whats an appraisal on a house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "calculate home appraisal",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "how much appraisal",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "what happens at a home appraisal",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "what happens at a house appraisal",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "what is an appraisal of a house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Appraisal",
+      "keyword": "what's a house appraisal",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "home appraisal websites",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "house appraisal website",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "house appraisal sites",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "online house valuation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "value my house online",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "online property valuation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "free online house valuation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "value my property online",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "online home appraisal",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "online home value estimator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "value my house online free",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "property value estimate online",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "online house appraisal",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "value my home online",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "free online property valuation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "value house online",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "house value estimate online",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "instant online property valuation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "how much is my house worth online",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "online valuation of my house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "online property appraisal estimate",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "value my home online free",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "property valuation estimate online",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "online valuation of my property",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "calculate house value online",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "home appraisal value online",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "how much my house worth online",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "property value website",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "home valuation sites",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "house valuation websites",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "house value website",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "real estate valuation websites",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "valuation website",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "property valuation website",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "house valuation sites",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "property valuation sites",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "house value sites",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "property value sites",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "real estate home value websites",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "best property valuation site",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "property price website",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "how much is my house worth calculator",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "how much is my home worth calculator",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Online Valuation Seekers (Priority 2)",
+      "keyword": "how much is your house worth calculator",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "property value",
+      "avg_monthly_searches": 90,
+      "competition": "LOW",
+      "low_bid": 0.18,
+      "high_bid": 11.81,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "house valuation",
+      "avg_monthly_searches": 20,
+      "competition": "MEDIUM",
+      "low_bid": 0.11,
+      "high_bid": 2.59,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "house value",
+      "avg_monthly_searches": 20,
+      "competition": "MEDIUM",
+      "low_bid": 0.11,
+      "high_bid": 2.59,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "property valuation palmerston north",
+      "avg_monthly_searches": 20,
+      "competition": "HIGH",
+      "low_bid": 2.62,
+      "high_bid": 7.86,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "free house valuation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "home valuation",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 4.33,
+      "high_bid": 9.39,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "home value estimator",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "value my house",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "value of my home",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "property value estimator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "house value estimator",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "value my property",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "what is the value of my home",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "free property valuation",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "real estate companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "property value check",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "what is the value of my house",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "property value search",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "free home valuation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "property value of my home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "estimated value of my home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "price my house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "check house value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "what's the value of my home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "market value of my house",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "get house valued",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "what's the value of my house",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "market value of my home",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "real estate valuation",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.25,
+      "high_bid": 5.14,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "property price estimate",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "house price valuation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "check my house value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "estimate my house value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "free property value estimate",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "current value of my home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "what is the market value of my home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "get a house valuation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "find the value of my home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "real estate property value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "property estimate",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "how do i find the value of my home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "check my home value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "check my property value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "property price check",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "what is the value of my property",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "find my house value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "market value of property",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "how do i find out the value of my home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "how to find the value of my home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "how to find home value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "house market value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "get my property valued",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "valuation of my house",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "find property value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "find house value",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "house valuation near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "estimate my property value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "get property valuation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "house pricing",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "current property value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "find my property value",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "current house value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "current value of my house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "what is the current value of my home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "realestate valuation",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.25,
+      "high_bid": 5.14,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "what's my property value",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "value my home free",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "how much is the value of my house",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 1.37,
+      "high_bid": 4.3,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "get a valuation on my house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "home valuation estimate",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "how can i find out the value of my home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "check your home value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "what is the price of my house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "current market value of my home",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "house valuation estimate",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "real estate value of my home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "house property value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "look up house value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "house price value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "how to value my home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "find out the value of my home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "how do i find out the value of my house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "what is the value of my house today",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "property valuation services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "what is the market value of my house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "property valuation estimate",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "check price of house",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "home property value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "how much is my house valued at",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "price estimate house",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "calculate house value",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "get the value of my home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "my home valuation",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "calculate property value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "find out house value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "what is the current value of my house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "how to find out home value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "get a home valuation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "check house valuation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "real estate house value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "home value of my home",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "free value my house",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "free property value",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "what's the value of my house now",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "my property valuation",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "get property valued",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "house price evaluator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "find out my house value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "land value of my property",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "market value of my property",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "check market value of house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "current market value of my house",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "residential property valuation",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "free house value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "find your property value",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "what's the price of my house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "how can i find out the value of my house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "how much is my property value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "house value finder",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "what's the market value of my home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "house value of my house",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "price of homes",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "property price valuation",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "how much is my home value",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 1.37,
+      "high_bid": 4.3,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "how to get home value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "how to get house valuation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "property value finder",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "how to find the estimated value of my home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "value our house",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "my property value estimate",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "free instant property valuation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "home property value estimator",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "my property price",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "current house valuation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "how do i get the value of my home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "what's the market value of my house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "determine house value",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "value of property estimate",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "home valuation near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "how to find out your property value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "what is the house value of my property",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "house value search",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "real estate home values",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "current market value of my property",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "property valuation company",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "real estate property valuation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "what is the home value of my home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "property valuations near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "how can i get the value of my home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "value of my house free",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "property pricing",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "valuator near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "what is my home value today",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "free property estimate",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "approximate value of my house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "what is my home value now",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "property price predictor",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "the price of my house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "see house value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "how do i estimate my home value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "check house value free",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "what is the value of my house now",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "what is my property valued at",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "current estimated value of my home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "house market valuation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "value property estimate",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "real estate home valuation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "how can i get a valuation on my house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "current valuation of property",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "valuation on a property",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "house market value estimator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "free valuation of my home",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "find the property value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "check property valuation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "value estimate property",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "market price for house",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "what's the current value of my house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "property valuation for buyers",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "find my property valuation",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "property iq valuation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "current market value of house",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "what is the valuation of my house",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "house valuation service",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "valuation of your house",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "property market valuation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "find house valuation",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "estimated property value of my home",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "house resale value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "what is your home value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "home price evaluation",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "capital value of property",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "rateable value of my house",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "property price finder",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "real estate house valuation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "value of residential property",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "property market price",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "current home valuation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "what is the value of a property",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "house sales value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "property price value",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "real estates agencies near me",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "net value of property",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "find current property value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "what is the value of the house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "home property valuation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "free value of my house",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "current property value of my home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "our house value",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "know my property value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "property selling prices",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "property valuation api",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "how to find house valuation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "property value address",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 1.53,
+      "high_bid": 4.81,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "sale prices of houses",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "property valuation search",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "real estate property prices",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "house cv value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "cv property value",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "home valuation companies",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "property cv value",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "govt value of property",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "velocity house valuation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "cv house value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "calculate valuation of property",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "what is home valuation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "what is property market value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "what is the house value in my area",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "what is your property value",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Property Valuation",
+      "keyword": "house valuation palmerston north",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 3.86,
+      "high_bid": 9.4,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "real estate agent palmerston north",
+      "avg_monthly_searches": 90,
+      "competition": "MEDIUM",
+      "low_bid": 2.67,
+      "high_bid": 11.53,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "real estate agent near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "best real estate agent near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "sell my house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "sell my home",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "realtors near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "estate agents near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "sell house",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "sell your house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "i want to sell my house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "sell your home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "sell house as is",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "sale my house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "best realtor near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "sale my home",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "best way to sell your house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "want to sell my house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "i want to sell my home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "local real estate agents",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "realtors in my area",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "sell house now",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "real estate brokers near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "realtor to sell my house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "i want to sell my house where do i start",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "best way to sell my house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "property agents near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "best way to sell your home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "good realtors near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "need to sell my house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "trying to sell my house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "i want to sale my house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "realty companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "real estate agents in my area",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "best way to sell home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "best way to sell my home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "top rated real estate agents near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "realtor agents near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "want to sell my home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "need to sale my house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "real estate agent to sell my house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "want to sale my house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "best selling real estate agents near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "house agent near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "local real estate companies",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "top selling real estate agents in my area",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "good real estate agents near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "house brokers near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "agent to sell my house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "land agents near me",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "i sold my house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "realty agents near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "real estate brokers in my area",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "sold my house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "buy sell house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "near me real estate agents",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "estate brokers near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "i sell my house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "real estate agents in near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "sell house and rent",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "need to sell my house quick",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "sell home and rent",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "realtor estate agent near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "realtor estate near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "realtors in near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "local realtor agents",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 Real Estate Agent",
+      "keyword": "someone that sells houses",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "whats my house worth",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how much is my house worth",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 1.37,
+      "high_bid": 4.3,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "what is my house worth",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how much is my home worth",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "what is my home worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "what's my home worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how much is my property worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "what is my property worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "what's my property worth",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how much is your house worth",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how to find out how much your house is worth",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how much is house worth",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 1.37,
+      "high_bid": 4.3,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "what is my house worth now",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how do i know how much my house is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "see how much my house is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how much is my house worth instant",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how much is my house worth today",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how much is my house worth now",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how do i find out what my house is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how much is your home worth",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how to see how much your house is worth",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how much does my house worth",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 1.37,
+      "high_bid": 4.3,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "what is your house worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how to know how much your house is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how can i find out what my house is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how much is home worth",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "what is your home worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how to find out how much a house is worth",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how to find out how much my home is worth",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how to know how much my house is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "what's my house worth now",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "what's your house worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how do i find out what my home is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "what is my house worth today",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "what's your home worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how much is my house worth instant valuation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "what's my house worth today",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how much is your property worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how to find out how much your home is worth",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how to find how much your house is worth",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how do i know how much my home is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how much does my property worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "property worth estimate",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how to tell how much your house is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how do you know how much your house is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how much is my home worth now",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how do i find out what my property is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "house worth checker",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how much is my house worth right now",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how to find out how much a property is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how to see what my house is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how can i find out what my home is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "what is my home worth today",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how can i tell how much my house is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how to check how much a house is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how to find out how much my property is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how much is my home worth today",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how to find out how much your property is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how do you find out what your house is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how much is my house worth estimate",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how much is my home really worth",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how much rent is my house worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how to tell how much my house is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "my property worth",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how to figure out how much your house is worth",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "what is my home worth now",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how much is my home worth right now",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how much is my house worth free",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how much is my house and property worth",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "what is my home worth right now",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "what is your property worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how to find out what your property is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "what is my house worth right now",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how can i know how much my house is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "whats house worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how to find what my house is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how to know how much your home is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how to find what your house is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how to find out how much a home is worth",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "find what my house is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how m7ch is my house worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "what is my home value worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how much would my house be worth",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how do i find what my house is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how can you tell how much your house is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how to know how much my home is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "what's my home worth today",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how to find how much a house is worth",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "what are houses worth in my area",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how do you know how much your home is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how much is my house worth without signing up",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "what is my house and property worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how much is my home worth free",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how do you find out what your home is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "what is my home currently worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how to determine how much your house is worth",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "what is my property value worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how do i know how much a house is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how to find what your home is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how to find out what a home is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how do you know how much a house is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "find out what your property is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "whats property worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how much will my property be worth in 10 years",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how can i find what my house is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how do i find what my home is worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "what price is my house worth",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how much is much is my house worth",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 1.37,
+      "high_bid": 4.3,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how muchis my home worth",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Bottom of Funnel \u2014 What's My Property Worth",
+      "keyword": "how much is your house worth now",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Appraisal Cost",
+      "keyword": "home appraisal cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Appraisal Cost",
+      "keyword": "house appraisal cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Appraisal Cost",
+      "keyword": "house valuation cost",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Appraisal Cost",
+      "keyword": "how much is an appraisal",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Appraisal Cost",
+      "keyword": "property appraisal cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Appraisal Cost",
+      "keyword": "how much is a house appraisal",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Appraisal Cost",
+      "keyword": "property valuation cost",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Appraisal Cost",
+      "keyword": "real estate appraisal cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Appraisal Cost",
+      "keyword": "home valuation cost",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Appraisal Cost",
+      "keyword": "how much to get house valued",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Appraisal Cost",
+      "keyword": "how much is it to get your house valued",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Appraisal Cost",
+      "keyword": "how much should a home appraisal cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Appraisal Cost",
+      "keyword": "residential appraisal cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Appraisal Cost",
+      "keyword": "how much to get my house appraised",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Appraisal Cost",
+      "keyword": "cost to get house valued",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Appraisal Cost",
+      "keyword": "how much should a house appraisal cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    }
+  ]
+}

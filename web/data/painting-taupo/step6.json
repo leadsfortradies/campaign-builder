@@ -1,0 +1,187 @@
+{
+  "project_id": "painting-taupo",
+  "step": "step6",
+  "label": "Paint Aesthetics - Taupo",
+  "ad_groups": [
+    {
+      "name": "General House Painting",
+      "sitelinks": [
+        {
+          "text": "Free Measure & Quote",
+          "description_1": "100% Obligation Free",
+          "description_2": "Fixed Price In Writing",
+          "url": "https://taupopainters.co.nz/quote/painting#quote"
+        },
+        {
+          "text": "5-Star Rated",
+          "description_1": "9 Five-Star Reviews",
+          "description_2": "Trusted By Locals",
+          "url": "https://taupopainters.co.nz/quote/painting#reviews"
+        },
+        {
+          "text": "See Our Work",
+          "description_1": "100+ Projects Done",
+          "description_2": "Browse Our Gallery",
+          "url": "https://taupopainters.co.nz/quote/painting#work"
+        },
+        {
+          "text": "10 Years Experience",
+          "description_1": "Locally Owned & Run",
+          "description_2": "Quality Workmanship",
+          "url": "https://taupopainters.co.nz/quote/painting#why"
+        },
+        {
+          "text": "5 Year Guarantee",
+          "description_1": "Workmanship Guarantee",
+          "description_2": "Public Liability Insured",
+          "url": "https://taupopainters.co.nz/quote/painting#why"
+        },
+        {
+          "text": "Service Areas",
+          "description_1": "Taupo District Wide",
+          "description_2": "Free Measure & Quote",
+          "url": "https://taupopainters.co.nz/quote/painting#areas"
+        }
+      ]
+    },
+    {
+      "name": "Interior Painting",
+      "sitelinks": [
+        {
+          "text": "Free Measure & Quote",
+          "description_1": "100% Obligation Free",
+          "description_2": "Fixed Price In Writing",
+          "url": "https://taupopainters.co.nz/quote/interior-painting#quote"
+        },
+        {
+          "text": "5-Star Rated",
+          "description_1": "9 Five-Star Reviews",
+          "description_2": "Trusted By Locals",
+          "url": "https://taupopainters.co.nz/quote/interior-painting#reviews"
+        },
+        {
+          "text": "See Our Work",
+          "description_1": "100+ Projects Done",
+          "description_2": "Browse Our Gallery",
+          "url": "https://taupopainters.co.nz/quote/interior-painting#work"
+        },
+        {
+          "text": "10 Years Experience",
+          "description_1": "Locally Owned & Run",
+          "description_2": "Quality Workmanship",
+          "url": "https://taupopainters.co.nz/quote/interior-painting#why"
+        },
+        {
+          "text": "5 Year Guarantee",
+          "description_1": "Workmanship Guarantee",
+          "description_2": "Public Liability Insured",
+          "url": "https://taupopainters.co.nz/quote/interior-painting#why"
+        },
+        {
+          "text": "Service Areas",
+          "description_1": "Taupo District Wide",
+          "description_2": "Free Measure & Quote",
+          "url": "https://taupopainters.co.nz/quote/interior-painting#areas"
+        }
+      ]
+    },
+    {
+      "name": "Exterior Painting",
+      "sitelinks": [
+        {
+          "text": "Free Measure & Quote",
+          "description_1": "100% Obligation Free",
+          "description_2": "Fixed Price In Writing",
+          "url": "https://taupopainters.co.nz/quote/exterior-painting#quote"
+        },
+        {
+          "text": "5-Star Rated",
+          "description_1": "9 Five-Star Reviews",
+          "description_2": "Trusted By Locals",
+          "url": "https://taupopainters.co.nz/quote/exterior-painting#reviews"
+        },
+        {
+          "text": "See Our Work",
+          "description_1": "100+ Projects Done",
+          "description_2": "Browse Our Gallery",
+          "url": "https://taupopainters.co.nz/quote/exterior-painting#work"
+        },
+        {
+          "text": "10 Years Experience",
+          "description_1": "Locally Owned & Run",
+          "description_2": "Quality Workmanship",
+          "url": "https://taupopainters.co.nz/quote/exterior-painting#why"
+        },
+        {
+          "text": "5 Year Guarantee",
+          "description_1": "Workmanship Guarantee",
+          "description_2": "Public Liability Insured",
+          "url": "https://taupopainters.co.nz/quote/exterior-painting#why"
+        },
+        {
+          "text": "Service Areas",
+          "description_1": "Taupo District Wide",
+          "description_2": "Free Measure & Quote",
+          "url": "https://taupopainters.co.nz/quote/exterior-painting#areas"
+        }
+      ]
+    },
+    {
+      "name": "Deck Painting & Staining",
+      "sitelinks": [
+        {
+          "text": "Free Measure & Quote",
+          "description_1": "100% Obligation Free",
+          "description_2": "Fixed Price In Writing",
+          "url": "https://taupopainters.co.nz/quote/deck-painting#quote"
+        },
+        {
+          "text": "5-Star Rated",
+          "description_1": "9 Five-Star Reviews",
+          "description_2": "Trusted By Locals",
+          "url": "https://taupopainters.co.nz/quote/deck-painting#reviews"
+        },
+        {
+          "text": "See Our Work",
+          "description_1": "100+ Projects Done",
+          "description_2": "Browse Our Gallery",
+          "url": "https://taupopainters.co.nz/quote/deck-painting#work"
+        },
+        {
+          "text": "10 Years Experience",
+          "description_1": "Locally Owned & Run",
+          "description_2": "Quality Workmanship",
+          "url": "https://taupopainters.co.nz/quote/deck-painting#why"
+        },
+        {
+          "text": "5 Year Guarantee",
+          "description_1": "Workmanship Guarantee",
+          "description_2": "Public Liability Insured",
+          "url": "https://taupopainters.co.nz/quote/deck-painting#why"
+        },
+        {
+          "text": "Service Areas",
+          "description_1": "Taupo District Wide",
+          "description_2": "Free Measure & Quote",
+          "url": "https://taupopainters.co.nz/quote/deck-painting#areas"
+        }
+      ]
+    }
+  ],
+  "callouts": [
+    "10 Years Experience",
+    "Fully Insured Painters",
+    "5-Star Rated, 9 Reviews",
+    "Free Quote, Fixed Price",
+    "100+ Projects Completed",
+    "5 Year Guarantee"
+  ],
+  "structured_snippets": {
+    "header": "Service Catalog",
+    "values": [
+      "Interior Painting",
+      "Exterior Painting",
+      "Deck Painting & Staining"
+    ]
+  }
+}

@@ -1,0 +1,1871 @@
+{
+  "project_id": "painting-taupo",
+  "step": "step1",
+  "label": "Paint Aesthetics - Taupo",
+  "group_label": "Category",
+  "rows": [
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "deck painter",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "professional deck stainers",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "painting companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "home painting companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "home painting contractors near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "home painting services near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "home paint services near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "painting contractors near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "paint contractors in my area",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "painter contractors in my area",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "painter near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "house painters near me",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "home painters near me",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "building painters near me",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "painting house near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "painter and decorator near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "outdoor painters near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "outside painters near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "outdoor house painters near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "painter & decorator near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "external painters near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "painting services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "indoor painting services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "painter painting service",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "house painting services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "house painting contractors",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "professional painting services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "pro painting services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "painting business near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "painting company services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "residential painters near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "kitchen painters near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "door painters near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "door painting near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "residential house painters near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "plaster painting near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "sandblasting and painting companies",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "blasting and painting company",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "interior painting companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "interior painting services near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "interior painters near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "interior home painters near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "interior painting contractor",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "best interior painters near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "interior house painting companies",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "interior house painting services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "interior home painting services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "interior home painting companies",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "interior house painting contractor",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "professional interior painting services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "exterior painters near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "exterior house painters near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "house painting exterior near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "exterior house painting contractors",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "exterior home painting contractors",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "exterior house painting services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "exterior home painting services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "exterior painting service",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "exterior deck painters near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "near me painter",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "painters close to me",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "painters in my area",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "local painters",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "local painters in my area",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "house painter",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "house painters in my area",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "local house painters",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "house painters local",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "painting company",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "painting companies in my area",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "local painting companies",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "home painters",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "home painting companies",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "building painters",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "house painting in my area",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "home painting services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "painting contractor",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "local painting contractors",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "outside painters",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "painting services near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "local house painting contractors",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "outside house painters near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "painter near by me",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "house painter's",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "paint workers near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "indoor painters",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "inside painters",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "professional house painters",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "house painter and decorator",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "pro house painters",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "professional painter",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "outside house painters",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "professional indoor painters",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "find a house painter",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "hire painters",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "pro painters",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "external house painter",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "trusted house painter",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "professional finish painters",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "paint spraying services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "interior painting services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "interior house painters near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "painters interior near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "interior painter",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "local interior painters near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "best interior painter near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "interior house painters",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "professional interior house painters",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "painters exterior near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "exterior painter",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "house painters exterior near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "house exterior painting services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "exterior paint contractors",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "virtual exterior house painter",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "exterior home virtual painter",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to paint house",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to repaint house",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to repaint home",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "repainting a house cost",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost of paint for a house",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost of paint to paint a house",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "interior painting cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "exterior home painting cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "interior painting prices",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "price to paint exterior house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "inside painting cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "outside painting cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "outdoor painting cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "interior painting rates",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost of repainting house exterior",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "exterior painting rates",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "house painting quote",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to paint interior of house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to paint exterior of house",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to paint interior of home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "paint quotes for house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "home painting quotes",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "price to paint interior of house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to repaint interior of house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to repaint house exterior",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "house painting quotation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "home painting quotation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to repaint a house exterior",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to interior paint a house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to paint house outside",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to paint an interior house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to paint a exterior house",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost for painting exterior house",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to repaint interior house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to paint an exterior house",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to repaint exterior house",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "exterior painting cost",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to paint outside of house",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "house painting prices exterior",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "exterior house painting cost estimator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost estimate for exterior house painting",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to repaint outside of house",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "estimated cost for exterior house painting",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost paint exterior home",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "average cost to paint a house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to paint a room",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "interior painting quotes",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "painters near me prices",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "painting prices per room",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "average cost to repaint a house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "average cost to repaint house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "charge to paint a room",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost for painting room",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "interior painting quotation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "house painting estimates",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "average cost to paint interior of house",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to paint inside of house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "exterior paint quote",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "deck painting cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "painters cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost of painting per square foot",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "average price to paint interior of house",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "exterior house painting quotes",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to paint 3 bedroom house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "painting prices per square foot",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "exterior paint cost estimate",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "interior painting cost per m2",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "paint wall price",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "painter and decorator cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "estimate on house painting",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "average cost to paint a 3 bedroom house",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "painting per sq ft cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost of painting inside 3 bedroom house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "price to paint 3 bedroom house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost of painting bedroom",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "painting price per square meter",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "repaint deck cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "home painting cost estimator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "paint cost per m2",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "average price to paint a 3 bedroom house",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to paint a three bedroom house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "painting cost per sf",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "painter price per m2",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "exterior painting cost per square metre",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "exterior painting quotation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "best price on interior paint",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost of a painter per day",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost of paint for 3 bedroom house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost of painting per m2",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "interior painting cost per square metre",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "wall primer cost",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "estimated cost to paint a house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    }
+  ]
+}

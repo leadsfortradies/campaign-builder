@@ -1,0 +1,139 @@
+{
+  "project_id": "painting-taupo",
+  "step": "step4",
+  "label": "Paint Aesthetics - Taupo",
+  "ad_groups": [
+    {
+      "name": "General House Painting",
+      "final_url": "https://taupopainters.co.nz/quote/painting",
+      "headlines_pinned": [
+        "House Painters Near Me",
+        "Painter Near Me",
+        "Taupo House Painters"
+      ],
+      "headlines_benefit": [
+        "10 Years Experience",
+        "100+ Projects Completed",
+        "5 Year Workmanship Guarantee",
+        "9 x 5 Star Reviews",
+        "5 Star Rated Painters",
+        "Locally Owned & Operated",
+        "Public Liability Insured",
+        "Quality Workmanship",
+        "Great Communication",
+        "Attention To Detail",
+        "Free Measure & Quote",
+        "100% Free Quotes"
+      ],
+      "descriptions": [
+        "House painters near me with 100+ projects done. Free quotes, 5 year guarantee.",
+        "Reliable painting contractors near me. 10 years experience, 5 star reviews.",
+        "Professional house painters offering quality work and a 5 year guarantee.",
+        "Looking to find a house painter? Insured, friendly, free quote today."
+      ],
+      "paths": [
+        "painters",
+        "taupo"
+      ]
+    },
+    {
+      "name": "Interior Painting",
+      "final_url": "https://taupopainters.co.nz/quote/interior-painting",
+      "headlines_pinned": [
+        "Interior Painters Near Me",
+        "Interior Painting Taupo",
+        "Interior House Painters"
+      ],
+      "headlines_benefit": [
+        "10 Years Experience",
+        "100+ Projects Completed",
+        "5 Year Workmanship Guarantee",
+        "9 x 5 Star Reviews",
+        "5 Star Rated Painters",
+        "Locally Owned & Operated",
+        "Public Liability Insured",
+        "Quality Workmanship",
+        "Great Communication",
+        "Attention To Detail",
+        "Free Measure & Quote",
+        "100% Free Quotes"
+      ],
+      "descriptions": [
+        "Interior painters near me, 10 years experience, 100+ projects done.",
+        "Interior painting companies near me? 5 year guarantee, 5 star reviews.",
+        "Interior painting services with real attention to detail. Fully insured.",
+        "Need interior painting services done right? Free measure and quote."
+      ],
+      "paths": [
+        "interior",
+        "painting"
+      ]
+    },
+    {
+      "name": "Exterior Painting",
+      "final_url": "https://taupopainters.co.nz/quote/exterior-painting",
+      "headlines_pinned": [
+        "Exterior Painters Near Me",
+        "Exterior Painting Taupo",
+        "Exterior House Painters"
+      ],
+      "headlines_benefit": [
+        "10 Years Experience",
+        "100+ Projects Completed",
+        "5 Year Workmanship Guarantee",
+        "9 x 5 Star Reviews",
+        "5 Star Rated Painters",
+        "Locally Owned & Operated",
+        "Public Liability Insured",
+        "Quality Workmanship",
+        "Great Communication",
+        "Attention To Detail",
+        "Free Measure & Quote",
+        "100% Free Quotes"
+      ],
+      "descriptions": [
+        "Exterior painters near me, 10 years protecting Taupo homes. Free quotes.",
+        "Exterior house painting services backed by a 5 year guarantee. 100+ done.",
+        "Exterior painting service with 9 five star reviews. Insured, locally owned.",
+        "Exterior house painting contractors with great attention to detail."
+      ],
+      "paths": [
+        "exterior",
+        "painting"
+      ]
+    },
+    {
+      "name": "Deck Painting & Staining",
+      "final_url": "https://taupopainters.co.nz/quote/deck-painting",
+      "headlines_pinned": [
+        "Deck Painters Taupo",
+        "Deck Painter Near Me",
+        "Deck Staining Taupo"
+      ],
+      "headlines_benefit": [
+        "10 Years Experience",
+        "100+ Projects Completed",
+        "5 Year Workmanship Guarantee",
+        "9 x 5 Star Reviews",
+        "5 Star Rated Painters",
+        "Locally Owned & Operated",
+        "Public Liability Insured",
+        "Quality Workmanship",
+        "Great Communication",
+        "Attention To Detail",
+        "Free Measure & Quote",
+        "100% Free Quotes"
+      ],
+      "descriptions": [
+        "Professional deck stainers, 10 years experience. 5 year guarantee included.",
+        "Deck painter near me? Locally owned, 100+ projects done. Free quotes.",
+        "Exterior deck painters near me with 9 five star reviews. Fully insured.",
+        "Experienced deck painters with real attention to detail. Free quote today."
+      ],
+      "paths": [
+        "deck",
+        "painting"
+      ]
+    }
+  ]
+}

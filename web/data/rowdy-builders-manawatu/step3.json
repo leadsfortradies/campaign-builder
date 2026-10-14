@@ -1,0 +1,2375 @@
+{
+  "project_id": "rowdy-builders-manawatu",
+  "step": "step3",
+  "label": "Rowdy Builders - Manawatu (rebuild)",
+  "group_label": "Campaign \u2014 Ad Group",
+  "rows": [
+    {
+      "group": "BOF - Priority 1 \u2014 Aluminium & Metal Fences",
+      "keyword": "aluminium fence installation",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Aluminium & Metal Fences",
+      "keyword": "aluminium fence installers",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Aluminium & Metal Fences",
+      "keyword": "aluminum fence installation",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Aluminium & Metal Fences",
+      "keyword": "colorbond fence installers",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Aluminium & Metal Fences",
+      "keyword": "iron fence installers",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Aluminium & Metal Fences",
+      "keyword": "steel fence installers",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Brick Fences",
+      "keyword": "brick fence builders",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Brick Fences",
+      "keyword": "brick fence builders near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Composite Decks",
+      "keyword": "composite deck builder",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Composite Decks",
+      "keyword": "composite decking installation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Deck & Fence Builders",
+      "keyword": "deck and fence builders",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Deck & Fence Builders",
+      "keyword": "deck and fence installers near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Deck & Fence Builders",
+      "keyword": "fence and deck builders",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Deck Builders",
+      "keyword": "deck builder",
+      "avg_monthly_searches": 30,
+      "competition": "LOW",
+      "low_bid": 0.26,
+      "high_bid": 8.84,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Deck Builders",
+      "keyword": "deck builders",
+      "avg_monthly_searches": 30,
+      "competition": "LOW",
+      "low_bid": 0.26,
+      "high_bid": 8.84,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Deck Builders",
+      "keyword": "best deck builders",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Deck Builders",
+      "keyword": "build a deck near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Deck Builders",
+      "keyword": "build me a deck",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Deck Builders",
+      "keyword": "custom deck",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Deck Builders",
+      "keyword": "deck and patio contractors near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Deck Builders",
+      "keyword": "deck builder near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Deck Builders",
+      "keyword": "deck builder palmerston north",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "close variant of 'deck builders palmerston north' (Keyword Planner merges them)"
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Deck Builders",
+      "keyword": "deck builders palmerston north",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 4.26,
+      "high_bid": 13.54,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Deck Builders",
+      "keyword": "deck building companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Deck Builders",
+      "keyword": "deck building company",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Deck Builders",
+      "keyword": "deck building contractor",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Deck Builders",
+      "keyword": "deck building contractors near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Deck Builders",
+      "keyword": "deck companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Deck Builders",
+      "keyword": "deck construction contractors",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Deck Builders",
+      "keyword": "deck contractors",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Deck Builders",
+      "keyword": "deck contractors near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Deck Builders",
+      "keyword": "deck installation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Deck Builders",
+      "keyword": "deck installation companies",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Deck Builders",
+      "keyword": "deck installation companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Deck Builders",
+      "keyword": "deck installation contractor",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Deck Builders",
+      "keyword": "deck replacement contractors",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Deck Builders",
+      "keyword": "decking builders",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Deck Builders",
+      "keyword": "decking palmerston north",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "merged into a variant by Keyword Planner; produced a lead in the live account last month"
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Deck Builders",
+      "keyword": "new deck builder",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Deck Builders",
+      "keyword": "outdoor deck builders near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Deck Builders",
+      "keyword": "patio and deck contractors near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Deck Builders",
+      "keyword": "patio deck contractors near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "best fencing companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fence builder",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fence builder near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fence builders",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fence builders near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fence co",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fence co near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 2.46,
+      "high_bid": 5.49,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fence companies",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fence companies close to me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 2.46,
+      "high_bid": 5.49,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fence companies in my area",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fence companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 2.46,
+      "high_bid": 5.49,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fence company",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fence company near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 2.46,
+      "high_bid": 5.49,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fence construction",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fence contractors",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fence contractors near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fence installation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fence installation near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fence installers",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fence installers near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fencers",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fencers near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 4.63,
+      "high_bid": 11.84,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fencing builders",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fencing business near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 3.3,
+      "high_bid": 6.03,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fencing co",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fencing co near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 3.3,
+      "high_bid": 6.03,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fencing companies",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fencing companies local",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fencing companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 2.46,
+      "high_bid": 5.49,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fencing company",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fencing company near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 2.46,
+      "high_bid": 5.49,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fencing contractor",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fencing contractors",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fencing contractors near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 3.3,
+      "high_bid": 6.03,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fencing contractors nz",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fencing installation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fencing services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "fencing specialist",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "local fence installers",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "local fencing companies",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "local fencing company near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "local fencing contractors",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "residential fence company near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "residential fence installation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "residential fencing",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fence Builders",
+      "keyword": "residential fencing companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fencing Manawatu, Levin & Marton",
+      "keyword": "fencers manawatu",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "close variant of 'fencing manawatu' (Keyword Planner merges them)"
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fencing Manawatu, Levin & Marton",
+      "keyword": "fences levin",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 3.57,
+      "high_bid": 12.0,
+      "note": "close variant of 'fencing levin' (Keyword Planner merges them)"
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fencing Manawatu, Levin & Marton",
+      "keyword": "fences manawatu",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "close variant of 'fencing manawatu' (Keyword Planner merges them)"
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fencing Manawatu, Levin & Marton",
+      "keyword": "fencing contractors levin",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fencing Manawatu, Levin & Marton",
+      "keyword": "fencing contractors manawatu",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fencing Manawatu, Levin & Marton",
+      "keyword": "fencing levin",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 3.57,
+      "high_bid": 12.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fencing Manawatu, Levin & Marton",
+      "keyword": "fencing manawatu",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fencing Manawatu, Levin & Marton",
+      "keyword": "fencing marton",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fencing Palmerston North",
+      "keyword": "fencers palmerston north",
+      "avg_monthly_searches": 50,
+      "competition": "HIGH",
+      "low_bid": 2.06,
+      "high_bid": 11.72,
+      "note": "close variant of 'fencing palmerston north' (Keyword Planner merges them)"
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fencing Palmerston North",
+      "keyword": "fences palmerston north",
+      "avg_monthly_searches": 50,
+      "competition": "HIGH",
+      "low_bid": 2.06,
+      "high_bid": 11.72,
+      "note": "close variant of 'fencing palmerston north' (Keyword Planner merges them)"
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fencing Palmerston North",
+      "keyword": "fencing palmerston north",
+      "avg_monthly_searches": 50,
+      "competition": "HIGH",
+      "low_bid": 2.06,
+      "high_bid": 11.72,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fencing Palmerston North",
+      "keyword": "fence builder palmerston north",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 3.83,
+      "high_bid": 9.16,
+      "note": "close variant of 'fence builders palmerston north' (Keyword Planner merges them)"
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fencing Palmerston North",
+      "keyword": "fence builders palmerston north",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 3.83,
+      "high_bid": 9.16,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Fencing Palmerston North",
+      "keyword": "fencing contractors palmerston north",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 3.16,
+      "high_bid": 9.97,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Pergolas",
+      "keyword": "pergola palmerston north",
+      "avg_monthly_searches": 30,
+      "competition": "HIGH",
+      "low_bid": 2.72,
+      "high_bid": 7.13,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Pergolas",
+      "keyword": "pergolas palmerston north",
+      "avg_monthly_searches": 30,
+      "competition": "HIGH",
+      "low_bid": 2.72,
+      "high_bid": 7.13,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Pergolas",
+      "keyword": "custom built pergola",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Pergolas",
+      "keyword": "custom built pergolas",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Pergolas",
+      "keyword": "custom pergola",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Pergolas",
+      "keyword": "custom pergolas",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Pergolas",
+      "keyword": "pergola and deck builders",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Pergolas",
+      "keyword": "pergola builder near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Pergolas",
+      "keyword": "pergola builders near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Pergolas",
+      "keyword": "pergola companies",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Pergolas",
+      "keyword": "pergola companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Pergolas",
+      "keyword": "pergola company",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Pergolas",
+      "keyword": "pergola installation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Pergolas",
+      "keyword": "pergola installers",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Pergolas",
+      "keyword": "pergola installers near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Pergolas",
+      "keyword": "pergola near me",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Pergolas",
+      "keyword": "pergolas near me",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Pool Fencing",
+      "keyword": "pool fencers",
+      "avg_monthly_searches": 30,
+      "competition": "HIGH",
+      "low_bid": 0.09,
+      "high_bid": 3.31,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Pool Fencing",
+      "keyword": "glass pool fence installation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Pool Fencing",
+      "keyword": "glass pool fence installers",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Pool Fencing",
+      "keyword": "pool fence installation",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Pool Fencing",
+      "keyword": "pool fence installation near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Pool Fencing",
+      "keyword": "pool fence installers",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Pool Fencing",
+      "keyword": "pool fence installers near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Pool Fencing",
+      "keyword": "pool fencing installers",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Pool Fencing",
+      "keyword": "pool fencing installers near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Pool Fencing",
+      "keyword": "pool fencing manawatu",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Pool Fencing",
+      "keyword": "pool fencing near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Pool Fencing",
+      "keyword": "pool fencing palmerston north",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Pool Fencing",
+      "keyword": "pool safety fence installation",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Pool Fencing",
+      "keyword": "swimming pool fence installation",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Timber Decks",
+      "keyword": "kwila decking installation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Timber Decks",
+      "keyword": "timber decking installation",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Timber Decks",
+      "keyword": "wood deck builders near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Timber Fences",
+      "keyword": "fence installation wood",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Timber Fences",
+      "keyword": "garden fence installers",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Timber Fences",
+      "keyword": "paling fence installation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Timber Fences",
+      "keyword": "picket fence builder",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Timber Fences",
+      "keyword": "timber fence builders",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Timber Fences",
+      "keyword": "timber fence contractors",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Timber Fences",
+      "keyword": "timber fence installation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Timber Fences",
+      "keyword": "timber fence installers",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Timber Fences",
+      "keyword": "timber fencing contractors near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Timber Fences",
+      "keyword": "wood fence builder",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Timber Fences",
+      "keyword": "wood fence builders near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Timber Fences",
+      "keyword": "wood fence company near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "BOF - Priority 1 \u2014 Timber Fences",
+      "keyword": "wooden fence installation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Aluminium, Brick & Colorbond Fence Costs",
+      "keyword": "aluminium fence cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Aluminium, Brick & Colorbond Fence Costs",
+      "keyword": "brick fence cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Aluminium, Brick & Colorbond Fence Costs",
+      "keyword": "colorbond fence installation cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Covered Deck Costs",
+      "keyword": "cost to cover a deck",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Covered Deck Costs",
+      "keyword": "covered deck cost",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Covered Deck Costs",
+      "keyword": "deck roof cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Costs",
+      "keyword": "cost estimate deck construction",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Costs",
+      "keyword": "cost to build deck",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Costs",
+      "keyword": "deck building estimator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Costs",
+      "keyword": "deck construction cost calculator",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Costs",
+      "keyword": "deck construction cost estimator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Costs",
+      "keyword": "deck cost calculator",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Costs",
+      "keyword": "deck installation cost calculator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Costs",
+      "keyword": "deck price calculator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Costs",
+      "keyword": "deck price estimator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Costs",
+      "keyword": "deck price per m2",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Costs",
+      "keyword": "deck pricing",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Costs",
+      "keyword": "deck quote",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Costs",
+      "keyword": "deck quote nz",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Costs",
+      "keyword": "deck replacement cost calculator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Costs",
+      "keyword": "decking estimate cost calculator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Costs",
+      "keyword": "decking quotation",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Costs",
+      "keyword": "how much does it cost for a composite deck",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Costs",
+      "keyword": "how much does it cost for composite decking",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Costs",
+      "keyword": "how much does it cost for decking",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Costs",
+      "keyword": "how much does it cost to build a deck",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Costs",
+      "keyword": "how much does it cost to build a small deck",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Costs",
+      "keyword": "how much does it cost to do a deck",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Costs",
+      "keyword": "how much does it cost to get a deck built",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Costs",
+      "keyword": "how much does it cost to install a deck",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Costs",
+      "keyword": "how much does it cost to make a deck",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Costs",
+      "keyword": "how much does it cost to replace a deck",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Costs",
+      "keyword": "how much is it to build a deck",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Costs",
+      "keyword": "how much it cost to build a deck",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Costs",
+      "keyword": "how much should it cost to build a deck",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Costs",
+      "keyword": "how much will it cost to build a deck",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Deck Costs",
+      "keyword": "how much would it cost to build a small deck",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "average cost of fencing per metre",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "average cost to build fence",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "average cost to replace a fence",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "average fence cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "average price for fence installation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "average price of fence",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "boundary fence cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "build a fence cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "cost for fence installation",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "cost of fence",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "cost of fences and installation",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "cost to build a fence",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "cost to build a fence nz",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "cost to put in a fence",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "cost to put up a fence",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "fence cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "fence cost calculator",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "fence cost estimator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "fence cost nz",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "fence cost per metre",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "fence cost per metre nz",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "fence installation cost",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "fence installation quote",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "fence price calculator",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "fence price estimator",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "fence price nz",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "fence prices",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "fence quote",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "fence quotes",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "fence replacement cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "fencing calculator",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "fencing cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "fencing cost nz",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "fencing cost per metre",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "fencing cost per metre nz",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "fencing price calculator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "fencing prices",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "fencing prices nz",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "fencing quote",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "fencing quotes",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "how much does a fence cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "how much does a fence cost nz",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "how much does fencing cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "how much does it cost for a fence",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "how much does it cost to build a fence",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "how much does it cost to fence a yard",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "how much does it cost to get a fence built",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "how much does it cost to have a fence built",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "how much does it cost to install a fence",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "how much does it cost to put in a fence",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "how much does it cost to put up a fence",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "how much is it to install a fence",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "how much is it to put up a fence",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 1.92,
+      "high_bid": 4.21,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "how much would it cost to build a fence",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Fence Costs",
+      "keyword": "new fence cost",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Pergola Costs",
+      "keyword": "cost to build a pergola",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Pergola Costs",
+      "keyword": "how much does a pergola cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Pergola Costs",
+      "keyword": "pergola cost",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.57,
+      "high_bid": 1.78,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Pergola Costs",
+      "keyword": "pergola cost nz",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Pergola Costs",
+      "keyword": "pergola installation cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Pergola Costs",
+      "keyword": "pergola price",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.57,
+      "high_bid": 1.78,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Pergola Costs",
+      "keyword": "pergola prices",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.57,
+      "high_bid": 1.78,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Pergola Costs",
+      "keyword": "pergola quote",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Pergola Costs",
+      "keyword": "timber pergola cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Pool Fencing Costs",
+      "keyword": "pool fencing cost per metre",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Timber Fence Costs",
+      "keyword": "average cost of wood fence",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Timber Fence Costs",
+      "keyword": "how much does it cost for a wooden fence",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Timber Fence Costs",
+      "keyword": "paling fence cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Timber Fence Costs",
+      "keyword": "picket fence cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Timber Fence Costs",
+      "keyword": "timber fence cost",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Timber Fence Costs",
+      "keyword": "timber fence cost calculator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Timber Fence Costs",
+      "keyword": "timber fence cost per metre",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Timber Fence Costs",
+      "keyword": "wood fence cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Timber Fence Costs",
+      "keyword": "wood fence cost calculator",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Timber Fence Costs",
+      "keyword": "wood fence installation cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Timber Fence Costs",
+      "keyword": "wood fence prices",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery \u2014 Timber Fence Costs",
+      "keyword": "wooden fence cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    }
+  ]
+}

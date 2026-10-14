@@ -1,0 +1,96 @@
+{
+  "project_id": "bolt-concreting-palmerston-north",
+  "step": "step5",
+  "label": "Bolt Concreting - Palmerston North (rebuild)",
+  "mode": "urls",
+  "ad_groups": [
+    {
+      "name": "Driveway Replacement",
+      "url": "https://www.palmerstonnorthconcreting.co.nz/quote/driveway"
+    },
+    {
+      "name": "Driveway Contractors",
+      "url": "https://www.palmerstonnorthconcreting.co.nz/quote/driveway"
+    },
+    {
+      "name": "Exposed Aggregate",
+      "url": "https://www.palmerstonnorthconcreting.co.nz/quote/driveway"
+    },
+    {
+      "name": "Coloured Concrete",
+      "url": "https://www.palmerstonnorthconcreting.co.nz/quote/driveway"
+    },
+    {
+      "name": "Concrete Patios",
+      "url": "https://www.palmerstonnorthconcreting.co.nz/quote/concrete-patios"
+    },
+    {
+      "name": "Concrete Paths",
+      "url": "https://www.palmerstonnorthconcreting.co.nz/quote/concrete-paths"
+    },
+    {
+      "name": "Concrete Slabs & Pads",
+      "url": "https://www.palmerstonnorthconcreting.co.nz/quote/concrete-slabs"
+    },
+    {
+      "name": "Concrete Floors",
+      "url": "https://www.palmerstonnorthconcreting.co.nz/quote/concrete-floors"
+    },
+    {
+      "name": "Foundations",
+      "url": "https://www.palmerstonnorthconcreting.co.nz/quote/concrete-slabs"
+    },
+    {
+      "name": "Carports & Garage Slabs",
+      "url": "https://www.palmerstonnorthconcreting.co.nz/quote/concrete-slabs"
+    },
+    {
+      "name": "Concrete Steps",
+      "url": "https://www.palmerstonnorthconcreting.co.nz/quote/concrete-steps"
+    },
+    {
+      "name": "Concrete Layers & Placers",
+      "url": "https://www.palmerstonnorthconcreting.co.nz/quote/concrete-contractor"
+    },
+    {
+      "name": "Concreters Palmerston North",
+      "url": "https://www.palmerstonnorthconcreting.co.nz/quote/concrete-contractor"
+    },
+    {
+      "name": "Concrete Contractors",
+      "url": "https://www.palmerstonnorthconcreting.co.nz/quote/concrete-contractor"
+    },
+    {
+      "name": "Driveway Costs",
+      "url": "https://www.palmerstonnorthconcreting.co.nz/quote/driveway"
+    },
+    {
+      "name": "Driveway Replacement Costs",
+      "url": "https://www.palmerstonnorthconcreting.co.nz/quote/driveway"
+    },
+    {
+      "name": "Exposed Aggregate Costs",
+      "url": "https://www.palmerstonnorthconcreting.co.nz/quote/driveway"
+    },
+    {
+      "name": "Path Costs",
+      "url": "https://www.palmerstonnorthconcreting.co.nz/quote/concrete-paths"
+    },
+    {
+      "name": "Patio Costs",
+      "url": "https://www.palmerstonnorthconcreting.co.nz/quote/concrete-patios"
+    },
+    {
+      "name": "Slab & Pad Costs",
+      "url": "https://www.palmerstonnorthconcreting.co.nz/quote/concrete-slabs"
+    },
+    {
+      "name": "Concrete Floor Costs",
+      "url": "https://www.palmerstonnorthconcreting.co.nz/quote/concrete-floors"
+    },
+    {
+      "name": "Concrete Costs",
+      "url": "https://www.palmerstonnorthconcreting.co.nz/quote/concrete-contractor"
+    }
+  ]
+}

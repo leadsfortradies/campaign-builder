@@ -1,0 +1,35 @@
+{
+  "business_name": "Rowdy Builders",
+  "business_phone": "06 280 1144",
+  "service_areas": [
+    "Palmerston North",
+    "Feilding",
+    "Ashhurst",
+    "Levin",
+    "Marton",
+    "Bulls",
+    "Sanson",
+    "Woodville",
+    "Rangitikei District"
+  ],
+  "services": [
+    "Decks",
+    "Fences (timber is the bulk of the work, all fence types done)",
+    "Pergolas",
+    "Pool fencing",
+    "Deck roofs / covers"
+  ],
+  "scope_notes": "Confirmed 2026-10-13 (account rebuild). Not stated: gates, fence/deck repairs, painting/staining, retaining walls, carports. Rebuild of existing Google Ads account 359-224-0013 (palmydecksandfences.co.nz).",
+  "owner_name": "Guy",
+  "domain": "palmydecksandfences.co.nz",
+  "years_experience": "10+ years building decks, fences and pergolas across Palmerston North and Feilding",
+  "reviews": "Website says 5-star rated; 4 written testimonials on site (Rob B., Hayley & Rhys, Steffan D., Steve C.). Google review count not yet confirmed.",
+  "differentiators": "Free on-site quotes, written quotes within 48 hours; a single written price that spells out timber, sizes and inclusions; whoever quotes it builds it (small crew, owner on the tools); built for Manawatu weather (deeper posts on exposed sections, drainage spacing, rust-proof fixings); priced to compete, low overheads; fence posts concreted to proper depth; old fencing removed and hauled away. Palmy born & bred (existing callout).",
+  "other_info": "Existing landing pages: /quote/decks, /quote/fences, /quote/pergolas (www.palmydecksandfences.co.nz). Website phone shows 027 755 2948; ads use 06 280 1144 per user. Site redesign (2026-10-13) uses the aucklanddeckbuilder.co.nz Astro template; images/logo/content pulled from palmydecksandfences, palmerstonnorthdecks and palmerstonnorthfences sites.",
+  "project_id": "rowdy-builders-manawatu",
+  "step": "step0",
+  "label": "Rowdy Builders - Manawatu (rebuild)",
+  "business_logo_path": "/Users/liamemery/Desktop/Websites/Palmy Decks & Fences v2/src/assets/logo/rowdy-builders-logo.png",
+  "site_build_path": "/Users/liamemery/Desktop/Websites/Palmy Decks & Fences v2",
+  "completed_projects": "100+ (per palmerstonnorthfences.co.nz)"
+}

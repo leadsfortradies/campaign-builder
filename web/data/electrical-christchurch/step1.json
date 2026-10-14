@@ -1,0 +1,3851 @@
+{
+  "project_id": "electrical-christchurch",
+  "step": "step1",
+  "label": "Electrician - Christchurch",
+  "group_label": "Category",
+  "rows": [
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrician",
+      "avg_monthly_searches": 720,
+      "competition": "MEDIUM",
+      "low_bid": 3.91,
+      "high_bid": 11.89,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrician near me",
+      "avg_monthly_searches": 590,
+      "competition": "MEDIUM",
+      "low_bid": 3.72,
+      "high_bid": 10.3,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical companies",
+      "avg_monthly_searches": 90,
+      "competition": "HIGH",
+      "low_bid": 2.8,
+      "high_bid": 8.75,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "master electrician",
+      "avg_monthly_searches": 50,
+      "competition": "LOW",
+      "low_bid": 3.1,
+      "high_bid": 6.27,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical near me",
+      "avg_monthly_searches": 50,
+      "competition": "MEDIUM",
+      "low_bid": 4.91,
+      "high_bid": 15.92,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "emergency electrician",
+      "avg_monthly_searches": 40,
+      "competition": "MEDIUM",
+      "low_bid": 3.42,
+      "high_bid": 12.84,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "residential electrician",
+      "avg_monthly_searches": 30,
+      "competition": "HIGH",
+      "low_bid": 5.73,
+      "high_bid": 15.74,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "sparky electrician",
+      "avg_monthly_searches": 30,
+      "competition": "HIGH",
+      "low_bid": 4.42,
+      "high_bid": 10.09,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "sparkies electrical",
+      "avg_monthly_searches": 30,
+      "competition": "HIGH",
+      "low_bid": 4.42,
+      "high_bid": 10.09,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electric company near me",
+      "avg_monthly_searches": 20,
+      "competition": "HIGH",
+      "low_bid": 0.92,
+      "high_bid": 10.64,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical services",
+      "avg_monthly_searches": 20,
+      "competition": "MEDIUM",
+      "low_bid": 1.12,
+      "high_bid": 4.75,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "registered electrician",
+      "avg_monthly_searches": 20,
+      "competition": "LOW",
+      "low_bid": 3.3,
+      "high_bid": 9.19,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "call electrician",
+      "avg_monthly_searches": 20,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrician 247",
+      "avg_monthly_searches": 20,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical servicing",
+      "avg_monthly_searches": 20,
+      "competition": "MEDIUM",
+      "low_bid": 1.12,
+      "high_bid": 4.75,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical repair near me",
+      "avg_monthly_searches": 20,
+      "competition": "HIGH",
+      "low_bid": 2.56,
+      "high_bid": 6.07,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical inspection",
+      "avg_monthly_searches": 20,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical testing",
+      "avg_monthly_searches": 20,
+      "competition": "LOW",
+      "low_bid": 1.33,
+      "high_bid": 8.06,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical contractors near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "residential electricians near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 4.43,
+      "high_bid": 19.17,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical services near me",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "licensed electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "best electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "certified electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "home electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "residential electrical contractors near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrician near me home service",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electricians near me for residential",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "licenced electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "best residential electricians near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "master electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "domestic electricians near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "good electricians near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "need an electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical technician near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "house electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "recommended electricians near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "private electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "top rated electricians near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "residential electrical companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 1.97,
+      "high_bid": 3.48,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "looking for electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "independent electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "an electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electric technician near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "registered electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "qualified electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "handyman electricians near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "looking for an electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "residential electrical services near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "best electrical company near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrician near me now",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "reliable electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "sparky electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical companies in my area",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "best electrical contractors near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "handy electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical installation service near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "home electrical services near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "highly rated electricians near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "any electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "call electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrician available near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "highest rated electricians near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "find local electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "24hrs electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "top electrical companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "your local electrician",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical installation companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical firms near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "24x7 electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrician companies in my area",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "service electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "local service electrical services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "small electrical companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "residential electrician companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical contractor",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 3.49,
+      "high_bid": 5.65,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "licensed electrician",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "best electric company",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 1.37,
+      "high_bid": 2.69,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical handyman near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "certified electrician",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical technician",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "find an electrician",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrician company",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "i need an electrician",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "need electrician",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "looking for electrician",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical installation",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical inspectors near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "home electrician",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 2.21,
+      "high_bid": 8.44,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "licenced electrician",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "professional electrician",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "qualified electrician",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "sparky electrical services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "best electrician",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electric service company",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "home electrical services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 2.33,
+      "high_bid": 17.19,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "domestic electrician",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "licensed electrical contractor",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electric light company",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "service electrician",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "house electrician",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "residential electric service",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "residential electrical contractors",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "an electrician",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "master electric",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "complete electrical services",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "independent electrician",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "residential electrical companies",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrician available now",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical installation services",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical installation companies",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical contractor services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electricians near us",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "professional electrical services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical contracting company",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "best electric service",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical services residential",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "find me an electrician",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "installation electrician",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical specialists",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "power electrical services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "urban electrician",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "best electrical contractors",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "licensed master electrician",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "domestic electrical installation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "find a registered electrician",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical installation contractors",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical firms",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "top electrician companies",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "power electrician",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "best electrician company",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "domestic electrical services",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "housing electrician",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "in house electrical services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "limited licensed electrician",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical contractors ltd",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "general electrical contractor",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "registered master electrician",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "residential electrical installation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "residential electrical service company",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "emergency electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "24 hour electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "24 7 electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "same day electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "after hours electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 3.61,
+      "high_bid": 7.04,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "24hr electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 3.39,
+      "high_bid": 10.7,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "on call electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 4.91,
+      "high_bid": 18.3,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electric repair company near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "urgent electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "emergency electrical service near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrician repair near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical repair services near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "call out electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "24 electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "24 hour emergency electrical service near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "24 hrs electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "24 hr electrical services near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical repairs",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 2.6,
+      "high_bid": 6.27,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical fault finding",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical maintenance",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "24 hour electrician",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "same day electrician",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 3.35,
+      "high_bid": 15.3,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "24 7 electrician",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "after hours electrician",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 3.52,
+      "high_bid": 8.12,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "emergency electrical service",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "24 hour emergency electrician",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "24 hour electrical service",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "small electrical repairs near me",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "same day electrical service",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "home electrical repair services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "24hr electrician",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical repair services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "on call electrician",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "home electrical repair",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "weekend electrician",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "24 7 electrical services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "emergency electrician 24 7",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrician call out",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electric fix near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrician repair",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrician same day service",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrician urgent",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "out of hours electrician",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical repairs for home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "home electrical inspection",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "sunday electrician",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "urgent electrical services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical testing and inspection",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "24 hrs electrician services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "emergency electrician call out",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "best electrical repair near me",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical maintenance near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical maintenance services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrician sunday call out",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "residential electrical inspection",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "24 hr electrical services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "house electrical repair near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "house electrical repair",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "domestic electrical repairs near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "after hours emergency electrician",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical service call",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical inspection services",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "wire repair",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "household electrical repairs near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "repair electric",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 2.6,
+      "high_bid": 6.27,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "domestic electrical testing",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical wire repair",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "household electrical repairs",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "24 7 electrical repair",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electric switch repair",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical maintenance and repair",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "repair damaged electrical cable in wall",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "home electrical maintenance",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "broken wire repair",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical installation & maintenance",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrician maintenance services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "fault finding electrical circuits",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "lighting electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Small Renos & Rewiring"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "power point installation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Small Renos & Rewiring"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "lighting installation near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Small Renos & Rewiring"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "lighting repair near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Small Renos & Rewiring"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "lighting electrician",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Small Renos & Rewiring"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical wiring installation",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Small Renos & Rewiring"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "wiring installation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Small Renos & Rewiring"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "home rewire",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Small Renos & Rewiring"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "house rewiring near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Small Renos & Rewiring"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrician for house wiring",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Small Renos & Rewiring"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "light switch repair",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Small Renos & Rewiring"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical wiring repair near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Small Renos & Rewiring"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "wiring contractor",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Small Renos & Rewiring"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical wiring services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Small Renos & Rewiring"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical wiring installation in house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Small Renos & Rewiring"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "lighting repairs",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Small Renos & Rewiring"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "new home electrician",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Small Renos & Rewiring"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "lighting and electrical near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Small Renos & Rewiring"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical lighting repair",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Small Renos & Rewiring"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "fault finding lighting circuit",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Small Renos & Rewiring"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "wiring maintenance",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Small Renos & Rewiring"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "house rewire",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Small Renos & Rewiring"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical rewiring",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Small Renos & Rewiring"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "re wiring a house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Small Renos & Rewiring"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrician rewire house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Small Renos & Rewiring"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "home renovation electrician",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Small Renos & Rewiring"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "whole home rewiring",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Small Renos & Rewiring"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "rewiring services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Small Renos & Rewiring"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "house re wire",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Small Renos & Rewiring"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical rewiring services",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Small Renos & Rewiring"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "rewire your home",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Small Renos & Rewiring"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "switchboard upgrade",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Switchboard Upgrades"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "switchboard upgrade near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Switchboard Upgrades"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "switchboard repair",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Switchboard Upgrades"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "fuse repair",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Switchboard Upgrades"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "rcd fault finding",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Switchboard Upgrades"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "switchboard maintenance",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Switchboard Upgrades"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "switchboard replacement",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Switchboard Upgrades"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "fuse box upgrade",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Switchboard Upgrades"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "switchboard electrician",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Switchboard Upgrades"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "meter board upgrade",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Switchboard Upgrades"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrical switchboard upgrade",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Switchboard Upgrades"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "switch board upgrade",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Switchboard Upgrades"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "domestic switchboard upgrade",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Switchboard Upgrades"
+    },
+    {
+      "group": "BOF - Priority 1",
+      "keyword": "electrician switch board",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Switchboard Upgrades"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "electrician close to me",
+      "avg_monthly_searches": 590,
+      "competition": "MEDIUM",
+      "low_bid": 3.72,
+      "high_bid": 10.3,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "electrician in near me",
+      "avg_monthly_searches": 590,
+      "competition": "MEDIUM",
+      "low_bid": 3.72,
+      "high_bid": 10.3,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "electrician emergency",
+      "avg_monthly_searches": 40,
+      "competition": "MEDIUM",
+      "low_bid": 3.42,
+      "high_bid": 12.84,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "local electricians",
+      "avg_monthly_searches": 30,
+      "competition": "HIGH",
+      "low_bid": 4.05,
+      "high_bid": 10.64,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "residential electricians",
+      "avg_monthly_searches": 30,
+      "competition": "HIGH",
+      "low_bid": 5.73,
+      "high_bid": 15.74,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "electrician around me",
+      "avg_monthly_searches": 20,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "repair electrical near me",
+      "avg_monthly_searches": 20,
+      "competition": "HIGH",
+      "low_bid": 2.56,
+      "high_bid": 6.07,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "local electricians near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "electricians in my area",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "electricians in the area",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "electrician nearby",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "local electrician in my area",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "the local electrician",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "near by electrician",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "nearest electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "electricians in",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "near me electrician",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "nearest electrician to me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "the electricians",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "electrician close by",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "electrician near by me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "my electrician",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "local electrical",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "electrical nearby",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "local electric company",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "local electric companies near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "contractors electrical",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 3.49,
+      "high_bid": 5.65,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "local electrical contractors",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "electrical contractors in my area",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "local electrical contractors near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "electrical contractors nearby",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "electricians near me residential",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "electrician residential near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 4.43,
+      "high_bid": 19.17,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "local electrical services",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "licensed electricians in my area",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "local licensed electricians",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "best electricians in my area",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "best local electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "electrician near home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "home service electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "good electricians in my area",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "recommended electricians in my area",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "independent electricians near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "registered electricians near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "electrical companies nearby",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "electrical companies around me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "home electrical service near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "electrician companies nearby",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "find me an electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 4.43,
+      "high_bid": 7.09,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "electrical installation contractor",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "General Electrician"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "electrical repairs nearby",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "emergency electricians in my area",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "local emergency electrician",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "electrician 24 7 near me",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 2.14,
+      "high_bid": 4.92,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "24 * 7 electrician near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "24 hour electrician emergency",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "emergency 24 hour electrician",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "emergency electrician 24 hours",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "electrician near me after hours",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "electrical emergency service near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "electrical service repair",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "24 7 emergency electrician",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "electrician repairs",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "same day service electrician",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Repairs & Servicing"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "lighting electricians near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Small Renos & Rewiring"
+    },
+    {
+      "group": "BOF - Priority 2",
+      "keyword": "electrician switchboard",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "Switchboard Upgrades"
+    },
+    {
+      "group": "Manual Review",
+      "keyword": "skilled electrical",
+      "avg_monthly_searches": 110,
+      "competition": "LOW",
+      "low_bid": 1.5,
+      "high_bid": 4.4,
+      "note": "bare topic/ambiguous term with real volume - could be research or hiring intent"
+    },
+    {
+      "group": "Manual Review",
+      "keyword": "electrical wiring",
+      "avg_monthly_searches": 70,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "bare topic/ambiguous term with real volume - could be research or hiring intent"
+    },
+    {
+      "group": "Manual Review",
+      "keyword": "electric panel upgrade",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "US-style panel/breaker wording - NZ customers usually say switchboard/fuse box, check intent"
+    },
+    {
+      "group": "Manual Review",
+      "keyword": "electrical panel upgrade cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "US-style panel/breaker wording on a price query - NZ customers usually say switchboard/fuse box, check intent"
+    },
+    {
+      "group": "Manual Review",
+      "keyword": "cost to replace electrical panel",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "US-style panel/breaker wording on a price query - NZ customers usually say switchboard/fuse box, check intent"
+    },
+    {
+      "group": "Manual Review",
+      "keyword": "rewiring a house",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "verb-first request with no hiring signal - could be DIY or hiring an electrician"
+    },
+    {
+      "group": "Manual Review",
+      "keyword": "circuit breaker repair near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "US-style panel/breaker wording - NZ customers usually say switchboard/fuse box, check intent"
+    },
+    {
+      "group": "Manual Review",
+      "keyword": "panel upgrade",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "US-style panel/breaker wording - NZ customers usually say switchboard/fuse box, check intent"
+    },
+    {
+      "group": "Manual Review",
+      "keyword": "circuit breaker repair",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "US-style panel/breaker wording - NZ customers usually say switchboard/fuse box, check intent"
+    },
+    {
+      "group": "Manual Review",
+      "keyword": "electrical panel cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "US-style panel/breaker wording on a price query - NZ customers usually say switchboard/fuse box, check intent"
+    },
+    {
+      "group": "Manual Review",
+      "keyword": "cost to replace a breaker",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "US-style panel/breaker wording on a price query - NZ customers usually say switchboard/fuse box, check intent"
+    },
+    {
+      "group": "Manual Review",
+      "keyword": "electrical panel installation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "US-style panel/breaker wording - NZ customers usually say switchboard/fuse box, check intent"
+    },
+    {
+      "group": "Manual Review",
+      "keyword": "circuit breaker installation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "US-style panel/breaker wording - NZ customers usually say switchboard/fuse box, check intent"
+    },
+    {
+      "group": "Manual Review",
+      "keyword": "circuit breaker maintenance",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "US-style panel/breaker wording - NZ customers usually say switchboard/fuse box, check intent"
+    },
+    {
+      "group": "Manual Review",
+      "keyword": "electrical panel fault finding",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "US-style panel/breaker wording - NZ customers usually say switchboard/fuse box, check intent"
+    },
+    {
+      "group": "Manual Review",
+      "keyword": "panel board maintenance",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "US-style panel/breaker wording - NZ customers usually say switchboard/fuse box, check intent"
+    },
+    {
+      "group": "Manual Review",
+      "keyword": "panel maintenance",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "US-style panel/breaker wording - NZ customers usually say switchboard/fuse box, check intent"
+    },
+    {
+      "group": "Manual Review",
+      "keyword": "panel repair cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "US-style panel/breaker wording on a price query - NZ customers usually say switchboard/fuse box, check intent"
+    },
+    {
+      "group": "Manual Review",
+      "keyword": "rewiring whole house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "verb-first request with no hiring signal - could be DIY or hiring an electrician"
+    },
+    {
+      "group": "Manual Review",
+      "keyword": "rewiring an old house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "verb-first request with no hiring signal - could be DIY or hiring an electrician"
+    },
+    {
+      "group": "Manual Review",
+      "keyword": "upgrade electrical switchboard",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "verb-first request with no hiring signal - could be DIY or hiring an electrician"
+    },
+    {
+      "group": "Manual Review",
+      "keyword": "rewire home electrical",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "verb-first request with no hiring signal - could be DIY or hiring an electrician"
+    },
+    {
+      "group": "Manual Review",
+      "keyword": "rewiring a house room by room",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "verb-first request with no hiring signal - could be DIY or hiring an electrician"
+    },
+    {
+      "group": "Manual Review",
+      "keyword": "rewiring an older home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "verb-first request with no hiring signal - could be DIY or hiring an electrician"
+    },
+    {
+      "group": "Manual Review",
+      "keyword": "cost to upgrade fuse box to circuit breaker",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "US-style panel/breaker wording on a price query - NZ customers usually say switchboard/fuse box, check intent"
+    },
+    {
+      "group": "Manual Review",
+      "keyword": "rewire electrical plug",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "verb-first request with no hiring signal - could be DIY or hiring an electrician"
+    },
+    {
+      "group": "Manual Review",
+      "keyword": "rewire entire house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "verb-first request with no hiring signal - could be DIY or hiring an electrician"
+    },
+    {
+      "group": "Manual Review",
+      "keyword": "upgrade fuse",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "verb-first request with no hiring signal - could be DIY or hiring an electrician"
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "electrician quote",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 3.86,
+      "high_bid": 13.12,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to rewire a house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "electrician cost",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 1.56,
+      "high_bid": 6.85,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "electrician near me prices",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "electrician cost per hour",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "electrician prices",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 1.56,
+      "high_bid": 6.85,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "electrician per hour",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "powerpoint installation cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "electrician prices near me",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "electrician charges",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "rewire cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "after hours electrician cost",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "power point installation cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to replace fuse box",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to replace electrical wiring",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "residential electrician cost",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost of powerpoint installation",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to install a powerpoint",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "average cost to rewire a house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "electrical switchboard upgrade cost",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 3.58,
+      "high_bid": 5.3,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to rewire an old house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "electrical rewiring cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "whole house rewire cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "rewiring cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "home rewiring cost",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "price to rewire a house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to upgrade switchboard",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to rewire a 3 bedroom house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "full house rewire cost",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "average price to rewire a house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "switchboard replacement cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "electrician rewiring cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to rewire entire house",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "fuse box upgrade cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "average cost to rewire a home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost of replacing fuse box",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "full house electrical rewire cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "full rewire cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "typical cost to rewire a house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "rewire entire house cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "electrician rewire house cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "3 bed rewire cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to rewire 1000 sq ft house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "average cost to rewire a 3 bed house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "average cost to rewire a small house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost for rewiring old house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "average price for rewiring a 3 bed house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "approximate cost to rewire a house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to replace fuse box with circuit breakers",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "rewire price",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "complete house rewire cost",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "price to rewire 3 bed house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "price to rewire a 3 bedroom house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "2 bed house rewire cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "average cost of rewiring a 2 bed house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "average cost rewire 2 bed house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "complete rewire cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost for house rewire",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost for rewire 3 bed house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost of 3 bed house rewire",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost of re wiring a house",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost of replacing electric fuse box",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost of rewiring a three bedroom house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost of wiring a new house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost of wiring house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to replace fuse board",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to replace fuse box in house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "cost to rewire old home",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "house re wire cost",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "price of rewiring a 3 bedroom house",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "Price Discovery",
+      "keyword": "redo electrical wiring house cost",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    }
+  ]
+}

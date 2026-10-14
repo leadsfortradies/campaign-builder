@@ -1,0 +1,84 @@
+{
+  "project_id": "rowdy-builders-manawatu",
+  "step": "step5",
+  "label": "Rowdy Builders - Manawatu (rebuild)",
+  "mode": "build_site",
+  "ad_groups": [
+    {
+      "name": "Deck Builders",
+      "url": "https://www.palmydecksandfences.co.nz/quote/decks"
+    },
+    {
+      "name": "Composite Decks",
+      "url": "https://www.palmydecksandfences.co.nz/quote/decks"
+    },
+    {
+      "name": "Timber Decks",
+      "url": "https://www.palmydecksandfences.co.nz/quote/decks"
+    },
+    {
+      "name": "Deck & Fence Builders",
+      "url": "https://www.palmydecksandfences.co.nz/"
+    },
+    {
+      "name": "Fence Builders",
+      "url": "https://www.palmydecksandfences.co.nz/quote/fences"
+    },
+    {
+      "name": "Fencing Palmerston North",
+      "url": "https://www.palmydecksandfences.co.nz/quote/fences"
+    },
+    {
+      "name": "Fencing Manawatu, Levin & Marton",
+      "url": "https://www.palmydecksandfences.co.nz/quote/fences"
+    },
+    {
+      "name": "Brick Fences",
+      "url": "https://www.palmydecksandfences.co.nz/quote/fences"
+    },
+    {
+      "name": "Timber Fences",
+      "url": "https://www.palmydecksandfences.co.nz/quote/timber-fences"
+    },
+    {
+      "name": "Aluminium & Metal Fences",
+      "url": "https://www.palmydecksandfences.co.nz/quote/aluminium-fences"
+    },
+    {
+      "name": "Pergolas",
+      "url": "https://www.palmydecksandfences.co.nz/quote/pergolas"
+    },
+    {
+      "name": "Pool Fencing",
+      "url": "https://www.palmydecksandfences.co.nz/quote/pool-fencing"
+    },
+    {
+      "name": "Deck Costs",
+      "url": "https://www.palmydecksandfences.co.nz/quote/decks"
+    },
+    {
+      "name": "Fence Costs",
+      "url": "https://www.palmydecksandfences.co.nz/quote/fences"
+    },
+    {
+      "name": "Timber Fence Costs",
+      "url": "https://www.palmydecksandfences.co.nz/quote/timber-fences"
+    },
+    {
+      "name": "Aluminium, Brick & Colorbond Fence Costs",
+      "url": "https://www.palmydecksandfences.co.nz/quote/aluminium-fences"
+    },
+    {
+      "name": "Pergola Costs",
+      "url": "https://www.palmydecksandfences.co.nz/quote/pergolas"
+    },
+    {
+      "name": "Pool Fencing Costs",
+      "url": "https://www.palmydecksandfences.co.nz/quote/pool-fencing"
+    },
+    {
+      "name": "Covered Deck Costs",
+      "url": "https://www.palmydecksandfences.co.nz/quote/covered-decks"
+    }
+  ]
+}

@@ -2,10 +2,42 @@
   "version": "0.0.1",
   "configurations": [
     {
+      "name": "campaign-builder-backend",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": [
+        "-c",
+        "cd '/Users/liamemery/Desktop/Work Shit/Google Ads Campaign Builder' && ALLOW_NO_AUTH=1 STATE_DIR=/private/tmp/cb-state WEB_DATA_ROOT=/private/tmp/cb-web exec venv/bin/python -m uvicorn server.app:app --port 8788"
+      ],
+      "port": 8788
+    },
+    {
       "name": "lftcampaignbuilder-local",
       "runtimeExecutable": "bash",
-      "runtimeArgs": ["-c", "cd '/Users/liamemery/Desktop/Work Shit/Google Ads Campaign Builder' && exec venv/bin/python scripts/local_server.py --port 8787"],
+      "runtimeArgs": [
+        "-c",
+        "cd '/Users/liamemery/Desktop/Work Shit/Google Ads Campaign Builder' && exec venv/bin/python scripts/local_server.py --port 8787"
+      ],
       "port": 8787
+    },
+    {
+      "name": "taupo-painters-site",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": [
+        "-c",
+        "cd '/Users/liamemery/Desktop/Websites/Taupo Painters' && exec npm run dev"
+      ],
+      "port": 4325,
+      "autoPort": true
+    },
+    {
+      "name": "palmy-decks-fences-site",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": [
+        "-c",
+        "cd '/Users/liamemery/Desktop/Websites/Palmy Decks & Fences v2' && exec npx astro dev --port ${PORT:-4331}"
+      ],
+      "port": 4331,
+      "autoPort": true
     }
   ]
 }

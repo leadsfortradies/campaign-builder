@@ -1,0 +1,134 @@
+{
+  "project_id": "rowdy-builders-manawatu",
+  "step": "step2",
+  "label": "Rowdy Builders - Manawatu (rebuild)",
+  "group_label": "Location",
+  "rows": [
+    {
+      "group": "levin",
+      "keyword": "fences levin",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 3.57,
+      "high_bid": 12.0,
+      "note": "close variant of 'fencing levin' (Keyword Planner merges them)"
+    },
+    {
+      "group": "levin",
+      "keyword": "fencing contractors levin",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "levin",
+      "keyword": "fencing levin",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 3.57,
+      "high_bid": 12.0,
+      "note": ""
+    },
+    {
+      "group": "manawatu",
+      "keyword": "fencers manawatu",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "close variant of 'fencing manawatu' (Keyword Planner merges them)"
+    },
+    {
+      "group": "manawatu",
+      "keyword": "fences manawatu",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "close variant of 'fencing manawatu' (Keyword Planner merges them)"
+    },
+    {
+      "group": "manawatu",
+      "keyword": "fencing manawatu",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "marton",
+      "keyword": "fencing marton",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "palmerston north",
+      "keyword": "fencers palmerston north",
+      "avg_monthly_searches": 50,
+      "competition": "HIGH",
+      "low_bid": 2.06,
+      "high_bid": 11.72,
+      "note": "close variant of 'fencing palmerston north' (Keyword Planner merges them)"
+    },
+    {
+      "group": "palmerston north",
+      "keyword": "fences palmerston north",
+      "avg_monthly_searches": 50,
+      "competition": "HIGH",
+      "low_bid": 2.06,
+      "high_bid": 11.72,
+      "note": "close variant of 'fencing palmerston north' (Keyword Planner merges them)"
+    },
+    {
+      "group": "palmerston north",
+      "keyword": "fencing palmerston north",
+      "avg_monthly_searches": 50,
+      "competition": "HIGH",
+      "low_bid": 2.06,
+      "high_bid": 11.72,
+      "note": ""
+    },
+    {
+      "group": "palmerston north",
+      "keyword": "deck builder palmerston north",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "close variant of 'deck builders palmerston north' (Keyword Planner merges them)"
+    },
+    {
+      "group": "palmerston north",
+      "keyword": "decking palmerston north",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": "merged into a variant by Keyword Planner; produced a lead in the live account last month"
+    },
+    {
+      "group": "palmerston north",
+      "keyword": "fence builder palmerston north",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 3.83,
+      "high_bid": 9.16,
+      "note": "close variant of 'fence builders palmerston north' (Keyword Planner merges them)"
+    },
+    {
+      "group": "palmerston north",
+      "keyword": "fence builders palmerston north",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 3.83,
+      "high_bid": 9.16,
+      "note": ""
+    }
+  ]
+}

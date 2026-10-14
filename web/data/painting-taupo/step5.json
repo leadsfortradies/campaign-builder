@@ -1,0 +1,24 @@
+{
+  "project_id": "painting-taupo",
+  "step": "step5",
+  "label": "Paint Aesthetics - Taupo",
+  "mode": "urls",
+  "ad_groups": [
+    {
+      "name": "General House Painting",
+      "url": "https://taupopainters.co.nz/quote/painting"
+    },
+    {
+      "name": "Interior Painting",
+      "url": "https://taupopainters.co.nz/quote/interior-painting"
+    },
+    {
+      "name": "Exterior Painting",
+      "url": "https://taupopainters.co.nz/quote/exterior-painting"
+    },
+    {
+      "name": "Deck Painting & Staining",
+      "url": "https://taupopainters.co.nz/quote/deck-painting"
+    }
+  ]
+}

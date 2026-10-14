@@ -1,0 +1,10 @@
+venv/
+.state/
+output/
+.git/
+google-ads.yaml
+gtm-credentials.yaml
+client_secret*.json
+*.pdf
+web/approvals/
+__pycache__/

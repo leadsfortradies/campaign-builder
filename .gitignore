@@ -1,5 +1,6 @@
 # secrets - never commit these
 google-ads.yaml
+gtm-credentials.yaml
 client_secret*.json
 *.pdf
 .env
@@ -24,3 +25,6 @@ web/approvals/
 
 # os
 .DS_Store
+
+# backend state (sqlite, approvals)
+.state/

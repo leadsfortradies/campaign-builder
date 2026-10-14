@@ -1,0 +1,130 @@
+{
+  "business_name": "Paint Aesthetics",
+  "business_logo_path": "data/painting-taupo/assets/image0.webp",
+  "business_phone": "027 533 7510",
+  "business_email": "paintaesthetics95@gmail.com",
+  "service_areas": [
+    "Taupo District"
+  ],
+  "services": [
+    "Interior house painting",
+    "Exterior house painting",
+    "Deck painting/staining"
+  ],
+  "scope_notes": "Residential only. No roof painting - explicitly excluded by the client. Fence painting/staining dropped from scope 2026-10-07 - client decided not to target it.",
+  "work_photo_paths": [
+    "data/painting-taupo/assets/a1.webp",
+    "data/painting-taupo/assets/a2.webp",
+    "data/painting-taupo/assets/a3.webp",
+    "data/painting-taupo/assets/a4.webp",
+    "data/painting-taupo/assets/a5.webp",
+    "data/painting-taupo/assets/a6.webp",
+    "data/painting-taupo/assets/a7.webp",
+    "data/painting-taupo/assets/a8.webp",
+    "data/painting-taupo/assets/a9.webp",
+    "data/painting-taupo/assets/a10.webp",
+    "data/painting-taupo/assets/a11.webp",
+    "data/painting-taupo/assets/a12.webp",
+    "data/painting-taupo/assets/a13.webp",
+    "data/painting-taupo/assets/a14.webp",
+    "data/painting-taupo/assets/a15.webp",
+    "data/painting-taupo/assets/b1.webp",
+    "data/painting-taupo/assets/b2.webp",
+    "data/painting-taupo/assets/b3.webp",
+    "data/painting-taupo/assets/b4.webp",
+    "data/painting-taupo/assets/b5.webp",
+    "data/painting-taupo/assets/b6.webp",
+    "data/painting-taupo/assets/b7.webp",
+    "data/painting-taupo/assets/b8.webp",
+    "data/painting-taupo/assets/b9.webp",
+    "data/painting-taupo/assets/b10.webp",
+    "data/painting-taupo/assets/b11.webp",
+    "data/painting-taupo/assets/b12.webp",
+    "data/painting-taupo/assets/b13.webp",
+    "data/painting-taupo/assets/b14.webp",
+    "data/painting-taupo/assets/b15.webp",
+    "data/painting-taupo/assets/468036789_560116906723195_3033694568888999467_n.webp",
+    "data/painting-taupo/assets/468054931_560117173389835_2755980486281459979_n.webp",
+    "data/painting-taupo/assets/468144114_560117243389828_6620943385553299448_n.webp",
+    "data/painting-taupo/assets/468187375_560116923389860_532426749721188453_n.webp",
+    "data/painting-taupo/assets/468400644_560117103389842_6669871745937453146_n.webp",
+    "data/painting-taupo/assets/551596846_17876488170409945_459623897703776445_n.webp"
+  ],
+  "before_after_pairs": [
+    {
+      "before": "data/painting-taupo/assets/b1.webp",
+      "after": "data/painting-taupo/assets/a1.webp"
+    },
+    {
+      "before": "data/painting-taupo/assets/b2.webp",
+      "after": "data/painting-taupo/assets/a2.webp"
+    },
+    {
+      "before": "data/painting-taupo/assets/b3.webp",
+      "after": "data/painting-taupo/assets/a3.webp"
+    },
+    {
+      "before": "data/painting-taupo/assets/b4.webp",
+      "after": "data/painting-taupo/assets/a4.webp"
+    },
+    {
+      "before": "data/painting-taupo/assets/b5.webp",
+      "after": "data/painting-taupo/assets/a5.webp"
+    },
+    {
+      "before": "data/painting-taupo/assets/b6.webp",
+      "after": "data/painting-taupo/assets/a6.webp"
+    },
+    {
+      "before": "data/painting-taupo/assets/b7.webp",
+      "after": "data/painting-taupo/assets/a7.webp"
+    },
+    {
+      "before": "data/painting-taupo/assets/b8.webp",
+      "after": "data/painting-taupo/assets/a8.webp"
+    },
+    {
+      "before": "data/painting-taupo/assets/b9.webp",
+      "after": "data/painting-taupo/assets/a9.webp"
+    },
+    {
+      "before": "data/painting-taupo/assets/b10.webp",
+      "after": "data/painting-taupo/assets/a10.webp"
+    },
+    {
+      "before": "data/painting-taupo/assets/b11.webp",
+      "after": "data/painting-taupo/assets/a11.webp"
+    },
+    {
+      "before": "data/painting-taupo/assets/b12.webp",
+      "after": "data/painting-taupo/assets/a12.webp"
+    },
+    {
+      "before": "data/painting-taupo/assets/b13.webp",
+      "after": "data/painting-taupo/assets/a13.webp"
+    },
+    {
+      "before": "data/painting-taupo/assets/b14.webp",
+      "after": "data/painting-taupo/assets/a14.webp"
+    },
+    {
+      "before": "data/painting-taupo/assets/b15.webp",
+      "after": "data/painting-taupo/assets/a15.webp"
+    }
+  ],
+  "other_info": "30 before/after work photos supplied as labelled pairs (a1/b1 .. a15/b15); Before/After text badges removed via automated inpainting (2026-10-07) - clean on smooth surfaces, visible soft blur on a handful with busy backgrounds (grass/foliage/pavement/carpet), shipped as-is per client's choice. All gallery images resized (max 1920px long edge) and converted to webp for page speed.",
+  "project_id": "painting-taupo",
+  "step": "step0",
+  "label": "Paint Aesthetics - Taupo",
+  "legal_name": "Paint Aesthetics Ltd",
+  "business_established": 2022,
+  "years_experience": "10 years in the painting industry (since 2016); founder worked for a larger painting company in Hamilton before moving to Taupo and starting Paint Aesthetics",
+  "certifications": "No formal painting qualifications/certificates. Public liability insurance held.",
+  "guarantee": "5-year workmanship guarantee",
+  "reviews": "5 Google reviews, 4 Facebook reviews, all 5-star (9 total, 5.0 average)",
+  "differentiators": "Experience, attention to detail, quality workmanship, good communication, 5-year workmanship guarantee, strong reviews. Locally owned and operated Taupo residential painting business.",
+  "completed_projects": "100+",
+  "owner_name": "Brock (with Natalie as part of the team)",
+  "domain": "taupopainters.co.nz",
+  "site_build_path": "/Users/liamemery/Desktop/Websites/Taupo Painters"
+}

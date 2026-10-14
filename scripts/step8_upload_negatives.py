@@ -95,6 +95,9 @@ def main():
     parser.add_argument("customer_id", help="Digits only, no dashes")
     parser.add_argument("--skip-terms", default="", help="Comma-separated keyword text to drop from upload (case-insensitive)")
     parser.add_argument("--validate-only", action="store_true")
+    parser.add_argument("--only-campaigns", nargs="+", default=None, metavar="NAME",
+                        help="Attach only to campaigns with these exact names (default: every non-removed "
+                             "campaign). Use on rebuilds so an existing live campaign isn't changed.")
     parser.add_argument("--attach-only", metavar="SHARED_SET_RESOURCE_NAME",
                          help="Recovery mode: skip mutate 1 (shared set + criteria already exist - "
                               "e.g. from a run where mutate 1 succeeded but mutate 2's attach failed) "
@@ -190,6 +193,9 @@ def main():
     # (Priority 2 / Price Discovery) at that time.
     campaign_query = "SELECT campaign.resource_name, campaign.name FROM campaign WHERE campaign.status != 'REMOVED'"
     campaigns = list(ga_service.search(customer_id=customer_id, query=campaign_query))
+    if args.only_campaigns:
+        campaigns = [c for c in campaigns if c.campaign.name in args.only_campaigns]
+        print(f"Attaching only to: {[c.campaign.name for c in campaigns]}")
     if not campaigns:
         sys.exit("No campaigns found on this account to attach the negative keyword list to.")
 

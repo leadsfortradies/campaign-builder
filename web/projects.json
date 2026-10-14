@@ -69,5 +69,243 @@
         "approved_count": 33
       }
     }
+  },
+  {
+    "id": "painting-taupo",
+    "label": "Paint Aesthetics - Taupo",
+    "steps": {
+      "step0": {
+        "status": "approved",
+        "file": "data/painting-taupo/step0.json",
+        "step_label": "Step 0: Setup"
+      },
+      "step1": {
+        "status": "approved",
+        "file": "data/painting-taupo/step1.json",
+        "step_label": "Step 1: Keyword Research",
+        "row_count": 207
+      },
+      "step2": {
+        "status": "skipped",
+        "note": "Taupo District geo-targeted Keyword Planner data came back flat (every keyword floored at 10 searches/mo, $0 bids) - too small a geo for granular metrics, even at the whole-district level. Going finer to town/suburb level would be even less reliable. Relying on Step 1's NZ-wide + near-me keyword set; actual delivery scoped to Taupo District via Google Ads location targeting (Step 8).",
+        "step_label": "Step 2: Location Keywords"
+      },
+      "step3": {
+        "status": "approved",
+        "file": "data/painting-taupo/step3.json",
+        "step_label": "Step 3: Ad Groups",
+        "row_count": 205
+      },
+      "step4": {
+        "status": "approved",
+        "file": "data/painting-taupo/step4.json",
+        "step_label": "Step 4: Ad Copy",
+        "row_count": 76
+      },
+      "step5": {
+        "status": "approved",
+        "file": "data/painting-taupo/step5.json",
+        "step_label": "Step 5: Landing Pages",
+        "row_count": 4
+      },
+      "step6": {
+        "status": "approved",
+        "file": "data/painting-taupo/step6.json",
+        "step_label": "Step 6: Sitelinks, Callouts & Snippets",
+        "row_count": 33,
+        "approved_count": 33
+      }
+    }
+  },
+  {
+    "id": "security-cabling-hamilton",
+    "label": "Security & Data Cabling - Hamilton",
+    "steps": {
+      "step1": {
+        "status": "pending_review",
+        "file": "data/security-cabling-hamilton/step1.json",
+        "step_label": "Step 1: Keyword Research",
+        "row_count": 224
+      }
+    }
+  },
+  {
+    "id": "real-estate-palmerston-north",
+    "label": "Real Estate Agent - Palmerston North",
+    "steps": {
+      "step1": {
+        "status": "approved",
+        "file": "data/real-estate-palmerston-north/step1.json",
+        "step_label": "Step 1: Keyword Research",
+        "row_count": 574,
+        "approved_count": 522
+      },
+      "step2": {
+        "status": "approved",
+        "file": "data/real-estate-palmerston-north/step2.json",
+        "step_label": "Step 2: Location Keywords",
+        "row_count": 3,
+        "approved_count": 3
+      },
+      "step3": {
+        "status": "approved",
+        "file": "data/real-estate-palmerston-north/step3.json",
+        "step_label": "Step 3: Ad Groups",
+        "row_count": 524,
+        "approved_count": 524
+      }
+    }
+  },
+  {
+    "id": "glazing-manawatu",
+    "label": "Altherm Windows & Doors - Manawatu",
+    "steps": {
+      "step1": {
+        "status": "pending_review",
+        "file": "data/glazing-manawatu/step1.json",
+        "step_label": "Step 1: Keyword Research",
+        "row_count": 874
+      }
+    }
+  },
+  {
+    "id": "timber-supplies-manawatu",
+    "label": "Timber & Building Supplies - Manawatu (Lumberland)",
+    "steps": {
+      "step0": {
+        "status": "pending_review",
+        "file": "data/timber-supplies-manawatu/step0.json",
+        "step_label": "Step 0: Setup"
+      },
+      "step1": {
+        "status": "pending_review",
+        "file": "data/timber-supplies-manawatu/step1.json",
+        "step_label": "Step 1: Keyword Research",
+        "row_count": 900
+      }
+    }
+  },
+  {
+    "id": "rowdy-builders-manawatu",
+    "label": "Rowdy Builders - Manawatu (rebuild)",
+    "steps": {
+      "step0": {
+        "status": "pending_review",
+        "file": "data/rowdy-builders-manawatu/step0.json",
+        "step_label": "Step 0: Setup"
+      },
+      "step1": {
+        "status": "pending_review",
+        "file": "data/rowdy-builders-manawatu/step1.json",
+        "step_label": "Step 1: Keyword Research",
+        "row_count": 275
+      },
+      "step2": {
+        "status": "pending_review",
+        "file": "data/rowdy-builders-manawatu/step2.json",
+        "step_label": "Step 2: Location Keywords",
+        "row_count": 14
+      },
+      "step3": {
+        "status": "pending_review",
+        "file": "data/rowdy-builders-manawatu/step3.json",
+        "step_label": "Step 3: Ad Groups",
+        "row_count": 263
+      },
+      "step5": {
+        "status": "pending_review",
+        "file": "data/rowdy-builders-manawatu/step5.json",
+        "step_label": "Step 5: Landing Pages",
+        "row_count": 19
+      },
+      "step4": {
+        "status": "pending_review",
+        "file": "data/rowdy-builders-manawatu/step4.json",
+        "step_label": "Step 4: Ad Copy",
+        "row_count": 399
+      },
+      "step6": {
+        "status": "pending_review",
+        "file": "data/rowdy-builders-manawatu/step6.json",
+        "step_label": "Step 6: Sitelinks, Callouts & Snippets",
+        "row_count": 127
+      }
+    }
+  },
+  {
+    "id": "bolt-concreting-palmerston-north",
+    "label": "Bolt Concreting - Palmerston North (rebuild)",
+    "steps": {
+      "step0": {
+        "status": "pending_review",
+        "file": "data/bolt-concreting-palmerston-north/step0.json",
+        "step_label": "Step 0: Setup"
+      },
+      "step1": {
+        "status": "pending_review",
+        "file": "data/bolt-concreting-palmerston-north/step1.json",
+        "step_label": "Step 1: Keyword Research",
+        "row_count": 351
+      },
+      "step2": {
+        "status": "pending_review",
+        "file": "data/bolt-concreting-palmerston-north/step2.json",
+        "step_label": "Step 2: Location Keywords",
+        "row_count": 1
+      },
+      "step3": {
+        "status": "pending_review",
+        "file": "data/bolt-concreting-palmerston-north/step3.json",
+        "step_label": "Step 3: Ad Groups",
+        "row_count": 323
+      },
+      "step4": {
+        "status": "pending_review",
+        "file": "data/bolt-concreting-palmerston-north/step4.json",
+        "step_label": "Step 4: Ad Copy",
+        "row_count": 462
+      },
+      "step5": {
+        "status": "approved",
+        "file": "data/bolt-concreting-palmerston-north/step5.json",
+        "step_label": "Step 5: Landing Pages",
+        "row_count": 22
+      },
+      "step6": {
+        "status": "pending_review",
+        "file": "data/bolt-concreting-palmerston-north/step6.json",
+        "step_label": "Step 6: Sitelinks, Callouts & Snippets",
+        "row_count": 145
+      }
+    }
+  },
+  {
+    "id": "electrical-christchurch",
+    "label": "Electrician - Christchurch",
+    "steps": {
+      "step1": {
+        "status": "pending_review",
+        "file": "data/electrical-christchurch/step1.json",
+        "step_label": "Step 1: Keyword Research",
+        "row_count": 427
+      }
+    }
+  },
+  {
+    "id": "timber-supplies-lni",
+    "label": "Timber & Sheds - Lower North Island (Lumberland)",
+    "steps": {
+      "step0": {
+        "status": "pending_review",
+        "file": "data/timber-supplies-lni/step0.json",
+        "step_label": "Step 0: Setup"
+      },
+      "step1": {
+        "status": "pending_review",
+        "file": "data/timber-supplies-lni/step1.json",
+        "step_label": "Step 1: Keyword Research",
+        "row_count": 1423
+      }
+    }
   }
 ]

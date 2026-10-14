@@ -1,0 +1,17 @@
+{
+  "project_id": "bolt-concreting-palmerston-north",
+  "step": "step2",
+  "label": "Bolt Concreting - Palmerston North (rebuild)",
+  "group_label": "Location",
+  "rows": [
+    {
+      "group": "palmerston north",
+      "keyword": "concrete paths palmerston north",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    }
+  ]
+}

@@ -15,6 +15,10 @@ function storageKey(projectId, step) {
   return `lft-excluded::${projectId}::${step}`;
 }
 
+function promotedStorageKey(projectId, step) {
+  return `lft-promoted::${projectId}::${step}`;
+}
+
 function loadExcluded(projectId, step) {
   try {
     const raw = localStorage.getItem(storageKey(projectId, step));
@@ -23,6 +27,21 @@ function loadExcluded(projectId, step) {
     return new Set();
   }
 }
+
+function loadPromoted(projectId, step) {
+  try {
+    const raw = localStorage.getItem(promotedStorageKey(projectId, step));
+    return new Set(raw ? JSON.parse(raw) : []);
+  } catch (e) {
+    return new Set();
+  }
+}
+
+// Only "BOF - Priority 2" rows get a promote button, and they only ever
+// promote to "BOF - Priority 1" - keep this mapping explicit rather than
+// generic in case other steps/groups reuse this component later.
+const PROMOTE_FROM = "BOF - Priority 2";
+const PROMOTE_TO = "BOF - Priority 1";
 
 function fmtBid(low, high) {
   if (low === 0 && high === 0) return "—";
@@ -37,6 +56,7 @@ class ReviewView {
     this.data = stepData;
     this.onApproved = onApproved;
     this.excluded = loadExcluded(stepData.project_id, stepData.step);
+    this.promoted = loadPromoted(stepData.project_id, stepData.step);
   }
 
   saveExcluded() {
@@ -48,6 +68,21 @@ class ReviewView {
     } catch (e) {
       /* ignore */
     }
+  }
+
+  savePromoted() {
+    try {
+      localStorage.setItem(
+        promotedStorageKey(this.data.project_id, this.data.step),
+        JSON.stringify([...this.promoted])
+      );
+    } catch (e) {
+      /* ignore */
+    }
+  }
+
+  effectiveGroup(row) {
+    return row.group === PROMOTE_FROM && this.promoted.has(row.keyword) ? PROMOTE_TO : row.group;
   }
 
   groupOrder(groupNames) {
@@ -72,7 +107,7 @@ class ReviewView {
 
     const byGroup = {};
     for (const row of this.data.rows) {
-      (byGroup[row.group] ||= []).push(row);
+      (byGroup[this.effectiveGroup(row)] ||= []).push(row);
     }
     const groupNames = this.groupOrder(Object.keys(byGroup));
 
@@ -104,6 +139,7 @@ class ReviewView {
             <th class="col-num">Avg/mo</th>
             <th class="col-comp">Competition</th>
             <th class="col-bid">Bid range</th>
+            <th class="col-promote"></th>
             <th class="col-x"></th>
           </tr>
         </thead>
@@ -146,6 +182,20 @@ class ReviewView {
         bidTd.className = "col-bid";
         bidTd.textContent = fmtBid(row.low_bid, row.high_bid);
 
+        const promoteTd = document.createElement("td");
+        promoteTd.className = "col-promote";
+        if (row.group === PROMOTE_FROM) {
+          const isPromoted = this.promoted.has(row.keyword);
+          const promoteBtn = document.createElement("button");
+          promoteBtn.className = "promote-btn" + (isPromoted ? " active" : "");
+          promoteBtn.textContent = isPromoted ? "↓ P2" : "↑ P1";
+          promoteBtn.title = isPromoted
+            ? "Move back to Priority 2"
+            : "Move up to Priority 1";
+          promoteBtn.addEventListener("click", () => this.togglePromote(row.keyword));
+          promoteTd.appendChild(promoteBtn);
+        }
+
         const xTd = document.createElement("td");
         xTd.className = "col-x";
         const xBtn = document.createElement("button");
@@ -155,7 +205,7 @@ class ReviewView {
         xBtn.addEventListener("click", () => this.toggleKeyword(row.keyword));
         xTd.appendChild(xBtn);
 
-        tr.append(kwTd, volTd, compTd, bidTd, xTd);
+        tr.append(kwTd, volTd, compTd, bidTd, promoteTd, xTd);
         tbody.appendChild(tr);
       }
 
@@ -186,8 +236,23 @@ class ReviewView {
     this.render();
   }
 
+  togglePromote(keyword) {
+    if (this.promoted.has(keyword)) {
+      this.promoted.delete(keyword);
+    } else {
+      this.promoted.add(keyword);
+    }
+    this.savePromoted();
+    this.render();
+  }
+
   keptRows() {
-    return this.data.rows.filter((r) => !this.excluded.has(r.keyword));
+    return this.data.rows
+      .filter((r) => !this.excluded.has(r.keyword))
+      .map((r) => {
+        const group = this.effectiveGroup(r);
+        return group === r.group ? r : { ...r, group };
+      });
   }
 
   exportCSV() {
@@ -209,6 +274,28 @@ class ReviewView {
     a.download = `${this.data.project_id}_${this.data.step}_kept.csv`;
     a.click();
     URL.revokeObjectURL(url);
+  }
+
+  // One keyword per line (kept rows only, de-duplicated), ready to paste
+  // into Google Keyword Planner.
+  async copyKeywords(btn) {
+    const kws = [...new Set(this.keptRows().map((r) => r.keyword))];
+    const text = kws.join("\n");
+    let ok = false;
+    try {
+      await navigator.clipboard.writeText(text);
+      ok = true;
+    } catch (e) {
+      const ta = document.createElement("textarea");
+      ta.value = text;
+      document.body.appendChild(ta);
+      ta.select();
+      try { ok = document.execCommand("copy"); } catch (e2) {}
+      ta.remove();
+    }
+    const original = btn.textContent;
+    btn.textContent = ok ? `Copied ${kws.length}` : "Copy failed";
+    setTimeout(() => { btn.textContent = original; }, 1500);
   }
 
   showStatus(msg, ok) {

@@ -1,0 +1,634 @@
+{
+  "project_id": "rowdy-builders-manawatu",
+  "step": "step4",
+  "label": "Rowdy Builders - Manawatu (rebuild)",
+  "ad_groups": [
+    {
+      "name": "Deck Builders",
+      "final_url": "https://www.palmydecksandfences.co.nz/quote/decks",
+      "headlines_pinned": [
+        "Deck Builders Palmerston North",
+        "Deck Builders Near Me",
+        "Deck Building Company"
+      ],
+      "headlines_benefit": [
+        "100+ Projects Completed",
+        "10+ Years Experience",
+        "Fully Insured",
+        "Free On-Site Quotes",
+        "Written Quote In 48 Hours",
+        "One Fixed Price In Writing",
+        "No Surprise Extras",
+        "Whoever Quotes It Builds It",
+        "Built For Manawat\u016b Weather",
+        "5-Star Rated",
+        "Priced To Compete",
+        "Pine, Hardwood & Composite"
+      ],
+      "descriptions": [
+        "Deck builders in Palmerston North. Free on-site quote, written price within 48 hours.",
+        "Local deck contractors near me. Pine, hardwood and composite decks built to last.",
+        "Whoever quotes your deck builds it. One fixed price, no surprise extras. Fully insured.",
+        "100+ projects completed. Get your new deck built by a 5-star rated Palmy builder."
+      ],
+      "paths": [
+        "Decks",
+        "Palmerston-Nth"
+      ]
+    },
+    {
+      "name": "Composite Decks",
+      "final_url": "https://www.palmydecksandfences.co.nz/quote/decks",
+      "headlines_pinned": [
+        "Composite Deck Builder",
+        "Composite Decking Installers",
+        "Composite Decks Palmy"
+      ],
+      "headlines_benefit": [
+        "100+ Projects Completed",
+        "10+ Years Experience",
+        "Fully Insured",
+        "Free On-Site Quotes",
+        "Written Quote In 48 Hours",
+        "One Fixed Price In Writing",
+        "No Surprise Extras",
+        "Whoever Quotes It Builds It",
+        "Built For Manawat\u016b Weather",
+        "5-Star Rated",
+        "Priced To Compete",
+        "No Oiling, No Splinters"
+      ],
+      "descriptions": [
+        "Composite deck builder in Palmerston North. Free on-site quote, written within 48 hours.",
+        "Composite decking installation that keeps its colour and just needs a wash. No oiling.",
+        "Whoever quotes your composite deck builds it. One fixed price, no surprise extras.",
+        "100+ projects completed across Palmy and Manawat\u016b. Fully insured, 5-star rated."
+      ],
+      "paths": [
+        "Composite",
+        "Decks"
+      ]
+    },
+    {
+      "name": "Timber Decks",
+      "final_url": "https://www.palmydecksandfences.co.nz/quote/decks",
+      "headlines_pinned": [
+        "Timber Deck Builders",
+        "Kwila Decking Installation",
+        "Wood Deck Builders Near Me"
+      ],
+      "headlines_benefit": [
+        "100+ Projects Completed",
+        "10+ Years Experience",
+        "Fully Insured",
+        "Free On-Site Quotes",
+        "Written Quote In 48 Hours",
+        "One Fixed Price In Writing",
+        "No Surprise Extras",
+        "Whoever Quotes It Builds It",
+        "Built For Manawat\u016b Weather",
+        "5-Star Rated",
+        "Priced To Compete",
+        "Pine & Hardwood Decks"
+      ],
+      "descriptions": [
+        "Timber decking installation in Palmerston North. Pine, kwila and hardwood decks.",
+        "Wood deck builders near me. Free on-site quote with a written price within 48 hours.",
+        "Kwila decking installation by the same builder who quotes it. No surprise extras.",
+        "100+ projects completed. Fully insured, 5-star rated. Built for Manawat\u016b weather."
+      ],
+      "paths": [
+        "Timber",
+        "Decks"
+      ]
+    },
+    {
+      "name": "Deck & Fence Builders",
+      "final_url": "https://www.palmydecksandfences.co.nz/",
+      "headlines_pinned": [
+        "Deck And Fence Builders",
+        "Deck & Fence Builders Near Me",
+        "Fence And Deck Builders"
+      ],
+      "headlines_benefit": [
+        "100+ Projects Completed",
+        "10+ Years Experience",
+        "Fully Insured",
+        "Free On-Site Quotes",
+        "Written Quote In 48 Hours",
+        "One Fixed Price In Writing",
+        "No Surprise Extras",
+        "Whoever Quotes It Builds It",
+        "Built For Manawat\u016b Weather",
+        "5-Star Rated",
+        "Priced To Compete",
+        "Decks, Fences & Pergolas"
+      ],
+      "descriptions": [
+        "Deck and fence builders in Palmerston North. Free on-site quote, written in 48 hours.",
+        "Local deck and fence installers near me. One fixed price in writing, no surprise extras.",
+        "Fence and deck builders with 100+ projects completed. Fully insured and 5-star rated.",
+        "Whoever quotes it builds it. Decks, fences and pergolas built for Manawat\u016b weather."
+      ],
+      "paths": [
+        "Decks-Fences",
+        "Palmy"
+      ]
+    },
+    {
+      "name": "Fence Builders",
+      "final_url": "https://www.palmydecksandfences.co.nz/quote/fences",
+      "headlines_pinned": [
+        "Fencing Contractors Near Me",
+        "Fence Builders Near Me",
+        "Fence Company Near Me"
+      ],
+      "headlines_benefit": [
+        "100+ Projects Completed",
+        "10+ Years Experience",
+        "Fully Insured",
+        "Free On-Site Quotes",
+        "Written Quote In 48 Hours",
+        "One Fixed Price In Writing",
+        "No Surprise Extras",
+        "Whoever Quotes It Builds It",
+        "Built For Manawat\u016b Weather",
+        "5-Star Rated",
+        "Old Fence Hauled Away",
+        "Posts Concreted To Depth"
+      ],
+      "descriptions": [
+        "Fencing contractors near me. Free on-site quote with a written price within 48 hours.",
+        "Local fence builders in Palmy. Posts concreted to proper depth, old fence hauled away.",
+        "Fence company with 100+ projects completed. One fixed price, no surprise extras.",
+        "Timber, Colorbond, aluminium and more. Fence installers who are fully insured."
+      ],
+      "paths": [
+        "Fencing",
+        "Palmerston-Nth"
+      ]
+    },
+    {
+      "name": "Fencing Palmerston North",
+      "final_url": "https://www.palmydecksandfences.co.nz/quote/fences",
+      "headlines_pinned": [
+        "Fencing Palmerston North",
+        "Fencers Palmerston North",
+        "Fences Palmerston North"
+      ],
+      "headlines_benefit": [
+        "100+ Projects Completed",
+        "10+ Years Experience",
+        "Fully Insured",
+        "Free On-Site Quotes",
+        "Written Quote In 48 Hours",
+        "One Fixed Price In Writing",
+        "No Surprise Extras",
+        "Whoever Quotes It Builds It",
+        "Built For Manawat\u016b Weather",
+        "5-Star Rated",
+        "Old Fence Hauled Away",
+        "Posts Concreted To Depth"
+      ],
+      "descriptions": [
+        "Fencing in Palmerston North. Free on-site quote with a written price within 48 hours.",
+        "Fence builders in Palmerston North. Posts concreted to depth, old fence hauled away.",
+        "Fencing contractors in Palmerston North with 100+ projects completed. Fully insured.",
+        "Whoever quotes your fence builds it. One fixed price in writing, no surprise extras."
+      ],
+      "paths": [
+        "Fencing",
+        "Palmerston-Nth"
+      ]
+    },
+    {
+      "name": "Fencing Manawatu, Levin & Marton",
+      "final_url": "https://www.palmydecksandfences.co.nz/quote/fences",
+      "headlines_pinned": [
+        "Fencing Manawatu",
+        "Fencing Levin",
+        "Fencing Marton"
+      ],
+      "headlines_benefit": [
+        "100+ Projects Completed",
+        "10+ Years Experience",
+        "Fully Insured",
+        "Free On-Site Quotes",
+        "Written Quote In 48 Hours",
+        "One Fixed Price In Writing",
+        "No Surprise Extras",
+        "Whoever Quotes It Builds It",
+        "Built For Manawat\u016b Weather",
+        "5-Star Rated",
+        "Old Fence Hauled Away",
+        "Posts Concreted To Depth"
+      ],
+      "descriptions": [
+        "Fencing in Manawat\u016b, Levin and Marton. Free on-site quote, written price within 48 hours.",
+        "Fencing contractors for Manawat\u016b and Levin. Posts concreted to depth, old fence removed.",
+        "Fences built across Manawat\u016b with 100+ projects completed. Fully insured, 5-star rated.",
+        "Whoever quotes your fence builds it. One fixed price in writing, no surprise extras."
+      ],
+      "paths": [
+        "Fencing",
+        "Manawatu"
+      ]
+    },
+    {
+      "name": "Brick Fences",
+      "final_url": "https://www.palmydecksandfences.co.nz/quote/fences",
+      "headlines_pinned": [
+        "Brick Fence Builders",
+        "Brick Fence Builders Near Me",
+        "Brick Fences Palmerston North"
+      ],
+      "headlines_benefit": [
+        "100+ Projects Completed",
+        "10+ Years Experience",
+        "Fully Insured",
+        "Free On-Site Quotes",
+        "Written Quote In 48 Hours",
+        "One Fixed Price In Writing",
+        "No Surprise Extras",
+        "Whoever Quotes It Builds It",
+        "Built For Manawat\u016b Weather",
+        "5-Star Rated",
+        "Old Fence Hauled Away",
+        "All Fence Types Built"
+      ],
+      "descriptions": [
+        "Brick fence builders in Palmerston North. Free on-site quote, written within 48 hours.",
+        "Brick fence builders near me with 100+ projects completed. Fully insured, 5-star rated.",
+        "Whoever quotes your brick fence builds it. One fixed price, no surprise extras.",
+        "Local fence builders for brick, timber, Colorbond and more. Built for Manawat\u016b weather."
+      ],
+      "paths": [
+        "Brick-Fences",
+        "Palmy"
+      ]
+    },
+    {
+      "name": "Timber Fences",
+      "final_url": "https://www.palmydecksandfences.co.nz/quote/timber-fences",
+      "headlines_pinned": [
+        "Timber Fence Installers",
+        "Timber Fence Builders",
+        "Paling Fence Installation"
+      ],
+      "headlines_benefit": [
+        "100+ Projects Completed",
+        "10+ Years Experience",
+        "Fully Insured",
+        "Free On-Site Quotes",
+        "Written Quote In 48 Hours",
+        "One Fixed Price In Writing",
+        "No Surprise Extras",
+        "Whoever Quotes It Builds It",
+        "Built For Manawat\u016b Weather",
+        "5-Star Rated",
+        "Old Fence Hauled Away",
+        "Posts Concreted To Depth"
+      ],
+      "descriptions": [
+        "Timber fence installers in Palmerston North. Free on-site quote, written within 48 hours.",
+        "Timber fence builders who concrete posts to proper depth. Old fence hauled away.",
+        "Paling fence installation with one fixed price in writing. No surprise extras.",
+        "Wood fence builders near me with 100+ projects completed. Fully insured, 5-star rated."
+      ],
+      "paths": [
+        "Timber-Fences",
+        "Palmy"
+      ]
+    },
+    {
+      "name": "Aluminium & Metal Fences",
+      "final_url": "https://www.palmydecksandfences.co.nz/quote/aluminium-fences",
+      "headlines_pinned": [
+        "Aluminium Fence Installers",
+        "Colorbond Fence Installers",
+        "Steel Fence Installers"
+      ],
+      "headlines_benefit": [
+        "100+ Projects Completed",
+        "10+ Years Experience",
+        "Fully Insured",
+        "Free On-Site Quotes",
+        "Written Quote In 48 Hours",
+        "One Fixed Price In Writing",
+        "No Surprise Extras",
+        "Whoever Quotes It Builds It",
+        "Built For Manawat\u016b Weather",
+        "5-Star Rated",
+        "Old Fence Hauled Away",
+        "No Staining Needed"
+      ],
+      "descriptions": [
+        "Aluminium fence installers in Palmerston North. Free on-site quote within 48 hours.",
+        "Colorbond fence installers. Low-maintenance fencing that holds its colour. No staining.",
+        "Aluminium fence installation with one fixed price in writing. No surprise extras.",
+        "Steel and iron fence installers with 100+ projects completed. Fully insured."
+      ],
+      "paths": [
+        "Aluminium",
+        "Fences"
+      ]
+    },
+    {
+      "name": "Pergolas",
+      "final_url": "https://www.palmydecksandfences.co.nz/quote/pergolas",
+      "headlines_pinned": [
+        "Pergola Builders Near Me",
+        "Pergolas Palmerston North",
+        "Custom Built Pergolas"
+      ],
+      "headlines_benefit": [
+        "100+ Projects Completed",
+        "10+ Years Experience",
+        "Fully Insured",
+        "Free On-Site Quotes",
+        "Written Quote In 48 Hours",
+        "One Fixed Price In Writing",
+        "No Surprise Extras",
+        "Whoever Quotes It Builds It",
+        "Built For Manawat\u016b Weather",
+        "5-Star Rated",
+        "Priced To Compete",
+        "Freestanding Or Attached"
+      ],
+      "descriptions": [
+        "Pergola builders near me. Free on-site quote with a written price within 48 hours.",
+        "Custom built pergolas in Palmerston North, freestanding or attached to the house.",
+        "Pergola installers with 100+ projects completed. One fixed price, no surprise extras.",
+        "Whoever quotes your pergola builds it. Fully insured, 5-star rated, local to Palmy."
+      ],
+      "paths": [
+        "Pergolas",
+        "Palmerston-Nth"
+      ]
+    },
+    {
+      "name": "Pool Fencing",
+      "final_url": "https://www.palmydecksandfences.co.nz/quote/pool-fencing",
+      "headlines_pinned": [
+        "Pool Fencing Installers",
+        "Pool Fence Installers Near Me",
+        "Pool Fencing Palmerston North"
+      ],
+      "headlines_benefit": [
+        "100+ Projects Completed",
+        "10+ Years Experience",
+        "Fully Insured",
+        "Free On-Site Quotes",
+        "Written Quote In 48 Hours",
+        "One Fixed Price In Writing",
+        "No Surprise Extras",
+        "Whoever Quotes It Builds It",
+        "Built For Manawat\u016b Weather",
+        "5-Star Rated",
+        "Built To NZ Pool Rules",
+        "Aluminium & Glass Options"
+      ],
+      "descriptions": [
+        "Pool fencing installers in Palmerston North. Free on-site quote within 48 hours.",
+        "Pool fence installation built to meet NZ pool barrier rules. Aluminium or glass.",
+        "Pool fence installers near me with 100+ projects completed. Fully insured.",
+        "Swimming pool fence installation with one fixed price in writing. No surprise extras."
+      ],
+      "paths": [
+        "Pool-Fencing",
+        "Palmy"
+      ]
+    },
+    {
+      "name": "Deck Costs",
+      "final_url": "https://www.palmydecksandfences.co.nz/quote/decks",
+      "headlines_pinned": [
+        "Get A Price For Your Deck",
+        "Need A Price For Your Deck?",
+        "Get Your New Deck Priced"
+      ],
+      "headlines_benefit": [
+        "100+ Projects Completed",
+        "10+ Years Experience",
+        "Fully Insured",
+        "Free On-Site Quotes",
+        "Written Quote In 48 Hours",
+        "One Fixed Price In Writing",
+        "No Surprise Extras",
+        "Whoever Quotes It Builds It",
+        "Built For Manawat\u016b Weather",
+        "5-Star Rated",
+        "Priced To Compete",
+        "Free No-Obligation Quote"
+      ],
+      "descriptions": [
+        "How much does it cost to build a deck? Get a free on-site quote, written in 48 hours.",
+        "Deck pricing in Palmerston North. One fixed price in writing, no surprise extras.",
+        "Get a free deck quote from a builder with 100+ projects completed. Fully insured.",
+        "Pine, hardwood or composite. We'll price your deck after a free on-site visit."
+      ],
+      "paths": [
+        "Deck-Cost",
+        "Free-Quote"
+      ]
+    },
+    {
+      "name": "Fence Costs",
+      "final_url": "https://www.palmydecksandfences.co.nz/quote/fences",
+      "headlines_pinned": [
+        "Get A Price For Your Fence",
+        "Need A Price For Your Fence?",
+        "Get Your New Fence Priced"
+      ],
+      "headlines_benefit": [
+        "100+ Projects Completed",
+        "10+ Years Experience",
+        "Fully Insured",
+        "Free On-Site Quotes",
+        "Written Quote In 48 Hours",
+        "One Fixed Price In Writing",
+        "No Surprise Extras",
+        "Whoever Quotes It Builds It",
+        "Built For Manawat\u016b Weather",
+        "5-Star Rated",
+        "Old Fence Hauled Away",
+        "Free No-Obligation Quote"
+      ],
+      "descriptions": [
+        "How much does a fence cost? Get a free on-site quote with a written price in 48 hours.",
+        "Fence installation cost in writing. One fixed price per job, no surprise extras.",
+        "Get a free fence quote from a builder with 100+ projects completed. Fully insured.",
+        "Fencing prices for Palmerston North and Manawat\u016b. Posts concreted to proper depth."
+      ],
+      "paths": [
+        "Fence-Cost",
+        "Free-Quote"
+      ]
+    },
+    {
+      "name": "Timber Fence Costs",
+      "final_url": "https://www.palmydecksandfences.co.nz/quote/timber-fences",
+      "headlines_pinned": [
+        "Get A Timber Fence Price",
+        "Need A Timber Fence Price?",
+        "Get Your Timber Fence Priced"
+      ],
+      "headlines_benefit": [
+        "100+ Projects Completed",
+        "10+ Years Experience",
+        "Fully Insured",
+        "Free On-Site Quotes",
+        "Written Quote In 48 Hours",
+        "One Fixed Price In Writing",
+        "No Surprise Extras",
+        "Whoever Quotes It Builds It",
+        "Built For Manawat\u016b Weather",
+        "5-Star Rated",
+        "Old Fence Hauled Away",
+        "Free No-Obligation Quote"
+      ],
+      "descriptions": [
+        "Timber fence cost in writing. Free on-site quote with a fixed price within 48 hours.",
+        "Wood fence prices for Palmerston North. One fixed price, no surprise extras.",
+        "Paling fence cost from a builder with 100+ projects completed. Fully insured.",
+        "Get your timber fence priced properly. Posts concreted to depth, old fence hauled away."
+      ],
+      "paths": [
+        "Timber-Fence",
+        "Cost"
+      ]
+    },
+    {
+      "name": "Aluminium, Brick & Colorbond Fence Costs",
+      "final_url": "https://www.palmydecksandfences.co.nz/quote/aluminium-fences",
+      "headlines_pinned": [
+        "Need An Aluminium Fence Price?",
+        "Get A Colorbond Fence Price",
+        "Get A Brick Fence Price"
+      ],
+      "headlines_benefit": [
+        "100+ Projects Completed",
+        "10+ Years Experience",
+        "Fully Insured",
+        "Free On-Site Quotes",
+        "Written Quote In 48 Hours",
+        "One Fixed Price In Writing",
+        "No Surprise Extras",
+        "Whoever Quotes It Builds It",
+        "Built For Manawat\u016b Weather",
+        "5-Star Rated",
+        "Old Fence Hauled Away",
+        "Free No-Obligation Quote"
+      ],
+      "descriptions": [
+        "Aluminium fence cost in writing. Free on-site quote with a fixed price within 48 hours.",
+        "Colorbond fence installation cost for Palmerston North. One fixed price, no extras.",
+        "Brick fence cost, aluminium or Colorbond. Get a free quote from a fully insured builder.",
+        "100+ projects completed. Get your new fence priced properly by a local builder."
+      ],
+      "paths": [
+        "Fence-Cost",
+        "Free-Quote"
+      ]
+    },
+    {
+      "name": "Pergola Costs",
+      "final_url": "https://www.palmydecksandfences.co.nz/quote/pergolas",
+      "headlines_pinned": [
+        "Get A Price For Your Pergola",
+        "Need A Price For A Pergola?",
+        "Get Your Pergola Priced"
+      ],
+      "headlines_benefit": [
+        "100+ Projects Completed",
+        "10+ Years Experience",
+        "Fully Insured",
+        "Free On-Site Quotes",
+        "Written Quote In 48 Hours",
+        "One Fixed Price In Writing",
+        "No Surprise Extras",
+        "Whoever Quotes It Builds It",
+        "Built For Manawat\u016b Weather",
+        "5-Star Rated",
+        "Priced To Compete",
+        "Free No-Obligation Quote"
+      ],
+      "descriptions": [
+        "How much does a pergola cost? Get a free on-site quote, written within 48 hours.",
+        "Pergola prices for Palmerston North. One fixed price in writing, no surprise extras.",
+        "Get a free pergola quote from a builder with 100+ projects completed. Fully insured.",
+        "Pergola installation cost depends on size and roofing. We'll price yours on site."
+      ],
+      "paths": [
+        "Pergola-Cost",
+        "Free-Quote"
+      ]
+    },
+    {
+      "name": "Pool Fencing Costs",
+      "final_url": "https://www.palmydecksandfences.co.nz/quote/pool-fencing",
+      "headlines_pinned": [
+        "Get A Pool Fence Price",
+        "Need A Pool Fence Price?",
+        "Get Your Pool Fence Priced"
+      ],
+      "headlines_benefit": [
+        "100+ Projects Completed",
+        "10+ Years Experience",
+        "Fully Insured",
+        "Free On-Site Quotes",
+        "Written Quote In 48 Hours",
+        "One Fixed Price In Writing",
+        "No Surprise Extras",
+        "Whoever Quotes It Builds It",
+        "Built For Manawat\u016b Weather",
+        "5-Star Rated",
+        "Built To NZ Pool Rules",
+        "Free No-Obligation Quote"
+      ],
+      "descriptions": [
+        "Pool fencing cost in writing. Free on-site quote with a fixed price within 48 hours.",
+        "Pool fencing prices for Palmerston North. One fixed price, no surprise extras.",
+        "Get a free pool fence quote from a builder with 100+ projects completed. Insured.",
+        "Pool fencing cost per metre depends on the fence type. We'll price yours on site."
+      ],
+      "paths": [
+        "Pool-Fence",
+        "Cost"
+      ]
+    },
+    {
+      "name": "Covered Deck Costs",
+      "final_url": "https://www.palmydecksandfences.co.nz/quote/covered-decks",
+      "headlines_pinned": [
+        "Get A Price For A Deck Roof",
+        "Need A Covered Deck Price?",
+        "Get Your Deck Roof Priced"
+      ],
+      "headlines_benefit": [
+        "100+ Projects Completed",
+        "10+ Years Experience",
+        "Fully Insured",
+        "Free On-Site Quotes",
+        "Written Quote In 48 Hours",
+        "One Fixed Price In Writing",
+        "No Surprise Extras",
+        "Whoever Quotes It Builds It",
+        "Built For Manawat\u016b Weather",
+        "5-Star Rated",
+        "Priced To Compete",
+        "Use Your Deck Year Round"
+      ],
+      "descriptions": [
+        "Covered deck cost in writing. Free on-site quote with a fixed price within 48 hours.",
+        "Deck roof cost for Palmerston North homes. One fixed price, no surprise extras.",
+        "Cost to cover a deck depends on size and roofing. We'll price yours on site, free.",
+        "Get a roof over your deck from a builder with 100+ projects completed. Fully insured."
+      ],
+      "paths": [
+        "Covered-Deck",
+        "Cost"
+      ]
+    }
+  ]
+}

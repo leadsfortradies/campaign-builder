@@ -58,6 +58,59 @@ comes through chat).
 
 ## Step 1 - Keyword Research (Keyword Planner) — IMPLEMENTED
 
+**Reuse prior keyword research for the same industry** (added 2026-10-07,
+revised 2026-10-07 after the Taupo painting run) - if this trade has already
+been through Step 1 for a different location (e.g. a deck builder in
+Auckland, now doing a deck builder in Christchurch), check that project's
+approved `web/data/<project-id>/step1.json` first. The core keyword set for
+a given trade is largely location-independent - same services, same
+customer search behaviour, same classification calls already made and
+user-corrected - so the prior run's classification (BOF Priority 1/2 vs
+Price Discovery vs Manual Review vs Excluded, and the account-specific
+negative list) is a strong prior for this run, not a from-scratch judgment
+call. Cross-check new results against the prior run's categorization before
+presenting for review, and flag anywhere the new run disagrees with how the
+same keyword was classified before.
+
+**Getting volume for the new location - do not default to nationwide**
+(added 2026-10-07, Taupo painting run): the instinct when a small location's
+own geo-targeted Keyword Planner numbers come back flat (everything floored
+at the 10/mo minimum via `GenerateKeywordIdeas`) is to fall back to running
+research NZ-wide instead. **Don't** - nationwide idea-generation pulls in a
+huge amount of genuinely irrelevant long-tail (other-city keywords, overseas
+brand names, unrelated trades picked up by semantic expansion) that reads as
+plausible but will never get searched from the actual service area, and
+inflates Priority 1 with junk. Instead:
+1. Build the candidate keyword list from the prior same-industry project's
+   already-approved keywords (see above) plus, for any service that prior
+   project doesn't cover, a tight manually-reasoned seed list for just that
+   service (not a broad nationwide idea-generation pull).
+2. Look up **real volume for the new location** via exact-phrase
+   `GenerateKeywordHistoricalMetrics` against that candidate list and the
+   new location's own geo target constant (same technique as Step 2 -
+   `scripts/lib/keyword_planner.py`'s `get_keyword_historical_metrics`) -
+   not idea-generation, since the candidate list is already known.
+3. **A low-population location's historical metrics will often only return
+   a binary signal** - 0, or the 10/mo floor, with nothing in between (true
+   for Taupo, pop. ~25k) - rather than a genuinely differentiated number.
+   That's still real and worth having: it tells you whether Google has
+   *any* recorded search presence for that exact phrase in that location,
+   which is what actually matters for a small-town campaign, even though it
+   can't rank keywords against each other by volume the way a bigger city's
+   numbers can. Treat **0 at the new location as "no verified local demand -
+   leave it out of the build"**, not as a negative-keyword-worthy
+   irrelevance signal (it's a data-quality gap, same as the existing
+   10/mo-floor rule in item 7 below) - and don't fall back to the nationwide
+   number to rescue it.
+4. When volume can't differentiate within the "has signal" group (the usual
+   case for a small town), fall back to intent-tier alone (see the Priority
+   1/2 rubric below) to rank/split - and remember **Priority 1 has no hard
+   cap regardless of how volume behaves** - a keyword with genuine Tier A/B
+   signal goes to Priority 1 even when every keyword in the set is tied at
+   the same reported volume. When unsure whether to include a high-intent
+   keyword, include it - excluding a real buyer-intent keyword is the worse
+   mistake, not the safer one.
+
 1. User describes the business: what services it offers, and where (e.g. "a
    deck/fence/retaining wall builder in Auckland").
 2. Derive seed keywords per service and run them through Keyword Planner
@@ -160,7 +213,18 @@ classification already is - not a rigid scoring script. Apply this rubric:
    starting guideline this tends to land around 10-12 per service, but let
    actual data quality decide rather than forcing a number; a business with
    more stated services naturally ends up with a larger Priority 1 set in
-   total, not squeezed to fit a fixed ceiling.
+   total, not squeezed to fit a fixed ceiling. **This means literally no
+   cap, ever, in code or in judgment** - every Tier A or Tier B keyword
+   belongs in Priority 1 regardless of volume, even if that makes a service's
+   Priority 1 set much bigger than "10-12". Corrected 2026-10-07 (Taupo
+   painting run) after a scripted version of this rubric imposed a 12-per-
+   service cap and silently bumped "house painters near me" / "home painters
+   near me" (880 searches/mo, the two highest-volume keywords in the entire
+   dataset) down to Priority 2 - caught and corrected by the user, who was
+   explicit: **when unsure whether a keyword belongs in Priority 1, include
+   it rather than exclude it.** The cost of a too-big Priority 1 is trivial
+   (the user trims it in the web app review); the cost of silently dropping
+   a genuine high-intent keyword is not.
 6. **Everything else stays Bottom of Funnel but goes to Priority 2** -
    never dropped, never moved to Manual Review or Excluded for this reason
    alone.
@@ -242,12 +306,50 @@ refresh picks up the change immediately.
   company that was only described as doing exterior/interior/roof work).
   Check scope before counting the hiring signal.
 - **Never include "cheap" / "affordable" / "cheapest" / "budget" /
-  "low cost" price-positioning terms, in any category, for any trade.**
-  Exclude outright (e.g. "cheap house painters", "affordable roof
-  painting", "affordable exterior painters near me") rather than treating
-  the hiring signal (painter/company/near me) as enough to keep them.
-  Standing rule from 2026-10-05 - don't re-ask, applies to every future
-  build regardless of trade.
+  "low cost" / "free" price-positioning terms, in any category, for any
+  trade.** Exclude outright (e.g. "cheap house painters", "affordable roof
+  painting", "affordable exterior painters near me", "free installation
+  home security system") rather than treating the hiring signal
+  (painter/company/near me/installer) as enough to keep them. Standing rule
+  from 2026-10-05 ("cheap"/"affordable"/"budget"/"low cost"), extended to
+  "free" 2026-10-09 (security + data cabling / Hamilton run) - don't
+  re-ask, applies to every future build regardless of trade. When writing a
+  one-off classify script for a new trade rather than reusing an existing
+  one, build this in explicitly near the top of the hard-excludes - it
+  doesn't reliably fall out of the other exclusion rules on its own (missed
+  once on the Hamilton run, letting "cheap cctv camera installation"
+  through to Priority 2).
+- **Painting-specific scope excludes** (added 2026-10-07, Taupo run - same
+  "near me doesn't override scope" principle as above, specific themes worth
+  naming so they're not re-derived from scratch each time): **road/line
+  marking** ("road painting", "line painting", "curb painting" - a different
+  trade entirely); **concrete/epoxy/garage-floor coatings** and **floor
+  painting generally** - different trade/material scope from house/deck/
+  fence painting, exclude even when phrased as "X painters near me", not
+  just "X painting"; **paint stripping/removal** (removal, not application -
+  different job); **paint matching/mixing services** (a retail paint-shop
+  counter service, not a painting contractor's job); **overseas paint brand
+  names** (Nippon, Asian Paints, Berger, Benjamin Moore, Sherwin Williams -
+  not NZ-relevant, almost always keyword-planner noise from semantic
+  expansion); **brand-specific accreditation claims** ("Dulux accredited
+  painters" etc.) unless the business actually holds that accreditation -
+  risk of an implied claim the business can't back up; **narrow single-
+  building-component framing** ("gutter painters", "shutter painters",
+  "trim painter", "room painter") - grammatically on-topic but not how a
+  real customer searches for a whole-house painting company, reads as
+  long-tail noise rather than genuine intent; **subcontractor/trade-
+  recruitment phrasing** ("painters wanted", "looking for painters",
+  "contractors looking for painters") - a business or tradesperson, not a
+  homeowner-customer.
+- **Nationwide Keyword Planner data pulls in a lot of this kind of junk
+  that a tighter, location-scoped pull wouldn't** - see "Getting volume for
+  the new location" above. These examples came from a nationwide NZ pull
+  for a small town (Taupo) specifically because the broad semantic expansion
+  surfaces things a tight, prior-research-reused candidate list wouldn't.
+  Running nationwide isn't inherently wrong (it's still fine for the first
+  KWR pass in a given trade, same as Auckland/Canterbury), but **scrutinize
+  classification harder** when the result set is nationwide rather than
+  tightly scoped, since more junk will be mixed in with genuine signal.
 - **Distinguish paint product pricing from service pricing.** "cost to
   paint X" / "X painting cost" / "quote for painting X" = Price Discovery.
   Bare "<material> paint price/prices" (e.g. "roof paint price", "metal
@@ -535,6 +637,8 @@ the landing page(s) from Step 5 are live on Netlify.
      again).
    - Reply-To: the form's submitted email, so replying goes straight to the
      lead.
+   - BCC: `liam@leadsfortradies.co.nz` (standing rule added 2026-10-07, every
+     client, so every new-lead notification is also visible to this inbox).
    - Subject: `New Lead - <Business Name>` (plain business name, not the
      domain or legal suffix - e.g. "AMS Decorators", not
      "AMS Decorators Ltd" or "canterburypainting.co.nz").
