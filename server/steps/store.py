@@ -10,6 +10,7 @@ STEP_LABELS = {
     "step0": "Step 0: Setup",
     "step1": "Step 1: Keyword Research",
     "step2": "Step 2: Location Keywords",
+    "campaigns": "Campaigns to Build",
     "step3": "Step 3: Ad Groups",
     "step4": "Step 4: Ad Copy",
     "step5": "Step 5: Landing Pages",
@@ -74,3 +75,30 @@ def approved_rows(project_id, step):
         return payload.get("kept_keywords") or payload.get("kept_items") or []
     data = read(project_id, step) or {}
     return data.get("rows", [])
+
+
+ALL_CAMPAIGNS = ("BOF - Priority 1", "BOF - Priority 2", "Price Discovery")
+MERGED_CAMPAIGN = "BOF - Priority 1 & 2"
+
+
+def campaign_choice(project_id):
+    """What the user picked on the Campaigns step: {"campaigns": [...], "merge_bof": bool}.
+    Projects approved before this step existed get all three, kept separate."""
+    rows = db.query("SELECT payload FROM approvals WHERE project_id=? AND step='campaigns' ORDER BY id DESC LIMIT 1",
+                    (project_id,))
+    sel = json.loads(rows[0]["payload"]).get("selection") if rows else None
+    picked = [c for c in ALL_CAMPAIGNS if c in ((sel or {}).get("campaigns") or [])] if sel else list(ALL_CAMPAIGNS)
+    merge = bool(sel and sel.get("merge_bof")) and "BOF - Priority 1" in picked and "BOF - Priority 2" in picked
+    return {"campaigns": picked, "merge_bof": merge}
+
+
+def ad_copy_campaign(project_id):
+    """The campaign Step 4 writes ad copy for: the combined BOF campaign, else
+    Priority 1, else Priority 2 if that's all that was chosen."""
+    c = campaign_choice(project_id)
+    if c["merge_bof"]:
+        return MERGED_CAMPAIGN
+    for name in ("BOF - Priority 1", "BOF - Priority 2"):
+        if name in c["campaigns"]:
+            return name
+    return None

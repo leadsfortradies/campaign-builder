@@ -13,6 +13,7 @@ Usage:
 import argparse
 import json
 import os
+import sys
 import time
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 
@@ -31,6 +32,9 @@ class Handler(SimpleHTTPRequestHandler):
         super().end_headers()
 
     def do_POST(self):
+        if self.path == "/api/chat":
+            self._chat()
+            return
         if self.path != "/approve":
             self.send_error(404)
             return
@@ -54,6 +58,28 @@ class Handler(SimpleHTTPRequestHandler):
         self.send_header("Content-Type", "application/json")
         self.end_headers()
         self.wfile.write(b'{"ok": true}')
+
+    def _chat(self):
+        """Chat box: needs ANTHROPIC_API_KEY in the environment."""
+        def reply(code, obj):
+            body = json.dumps(obj).encode()
+            self.send_response(code)
+            self.send_header("Content-Type", "application/json")
+            self.end_headers()
+            self.wfile.write(body)
+
+        try:
+            body = json.loads(self.rfile.read(int(self.headers.get("Content-Length", 0))))
+            path = os.path.join(WEB_ROOT, "data", os.path.basename(body["project_id"]),
+                                os.path.basename(body["step"]) + ".json")
+            with open(path, encoding="utf-8") as f:
+                rows = json.load(f).get("rows") or []
+            sys.path.insert(0, os.path.dirname(WEB_ROOT))
+            from server import chat
+            model = os.environ.get("CHAT_MODEL", "claude-sonnet-5-5")
+            reply(200, chat.suggest(rows, body["message"], body.get("excluded") or [], model))
+        except Exception as exc:  # noqa: BLE001 - shown to the user in the chat box
+            reply(502, {"detail": str(exc)})
 
     def log_message(self, fmt, *args):
         if "/approve" not in (self.path or ""):

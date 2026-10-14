@@ -1,4 +1,4 @@
-const STEP_ORDER = ["step1", "step2", "step3", "step4", "step5", "step6"];
+const STEP_ORDER = ["step1", "step2", "campaigns", "step3", "step4", "step5", "step6"];
 
 function qs(name) {
   return new URLSearchParams(location.search).get(name);
@@ -106,6 +106,7 @@ async function init() {
     const ViewClass =
       activeStep === "step5" ? LandingPagesView :
       activeStep === "step6" ? SitelinksView :
+      activeStep === "campaigns" ? CampaignsView :
       stepData.ad_groups ? AdCopyView : ReviewView;
     const view = new ViewClass({
       mountEl: content,
@@ -134,10 +135,54 @@ async function init() {
       content.prepend(w);
     }
 
-    document.getElementById("reset-btn").onclick = () => view.resetExclusions();
-    document.getElementById("export-btn").onclick = () => view.exportCSV();
+    const chatForm = document.getElementById("chat-form");
+    const chatReply = document.getElementById("chat-reply");
+    chatReply.hidden = true;
+    chatForm.hidden = typeof view.applyChat !== "function";
+    chatForm.onsubmit = async (ev) => {
+      ev.preventDefault();
+      const input = document.getElementById("chat-input");
+      const send = document.getElementById("chat-send");
+      const message = input.value.trim();
+      if (!message) return;
+      send.disabled = true;
+      send.textContent = "Thinking…";
+      try {
+        const r = await fetch("/api/chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            project_id: project.id, step: activeStep, message,
+            excluded: [...view.excluded],
+          }),
+        });
+        if (!r.ok) throw new Error((await r.json().catch(() => ({}))).detail || `HTTP ${r.status}`);
+        const out = await r.json();
+        view.applyChat(out.exclude, out.restore);
+        const bits = [];
+        if (out.exclude.length) bits.push(`excluded ${out.exclude.length}`);
+        if (out.restore.length) bits.push(`restored ${out.restore.length}`);
+        chatReply.textContent = [out.reply, bits.length ? `(${bits.join(", ")})` : ""].filter(Boolean).join(" ");
+        chatReply.className = "status-msg ok";
+        input.value = "";
+      } catch (err) {
+        chatReply.textContent = "Couldn't do that: " + err.message;
+        chatReply.className = "status-msg err";
+      }
+      chatReply.hidden = false;
+      send.disabled = false;
+      send.textContent = "Send";
+    };
+
+    for (const id of ["reset-btn", "export-btn", "copy-btn", "changes-btn"]) {
+      if (activeStep === "campaigns") document.getElementById(id).hidden = true;
+      else if (id !== "copy-btn") document.getElementById(id).hidden = false;
+    }
+    document.getElementById("changes-panel").hidden = true;
+    document.getElementById("reset-btn").onclick = () => view.resetExclusions && view.resetExclusions();
+    document.getElementById("export-btn").onclick = () => view.exportCSV && view.exportCSV();
     const copyBtn = document.getElementById("copy-btn");
-    copyBtn.hidden = typeof view.copyKeywords !== "function";
+    copyBtn.hidden = typeof view.copyKeywords !== "function" || activeStep === "campaigns";
     copyBtn.onclick = () => view.copyKeywords(copyBtn);
     document.getElementById("approve-btn").onclick = (e) => view.submitApproval(e.target, "the next step is queued");
   }

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>LFT Campaign Builder — Project</title>
-<link rel="stylesheet" href="style.css?v=7">
+<link rel="stylesheet" href="style.css?v=10">
 </head>
 <body>
 <header>
@@ -26,17 +26,23 @@
     <textarea id="changes-note" rows="3" placeholder="What should change? e.g. 'move X into the near-me group, drop anything mentioning gates'" style="width:100%;box-sizing:border-box;font:inherit;padding:8px"></textarea>
     <button id="changes-send" class="primary">Send changes</button>
   </div>
+  <form id="chat-form" class="chat-form" hidden>
+    <input id="chat-input" type="text" autocomplete="off" placeholder="Tell me what to change, e.g. remove all the general builder keywords, keep only specific ones like 'deck builder palmerston north'">
+    <button id="chat-send" class="primary" type="submit">Send</button>
+  </form>
+  <p id="chat-reply" class="status-msg" hidden></p>
   <p id="status-msg" class="status-msg" hidden></p>
   <p id="job-msg" class="status-msg" hidden></p>
 </header>
 
 <main id="content"></main>
 
-<script src="js/review.js?v=5"></script>
+<script src="js/review.js?v=6"></script>
 <script src="js/adcopy.js?v=5"></script>
 <script src="js/landingpages.js?v=2"></script>
 <script src="js/sitelinks.js?v=2"></script>
+<script src="js/campaigns.js?v=1"></script>
 <script src="js/model.js?v=1"></script>
-<script src="js/project.js?v=10"></script>
+<script src="js/project.js?v=12"></script>
 </body>
 </html>

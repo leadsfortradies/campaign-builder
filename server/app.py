@@ -14,10 +14,11 @@ from urllib.parse import parse_qs, urlparse
 from fastapi import FastAPI, File, Form, HTTPException, Request, UploadFile
 from fastapi.responses import FileResponse, HTMLResponse, JSONResponse, RedirectResponse
 
-from . import auth, config, db, jobs, projects_store
+from . import auth, config, db, jobs, llm, projects_store
 from .notify import notify
-from .steps import step1, step2, step3, step4  # noqa: F401 - registers step handlers
+from .steps import campaigns, step1, step2, step3, step4  # noqa: F401 - registers step handlers
 from .steps import store
+from . import chat as chat_edit
 
 FAILED_LOGINS = {}  # ip -> (count, window_start)
 
@@ -164,6 +165,22 @@ async def request_changes(request: Request):
     db.log_event("changes_requested", project_id, step, note)
     job_id = db.add_job(project_id, step, "revise_step", {"note": note})
     return {"ok": True, "job_id": job_id}
+
+
+# ---------- chat (instant keyword edits on the step being reviewed) ----------
+
+@app.post("/api/chat")
+async def chat(request: Request):
+    body = await request.json()
+    project_id, step = body.get("project_id"), body.get("step")
+    message = (body.get("message") or "").strip()
+    if not (project_id and step and message):
+        raise HTTPException(400, "project_id, step and message required")
+    try:
+        return chat_edit.suggest((store.read(project_id, step) or {}).get("rows") or [],
+                                 message, body.get("excluded") or [], db.current_model())
+    except llm.LLMError as exc:
+        raise HTTPException(502, str(exc))
 
 
 # ---------- new campaign (Step 0) ----------

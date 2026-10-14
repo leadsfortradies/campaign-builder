@@ -185,7 +185,7 @@ thead th {
   text-align: right;
 }
 
-.col-x { text-align: center; width: 40px; }
+.col-x { text-align: center; width: 56px; }
 .col-promote { text-align: center; width: 56px; }
 
 tbody tr {
@@ -212,10 +212,12 @@ td {
 
 .x-btn {
   background: transparent;
-  border: 1px solid var(--border);
-  color: var(--muted);
-  width: 28px;
-  height: 28px;
+  border: 1px solid var(--muted);
+  color: var(--text);
+  font-size: 0.95rem;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
   padding: 0;
   border-radius: 50%;
   line-height: 1;
@@ -713,4 +715,27 @@ tr.excluded .x-btn {
 .warn-list {
   color: #ffb84f;
   font-size: 13px;
+}
+
+.chat-form { display: flex; gap: 8px; margin: 12px 0 0; }
+.chat-form input { flex: 1; font: inherit; padding: 8px 10px; }
+
+/* Phones: keep everything inside the screen width so the ✕ and Approve
+   buttons are never pushed off to the right. */
+@media (max-width: 640px) {
+  html, body { overflow-x: hidden; }
+  .toolbar { flex-direction: column; align-items: stretch; gap: 10px; }
+  .actions { flex-wrap: wrap; }
+  .actions button { flex: 1 1 calc(50% - 8px); }
+  .actions #approve-btn { flex-basis: 100%; }
+  .tabs { overflow-x: auto; flex-wrap: nowrap; -webkit-overflow-scrolling: touch; }
+  .tab-btn { white-space: nowrap; }
+  .col-comp, .col-bid { display: none; }
+  thead th, td { padding-left: 12px; padding-right: 12px; }
+  .col-kw { width: auto; }
+  .col-x { width: 48px; }
+  .col-promote { width: 52px; }
+  .x-btn { width: 36px; height: 36px; }
+  .chat-form { flex-direction: column; }
+  .chat-form button { width: 100%; }
 }

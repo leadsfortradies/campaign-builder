@@ -398,6 +398,12 @@ which case run step 2 as designed, it'll show real volume per town.
 
 ## Step 3 - Organise Keywords into Ad Groups (STAGs) — IMPLEMENTED
 
+0. **Campaigns step (before ad groups).** After Step 2 is approved the app asks
+   which campaigns to build (BOF - Priority 1, BOF - Priority 2, Price Discovery)
+   and whether Priority 1 + 2 are combined into one campaign ("BOF - Priority 1
+   & 2"). Keywords in unchosen campaigns are left out of Step 3; Step 4 writes
+   ad copy for the combined campaign, else Priority 1, else Priority 2.
+
 1. **There are three campaigns: BOF - Priority 1, BOF - Priority 2, and
    Price Discovery** (updated 2026-10-06 - was two campaigns before the
    Priority 1/2 split existed). Campaigns are the top-level container in

@@ -230,6 +230,14 @@ class ReviewView {
     this.render();
   }
 
+  // Applied from the chat box: exclude / restore a list of keywords at once.
+  applyChat(exclude, restore) {
+    exclude.forEach((k) => this.excluded.add(k));
+    restore.forEach((k) => this.excluded.delete(k));
+    this.saveExcluded();
+    this.render();
+  }
+
   resetExclusions() {
     this.excluded = new Set();
     this.saveExcluded();

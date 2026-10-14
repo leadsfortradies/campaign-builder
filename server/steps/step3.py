@@ -14,7 +14,7 @@ from .. import llm
 from ..jobs import Blocked, register_step
 from . import rules, store
 
-CAMPAIGNS = ("BOF - Priority 1", "BOF - Priority 2", "Price Discovery")
+CAMPAIGNS = store.ALL_CAMPAIGNS + (store.MERGED_CAMPAIGN,)
 COST_WORDS = re.compile(r"\b(cost|costs|price|prices|pricing|quote|quotes|how much|rates?|per m2|per square)\b")
 BATCH = 250
 
@@ -35,8 +35,16 @@ def run(ctx):
         kws[r["keyword"]] = {**r, "campaign": _campaign(r, False)}
     for r in store.approved_rows(ctx.project_id, "step2"):
         kws.setdefault(r["keyword"], {**r, "campaign": _campaign(r, True)})
+    choice = store.campaign_choice(ctx.project_id)
+    # Keywords in a campaign the user didn't pick are left out; Priority 1 and 2
+    # become one campaign when they asked for that.
+    kws = {k: v for k, v in kws.items() if v["campaign"] in choice["campaigns"]}
+    if choice["merge_bof"]:
+        for v in kws.values():
+            if v["campaign"] in ("BOF - Priority 1", "BOF - Priority 2"):
+                v["campaign"] = store.MERGED_CAMPAIGN
     if not kws:
-        raise Blocked("Step 3 needs approved keywords from Step 1.")
+        raise Blocked("Step 3 needs approved keywords from Step 1 in at least one of the chosen campaigns.")
     note = ctx.payload.get("note", "")
     previous = store.read(ctx.project_id, "step3") if note else None
 

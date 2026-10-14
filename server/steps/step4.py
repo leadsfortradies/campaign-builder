@@ -110,13 +110,14 @@ def run(ctx):
     facts = {k: s0[k] for k in FACT_FIELDS if s0.get(k)}
     note = ctx.payload.get("note", "")
 
+    campaign = store.ad_copy_campaign(ctx.project_id) or CAMPAIGN
     groups = {}
     for r in store.approved_rows(ctx.project_id, "step3"):
-        campaign, _, theme = r.get("group", "").partition(" — ")
-        if campaign == CAMPAIGN and theme:
+        camp, _, theme = r.get("group", "").partition(" — ")
+        if camp == campaign and theme:
             groups.setdefault(theme, []).append(r)
     if not groups:
-        raise Blocked("Ad copy needs an approved Step 3 with Priority 1 ad groups.")
+        raise Blocked("Ad copy needs an approved Step 3 with ad groups in the chosen BOF campaign.")
 
     previous = {g["name"]: g for g in (store.read(ctx.project_id, "step4") or {}).get("ad_groups", [])} if note else {}
     ad_groups = []
