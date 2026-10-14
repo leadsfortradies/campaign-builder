@@ -1,0 +1,188 @@
+{
+  "project_id": "timber-supplies-lni",
+  "step": "step2",
+  "label": "Timber & Sheds - Lower North Island (Lumberland)",
+  "group_label": "Location",
+  "rows": [
+    {
+      "group": "wellington",
+      "keyword": "chicken coop wellington",
+      "avg_monthly_searches": 30,
+      "competition": "HIGH",
+      "low_bid": 0.05,
+      "high_bid": 2.06,
+      "note": ""
+    },
+    {
+      "group": "wellington",
+      "keyword": "picnic table wellington",
+      "avg_monthly_searches": 30,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "hastings",
+      "keyword": "fencing supplies hastings",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "hastings",
+      "keyword": "chicken coop hastings",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "wellington",
+      "keyword": "fence posts wellington",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "wellington",
+      "keyword": "fencing supplies wellington",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "wellington",
+      "keyword": "sleepout wellington",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.28,
+      "high_bid": 2.24,
+      "note": ""
+    },
+    {
+      "group": "manawatu",
+      "keyword": "fence posts manawatu",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "manawatu",
+      "keyword": "chicken coop manawatu",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "manawatu",
+      "keyword": "sleepout manawatu",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "taranaki",
+      "keyword": "fence posts taranaki",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "taranaki",
+      "keyword": "chicken coop taranaki",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "taranaki",
+      "keyword": "picnic table taranaki",
+      "avg_monthly_searches": 10,
+      "competition": "MEDIUM",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "taranaki",
+      "keyword": "sleepout taranaki",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "palmerston north",
+      "keyword": "sleepouts palmerston north",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "manawatu",
+      "keyword": "picnic table manawatu",
+      "avg_monthly_searches": 10,
+      "competition": "LOW",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "wairarapa",
+      "keyword": "chicken coop wairarapa",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "wairarapa",
+      "keyword": "picnic table wairarapa",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "wairarapa",
+      "keyword": "sleepout wairarapa",
+      "avg_monthly_searches": 10,
+      "competition": "HIGH",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    },
+    {
+      "group": "hawke's bay",
+      "keyword": "chicken coop hawke's bay",
+      "avg_monthly_searches": 10,
+      "competition": "UNSPECIFIED",
+      "low_bid": 0.0,
+      "high_bid": 0.0,
+      "note": ""
+    }
+  ]
+}

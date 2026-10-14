@@ -200,6 +200,14 @@ async def set_settings(request: Request):
     return {"ok": True, "model": model}
 
 
+@app.post("/api/test-notify")
+def test_notify():
+    if not config.NTFY_TOPIC:
+        raise HTTPException(400, "NTFY_TOPIC isn't set on the server")
+    notify("Campaign Builder", "Test notification - phone alerts are working.", "/")
+    return {"ok": True}
+
+
 @app.post("/api/selftest")
 def selftest():
     return {"job_id": db.add_job("_selftest", "step0", "selftest")}
