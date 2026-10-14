@@ -194,83 +194,6 @@ class AdCopyView {
     URL.revokeObjectURL(url);
   }
 
-  exportPDF() {
-    const esc = (v) => String(v).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-    const kept = new Set(this.keptItems().map((i) => adCopyItemId(i.group, i.kind, i.text)));
-    const keep = (g, kind, t) => kept.has(adCopyItemId(g.name, kind, t));
-    const logo = new URL("images/lft-logo.png", location.href).href;
-    const date = new Date().toLocaleDateString("en-NZ", { day: "numeric", month: "long", year: "numeric" });
-
-    const groups = this.data.ad_groups.map((g) => {
-      const pinned = g.headlines_pinned.filter((t) => keep(g, "headline", t));
-      const benefit = g.headlines_benefit.filter((t) => keep(g, "headline", t));
-      const descs = g.descriptions.filter((t) => keep(g, "description", t));
-      const paths = g.paths.filter((t) => keep(g, "path", t));
-      const list = (title, arr, tag) =>
-        arr.length
-          ? `<h3>${title}</h3><ul>${arr.map((t) => `<li>${esc(t)}${tag ? `<span class="tag">${tag}</span>` : ""}</li>`).join("")}</ul>`
-          : "";
-      return `<section class="group">
-        <h2>${esc(g.name)}</h2>
-        ${g.final_url ? `<p class="url">${esc(g.final_url)}</p>` : ""}
-        ${list("Headlines", pinned, "Shown first")}
-        ${list("Additional headlines", benefit)}
-        ${list("Descriptions", descs)}
-        ${paths.length ? `<h3>Display URL paths</h3><p class="paths">${paths.map((t) => `/${esc(t)}`).join("&nbsp;&nbsp;·&nbsp;&nbsp;")}</p>` : ""}
-      </section>`;
-    }).join("");
-
-    const html = `<!doctype html><html><head><meta charset="utf-8"><title>${esc(this.data.label)} - Ad Copy</title>
-<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
-<style>
-  @page { size: A4; margin: 14mm 14mm 16mm; }
-  * { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  body { font-family: Karla, Arial, sans-serif; color: #1c231f; margin: 0; font-size: 11pt; line-height: 1.4; }
-  .banner { background: #141c19; color: #f2ecdd; padding: 18px 22px; border-radius: 6px; display: flex; align-items: center; justify-content: space-between; }
-  .banner img { height: 40px; }
-  .banner .meta { text-align: right; font-size: 9.5pt; color: #c9c5b4; }
-  .banner .meta strong { color: #e8b463; font-family: Oswald, sans-serif; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; display: block; font-size: 11pt; }
-  h1 { font-family: Oswald, sans-serif; font-weight: 600; font-size: 24pt; margin: 22px 0 4px; text-transform: uppercase; letter-spacing: .02em; }
-  .intro { color: #5a6359; margin: 0 0 8px; }
-  .group { border: 1px solid #d9d4c2; border-left: 5px solid #e8b463; border-radius: 6px; padding: 14px 18px; margin: 16px 0; break-inside: avoid-page; }
-  h2 { font-family: Oswald, sans-serif; font-weight: 500; font-size: 15pt; margin: 0 0 2px; }
-  h3 { font-size: 9pt; text-transform: uppercase; letter-spacing: .08em; color: #8a6a2a; margin: 12px 0 4px; }
-  .url { margin: 0; font-size: 9pt; color: #8f9787; word-break: break-all; }
-  ul { margin: 0; padding: 0; list-style: none; }
-  li { padding: 4px 0; border-bottom: 1px solid #efebdc; }
-  li:last-child { border-bottom: 0; }
-  .tag { float: right; font-size: 8pt; background: #fbf1da; color: #8a6a2a; border-radius: 10px; padding: 1px 8px; }
-  .paths { margin: 0; }
-  .foot { margin-top: 22px; padding-top: 10px; border-top: 2px solid #e8b463; font-size: 9pt; color: #5a6359; }
-</style></head><body>
-  <div class="banner"><img src="${logo}" alt="Leads For Tradies">
-    <div class="meta"><strong>Google Ads copy for approval</strong>${esc(date)}</div></div>
-  <h1>${esc(this.data.label)}</h1>
-  <p class="intro">Please review the ad copy below and let us know if you'd like anything changed. Once approved, these ads go live.</p>
-  ${groups}
-  <div class="foot">Leads For Tradies · 027 824 6725 · liam@leadsfortradies.co.nz · leadsfortradies.co.nz</div>
-</body></html>`;
-
-    const frame = document.createElement("iframe");
-    frame.style.cssText = "position:fixed;right:0;bottom:0;width:0;height:0;border:0";
-    document.body.appendChild(frame);
-    const doc = frame.contentWindow.document;
-    doc.open();
-    doc.write(html);
-    doc.close();
-    const finish = () => {
-      frame.contentWindow.focus();
-      frame.contentWindow.print();
-      setTimeout(() => frame.remove(), 60000);
-    };
-    // wait for logo + web fonts so the PDF isn't missing them
-    const ready = Promise.all([
-      new Promise((r) => { const img = doc.images[0]; if (!img || img.complete) r(); else { img.onload = r; img.onerror = r; } }),
-      doc.fonts ? doc.fonts.ready.catch(() => {}) : Promise.resolve(),
-    ]);
-    Promise.race([ready, new Promise((r) => setTimeout(r, 4000))]).then(finish);
-  }
-
   showStatus(msg, ok) {
     if (!this.statusEl) return;
     this.statusEl.textContent = msg;
@@ -311,4 +234,106 @@ class AdCopyView {
       btn.textContent = originalText;
     }
   }
+}
+
+// Client-facing approval PDF: ad copy (kept lines only) followed by the
+// extensions (sitelinks, callouts, snippets). Opens the browser print dialog
+// via a hidden iframe - choose "Save as PDF". Called from the extensions view.
+function exportApprovalPDF({ label, adCopy, adCopyExcluded, extensions, extensionsExcluded }) {
+  const esc = (v) => String(v).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  const logo = new URL("images/lft-logo.png", location.href).href;
+  const date = new Date().toLocaleDateString("en-NZ", { day: "numeric", month: "long", year: "numeric" });
+  const list = (title, arr, tag) =>
+    arr.length
+      ? `<h3>${title}</h3><ul>${arr.map((t) => `<li>${esc(t)}${tag ? `<span class="tag">${tag}</span>` : ""}</li>`).join("")}</ul>`
+      : "";
+
+  let body = "";
+  if (adCopy) {
+    body += adCopy.ad_groups.map((g) => {
+      const keep = (kind, t) => !adCopyExcluded.has(adCopyItemId(g.name, kind, t));
+      const pinned = g.headlines_pinned.filter((t) => keep("headline", t));
+      const benefit = g.headlines_benefit.filter((t) => keep("headline", t));
+      const descs = g.descriptions.filter((t) => keep("description", t));
+      const paths = g.paths.filter((t) => keep("path", t));
+      return `<section class="group">
+        <h2>${esc(g.name)}</h2>
+        ${g.final_url ? `<p class="url">${esc(g.final_url)}</p>` : ""}
+        ${list("Headlines", pinned, "Shown first")}
+        ${list("Additional headlines", benefit)}
+        ${list("Descriptions", descs)}
+        ${paths.length ? `<h3>Display URL paths</h3><p class="paths">${paths.map((t) => `/${esc(t)}`).join("&nbsp;&nbsp;·&nbsp;&nbsp;")}</p>` : ""}
+      </section>`;
+    }).join("");
+  }
+
+  if (extensions) {
+    const out = extensionsExcluded;
+    const sitelinkGroups = extensions.ad_groups.map((g) => {
+      const items = g.sitelinks.filter((_, i) => !out.has(sitelinkId(g.name, i)));
+      if (!items.length) return "";
+      return `<h3>${esc(g.name)}</h3><ul>${items.map((sl) => `<li><strong>${esc(sl.text)}</strong><br>
+        <span class="sub">${esc(sl.description_1)} · ${esc(sl.description_2)}</span><br>
+        <span class="url">${esc(sl.url)}</span></li>`).join("")}</ul>`;
+    }).join("");
+    if (sitelinkGroups) body += `<section class="group"><h2>Sitelinks</h2>${sitelinkGroups}</section>`;
+
+    const callouts = (extensions.callouts || []).filter((_, i) => !out.has(calloutId(i)));
+    if (callouts.length) body += `<section class="group"><h2>Callouts</h2>${list("Shown across all ad groups", callouts)}</section>`;
+
+    const snip = extensions.structured_snippets;
+    const values = ((snip && snip.values) || []).filter((_, i) => !out.has(snippetId(i)));
+    if (values.length) body += `<section class="group"><h2>Structured snippets</h2>${list(esc(snip.header || "Snippet"), values)}</section>`;
+  }
+
+  const html = `<!doctype html><html><head><meta charset="utf-8"><title>${esc(label)} - Ad Copy</title>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4; margin: 14mm 14mm 16mm; }
+  * { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { font-family: Karla, Arial, sans-serif; color: #1c231f; margin: 0; font-size: 11pt; line-height: 1.4; }
+  .banner { background: #141c19; color: #f2ecdd; padding: 18px 22px; border-radius: 6px; display: flex; align-items: center; justify-content: space-between; }
+  .banner img { height: 40px; }
+  .banner .meta { text-align: right; font-size: 9.5pt; color: #c9c5b4; }
+  .banner .meta strong { color: #e8b463; font-family: Oswald, sans-serif; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; display: block; font-size: 11pt; }
+  h1 { font-family: Oswald, sans-serif; font-weight: 600; font-size: 24pt; margin: 22px 0 4px; text-transform: uppercase; letter-spacing: .02em; }
+  .intro { color: #5a6359; margin: 0 0 8px; }
+  .group { border: 1px solid #d9d4c2; border-left: 5px solid #e8b463; border-radius: 6px; padding: 14px 18px; margin: 16px 0; break-inside: avoid-page; }
+  h2 { font-family: Oswald, sans-serif; font-weight: 500; font-size: 15pt; margin: 0 0 2px; }
+  h3 { font-size: 9pt; text-transform: uppercase; letter-spacing: .08em; color: #8a6a2a; margin: 12px 0 4px; }
+  .url { margin: 0; font-size: 9pt; color: #8f9787; word-break: break-all; }
+  .sub { color: #5a6359; font-size: 10pt; }
+  ul { margin: 0; padding: 0; list-style: none; }
+  li { padding: 4px 0; border-bottom: 1px solid #efebdc; }
+  li:last-child { border-bottom: 0; }
+  .tag { float: right; font-size: 8pt; background: #fbf1da; color: #8a6a2a; border-radius: 10px; padding: 1px 8px; }
+  .paths { margin: 0; }
+  .foot { margin-top: 22px; padding-top: 10px; border-top: 2px solid #e8b463; font-size: 9pt; color: #5a6359; }
+</style></head><body>
+  <div class="banner"><img src="${logo}" alt="Leads For Tradies">
+    <div class="meta"><strong>Google Ads copy for approval</strong>${esc(date)}</div></div>
+  <h1>${esc(label)}</h1>
+  <p class="intro">Please review the ad copy and extensions below and let us know if you'd like anything changed.</p>
+  ${body}
+  <div class="foot">Leads For Tradies · 027 824 6725 · liam@leadsfortradies.co.nz · leadsfortradies.co.nz</div>
+</body></html>`;
+
+  const frame = document.createElement("iframe");
+  frame.style.cssText = "position:fixed;right:0;bottom:0;width:0;height:0;border:0";
+  document.body.appendChild(frame);
+  const doc = frame.contentWindow.document;
+  doc.open();
+  doc.write(html);
+  doc.close();
+  const finish = () => {
+    frame.contentWindow.focus();
+    frame.contentWindow.print();
+    setTimeout(() => frame.remove(), 60000);
+  };
+  // wait for logo + web fonts so the PDF isn't missing them
+  const ready = Promise.all([
+    new Promise((r) => { const img = doc.images[0]; if (!img || img.complete) r(); else { img.onload = r; img.onerror = r; } }),
+    doc.fonts ? doc.fonts.ready.catch(() => {}) : Promise.resolve(),
+  ]);
+  Promise.race([ready, new Promise((r) => setTimeout(r, 4000))]).then(finish);
 }

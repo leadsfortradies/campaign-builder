@@ -81,4 +81,11 @@ GOOGLE ADS RESPONSIVE SEARCH AD RULES:
 - NEVER use em dashes or en dashes, and avoid AI-slop phrasing ("elevate",
   "unlock", "seamless", "look no further", "transform your space").
 - Do not use the words cheap, affordable or budget.
+- "near me" is only for the 3 pinned keyword headlines (e.g. "Bathroom Contractor
+  Near Me"). In descriptions and benefit headlines write natural sentences: say
+  "near you" with a singular noun and article, never "near me" and never a plural
+  noun with it. Right: "Need a bathroom contractor near you? LBP licensed, Site
+  Safe, 10 years of experience." Wrong: "Need bathroom contractors near me? ..."
+  (a business doesn't say "near me" about itself). The keyword check treats
+  "near you" as matching a "near me" keyword.
 """

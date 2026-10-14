@@ -13,8 +13,8 @@ STEP_LABELS = {
     "campaigns": "Campaigns to Build",
     "step3": "Step 3: Ad Groups",
     "step4": "Step 4: Ad Copy",
-    "step5": "Step 5: Landing Pages",
-    "step6": "Step 6: Sitelinks, Callouts & Snippets",
+    "step5": "Step 6: Landing Pages",
+    "step6": "Step 5: Sitelinks, Callouts & Snippets",
 }
 
 

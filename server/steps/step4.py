@@ -17,6 +17,9 @@ CAMPAIGN = "BOF - Priority 1"
 FACT_FIELDS = ("business_name", "trade", "services", "service_areas", "years_experience",
                "completed_projects", "certifications", "other_info", "scope_notes")
 BANNED = re.compile(r"[—–]|\b(cheap|affordable|budget)\b", re.I)
+# "near me" is a searcher's phrase: fine in pinned keyword headlines, wrong in
+# sentences the business writes about itself ("Need a plumber near you?" instead).
+NEAR_ME = re.compile(r"\bnear\s*me\b|\bnearby me\b", re.I)
 
 
 def _norm(s):
@@ -26,6 +29,7 @@ def _norm(s):
 def _tokens(s):
     """Lowercased, singularised word set - so "deck builders near me" counts as
     containing the keyword "deck builder near me" (Google treats them as close variants)."""
+    s = re.sub(r"\bnear you\b", "near me", s, flags=re.I)  # "near you" satisfies a "near me" keyword
     return {t[:-1] if len(t) > 3 and t.endswith("s") and not t.endswith("ss") else t for t in _norm(s).split()}
 
 
@@ -56,6 +60,9 @@ def validate(ad, keywords):
     for p in paths:
         if len(p) > 15 or " " in p:
             problems.append(f'path must be max 15 chars, no spaces: "{p}"')
+    for text in benefit + descs:
+        if NEAR_ME.search(text):
+            problems.append(f'use "near you" (singular noun, with an article), not "near me", in: "{text}"')
     for text in heads + descs + paths:
         if BANNED.search(text):
             problems.append(f'banned dash/word in: "{text}"')

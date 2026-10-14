@@ -273,6 +273,17 @@ class SitelinksView {
     URL.revokeObjectURL(url);
   }
 
+  // Needs this.adCopyData (step 4 json) - set by project.js when available.
+  exportPDF() {
+    exportApprovalPDF({
+      label: this.data.label,
+      adCopy: this.adCopyData || null,
+      adCopyExcluded: this.adCopyData ? loadExcluded(this.data.project_id, "step4") : new Set(),
+      extensions: this.data,
+      extensionsExcluded: this.excluded,
+    });
+  }
+
   showStatus(msg, ok) {
     if (!this.statusEl) return;
     this.statusEl.textContent = msg;

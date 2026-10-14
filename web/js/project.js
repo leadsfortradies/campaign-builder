@@ -1,4 +1,6 @@
-const STEP_ORDER = ["step1", "step2", "campaigns", "step3", "step4", "step5", "step6"];
+const STEP_ORDER = ["step1", "step2", "campaigns", "step3", "step4", "step6", "step5"];
+// Sitelinks (step6 key) now runs before Landing Pages (step5 key); data keys unchanged.
+const STEP_TITLES = { step6: "Step 5: Sitelinks, Callouts & Snippets", step5: "Step 6: Landing Pages" };
 
 function qs(name) {
   return new URLSearchParams(location.search).get(name);
@@ -67,7 +69,7 @@ async function init() {
       const btn = document.createElement("button");
       btn.className = "tab-btn" + (step === activeStep ? " active" : "");
       const dotColor = info.status === "approved" ? "#3ddc84" : info.status === "skipped" ? "#9aa1ac" : "#ffb84f";
-      btn.innerHTML = `<span class="tab-dot" style="background:${dotColor}"></span>${info.step_label || step}`;
+      btn.innerHTML = `<span class="tab-dot" style="background:${dotColor}"></span>${STEP_TITLES[step] || info.step_label || step}`;
       btn.addEventListener("click", () => {
         activeStep = step;
         setTab(step);
@@ -118,6 +120,13 @@ async function init() {
         renderTabs();
       },
     });
+    if (activeStep === "step6" && project.steps.step4?.file) {
+      try {
+        view.adCopyData = await (await fetch(project.steps.step4.file)).json();
+      } catch (e) {
+        /* PDF just won't include ad copy */
+      }
+    }
     view.render();
 
     const warned = (stepData.ad_groups || []).filter((g) => g.warnings && g.warnings.length);

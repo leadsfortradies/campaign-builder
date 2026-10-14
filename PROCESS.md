@@ -458,6 +458,12 @@ which case run step 2 as designed, it'll show real volume per town.
    keyword); 1-2 per ad group can be swapped for a more specific real detail
    when the business has one for that service (e.g. "Rust Treated & Primed"
    for a roof-painting ad group instead of a generic prep line).
+5b. **"Near me" only appears in the 3 pinned keyword headlines.** In
+   descriptions and benefit headlines write it naturally: "Need a bathroom
+   contractor near you? LBP licensed, Site Safe, 10 years of experience." -
+   never "Need bathroom contractors near me?" (enforced in
+   `server/steps/step4.py`'s `validate()`; "near you" still counts as matching
+   a "near me" keyword for rule 6).
 6. **Every description must include at least one of that ad group's actual
    keywords** (verbatim or very close to it), not just generic sales copy.
 7. Before writing any of this, get the real business facts from the user -
@@ -472,6 +478,12 @@ which case run step 2 as designed, it'll show real volume per town.
    build - re-verify stats like review count against the business's current
    Google listing before reusing an older ad-copy build, since review counts
    and project counts climb over time.
+
+> **Order change (2026-10-15):** in the web app, Sitelinks/Callouts/Snippets now
+> run as **Step 5** and Landing Pages as **Step 6** (sitelinks no longer wait for
+> landing pages). Internal keys/files are unchanged: `step6.json` = sitelinks,
+> `step5.json` = landing pages. Step 5 (sitelinks) has an "Export To PDF" button
+> that bundles ad copy + extensions for client approval.
 
 ## Step 5 - Landing Pages — IMPLEMENTED
 

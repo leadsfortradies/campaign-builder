@@ -8,7 +8,7 @@ from . import config
 
 _lock = threading.RLock()
 
-STEP_ORDER = ["step1", "step2", "campaigns", "step3", "step4", "step5", "step6"]
+STEP_ORDER = ["step1", "step2", "campaigns", "step3", "step4", "step6", "step5"]
 
 
 def load():
