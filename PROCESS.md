@@ -506,7 +506,8 @@ https://github.com/leadsfortradies/site-template. The landing page layout is
 the template's `/quote/` page.
 
 Uses the template **exactly** - only the client's logo, images and content
-change. **Typography and colours stay untouched.**
+change. **Typography and colours stay untouched.** Builds: (1) all the
+landing pages, (2) privacy and terms, (3) index.
 
 1. Ask the user which template to use if there's more than one for the
    industry.
@@ -524,10 +525,14 @@ change. **Typography and colours stay untouched.**
    copy). Update the **H1 and Title** above all else. Use images specific
    to that service where available; fall back to other provided images only
    when there aren't enough service-specific ones.
-5. Once every landing page is done, send the user the links for review and
-   approval.
-6. Feed the approved landing page links into the Step 4 ad copy as the
-   final URLs.
+5. Also build **privacy** and **terms** pages from the template.
+6. Build the **index** (home page) as a duplicate of the most general
+   landing page (the one least specific to a single service). For now it's
+   just that copy - no separate home page design or copy.
+7. Once the landing pages, privacy, terms and index are done, send the user
+   the links for review and approval.
+8. Feed the approved landing page links into the Step 4 ad copy as the
+   final URLs (the index is not an ad landing page).
 
 ### Option 3: build landing pages with an existing site's design system
 
