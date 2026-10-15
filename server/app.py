@@ -214,7 +214,7 @@ async def chat(request: Request):
 
 # ---------- new campaign (Step 0) ----------
 
-IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp", ".gif", ".svg", ".heic"}
+IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp", ".avif", ".gif", ".svg", ".heic"}
 MAX_IMAGE_BYTES = 15 * 1024 * 1024
 
 
