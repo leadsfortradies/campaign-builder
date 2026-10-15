@@ -25,7 +25,7 @@ def link_landing_pages(ctx):
         pages = {_key(g["name"]): g["url"] for g in (store.read(pid, "step5") or {}).get("ad_groups", [])
                  if g.get("url")}
         if not pages:
-            ctx.log("No landing page URLs in step5 - nothing to add.")
+            ctx.log("No landing page URLs in Step 6 - nothing to add.")
             return
         changed_ad, changed_sl, missing = 0, 0, []
 

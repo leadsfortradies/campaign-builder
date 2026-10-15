@@ -403,7 +403,8 @@ def build(ctx, s5, s0, ad_groups, note):
             page = lp_site.fill_page(master, d, {**c, "select": pg.get("select") if pg.get("select") in job_options else "",
                                                   "hero_stem": f"hero-{hero}"},
                                      lp_site.work_section(d, c.get("photo_order")))
-            left = lp_site.leftovers(re.sub(r"<(style|script)\b.*?</\1>", "", page, flags=re.S))
+            left = lp_site.leftovers(re.sub(r"<(style|script)\b.*?</\1>", "", page, flags=re.S),
+                                     " ".join([name or "", *map(str, areas)]))
             if left:
                 raise RuntimeError(f"Template content leaked into {pg['slug']}: {left}")
             open(os.path.join(out, "quote", pg["slug"] + ".html"), "w", encoding="utf-8").write(page)

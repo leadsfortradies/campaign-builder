@@ -327,9 +327,14 @@ def hero_markup_check(p):
     return "img/hero-" in p or "hero-bg" in p
 
 
-def leftovers(page_html):
-    """Template-client strings still present in visible HTML (should be none)."""
-    return sorted({s for s in LEAKS if s in page_html})
+def leftovers(page_html, own_text=""):
+    """Template-client strings still present in visible HTML (should be none).
+
+    own_text is the client's own name and service areas: a template word that
+    appears there is the client's real place name (e.g. a Palmerston North
+    client), not a leak."""
+    own = own_text.lower()
+    return sorted({s for s in LEAKS if s in page_html and s.lower() not in own})
 
 
 # ---------- legal pages ----------

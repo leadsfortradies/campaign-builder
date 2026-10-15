@@ -303,7 +303,8 @@ async function init() {
         queued: "Queued", running: "Running",
         blocked: job.error || "Waiting on you", failed: "Failed: " + (job.error || "").split("\n")[0],
       }[job.status] || job.status;
-      el.textContent = `Latest job (${job.step}): ${text}`;
+      const stepName = STEP_TITLES[job.step] || job.step; // internal key step5 = Step 6 for the user
+      el.textContent = `Latest job (${stepName}): ${text}`;
       el.className = "status-msg " + (job.status === "failed" ? "err" : "ok");
       el.hidden = false;
     } catch (e) { /* old local server has no jobs API */ }
