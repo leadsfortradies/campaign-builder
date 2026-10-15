@@ -36,6 +36,20 @@ def _is_colourful(h):
     return max(r, g, b) - min(r, g, b) > 28 and 25 < (r + g + b) / 3 < 235
 
 
+_NOT_GOOGLE = re.compile(r"helvetica|din-next|madefor|arial|sans-serif|serif|system-ui|inherit|^-", re.I)
+
+
+def clean_font(name):
+    """CSS family -> Google Fonts family. Wix writes 'open-sans-v2', 'montserrat',
+    'roboto-slab-w01-regular'; strip the platform suffixes and title-case."""
+    n = name.strip().strip("'\"")
+    if not n or _NOT_GOOGLE.search(n):
+        return ""
+    n = re.sub(r"[-_ ]?(?:v\d+|w\d{2}.*|regular|bold|light|medium|semibold|italic)$", "", n, flags=re.I)
+    n = re.sub(r"[-_]+", " ", n).strip()
+    return n.title() if n.islower() else n
+
+
 def digest(home_url):
     """Everything Claude needs to pick this site's design tokens + the raw
     candidates for logo / photos / legal pages."""
@@ -56,8 +70,10 @@ def digest(home_url):
     colours = [c for c, _ in counts.most_common(40) if _is_colourful(c)][:8]
     named = re.findall(r"--[\w-]*(?:primary|accent|brand|main|cta|button)[\w-]*\s*:\s*(#[0-9a-fA-F]{3,6})", css_text, re.I)
     theme = re.findall(r'name=["\']theme-color["\'][^>]*content=["\']([^"\']+)', home, re.I)
-    fonts = Counter(f.strip().strip("'\"") for decl in re.findall(r"font-family\s*:\s*([^;}{]+)", css_text, re.I)
+    all_css = css_text + "\n" + "\n".join(re.findall(r"<style[^>]*>(.*?)</style>", home, re.S | re.I))
+    fonts = Counter(clean_font(f) for decl in re.findall(r"font-family\s*:\s*([^;}{]+)", all_css, re.I)
                     for f in decl.split(",")[:1])
+    fonts.pop("", None)
     google = [html.unescape(g) for g in re.findall(r'href=["\'](https://fonts\.googleapis\.com/css[^"\']+)', home, re.I)]
 
     logos = []
@@ -68,6 +84,18 @@ def digest(home_url):
     for m in re.findall(r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)', home, re.I):
         logos.append(_absolute(home_url, m))
 
+    # favicon candidates, best first (apple-touch-icon is the largest, then sized icons, then /favicon.ico)
+    icons = []
+    for tag in re.findall(r"<link\b[^>]*>", home, re.I):
+        rel = re.search(r'rel=["\']([^"\']+)', tag, re.I)
+        href = re.search(r'href=["\']([^"\']+)', tag, re.I)
+        if rel and href and "icon" in rel.group(1).lower() and "mask" not in rel.group(1).lower():
+            size = re.search(r'sizes=["\'](\d+)', tag, re.I)
+            icons.append((-(int(size.group(1)) if size else 0) - (1000 if "apple" in rel.group(1).lower() else 0),
+                          _absolute(home_url, html.unescape(href.group(1)))))
+    icons = [u for _, u in sorted(icons, key=lambda t: t[0])]
+    icons.append(_absolute(home_url, "/favicon.ico"))
+
     images = []
     for src in re.findall(r"<img\b[^>]*\bsrc=[\"']([^\"']+)", home, re.I):
         u = _absolute(home_url, src)
@@ -77,7 +105,7 @@ def digest(home_url):
         "home_html": home, "title": (re.search(r"<title[^>]*>(.*?)</title>", home, re.S | re.I) or [0, ""])[1].strip(),
         "colours": colours, "named_colours": named, "theme_color": theme[:1],
         "fonts": [f for f, _ in fonts.most_common(6)], "google_fonts": google[:2],
-        "logo_candidates": list(dict.fromkeys(logos))[:6], "images": list(dict.fromkeys(images))[:40],
+        "logo_candidates": list(dict.fromkeys(logos))[:6], "favicon_candidates": list(dict.fromkeys(icons))[:6], "images": list(dict.fromkeys(images))[:40],
     }
 
 

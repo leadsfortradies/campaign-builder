@@ -51,13 +51,13 @@ def jpeg_thumb(im, width=512):
     return buf.getvalue()
 
 
-def write_icons(logo_im, img_dir, site_dir):
-    """Favicon set made by centring the logo on a square. Good enough for
-    ad landing pages; the client can swap real ones in later."""
+def write_icons(logo_im, img_dir, site_dir, bare=False):
+    """Favicon set. bare=True: logo_im is the client's real favicon, fill the
+    square with it. Otherwise centre the logo on a white square."""
     def square(n):
         c = Image.new("RGBA", (n, n), (255, 255, 255, 255))
         l = logo_im.convert("RGBA")
-        l.thumbnail((int(n * .86), int(n * .86)))
+        l.thumbnail((n, n) if bare else (int(n * .86), int(n * .86)), Image.LANCZOS)
         c.paste(l, ((n - l.width) // 2, (n - l.height) // 2), l)
         return c.convert("RGB")
     os.makedirs(img_dir, exist_ok=True)
@@ -143,6 +143,13 @@ def build_master(M, d):
         if t.get("fonts_url"):
             p = re.sub(r'https://fonts\.googleapis\.com/css2\?[^"]+', t["fonts_url"], p, count=1)
             p = p.replace('--head:"Montserrat"', f'--head:"{t["head_font"]}"').replace('--body:"Open Sans"', f'--body:"{t["body_font"]}"')
+
+    # --- light (white) logo: the template's white nav would hide it, so run the nav dark ---
+    if d.get("logo_light"):
+        p = p.replace(".nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line)}",
+                      ".nav{position:sticky;top:0;z-index:50;background:var(--ink);border-bottom:1px solid var(--steel)}", 1)
+        p = p.replace(".nav-links a{text-decoration:none;color:var(--ink)}", ".nav-links a{text-decoration:none;color:#fff}", 1)
+        p = p.replace("color:var(--ink);text-decoration:none}\n.nav-phone svg", "color:#fff;text-decoration:none}\n.nav-phone svg", 1)
 
     # --- logo, name, phone, tracking ---
     p = p.replace("img/logo.png", "img/" + d["logo_file"])

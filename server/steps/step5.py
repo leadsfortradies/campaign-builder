@@ -189,13 +189,14 @@ def _brand_tokens(ctx, dg):
     user = f"""Website: {dg["title"]}
 Most used colours (hex, by frequency): {dg["colours"]}
 Colours from named brand variables: {dg["named_colours"]}  theme-color: {dg["theme_color"]}
-Font families seen: {dg["fonts"]}   Google Fonts links: {dg["google_fonts"]}
+Font families seen (most used first, already cleaned to Google Fonts names): {dg["fonts"]}   Google Fonts links: {dg["google_fonts"]}
 Logo candidates: {dg["logo_candidates"]}
 Header HTML (first part of page): {dg["home_html"][:5000]}
 
 Pick this business's design tokens. "accent" is the main button/highlight colour, "ink" the very dark
 colour used for headings and the dark bands (if the site has no dark brand colour use #16181B),
 "steel" a slightly lighter dark. Fonts only count if they are on Google Fonts, otherwise "".
+Use the font the site really uses for headings and for body text; if it uses one family for both, or you can't tell, use the most-used family for both.
 Return JSON: {{"accent":"#rrggbb","accent_dark":"#rrggbb (10-15% darker)","ink":"#rrggbb","steel":"#rrggbb",
 "head_font":"Family or ''","body_font":"Family or ''","logo_url":"best logo URL from candidates or ''"}}"""
     return llm.complete_json(ctx, "You extract brand design tokens from a website. JSON only.", user, max_tokens=800)
@@ -226,6 +227,31 @@ def _load_logo(s0, dg, token_logo):
         except Exception:  # noqa: BLE001 - try the next candidate
             continue
     return None, None
+
+
+def _logo_is_light(im):
+    """True when the logo's visible pixels are mostly light (white-on-dark logos
+    vanish on the template's white nav)."""
+    px = [p for p in im.convert("RGBA").getdata() if p[3] > 60]
+    if not px:
+        return False
+    return sum(0.299 * r + 0.587 * g + 0.114 * b for r, g, b, _ in px) / len(px) > 170
+
+
+def _load_favicon(dg):
+    """The client's own favicon from their live site (largest first), or None."""
+    from PIL import Image
+    for url in dg.get("favicon_candidates", []):
+        try:
+            data, ctype = lp_brand.fetch(url, binary=True, limit=2_000_000)
+            if "svg" in ctype or "html" in ctype:
+                continue
+            im = Image.open(__import__("io").BytesIO(data)).convert("RGBA")
+            if im.width >= 32:
+                return im
+        except Exception:  # noqa: BLE001 - try the next candidate
+            continue
+    return None
 
 
 def _collect_photos(s0, dg):
@@ -285,7 +311,11 @@ def build(ctx, s5, s0, ad_groups, note):
             dg = lp_brand.digest(s5["design_source_url"])
             t = _brand_tokens(ctx, dg)
             tokens = {k: t[k] for k in ("accent", "accent_dark", "ink", "steel") if _hex_ok(t.get(k))}
-            if t.get("head_font") and t.get("body_font"):
+            hf, bf = t.get("head_font") or t.get("body_font"), t.get("body_font") or t.get("head_font")
+            if not hf and dg["fonts"]:
+                hf = bf = dg["fonts"][0]
+            if hf and bf:
+                t["head_font"], t["body_font"] = hf, bf
                 tokens.update(head_font=t["head_font"], body_font=t["body_font"],
                               fonts_url=lp_brand.google_fonts_url(t["head_font"], t["body_font"]))
             brand_logo = t.get("logo_url") or ""
@@ -305,6 +335,7 @@ def build(ctx, s5, s0, ad_groups, note):
         logo_im, logo_svg = _load_logo(s0, dg, brand_logo)
         if logo_im is None and logo_svg is None:
             raise Blocked("I couldn't find a logo. Upload one under 'Business info' and press Retry.")
+        logo_light = _logo_is_light(logo_im) if logo_im is not None else False
         if logo_svg:
             open(os.path.join(qimg, "logo.svg"), "wb").write(logo_svg)
             logo_file, logo_w, logo_h = "logo.svg", 244, 54
@@ -315,6 +346,9 @@ def build(ctx, s5, s0, ad_groups, note):
             logo_file, logo_h = "logo.png", 54
             logo_w = max(40, round(54 * logo_im.width / logo_im.height))
             icon_im = logo_im
+        fav_im = _load_favicon(dg) if dg else None
+        if fav_im is not None:
+            icon_im = fav_im
         raw = _collect_photos(s0, dg)
         if len(raw) < 3:
             raise Blocked("Landing pages need at least 3 real job photos. Upload some under 'Business info' and press Retry.")
@@ -360,6 +394,7 @@ def build(ctx, s5, s0, ad_groups, note):
             "review_source": s0.get("review_source", ""), "review_count_label": s0.get("review_count_label", ""),
             "rating_line": s0.get("rating_line", ""),
             "logo_file": logo_file, "logo_w": logo_w, "logo_h": logo_h, "tokens": tokens,
+            "logo_light": logo_light,
             "has_legal": True,
             "footer_html": (f"&copy; {year} {lp_site.E(name)}. All rights reserved." if designed else
                             f"{lp_site.E(host)} is owned and operated by Leads For Tradies Limited (NZBN: {LFT_NBZN}). "
@@ -425,7 +460,7 @@ def build(ctx, s5, s0, ad_groups, note):
         # 7. static files from the template + icons
         os.makedirs(os.path.join(out, "img"), exist_ok=True)
         if icon_im is not None:
-            lp_site.write_icons(icon_im, os.path.join(out, "img"), out)
+            lp_site.write_icons(icon_im, os.path.join(out, "img"), out, bare=fav_im is not None)
         shutil.copytree(os.path.join(tpl, "site", "netlify"), os.path.join(out, "netlify"))
         shutil.copy(os.path.join(tpl, "site", "_headers"), os.path.join(out, "_headers"))
         open(os.path.join(out, "netlify.toml"), "w").write(
