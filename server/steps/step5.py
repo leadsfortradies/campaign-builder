@@ -405,8 +405,10 @@ def build(ctx, s5, s0, ad_groups, note):
                                      lp_site.work_section(d, c.get("photo_order")))
             left = lp_site.leftovers(re.sub(r"<(style|script)\b.*?</\1>", "", page, flags=re.S),
                                      " ".join([name or "", *map(str, areas)]))
-            if left:
-                raise RuntimeError(f"Template content leaked into {pg['slug']}: {left}")
+            if left:  # warn, don't fail: the whole build (and its Claude spend) shouldn't be lost for a few words
+                warnings.append(f"The page '{pg['name']}' still contains words from the template's old client "
+                                f"({', '.join(left)}). Check it; if they're wrong, use Request changes and say what "
+                                f"to put there instead.")
             open(os.path.join(out, "quote", pg["slug"] + ".html"), "w", encoding="utf-8").write(page)
             urls[pg["slug"]] = f"{base}/quote/{pg['slug']}"
             if pg is general:
