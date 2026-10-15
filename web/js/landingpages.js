@@ -1,10 +1,14 @@
-// Step 5 view - {project_id, step: "step5", label, mode: "urls"|"build_site"|null,
-// design_source_url, ad_groups: [{name, url}]}. Three modes, chosen at the top:
-//   - "build_template": Claude builds new landing pages from the site template.
-//   - "urls": one text input per ad group for its existing landing page URL.
-//   - "build_designed": Claude builds landing pages on the site template's
-//     layout using the design system (logo, fonts, colours) of an existing
-//     site, whose link is entered here (design_source_url). Managed ads.
+// Landing pages view (step key "step5", shown as Step 6) -
+// {project_id, step, label, mode, design_source_url, custom_domain,
+//  ad_groups: [{name, url}], pages: [{slug, title, url, ad_groups}], index_url,
+//  privacy_url, terms_url, repo_url, dns_note, warnings}. Three options:
+//   1 "build_template": the app builds all pages from the LFT site template,
+//     plus privacy, terms and index from the template.
+//   2 "build_designed": same pages, restyled with the client's own logo, fonts
+//     and colours read from their website; privacy/terms copied from that site.
+//   3 "urls": one text input per ad group for existing landing page links.
+// Build options start a background job via /api/landing/start; the finished
+// pages come back in this same data file for review and approval.
 // Mode choice + in-progress URL edits are drafted to localStorage (same
 // pattern as loadExcluded() in review.js) until "Approve this step" submits
 // them for real.
@@ -20,15 +24,16 @@ function normMode(m) {
 function loadLandingPagesDraft(projectId, step, data) {
   try {
     const raw = localStorage.getItem(landingPagesDraftKey(projectId, step));
-    if (!raw) return { mode: normMode(data.mode), urls: {}, designUrl: data.design_source_url || "" };
+    if (!raw) return { mode: normMode(data.mode), urls: {}, designUrl: data.design_source_url || "", customDomain: data.custom_domain || "" };
     const parsed = JSON.parse(raw);
     return {
       mode: normMode(parsed.mode || data.mode),
       urls: parsed.urls || {},
       designUrl: parsed.designUrl != null ? parsed.designUrl : data.design_source_url || "",
+      customDomain: parsed.customDomain != null ? parsed.customDomain : data.custom_domain || "",
     };
   } catch (e) {
-    return { mode: normMode(data.mode), urls: {}, designUrl: data.design_source_url || "" };
+    return { mode: normMode(data.mode), urls: {}, designUrl: data.design_source_url || "", customDomain: data.custom_domain || "" };
   }
 }
 
@@ -71,9 +76,9 @@ class LandingPagesView {
     modeRow.className = "lp-mode-row";
 
     const options = [
-      ["build_template", "Build new landing pages from scratch", "Claude builds them using the site template."],
-      ["urls", "Landing pages already exist", "Paste a landing page link for each ad group."],
-      ["build_designed", "Build with an existing site's design", "Site template layout, styled to match a client's existing site. Managed ads."],
+      ["build_template", "1. Build from scratch", "All landing pages, privacy, terms and index from the LFT template."],
+      ["build_designed", "2. Build with the client's branding", "Same template pages, using the logo, fonts and colours from the client's website."],
+      ["urls", "3. I already have the links", "Paste a landing page link for each ad group."],
     ];
     for (const [value, title, blurb] of options) {
       const card = document.createElement("button");
@@ -128,33 +133,8 @@ class LandingPagesView {
 
       group.appendChild(body);
       this.mountEl.appendChild(group);
-    } else if (this.draft.mode === "build_template") {
-      const note = document.createElement("div");
-      note.className = "skip-note";
-      note.innerHTML = `<strong>Approve this step and tell Claude in chat.</strong> It will build the landing pages from the site template and fill in the URLs once they're live.`;
-      this.mountEl.appendChild(note);
-    } else if (this.draft.mode === "build_designed") {
-      const wrap = document.createElement("div");
-      wrap.className = "lp-row";
-      const label = document.createElement("span");
-      label.className = "lp-label";
-      label.textContent = "Existing site link";
-      wrap.appendChild(label);
-      const input = document.createElement("input");
-      input.type = "url";
-      input.className = "lp-input";
-      input.placeholder = "https://clientsite.co.nz";
-      input.value = this.draft.designUrl || "";
-      input.addEventListener("input", () => {
-        this.draft.designUrl = input.value;
-        this.saveDraft();
-      });
-      wrap.appendChild(input);
-      this.mountEl.appendChild(wrap);
-      const note = document.createElement("div");
-      note.className = "skip-note";
-      note.innerHTML = `<strong>Approve this step and tell Claude in chat.</strong> It will pull the logo, fonts and colours from that site, build the landing pages on the site template layout (new Netlify project + GitHub repo, subdomain), and fill in the URLs once live.`;
-      this.mountEl.appendChild(note);
+    } else if (this.draft.mode === "build_template" || this.draft.mode === "build_designed") {
+      this.renderBuild();
     } else {
       const note = document.createElement("div");
       note.className = "skip-note";
@@ -165,10 +145,94 @@ class LandingPagesView {
     this.updateCounts();
   }
 
+  renderBuild() {
+    const designed = this.draft.mode === "build_designed";
+    const built = this.data.pages && this.data.pages.length && this.data.mode === this.draft.mode;
+    const box = document.createElement("div");
+    box.className = "lp-build";
+    if (built) {
+      const d = this.data;
+      const link = (u, t) => `<a href="${u}" target="_blank" rel="noopener">${t}</a>`;
+      const rows = d.pages
+        .map((p) => `<li><strong>${link(p.url, p.title || p.name)}</strong><br><span class="muted">${p.ad_groups.join(", ")}</span></li>`)
+        .join("");
+      box.innerHTML = `
+        <div class="group-header"><span class="dot" style="background:#3ddc84"></span><h2>Landing pages built</h2></div>
+        <ul class="lp-pages">${rows}</ul>
+        <p>${d.index_url ? link(d.index_url, "Index") : ""}
+           ${d.privacy_url ? " · " + link(d.privacy_url, "Privacy") : ""}
+           ${d.terms_url ? " · " + link(d.terms_url, "Terms") : ""}
+           ${d.repo_url ? " · " + link(d.repo_url, "GitHub repo") : ""}</p>
+        ${d.dns_note ? `<p class="skip-note"><strong>DNS:</strong> ${d.dns_note}</p>` : ""}
+        ${(d.warnings || []).map((w) => `<p class="skip-note"><strong>Check:</strong> ${w}</p>`).join("")}
+        <p class="muted">Review the pages, then approve. Approving adds each ad group's link to its ad copy and sitelinks.
+        To change something, use Request changes and describe it.</p>`;
+      this.mountEl.appendChild(box);
+      return;
+    }
+    const field = (label, key, ph) => {
+      const row = document.createElement("div");
+      row.className = "lp-row";
+      row.innerHTML = `<span class="lp-label">${label}</span>`;
+      const input = document.createElement("input");
+      input.type = "text";
+      input.className = "lp-input";
+      input.placeholder = ph;
+      input.value = this.draft[key] || "";
+      input.addEventListener("input", () => {
+        this.draft[key] = input.value;
+        this.saveDraft();
+      });
+      row.appendChild(input);
+      box.appendChild(row);
+    };
+    if (designed) field("Client's website", "designUrl", "https://clientsite.co.nz");
+    field("Live address (optional)", "customDomain", designed ? "quotes.clientsite.co.nz" : "www.clientsite.co.nz");
+    const note = document.createElement("div");
+    note.className = "skip-note";
+    note.innerHTML = designed
+      ? "Builds the landing pages on the LFT template with this client's logo, fonts and colours, and copies their privacy policy and terms from their site. You set up the subdomain DNS yourself; leave the address blank to use the temporary Netlify link."
+      : "Builds all landing pages, privacy, terms and index from the LFT template, with the client's logo and photos. Leave the address blank to use the temporary Netlify link.";
+    box.appendChild(note);
+    const btn = document.createElement("button");
+    btn.className = "primary";
+    btn.textContent = "Build landing pages";
+    btn.addEventListener("click", () => this.startBuild(btn));
+    box.appendChild(btn);
+    this.mountEl.appendChild(box);
+  }
+
+  async startBuild(btn) {
+    if (this.draft.mode === "build_designed" && !(this.draft.designUrl || "").trim()) {
+      this.showStatus("Add the client's website link first.", false);
+      return;
+    }
+    btn.disabled = true;
+    btn.textContent = "Starting…";
+    try {
+      const res = await fetch("/api/landing/start", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          project_id: this.data.project_id,
+          mode: this.draft.mode,
+          design_source_url: (this.draft.designUrl || "").trim(),
+          custom_domain: (this.draft.customDomain || "").trim(),
+        }),
+      });
+      if (!res.ok) throw new Error((await res.json()).detail || `HTTP ${res.status}`);
+      location.reload();
+    } catch (e) {
+      this.showStatus(`Couldn't start the build: ${e.message}`, false);
+      btn.disabled = false;
+      btn.textContent = "Build landing pages";
+    }
+  }
+
   updateCounts() {
     if (!this.countsEl) return;
     if (this.draft.mode !== "urls") {
-      this.countsEl.innerHTML = "";
+      this.countsEl.innerHTML = this.data.pages ? `<span><strong>${this.data.pages.length}</strong> pages built</span>` : "";
       return;
     }
     const total = this.data.ad_groups.length;
@@ -177,7 +241,7 @@ class LandingPagesView {
   }
 
   resetExclusions() {
-    this.draft = { mode: normMode(this.data.mode), urls: {}, designUrl: this.data.design_source_url || "" };
+    this.draft = { mode: normMode(this.data.mode), urls: {}, designUrl: this.data.design_source_url || "", customDomain: this.data.custom_domain || "" };
     this.saveDraft();
     this.render();
   }
@@ -218,8 +282,8 @@ class LandingPagesView {
     } else if (!this.draft.mode) {
       this.showStatus("Pick an option above first.", false);
       return;
-    } else if (this.draft.mode === "build_designed" && !(this.draft.designUrl || "").trim()) {
-      this.showStatus("Add the existing site link first.", false);
+    } else if (!(this.data.pages && this.data.pages.length && this.data.mode === this.draft.mode)) {
+      this.showStatus("Build the landing pages first, then approve them.", false);
       return;
     }
 

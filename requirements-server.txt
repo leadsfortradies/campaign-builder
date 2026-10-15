@@ -3,3 +3,4 @@ uvicorn[standard]>=0.29
 python-multipart>=0.0.9
 anthropic>=0.40
 google-ads>=33.0.0
+Pillow>=10.0

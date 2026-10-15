@@ -16,9 +16,10 @@ from fastapi.responses import FileResponse, HTMLResponse, JSONResponse, Redirect
 
 from . import auth, config, db, jobs, llm, projects_store
 from .notify import notify
-from .steps import campaigns, step1, step2, step3, step4, step6, link_urls  # noqa: F401 - registers step handlers
+from .steps import campaigns, step1, step2, step3, step4, step5, step6, link_urls  # noqa: F401 - registers step handlers
 from .steps import store
 from . import chat as chat_edit
+from . import cost
 
 FAILED_LOGINS = {}  # ip -> (count, window_start)
 
@@ -156,6 +157,30 @@ async def approve(request: Request):
     return {"ok": True, "next_step": nxt, "job_id": job_id}
 
 
+@app.post("/api/landing/start")
+async def landing_start(request: Request):
+    """Save the landing page option chosen in the web app and, for the two
+    build options, start the build job."""
+    body = await request.json()
+    project_id, mode = body.get("project_id"), body.get("mode")
+    if mode not in ("build_template", "build_designed"):
+        raise HTTPException(400, "mode must be build_template or build_designed")
+    if not any(p["id"] == project_id for p in projects_store.load()):
+        raise HTTPException(404, "Unknown project")
+    design_url = (body.get("design_source_url") or "").strip()
+    if mode == "build_designed" and not design_url.startswith(("http://", "https://")):
+        raise HTTPException(400, "Add the client's existing website link first.")
+    domain = re.sub(r"^https?://|/.*$", "", (body.get("custom_domain") or "").strip().lower())
+    s5 = store.read(project_id, "step5") or {}
+    s5.update({"project_id": project_id, "step": "step5", "mode": mode,
+               "design_source_url": design_url if mode == "build_designed" else "", "custom_domain": domain})
+    store.write(project_id, "step5", s5)
+    projects_store.update_step(project_id, "step5", status="running", step_label=store.STEP_LABELS["step5"],
+                               file=f"data/{project_id}/step5.json")
+    db.log_event("landing_build_started", project_id, "step5", mode)
+    return {"ok": True, "job_id": db.add_job(project_id, "step5", "run_step", {"build": True})}
+
+
 @app.post("/api/request-changes")
 async def request_changes(request: Request):
     body = await request.json()
@@ -182,7 +207,7 @@ async def chat(request: Request):
     try:
         return chat_edit.suggest((store.read(project_id, step) or {}).get("rows") or [],
                                  message, body.get("excluded") or [], db.current_model(),
-                                 body.get("regrouped") or {})
+                                 body.get("regrouped") or {}, project_id, step)
     except llm.LLMError as exc:
         raise HTTPException(502, str(exc))
 
@@ -373,6 +398,11 @@ def get_job(job_id: int):
     if not rows:
         raise HTTPException(404)
     return rows[0]
+
+
+@app.get("/api/projects/{project_id}/cost")
+def project_cost(project_id: str):
+    return cost.project_cost(project_id)
 
 
 @app.get("/api/settings")

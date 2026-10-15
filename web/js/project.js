@@ -304,9 +304,30 @@ async function init() {
     } catch (e) { /* old local server has no jobs API */ }
   }
 
+  async function showCost() {
+    const el = document.getElementById("cost-line");
+    try {
+      const r = await fetch(`/api/projects/${encodeURIComponent(project.id)}/cost`);
+      if (!r.ok) return;
+      const c = await r.json();
+      const names = { step1: "Keywords", step2: "Location keywords", campaigns: "Campaigns", step3: "Ad groups",
+        step4: "Ad copy", step6: "Sitelinks", step5: "Landing pages", chat: "Chat edits" };
+      const lines = Object.entries(c.by_step)
+        .sort((a, b) => b[1].usd - a[1].usd)
+        .map(([s, v]) => `${names[s] || s}: US$${v.usd.toFixed(2)}`);
+      el.textContent = `Claude API cost so far: US$${c.total_usd.toFixed(2)} (${(c.tokens_used / 1000).toFixed(0)}k tokens)`;
+      el.title = (lines.join("\n") || "No Claude usage yet") +
+        "\n\nEstimate from list prices; your Anthropic invoice is the source of truth." +
+        (c.unpriced_models.length ? `\nNo price set for: ${c.unpriced_models.join(", ")}` : "");
+      el.hidden = false;
+    } catch (e) { /* older server without the cost API */ }
+  }
+
   renderTabs();
   renderContent();
   showJobs();
+  showCost();
+  setInterval(showCost, 30000);
   setInterval(showJobs, 5000);
 }
 

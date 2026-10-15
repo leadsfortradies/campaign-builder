@@ -32,7 +32,7 @@ def _call(model, system, user, max_tokens):
         model=model,
         max_tokens=max_tokens,
         system=system,
-        messages=[{"role": "user", "content": user}],
+        messages=[{"role": "user", "content": user}],  # user: str, or a list of content blocks (images)
     )
     text = "".join(b.text for b in resp.content if getattr(b, "type", "") == "text")
     return text, resp.usage.input_tokens, resp.usage.output_tokens
@@ -49,6 +49,13 @@ def _parse_json(text):
     start = min(starts)
     end = max(text.rfind("}"), text.rfind("]"))
     return json.loads(text[start:end + 1])
+
+
+def image_block(jpeg_bytes):
+    """Content block for _call/complete_json when a prompt includes a photo."""
+    import base64
+    return {"type": "image", "source": {"type": "base64", "media_type": "image/jpeg",
+                                        "data": base64.b64encode(jpeg_bytes).decode()}}
 
 
 def complete_json(ctx, system, user, max_tokens=8000, attempts=3):

@@ -74,6 +74,8 @@ class Ctx:
     def add_usage(self, tin, tout):
         db.execute("UPDATE jobs SET input_tokens=input_tokens+?, output_tokens=output_tokens+? WHERE id=?",
                    (tin, tout, self.job["id"]))
+        if self.project_id and not self.project_id.startswith("_"):
+            db.record_usage(self.project_id, self.step, self.model, tin, tout, self.job["id"])
         used = db.query("SELECT COALESCE(SUM(input_tokens+output_tokens),0) AS t FROM jobs WHERE project_id=?",
                         (self.project_id,))[0]["t"]
         if used > PROJECT_TOKEN_CAP:

@@ -490,90 +490,50 @@ which case run step 2 as designed, it'll show real volume per town.
 > the ad copy's final URL (`step4.json`) and into that ad group's sitelinks
 > (`step6.json`, keeping each #anchor). No review needed.
 
-## Step 5 - Landing Pages — IMPLEMENTED
+## Step 5 - Landing Pages (shown as **Step 6** in the web app) — IMPLEMENTED
+
+(Numbering note: the web app shows Sitelinks/Callouts/Snippets as Step 5 and
+Landing Pages as Step 6. Data keys are unchanged: `step6.json` = sitelinks,
+`step5.json` = landing pages.)
 
 1. Covers whichever campaign's ad groups currently have ad copy (currently
-   **BOF - Priority 1**, same scope as Step 4 - expand to Priority 2 / Price
-   Discovery once those campaigns launch).
-2. The web app's Step 5 tab presents three options per project:
-   - **"Build new landing pages from scratch"** (`build_template`) - Claude
-     builds them from the site template. See the build flow below.
-   - **"Landing pages already exist"** (`urls`) - a text input per ad group
-     for that ad group's landing page URL.
-   - **"Build with an existing site's design"** (`build_designed`) - for
-     managed-ads clients who already have a site. Always shown as an option
-     for now. See the design-system flow below.
-3. When the user gives Claude the landing page URLs directly in chat (rather
-   than typing them into the web app), Claude stores them straight into
-   `web/data/<project-id>/step5.json` itself - no need to wait for a web
-   approval round-trip for that path.
-4. These URLs do double duty: they're the final URLs used when the ads are
-   built, **and** they feed Step 6 (sitelinks) - Claude pulls specific pages
-   off the same business website (About, Gallery, Service Areas, Contact,
-   etc.) to build sitelink extensions from.
-5. **Never use em-dashes or other classic AI-slop tell-tales** in any
-   landing page copy.
-
-### Option 1: build new landing pages from the site template — NOT YET AUTOMATED
-
-(Legacy mode name `build_site` is read as `build_template`.) Template:
-Netlify project `lft-site-template`
-(https://app.netlify.com/projects/lft-site-template/overview), GitHub repo
-https://github.com/leadsfortradies/site-template. The landing page layout is
-the template's `/quote/` page.
-
-Uses the template **exactly** - only the client's logo, images and content
-change. **Typography and colours stay untouched.** Builds: (1) all the
-landing pages, (2) privacy and terms, (3) index.
-
-1. Ask the user which template to use if there's more than one for the
-   industry.
-2. Create a new folder for the site under the Websites folder on the user's
-   Mac, named after the city + service (e.g. a deck/fence company in
-   Auckland -> "Auckland Decks & Fences"), and duplicate the template into
-   it.
-3. Swap in the client's logo and images, and rewrite the content to be
-   specific to the new location/business (years of experience,
-   qualifications, service areas, etc.) using Step 0's `step0.json`. Don't
-   change fonts, colours or layout.
-4. Per landing page: use copy and images specific to that page's service
-   where appropriate - don't carry over copy about an unrelated service
-   (e.g. a roof-painting landing page shouldn't have interior-painting
-   copy). Update the **H1 and Title** above all else. Use images specific
-   to that service where available; fall back to other provided images only
-   when there aren't enough service-specific ones.
-5. Also build **privacy** and **terms** pages from the template.
-6. Build the **index** (home page) as a duplicate of the most general
-   landing page (the one least specific to a single service). For now it's
-   just that copy - no separate home page design or copy.
-7. Once the landing pages, privacy, terms and index are done, send the user
-   the links for review and approval.
-8. Feed the approved landing page links into the Step 4 ad copy as the
-   final URLs (the index is not an ad landing page).
-
-### Option 3: build landing pages with an existing site's design system
-
-For managed-ads clients who already have a website. Builds **landing pages
-only** (no home page, no full site) using the layout of the site template
-re-skinned with the client's existing branding.
-
-1. Ask the user for the link to the client's existing site (the web app tab
-   has an input for it, saved as `design_source_url` in `step5.json`).
-2. Visit that site and build a design system from it: logo, fonts, colours,
-   button and heading styles. Pull the logo and images from the site unless
-   the user has already supplied them. **Don't stop for approval of the
-   design system** - go straight to building.
-3. Build the landing pages on the **layout of the `/quote/` page in the site
-   template** (the `/quote/` folder of the repo above - that page is the
-   landing page layout), swapping the template's styling for the extracted design
-   system. Copy per page follows the same rules as Option 1 item 6, using
-   Step 0's `step0.json`.
-4. Create a **new GitHub repo** and a **new Netlify project** for these pages
-   (never reuse the template's or another client's). They are served from a
-   **subdomain** of the client's domain.
-5. Send the user the landing page links for review and approval, then feed
-   the approved links into the Step 4 ad copy as the final URLs (and store
-   them in `step5.json`).
+   **BOF - Priority 1**, same scope as Step 4).
+2. The web app's Landing Pages tab offers three options per project:
+   - **Option 1 - "Build from scratch"** (`build_template`): the app builds
+     every landing page from the LFT site template, **plus privacy, terms and
+     index from the template**. Template styling is untouched.
+   - **Option 2 - "Build with the client's branding"** (`build_designed`): the
+     same template pages, restyled with the client's logo, fonts and colours
+     read from their website (link entered in the tab, saved as
+     `design_source_url`). Landing pages and index only; **privacy and terms are
+     copied straight from the client's site** (never from the template).
+   - **Option 3 - "I already have the links"** (`urls`): a text input per ad
+     group for that ad group's landing page URL. Nothing is built.
+3. Options 1 and 2 run as a background job (`server/steps/step5.py`, started by
+   `POST /api/landing/start`). It: clones the template repo
+   (`leadsfortradies/site-template`, the GitHub copy is the source of truth);
+   groups the ad groups into landing pages (one page per service plus one
+   general page); has Claude caption the client's photos and write the page copy
+   from Step 0 facts only; fills the template's `content/lp-master.html`
+   (`server/steps/lp_site.py`); checks no template-client text or missing image
+   survives; pushes to a new private GitHub repo (`<project-id>-landing-pages`)
+   and deploys to a new Netlify site; then publishes the links for review.
+   Needs `GITHUB_TOKEN` and `NETLIFY_AUTH_TOKEN` (see DEPLOY.md).
+4. Reviews and approval happen in the web app. **Approving the landing pages
+   runs the background `link_landing_pages` job**, which copies each ad group's
+   URL into the ad copy final URL and into that ad group's sitelinks (keeping
+   each #anchor). No further review needed.
+5. Option 2 subdomain: the user enters the live address in the tab (optional);
+   the app attaches it to the Netlify site and shows the CNAME to add. **The
+   user does the DNS by hand.** Without an address the links use the temporary
+   `<name>.netlify.app` host.
+6. Required before a build: business name, services, service area, phone and a
+   logo, plus at least 3 job photos (option 2 falls back to the client site's
+   images). A missing item blocks with a notification. Reviews, GTM container
+   ID and rating line are used only if supplied in Step 0 (`review_quotes`,
+   `gtm_container_id`, ...); otherwise the section is removed, never invented.
+7. **Never use em-dashes or other classic AI-slop tell-tales** in landing page
+   copy (the build strips them).
 
 ## Step 6 - Writing Sitelinks, Callouts & Structured Snippets Copy For Google Ads — NOT YET IMPLEMENTED
 

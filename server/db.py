@@ -45,6 +45,17 @@ CREATE TABLE IF NOT EXISTS settings (
     key TEXT PRIMARY KEY,
     value TEXT NOT NULL
 );
+CREATE TABLE IF NOT EXISTS usage (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    project_id TEXT NOT NULL,
+    step TEXT NOT NULL,
+    job_id INTEGER,                  -- NULL for calls outside a job (chat edits)
+    model TEXT NOT NULL,
+    input_tokens INTEGER NOT NULL,
+    output_tokens INTEGER NOT NULL,
+    created_at REAL NOT NULL
+);
+CREATE INDEX IF NOT EXISTS usage_project ON usage(project_id);
 CREATE TABLE IF NOT EXISTS events (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     project_id TEXT,
@@ -100,6 +111,12 @@ def add_job(project_id, step, kind, payload=None):
         (project_id, step, kind, "queued", json.dumps(payload or {}), time.time()),
     )
     return cur.lastrowid
+
+
+def record_usage(project_id, step, model, tin, tout, job_id=None):
+    """One Claude API call's tokens, priced later by server/cost.py."""
+    execute("INSERT INTO usage (project_id, step, job_id, model, input_tokens, output_tokens, created_at) "
+            "VALUES (?,?,?,?,?,?,?)", (project_id, step, job_id, model, int(tin), int(tout), time.time()))
 
 
 def get_setting(key, default=""):

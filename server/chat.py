@@ -1,7 +1,7 @@
 """Chat box on the review pages: turn a plain instruction ("remove all the
 general builder keywords") into exclude/restore lists for the keyword table."""
 
-from . import llm
+from . import db, llm
 
 SYSTEM = (
     "You help a Google Ads specialist edit a keyword list on screen. They type a plain "
@@ -23,17 +23,18 @@ SYSTEM = (
 
 class _Ctx:
     """Just enough of jobs.Ctx for llm.complete_json outside a job."""
-    def __init__(self, model):
-        self.model = model
+    def __init__(self, model, project_id=None, step=""):
+        self.model, self.project_id, self.step = model, project_id, step
 
     def add_usage(self, tin, tout):
-        pass
+        if self.project_id:
+            db.record_usage(self.project_id, self.step, self.model, tin, tout)
 
     def log(self, msg):
         print(f"[chat] {msg}", flush=True)
 
 
-def suggest(rows, message, excluded, model, regrouped=None):
+def suggest(rows, message, excluded, model, regrouped=None, project_id=None, step="chat"):
     if not rows:
         return {"exclude": [], "restore": [], "reply": "There's no keyword list on this step to edit."}
     excluded = set(excluded)
@@ -45,7 +46,7 @@ def suggest(rows, message, excluded, model, regrouped=None):
         for r in rows
     )
     user = f"Instruction: {message}\n\nKeyword list (keyword | group | volume):\n{lines}"
-    out = llm.complete_json(_Ctx(model), SYSTEM, user, max_tokens=16000)
+    out = llm.complete_json(_Ctx(model, project_id, step), SYSTEM, user, max_tokens=16000)
     valid = {r["keyword"] for r in rows}
     pick = lambda k: [x for x in dict.fromkeys(out.get(k) or []) if x in valid]
     moves = {}

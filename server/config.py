@@ -45,3 +45,20 @@ MODELS = [
     {"id": "claude-haiku-5-5", "label": "Haiku 5.5", "note": "Fastest / cheapest"},
 ]
 DEFAULT_MODEL = os.environ.get("DEFAULT_MODEL", "claude-sonnet-5-5")
+
+
+# Claude API list prices in US$ per million tokens, used only for the cost
+# tracker (estimates; Anthropic's invoice is the source of truth). Override or
+# extend with MODEL_PRICES_JSON in Railway, e.g.
+#   {"claude-sonnet-5-5": {"input": 3, "output": 15}}
+MODEL_PRICES = {
+    "claude-fable-5-1": {"input": 15.0, "output": 75.0},
+    "claude-opus-5-5": {"input": 5.0, "output": 25.0},
+    "claude-sonnet-5-5": {"input": 3.0, "output": 15.0},
+    "claude-haiku-5-5": {"input": 1.0, "output": 5.0},
+}
+try:
+    import json as _json
+    MODEL_PRICES.update(_json.loads(os.environ.get("MODEL_PRICES_JSON", "{}")))
+except ValueError:
+    pass
