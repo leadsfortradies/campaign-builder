@@ -45,6 +45,19 @@ def load_json(project_id, step):
         return json.load(f)
 
 
+def require_final_domain_confirmed(project_id):
+    """Ad copy and sitelinks point at the client's final domain. Don't upload until the
+    user has confirmed in the web app (Landing Pages tab) that the domain is connected."""
+    path = data_path(project_id, "step5")
+    if not os.path.exists(path):
+        return
+    s5 = json.load(open(path))
+    if s5.get("custom_base") and not s5.get("domain_connected"):
+        sys.exit(f"Not uploading: the final domain ({s5['custom_base']}) hasn't been confirmed as connected. "
+                 "Ask the user 'is the final domain connected?'. They confirm it in the web app's Landing Pages tab. "
+                 "Sync the project data afterwards, then re-run.")
+
+
 def build_keyword_bid_map(project_id):
     """keyword text (lower) -> low_bid (top-of-page low estimate), from step1+step2."""
     bid_map = {}
@@ -126,6 +139,7 @@ def main():
                         help="Target people physically in the locations only (not 'presence or interest')")
     parser.add_argument("--validate-only", action="store_true")
     args = parser.parse_args()
+    require_final_domain_confirmed(args.project_id)
 
     customer_id = args.customer_id.replace("-", "")
 

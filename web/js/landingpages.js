@@ -181,11 +181,12 @@ class LandingPagesView {
         ${finalSet}
         <p class="lp-actions">
           <button type="button" class="btn lp-rebuild">Rebuild landing pages</button>
-          ${d.dns_note && !d.domain_connected ? `<button type="button" class="btn lp-dns-done">DNS Settings Updated</button>` : ""}
         </p>
-        ${d.dns_note && !d.domain_connected ? `<p class="skip-note"><strong>DNS:</strong> ${d.dns_note}
-          Use the Netlify links to review until the domain is connected.</p>` : ""}
-        ${d.domain_connected && d.custom_base ? `<p class="muted">Domain connected. Links use ${d.custom_base.replace("https://", "")}.</p>` : ""}
+        ${cBase && !d.domain_connected ? `<div class="skip-note"><strong>Is the final domain connected?</strong>
+          Ad copy and sitelinks use the final domain links (${cBase.replace("https://", "")}), never the Netlify ones.
+          ${d.dns_note || ""} No campaign is uploaded until you confirm this.
+          <p><button type="button" class="btn lp-dns-done">Yes, the final domain is connected</button></p></div>` : ""}
+        ${d.domain_connected && d.custom_base ? `<p class="muted">Final domain confirmed as connected (${d.custom_base.replace("https://", "")}). Campaigns can be uploaded.</p>` : ""}
         ${(d.warnings || []).map((w) => `<p class="skip-note"><strong>Check:</strong> ${w}</p>`).join("")}
         <p class="muted">Review the pages, then approve. Approving adds each ad group's link to its ad copy and sitelinks.
         To change something, use Request changes and describe it.</p>`;
@@ -228,7 +229,7 @@ class LandingPagesView {
             location.reload();
           } catch (e) {
             dnsBtn.disabled = false;
-            dnsBtn.textContent = "DNS Settings Updated";
+            dnsBtn.textContent = "Yes, the final domain is connected";
             this.showStatus("Couldn't switch the links. Try again.", false);
           }
         });

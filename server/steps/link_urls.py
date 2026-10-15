@@ -22,8 +22,15 @@ def _swap_base(url, base):
 def link_landing_pages(ctx):
     pid = ctx.project_id
     try:
-        pages = {_key(g["name"]): g["url"] for g in (store.read(pid, "step5") or {}).get("ad_groups", [])
-                 if g.get("url")}
+        s5 = store.read(pid, "step5") or {}
+        final = (s5.get("custom_base") or "").rstrip("/")
+        netlify = (s5.get("netlify_base") or s5.get("preview_base") or "").rstrip("/")
+
+        def final_url(u):  # ad copy and sitelinks always use the final domain, never the Netlify address
+            if final and netlify and u.startswith(netlify):
+                return final + u[len(netlify):]
+            return u
+        pages = {_key(g["name"]): final_url(g["url"]) for g in s5.get("ad_groups", []) if g.get("url")}
         if not pages:
             ctx.log("No landing page URLs in Step 6 - nothing to add.")
             return

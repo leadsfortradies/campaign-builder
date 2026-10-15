@@ -311,6 +311,14 @@ def build(ctx, s5, s0, ad_groups, note):
             dg = lp_brand.digest(s5["design_source_url"])
             t = _brand_tokens(ctx, dg)
             tokens = {k: t[k] for k in ("accent", "accent_dark", "ink", "steel") if _hex_ok(t.get(k))}
+            # Dark brand colour from the site's CSS too (Claude falls back to the template's #16181B).
+            darks = dg.get("dark_colours") or []
+            neutral = [c for c in darks if max(int(c[i:i + 2], 16) for i in (1, 3, 5)) - min(int(c[i:i + 2], 16) for i in (1, 3, 5)) <= 40]
+            pair = sorted((neutral or darks)[:2], key=lambda c: sum(int(c[i:i + 2], 16) for i in (1, 3, 5)))
+            if pair:
+                tokens["ink"] = pair[0]
+                tokens["steel"] = pair[1] if len(pair) > 1 else "#" + "".join(
+                    "%02x" % min(255, int(pair[0][i:i + 2], 16) + 20) for i in (1, 3, 5))
             # Fonts come from the site's CSS, not from Claude (it picks a secondary font as the heading font).
             # One family for both unless the site styles h1-h3 with a different one.
             bf = dg["fonts"][0] if dg["fonts"] else (t.get("body_font") or t.get("head_font"))
@@ -488,7 +496,9 @@ def build(ctx, s5, s0, ad_groups, note):
             except lp_publish.PublishError as exc:
                 warnings.append(f"Couldn't attach {host} to Netlify automatically ({exc}); add it in Netlify > Domain management.")
 
-        ad_urls = {n_: urls[pg["slug"]] for pg in pages for n_ in pg["ad_groups"]}
+        # Ad copy and sitelinks always get the FINAL domain links, never the temporary Netlify ones.
+        ad_base = custom_base or base
+        ad_urls = {n_: f"{ad_base}/quote/{pg['slug']}" for pg in pages for n_ in pg["ad_groups"]}
         netlify_host = site["url"].replace("https://", "")
         dns_note = (f"Point a CNAME for {host} at {netlify_host}, then wait for the HTTPS certificate."
                     if s5.get("custom_domain") else "")

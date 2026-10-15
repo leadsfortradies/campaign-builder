@@ -525,8 +525,14 @@ Landing Pages as Step 6. Data keys are unchanged: `step6.json` = sitelinks,
    each #anchor). No further review needed.
 5. Option 2 subdomain: the user enters the live address in the tab (optional);
    the app attaches it to the Netlify site and shows the CNAME to add. **The
-   user does the DNS by hand.** Without an address the links use the temporary
-   `<name>.netlify.app` host.
+   user does the DNS by hand.** The tab shows two link sets: the Netlify links
+   (for review) and the final domain links. **Ad copy and sitelinks ALWAYS use
+   the final domain links, never the Netlify ones** - even before DNS resolves.
+   The tab asks "Is the final domain connected?" and **no campaign is uploaded
+   (Step 8) until the user confirms it there** (`domain_connected` in step5.json;
+   `step8_upload_campaign.py` refuses otherwise). Brand fonts and dark colours are
+   read from the client's CSS (not picked by Claude); the favicon is the live
+   site's own; a light logo gets a dark nav.
 6. Required before a build: business name, services, service area, phone and a
    logo, plus at least 3 job photos (option 2 falls back to the client site's
    images). A missing item blocks with a notification. Reviews, GTM container
@@ -691,6 +697,9 @@ Takes the approved Step 1-6 output and actually builds the live (paused)
 campaign in the client's Google Ads account, including conversion tracking
 via Google Tag Manager.
 
+0. **If the landing pages use a final domain, the user must have confirmed in the
+   app that it's connected** ("Is the final domain connected?"); ask them if it
+   isn't confirmed. The upload script refuses until it is.
 1. **Get the correct Google Ads account ID from the user first** - never
    guess or reuse another client's account.
 2. **Always upload the campaign paused.** Never let it go live during this

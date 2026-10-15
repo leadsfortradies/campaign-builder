@@ -50,6 +50,24 @@ def clean_font(name):
     return n.title() if n.islower() else n
 
 
+def _lum(h):
+    r, g, b = (int(h[i:i + 2], 16) for i in (1, 3, 5))
+    return 0.299 * r + 0.587 * g + 0.114 * b
+
+
+def dark_colours(text):
+    """Dark (but not pure black) brand colours by frequency, from hex, rgb() and
+    bare 'r,g,b' triplets (Wix --color_N variables)."""
+    c = Counter()
+    for h in re.findall(r"#[0-9a-fA-F]{6}\b|#[0-9a-fA-F]{3}\b", text):
+        c[_hex6(h)] += 1
+    for r, g, b in re.findall(r"(?<![\d.])(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})(?![\d.])", text):
+        if max(int(r), int(g), int(b)) <= 255:
+            c["#%02x%02x%02x" % (int(r), int(g), int(b))] += 1
+    out = [h for h, _ in c.most_common(200) if 12 <= _lum(h) <= 80 and max(int(h[i:i + 2], 16) for i in (1, 3, 5)) > 14]
+    return out[:6]
+
+
 def digest(home_url):
     """Everything Claude needs to pick this site's design tokens + the raw
     candidates for logo / photos / legal pages."""
@@ -109,7 +127,7 @@ def digest(home_url):
     return {
         "home_html": home, "title": (re.search(r"<title[^>]*>(.*?)</title>", home, re.S | re.I) or [0, ""])[1].strip(),
         "colours": colours, "named_colours": named, "theme_color": theme[:1],
-        "fonts": [f for f, _ in fonts.most_common(6)], "heading_font": heading, "google_fonts": google[:2],
+        "fonts": [f for f, _ in fonts.most_common(6)], "heading_font": heading, "dark_colours": dark_colours(css_text + "\n" + home), "google_fonts": google[:2],
         "logo_candidates": list(dict.fromkeys(logos))[:6], "favicon_candidates": list(dict.fromkeys(icons))[:6], "images": list(dict.fromkeys(images))[:40],
     }
 
