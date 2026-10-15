@@ -139,6 +139,32 @@ async function init() {
     const canUpdate = activeStep === "step3" && project.steps.step4 && project.steps.step4.file &&
       typeof view.updateAdCopy === "function";
     updateBtn.hidden = true;
+    if (activeStep === "step4") {
+      // Same sync as Step 3's button: writes copy for any ad group that has none yet (e.g. Price Discovery).
+      updateBtn.hidden = false;
+      updateBtn.disabled = false;
+      updateBtn.textContent = "Update Ad Copy";
+      updateBtn.onclick = async () => {
+        updateBtn.disabled = true;
+        updateBtn.textContent = "Updating…";
+        try {
+          const res = await fetch("/api/ad-copy/sync", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ project_id: project.id }),
+          });
+          if (!res.ok) throw new Error((await res.json().catch(() => ({}))).detail || `HTTP ${res.status}`);
+          statusMsg.hidden = false;
+          statusMsg.textContent = "Updating the ad copy. Missing ad groups (like Price Discovery) get new copy. Check back in a minute.";
+          updateBtn.textContent = "Updating ✓";
+        } catch (e) {
+          statusMsg.hidden = false;
+          statusMsg.textContent = "Couldn't update the ad copy: " + e.message;
+          updateBtn.disabled = false;
+          updateBtn.textContent = "Update Ad Copy";
+        }
+      };
+    }
     if (canUpdate) {
       view.onChange = () => { updateBtn.hidden = !view.hasChanges(); };
       view.onChange();
