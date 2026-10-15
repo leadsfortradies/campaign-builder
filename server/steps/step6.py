@@ -83,13 +83,13 @@ def validate(data):
 
 
 def _final_urls(project_id, ad_groups):
-    """Approved final URLs per ad group (latest step4 approval), else whatever step4.json holds."""
+    """Final URLs per ad group: step4.json (kept current by link_urls), else the latest step4 approval."""
     urls = {g["name"]: g.get("final_url", "") for g in ad_groups}
     rows = db.query("SELECT payload FROM approvals WHERE project_id=? AND step='step4' ORDER BY id DESC LIMIT 1",
                     (project_id,))
     if rows:
         for name, url in (json.loads(rows[0]["payload"]).get("final_urls") or {}).items():
-            if url:
+            if url and not urls.get(name):
                 urls[name] = url
     return urls
 

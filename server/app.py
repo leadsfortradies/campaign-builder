@@ -16,7 +16,7 @@ from fastapi.responses import FileResponse, HTMLResponse, JSONResponse, Redirect
 
 from . import auth, config, db, jobs, llm, projects_store
 from .notify import notify
-from .steps import campaigns, step1, step2, step3, step4, step6  # noqa: F401 - registers step handlers
+from .steps import campaigns, step1, step2, step3, step4, step6, link_urls  # noqa: F401 - registers step handlers
 from .steps import store
 from . import chat as chat_edit
 
@@ -150,6 +150,9 @@ async def approve(request: Request):
 
     nxt = projects_store.next_step(step)
     job_id = db.add_job(project_id, nxt, "run_step", {"after_approval_of": step}) if nxt else None
+    if step == "step5":
+        # Landing pages approved: quietly add their URLs to the ad copy and sitelinks.
+        job_id = db.add_job(project_id, step, "link_landing_pages", {"after_approval_of": step})
     return {"ok": True, "next_step": nxt, "job_id": job_id}
 
 

@@ -485,6 +485,11 @@ which case run step 2 as designed, it'll show real volume per town.
 > `step5.json` = landing pages. Step 5 (sitelinks) has an "Export To PDF" button
 > that bundles ad copy + extensions for client approval.
 
+> **Auto-link (2026-10-15):** when landing pages are approved in the web app,
+> a background job (`server/steps/link_urls.py`) copies each ad group's URL into
+> the ad copy's final URL (`step4.json`) and into that ad group's sitelinks
+> (`step6.json`, keeping each #anchor). No review needed.
+
 ## Step 5 - Landing Pages — IMPLEMENTED
 
 1. Covers whichever campaign's ad groups currently have ad copy (currently
