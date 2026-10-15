@@ -69,14 +69,36 @@ def validate(ad, keywords):
     return problems
 
 
-def _write_group(ctx, facts, name, keywords, note, previous):
+PD_RULE = ("This is a PRICE DISCOVERY ad group (people asking what the service costs). The 3 pinned "
+           "headlines must be offer-style price prompts like \"Get A Price For Your Deck\", \"Need A Price "
+           "For Your Deck?\", \"Get Your New Deck Priced\", NOT echoes of the cost keywords. Descriptions "
+           "may still contain the cost keyword.")
+
+
+def ad_group_sets(project_id):
+    """{ad group name: (campaign, theme, rows)} for every campaign that gets ad copy.
+    The main BOF campaign keeps the bare theme as its name (as before); other
+    campaigns use "Campaign — theme" so names never collide."""
+    campaigns = store.ad_copy_campaigns(project_id) or [CAMPAIGN]
+    out = {}
+    for r in store.approved_rows(project_id, "step3"):
+        camp, _, theme = r.get("group", "").partition(" — ")
+        if theme and camp in campaigns:
+            name = theme if camp == campaigns[0] else f"{camp} — {theme}"
+            out.setdefault(name, (camp, theme, []))[2].append(r)
+    return out
+
+
+def _write_group(ctx, facts, name, keywords, note, previous, campaign=CAMPAIGN, theme=None):
     kw_lines = "\n".join(f"- {k['keyword']} ({k['avg_monthly_searches']}/mo)" for k in keywords[:40])
     prev = f"\nPrevious version (revise it per the change request):\n{json.dumps(previous)}" if previous else ""
     user = f"""\
 Business facts (the ONLY facts you may use for benefit headlines):
 {json.dumps(facts, indent=1)}
 
-Ad group: {name}
+Campaign: {campaign}
+Ad group: {theme or name}
+{PD_RULE if campaign == "Price Discovery" else ""}
 Keywords (by search volume):
 {kw_lines}
 {('CHANGE REQUEST FROM THE USER (apply this): ' + note) if note else ''}{prev}
@@ -95,6 +117,8 @@ Return JSON: {{"headlines_pinned": [3], "headlines_benefit": [12], "descriptions
     problems = validate(ad, kw_texts)
     return {
         "name": name,
+        "campaign": campaign,
+        "theme": theme or name,
         "final_url": (previous or {}).get("final_url", ""),
         "headlines_pinned": ad.get("headlines_pinned", []),
         "headlines_benefit": ad.get("headlines_benefit", []),
@@ -117,20 +141,15 @@ def run(ctx):
     facts = {k: s0[k] for k in FACT_FIELDS if s0.get(k)}
     note = ctx.payload.get("note", "")
 
-    campaign = store.ad_copy_campaign(ctx.project_id) or CAMPAIGN
-    groups = {}
-    for r in store.approved_rows(ctx.project_id, "step3"):
-        camp, _, theme = r.get("group", "").partition(" — ")
-        if camp == campaign and theme:
-            groups.setdefault(theme, []).append(r)
-    if not groups:
-        raise Blocked("Ad copy needs an approved Step 3 with ad groups in the chosen BOF campaign.")
+    sets = ad_group_sets(ctx.project_id)
+    if not sets:
+        raise Blocked("Ad copy needs an approved Step 3 with ad groups in the chosen campaigns.")
 
     previous = {g["name"]: g for g in (store.read(ctx.project_id, "step4") or {}).get("ad_groups", [])} if note else {}
     ad_groups = []
-    for name, kws in groups.items():
+    for name, (camp, theme, kws) in sets.items():
         kws.sort(key=lambda r: -r["avg_monthly_searches"])
-        g = _write_group(ctx, facts, name, kws, note, previous.get(name))
+        g = _write_group(ctx, facts, name, kws, note, previous.get(name), camp, theme)
         g["keywords"] = sorted(k["keyword"] for k in kws)  # lets "Update Ad Copy" spot changed ad groups
         ad_groups.append(g)
         ctx.log(f"Wrote ad copy for {name}")

@@ -114,7 +114,8 @@ class AdCopyView {
       header.className = "group-header";
       header.innerHTML = `
         <span class="dot" style="background:#3ddc84"></span>
-        <h2>${adGroup.name}</h2>
+        <h2>${adGroup.theme || adGroup.name}</h2>
+        ${adGroup.campaign ? `<span class="ac-campaign">${adGroup.campaign}</span>` : ""}
         <span class="group-count">${keptInGroup} / ${allInGroup.length} kept</span>
         <span class="chevron">▾</span>
       `;

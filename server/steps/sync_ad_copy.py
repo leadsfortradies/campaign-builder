@@ -40,16 +40,11 @@ def sync(ctx):
     s4 = store.read(pid, "step4") or {}
     if not s4.get("ad_groups"):
         raise Blocked("There's no ad copy to update yet.")
-    campaign = store.ad_copy_campaign(pid) or step4.CAMPAIGN
-
+    sets = step4.ad_group_sets(pid)
+    if not sets:
+        raise Blocked("Every ad group in the ad copy campaigns has been deleted. Keep at least one.")
     rows = store.approved_rows(pid, "step3")
-    groups = {}
-    for r in rows:
-        camp, _, theme = r.get("group", "").partition(" — ")
-        if camp == campaign and theme:
-            groups.setdefault(theme, []).append(r)
-    if not groups:
-        raise Blocked("Every ad group in the ad copy campaign has been deleted. Keep at least one.")
+    groups = {n: kws for n, (_, _, kws) in sets.items()}
 
     # Step 8 reads step3.json, so it must reflect the approved edits (original kept once).
     s3 = store.read(pid, "step3")
@@ -66,15 +61,18 @@ def sync(ctx):
         kws.sort(key=lambda r: -r["avg_monthly_searches"])
         sig, prev = _sig(kws), old.get(name)
         if prev is None:
-            g = step4._write_group(ctx, facts, name, kws, "", None)
+            g = step4._write_group(ctx, facts, name, kws, "", None, *sets[name][:2])
             added.append(name)
         elif prev.get("keywords") is not None and prev["keywords"] != sig:
             g = step4._write_group(ctx, facts, name, kws,
-                                   "The keywords in this ad group changed; make sure the copy still fits them.", prev)
+                                   "The keywords in this ad group changed; make sure the copy still fits them.", prev,
+                                   *sets[name][:2])
             rewritten.append(name)
         else:
             g = prev
         g["keywords"] = sig
+        g.setdefault("campaign", sets[name][0])
+        g.setdefault("theme", sets[name][1])
         out.append(g)
     items = sum(len(g["headlines_pinned"]) + len(g["headlines_benefit"]) + len(g["descriptions"]) + len(g["paths"])
                 for g in out)

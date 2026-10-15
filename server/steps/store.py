@@ -102,3 +102,15 @@ def ad_copy_campaign(project_id):
         if name in c["campaigns"]:
             return name
     return None
+
+
+def ad_copy_campaigns(project_id):
+    """Every campaign that gets ad copy: the one BOF campaign (see ad_copy_campaign)
+    plus Price Discovery when it was chosen on the Campaigns step."""
+    out = []
+    bof = ad_copy_campaign(project_id)
+    if bof:
+        out.append(bof)
+    if "Price Discovery" in campaign_choice(project_id)["campaigns"]:
+        out.append("Price Discovery")
+    return out

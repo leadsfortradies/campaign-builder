@@ -763,3 +763,12 @@ tr.excluded .x-btn {
 @media (max-width:640px){.col-move{width:auto}.move-select{max-width:110px}}
 
 .del-group-btn{margin-left:auto;margin-right:10px;font-size:12px;padding:3px 8px}
+
+.ac-campaign {
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #aaa;
+  white-space: nowrap;
+}
