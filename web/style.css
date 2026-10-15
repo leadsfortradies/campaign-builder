@@ -5,6 +5,7 @@
   --text: #e8eaed;
   --muted: #9aa1ac;
   --accent: #4f8cff;
+  --link: #7fb0ff;
   --bof: #3ddc84;
   --price: #ffb84f;
   --review: #ff6b6b;
@@ -18,9 +19,13 @@
     --border: #e1e4ea;
     --text: #1a1d23;
     --muted: #6b7280;
+    --link: #1a5fd0;
     --excluded: #c7cbd3;
   }
 }
+
+a { color: var(--link); }
+a:visited { color: var(--link); }
 
 * { box-sizing: border-box; }
 
