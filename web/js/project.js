@@ -64,6 +64,11 @@ async function init() {
 
   function renderTabs() {
     tabsEl.innerHTML = "";
+    const biz = document.createElement("button");
+    biz.className = "tab-btn";
+    biz.textContent = "Step 0: Business info";
+    biz.addEventListener("click", () => { location.href = `new.html?id=${encodeURIComponent(project.id)}`; });
+    tabsEl.appendChild(biz);
     for (const step of availableSteps) {
       const info = project.steps[step];
       const btn = document.createElement("button");

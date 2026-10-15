@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>LFT Campaign Builder — New campaign</title>
-<link rel="stylesheet" href="style.css?v=8">
+<link rel="stylesheet" href="style.css?v=9">
 </head>
 <body>
 <header>
   <a href="index.html" class="back-link">← All projects</a>
   <h1 id="page-title">New campaign</h1>
-  <p class="muted">Starred fields are. Everything else makes the ad copy better. Only list services the business actually offers.</p>
+  <p class="muted" id="intro">Starred fields are needed to start. Everything else makes the ad copy better. Only list services the business actually offers.</p>
 </header>
 <main>
   <form id="new-form" class="new-form">
@@ -41,10 +41,10 @@ const form = document.getElementById("new-form");
   if (!editId) return;
   document.getElementById("page-title").textContent = "Business info";
   document.getElementById("intro").textContent =
-    "Add or change anything here. Blank fields keep what's already saved, and any step that was waiting on missing info restarts when you save.";
+    "Add or change anything here. Blank fields keep what's already saved, and any step that was waiting on missing info restarts when you update.";
   document.getElementById("start-row").hidden = true;
   form.querySelectorAll("[required]").forEach((el) => { el.required = false; });
-  form.querySelector("button[type=submit]").textContent = "Save";
+  form.querySelector("button[type=submit]").textContent = "Update";
   document.querySelector(".back-link").href = `project.html?id=${encodeURIComponent(editId)}`;
   document.querySelector(".back-link").textContent = "← Back to project";
   try {
@@ -73,7 +73,7 @@ document.getElementById("new-form").addEventListener("submit", async (e) => {
   const data = new FormData(form);
   if (!editId && !form.start_now.checked) data.set("start_now", "0");
   btn.disabled = true;
-  btn.textContent = "Uploading…";
+  btn.textContent = editId ? "Updating…" : "Uploading…";
   try {
     const url = editId ? `/api/projects/${encodeURIComponent(editId)}/info` : "/api/projects";
     const r = await fetch(url, { method: "POST", body: data });
@@ -81,11 +81,11 @@ document.getElementById("new-form").addEventListener("submit", async (e) => {
     if (!r.ok) throw new Error(body.detail || `HTTP ${r.status}`);
     location.href = `project.html?id=${encodeURIComponent(body.project_id || editId)}`;
   } catch (err) {
-    msg.textContent = "Couldn't create it: " + err.message;
+    msg.textContent = (editId ? "Couldn't update it: " : "Couldn't create it: ") + err.message;
     msg.className = "status-msg err";
     msg.hidden = false;
     btn.disabled = false;
-    btn.textContent = editId ? "Save" : "Create campaign";
+    btn.textContent = editId ? "Update" : "Create campaign";
   }
 });
 </script>
