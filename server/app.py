@@ -181,6 +181,45 @@ async def landing_start(request: Request):
     return {"ok": True, "job_id": db.add_job(project_id, "step5", "run_step", {"build": True})}
 
 
+@app.post("/api/landing/domain-connected")
+async def landing_domain_connected(request: Request):
+    """The user says DNS now points at Netlify: switch every landing page link
+    from the Netlify address to the custom domain."""
+    body = await request.json()
+    project_id = body.get("project_id")
+    if not any(p["id"] == project_id for p in projects_store.load()):
+        raise HTTPException(404, "Unknown project")
+    s5 = store.read(project_id, "step5") or {}
+    old, new = (s5.get("preview_base") or "").rstrip("/"), (s5.get("custom_base") or "").rstrip("/")
+    if not (old and new) and s5.get("site_host"):  # built before preview links used the Netlify address
+        m = re.search(r"at ([\w.-]+\.netlify\.app)", s5.get("dns_note") or "")
+        if m:
+            old, new = "https://" + s5["site_host"], "https://" + s5["site_host"]
+            # links already point at the custom domain; only the flag needs to flip
+    if not (old and new):
+        raise HTTPException(400, "No custom domain to switch to.")
+
+    def swap(u):
+        return new + u[len(old):] if isinstance(u, str) and u.startswith(old) else u
+    if not s5.get("domain_connected"):
+        for g in s5.get("ad_groups", []):
+            g["url"] = swap(g.get("url", ""))
+        for pg in s5.get("pages", []):
+            pg["url"] = swap(pg.get("url", ""))
+        for k in ("index_url", "privacy_url", "terms_url"):
+            if s5.get(k):
+                s5[k] = swap(s5[k])
+        s5["domain_connected"] = True
+        s5["dns_note"] = ""
+        store.write(project_id, "step5", s5)
+    step = next((p for p in projects_store.load() if p["id"] == project_id), {}).get("steps", {}).get("step5", {})
+    job_id = None
+    if (step.get("status") if isinstance(step, dict) else None) == "approved":
+        job_id = db.add_job(project_id, "step5", "link_landing_pages", {})
+    db.log_event("landing_domain_connected", project_id, "step5", new)
+    return {"ok": True, "job_id": job_id}
+
+
 @app.post("/api/request-changes")
 async def request_changes(request: Request):
     body = await request.json()

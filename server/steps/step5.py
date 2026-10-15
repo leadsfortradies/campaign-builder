@@ -294,7 +294,9 @@ def build(ctx, s5, s0, ad_groups, note):
         # 2. site + deploy target
         site = lp_publish.ensure_netlify_site(f"{pid}-lp", s5.get("netlify_site_id"))
         host = (s5.get("custom_domain") or "").strip().lower() or site["url"].replace("https://", "")
-        base = "https://" + host
+        # Links point at Netlify until the user confirms DNS is connected (custom domain 404s before then).
+        base = site["url"]
+        custom_base = "https://" + host if s5.get("custom_domain") else ""
         out = os.path.join(work, "site")
         qimg = os.path.join(out, "quote", "img")
         os.makedirs(qimg)
@@ -462,6 +464,7 @@ def build(ctx, s5, s0, ad_groups, note):
             "index_url": base + "/", "privacy_url": base + "/privacy-policy" if "privacy" in legal else "",
             "terms_url": base + "/terms" if "terms" in legal else "",
             "repo_url": repo, "netlify_site_id": site["id"], "site_host": host, "dns_note": dns_note,
+            "preview_base": base, "custom_base": custom_base, "domain_connected": False,
             "warnings": warnings, "built_at": time.strftime("%Y-%m-%d %H:%M"),
         }
     finally:
