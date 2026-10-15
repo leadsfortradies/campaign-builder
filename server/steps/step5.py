@@ -512,8 +512,11 @@ def build(ctx, s5, s0, ad_groups, note):
         os.makedirs(os.path.join(out, "img"), exist_ok=True)
         if icon_im is not None:
             lp_site.write_icons(icon_im, os.path.join(out, "img"), out, bare=fav_im is not None)
-        shutil.copytree(os.path.join(tpl, "site", "netlify"), os.path.join(out, "netlify"))
-        shutil.copy(os.path.join(tpl, "site", "_headers"), os.path.join(out, "_headers"))
+        # the template repo renamed site/ to base-site/; accept either
+        tpl_site = next(d for d in (os.path.join(tpl, "base-site"), os.path.join(tpl, "site"))
+                        if os.path.isdir(d))
+        shutil.copytree(os.path.join(tpl_site, "netlify"), os.path.join(out, "netlify"))
+        shutil.copy(os.path.join(tpl_site, "_headers"), os.path.join(out, "_headers"))
         open(os.path.join(out, "netlify.toml"), "w").write(
             '[build]\n  publish = "."\n\n[functions]\n  directory = "netlify/functions"\n')
         open(os.path.join(out, "robots.txt"), "w").write("User-agent: *\nAllow: /\nDisallow: /api/\n")
