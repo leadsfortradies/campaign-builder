@@ -185,6 +185,48 @@ def _fix_page(ctx, facts, city, page, photos, job_options, other_titles, note, c
     return copy
 
 
+def _plan(ctx, s0, ad_groups, note):
+    """Which landing pages will be built and which ad groups each one serves.
+    Shown to the user before anything is built."""
+    opts = [str(x) for x in (s0.get("services") or [])][:7] + ["Something else"]
+    pages = _group_pages(ctx, _facts(s0), ad_groups, opts, note)
+    out, seen = [], set()
+    for p in pages:
+        slug = re.sub(r"[^a-z0-9-]+", "-", str(p.get("slug", "")).lower()).strip("-")[:40] or "page"
+        while slug in seen:
+            slug += "-2"
+        seen.add(slug)
+        out.append({"slug": slug, "name": str(p.get("name") or slug), "ad_groups": p["ad_groups"],
+                    "general": bool(p.get("general")), "select": p.get("select") or ""})
+    return out
+
+
+def _apply_plan(plan, ad_groups, job_options):
+    """The approved plan, kept in line with the current ad groups (deleted ones
+    dropped, new ones go on the general page). None if there is no plan."""
+    if not plan or not plan.get("pages"):
+        return None
+    names = {g["name"] for g in ad_groups}
+    pages = []
+    for p in plan["pages"]:
+        ags = [n for n in p.get("ad_groups", []) if n in names]
+        if not ags:
+            continue
+        sel = p.get("select") or ""
+        if sel not in job_options:
+            sel = next((o for o in job_options if o.lower() == str(p.get("name", "")).lower()), "")
+        pages.append({**p, "ad_groups": ags, "select": sel})
+    if not pages:
+        return None
+    assigned = {n for p in pages for n in p["ad_groups"]}
+    gen = next((p for p in pages if p.get("general")), pages[0])
+    gen["general"] = True
+    for g in ad_groups:
+        if g["name"] not in assigned:
+            gen["ad_groups"].append(g["name"])
+    return pages
+
+
 def _brand_tokens(ctx, dg):
     user = f"""Website: {dg["title"]}
 Most used colours (hex, by frequency): {dg["colours"]}
@@ -382,7 +424,7 @@ def build(ctx, s5, s0, ad_groups, note):
             c["photo"] = clamp(c.get("photo"))
             if c.get("service") not in job_options:
                 c["service"] = job_options[0]
-        pages = _group_pages(ctx, facts, ad_groups, job_options, note)
+        pages = _apply_plan(s5.get("plan"), ad_groups, job_options) or _group_pages(ctx, facts, ad_groups, job_options, note)
         titles = []
         for pg in pages:
             pg["copy"] = _fix_page(ctx, facts, city, pg, photos, job_options, titles, note,
@@ -532,7 +574,18 @@ def run(ctx):
     s0 = store.read(pid, "step0") or {}
     groups = _seed_groups(pid, s5)
     base_doc = {"project_id": pid, "step": "step5", "label": store.project_label(pid)}
-    keep = {k: s5[k] for k in ("mode", "design_source_url", "custom_domain", "netlify_site_id") if s5.get(k)}
+    keep = {k: s5[k] for k in ("mode", "design_source_url", "custom_domain", "netlify_site_id",
+                               "chat", "revision_notes", "plan") if s5.get(k)}
+    if ctx.payload.get("plan"):
+        if not groups:
+            raise Blocked("Landing pages need ad groups from Step 4 first.")
+        plan = _plan(ctx, s0, groups, s5.get("plan_note", ""))
+        store.publish_step(pid, "step5", {**s5, **base_doc, "ad_groups": groups,
+                                          "plan": {"pages": plan, "note": s5.get("plan_note", "")}},
+                           row_count=len(plan))
+        ctx.need_approval(f"Landing page plan ready: {len(plan)} pages for {len(groups)} ad groups. "
+                          "Check it, then press Build.")
+        return
     building = s5.get("mode") in BUILD_MODES and (
         ctx.payload.get("build") or ctx.payload.get("retry") or ctx.job["kind"] == "revise_step")
     if not building:
@@ -542,7 +595,23 @@ def run(ctx):
         return
     if not groups:
         raise Blocked("Landing pages need ad groups from Step 4 first.")
-    result = build(ctx, s5, s0, groups, ctx.payload.get("note", ""))
+    # Every chat / "Ask for changes" note so far, so a rebuild never drops an earlier change.
+    notes = list(s5.get("revision_notes") or [])
+    extra = (ctx.payload.get("note") or "").strip()
+    if extra and extra not in notes:
+        notes.append(extra)
+        keep["revision_notes"] = notes
+    result = build(ctx, s5, s0, groups, "; ".join(f"({i}) {n}" for i, n in enumerate(notes, 1)) if len(notes) > 1
+                   else (notes[0] if notes else ""))
+    chat = [dict(m) for m in (s5.get("chat") or [])]
+    done = [m for m in chat if m.get("role") == "user" and not m.get("applied")]
+    for m in done:
+        m["applied"] = True
+    if done:
+        chat.append({"role": "assistant", "at": time.strftime("%Y-%m-%d %H:%M"),
+                     "text": "Done. I rebuilt the landing pages with that change. Have a look at the links above."
+                             + (f" Check: {'; '.join(result['warnings'])}" if result["warnings"] else "")})
+        keep["chat"] = chat
     store.publish_step(pid, "step5", {**base_doc, **keep, **result}, row_count=len(result["pages"]))
     flagged = f" Check: {'; '.join(result['warnings'])}" if result["warnings"] else ""
     ctx.need_approval(f"{len(result['pages'])} landing pages built, plus index, privacy and terms.{flagged}")

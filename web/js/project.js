@@ -90,6 +90,7 @@ async function init() {
     const statusMsg = document.getElementById("status-msg");
     statusMsg.hidden = true;
     content.innerHTML = "";
+    document.getElementById("update-adcopy-btn").hidden = true;
 
     const info = project.steps[activeStep];
 
@@ -133,6 +134,16 @@ async function init() {
       }
     }
     view.render();
+
+    const updateBtn = document.getElementById("update-adcopy-btn");
+    const canUpdate = activeStep === "step3" && project.steps.step4 && project.steps.step4.file &&
+      typeof view.updateAdCopy === "function";
+    updateBtn.hidden = true;
+    if (canUpdate) {
+      view.onChange = () => { updateBtn.hidden = !view.hasChanges(); };
+      view.onChange();
+      updateBtn.onclick = () => view.updateAdCopy(updateBtn);
+    }
 
     const warned = (stepData.ad_groups || []).filter((g) => g.warnings && g.warnings.length);
     if (warned.length) {

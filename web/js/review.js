@@ -23,6 +23,10 @@ function regroupKey(projectId, step) {
   return `lft-regroup::${projectId}::${step}`;
 }
 
+function deletedKey(projectId, step) {
+  return `lft-deleted-groups::${projectId}::${step}`;
+}
+
 function loadRegrouped(projectId, step) {
   try {
     return JSON.parse(localStorage.getItem(regroupKey(projectId, step)) || "{}") || {};
@@ -70,6 +74,66 @@ class ReviewView {
     this.excluded = loadExcluded(stepData.project_id, stepData.step);
     this.promoted = loadPromoted(stepData.project_id, stepData.step);
     this.regrouped = loadRegrouped(stepData.project_id, stepData.step);
+    try {
+      this.deletedGroups = new Set(JSON.parse(localStorage.getItem(deletedKey(stepData.project_id, stepData.step)) || "[]"));
+    } catch (e) {
+      this.deletedGroups = new Set();
+    }
+  }
+
+  saveDeleted() {
+    try {
+      localStorage.setItem(deletedKey(this.data.project_id, this.data.step), JSON.stringify([...this.deletedGroups]));
+    } catch (e) { /* ignore */ }
+  }
+
+  // True when the kept keywords or their ad groups differ from what's saved in the data file.
+  hasChanges() {
+    return this.data.rows.some((r) => this.excluded.has(r.keyword) || this.effectiveGroup(r) !== r.group);
+  }
+
+  deleteGroup(groupName) {
+    const inGroup = this.data.rows.filter((r) => this.effectiveGroup(r) === groupName);
+    const label = groupName.split(" — ").slice(1).join(" — ") || groupName;
+    if (!confirm(`Delete the ad group "${label}" and all ${inGroup.length} keywords in it?`)) return;
+    inGroup.forEach((r) => this.excluded.add(r.keyword));
+    this.deletedGroups.add(groupName);
+    this.saveExcluded();
+    this.saveDeleted();
+    this.render();
+  }
+
+  // Re-approve Step 3 as edited (without regenerating anything), then update the
+  // ad copy, extensions and landing page list to match.
+  async updateAdCopy(btn) {
+    const kept = this.keptRows();
+    const original = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = "Updating…";
+    try {
+      let res = await fetch("/approve", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          project_id: this.data.project_id, step: this.data.step, dataset_label: this.data.label,
+          submitted_at: new Date().toISOString(), total_kept: kept.length,
+          total_excluded: this.data.rows.length - kept.length, kept_keywords: kept, no_advance: true,
+        }),
+      });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      res = await fetch("/api/ad-copy/sync", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ project_id: this.data.project_id }),
+      });
+      if (!res.ok) throw new Error((await res.json().catch(() => ({}))).detail || `HTTP ${res.status}`);
+      this.showStatus("Updating the ad copy and extensions. Deleted ad groups are removed, new ones get new copy. Check the Ad copy tab in a minute.", true);
+      btn.textContent = "Updating ✓";
+    } catch (e) {
+      this.showStatus("Couldn't update the ad copy: " + e.message, false);
+      btn.disabled = false;
+      btn.textContent = original;
+    }
   }
 
   saveExcluded() {
@@ -123,7 +187,11 @@ class ReviewView {
     for (const row of this.data.rows) {
       (byGroup[this.effectiveGroup(row)] ||= []).push(row);
     }
+    // Ad-group sections ("<Campaign> — <Ad Group>") stay on screen even when emptied, so they remain drop targets.
+    for (const row of this.data.rows) if (this.canMove(row.group)) byGroup[row.group] ||= [];
+    for (const g of this.deletedGroups) delete byGroup[g];
     const groupNames = this.groupOrder(Object.keys(byGroup));
+    this.allGroups = groupNames;
 
     let totalKept = 0;
     let totalAll = 0;
@@ -143,7 +211,37 @@ class ReviewView {
         <span class="chevron">▾</span>
       `;
       header.addEventListener("click", () => group.classList.toggle("collapsed"));
+      if (this.canMove(groupName)) {
+        const del = document.createElement("button");
+        del.className = "secondary del-group-btn";
+        del.textContent = "Delete ad group";
+        del.title = "Delete this ad group and all its keywords";
+        del.addEventListener("click", (ev) => {
+          ev.stopPropagation();
+          this.deleteGroup(groupName);
+        });
+        header.insertBefore(del, header.querySelector(".chevron"));
+      }
       group.appendChild(header);
+      if (this.canMove(groupName)) {
+        group.addEventListener("dragover", (ev) => {
+          if (this.dragKw && this.campaignOf(this.dragFrom) === this.campaignOf(groupName)) {
+            ev.preventDefault();
+            group.classList.add("drop-target");
+          }
+        });
+        group.addEventListener("dragleave", (ev) => {
+          if (!group.contains(ev.relatedTarget)) group.classList.remove("drop-target");
+        });
+        group.addEventListener("drop", (ev) => {
+          ev.preventDefault();
+          group.classList.remove("drop-target");
+          if (this.dragKw && this.campaignOf(this.dragFrom) === this.campaignOf(groupName)) {
+            this.moveKeyword(this.dragKw, groupName);
+          }
+          this.dragKw = null;
+        });
+      }
 
       const table = document.createElement("table");
       table.innerHTML = `
@@ -154,6 +252,7 @@ class ReviewView {
             <th class="col-comp">Competition</th>
             <th class="col-bid">Bid range</th>
             <th class="col-promote"></th>
+            ${this.canMove(groupName) ? '<th class="col-move">Move to</th>' : ""}
             <th class="col-x"></th>
           </tr>
         </thead>
@@ -170,6 +269,20 @@ class ReviewView {
 
         const tr = document.createElement("tr");
         tr.className = "kw-row" + (isExcluded ? " excluded" : "");
+        if (this.canMove(groupName)) {
+          tr.draggable = true;
+          tr.addEventListener("dragstart", (ev) => {
+            this.dragKw = row.keyword;
+            this.dragFrom = groupName;
+            ev.dataTransfer.effectAllowed = "move";
+            ev.dataTransfer.setData("text/plain", row.keyword);
+            tr.classList.add("dragging");
+          });
+          tr.addEventListener("dragend", () => {
+            tr.classList.remove("dragging");
+            this.dragKw = null;
+          });
+        }
 
         const kwTd = document.createElement("td");
         kwTd.className = "col-kw";
@@ -219,7 +332,33 @@ class ReviewView {
         xBtn.addEventListener("click", () => this.toggleKeyword(row.keyword));
         xTd.appendChild(xBtn);
 
-        tr.append(kwTd, volTd, compTd, bidTd, promoteTd, xTd);
+        const cells = [kwTd, volTd, compTd, bidTd, promoteTd];
+        if (this.canMove(groupName)) {
+          const moveTd = document.createElement("td");
+          moveTd.className = "col-move";
+          const sel = document.createElement("select");
+          sel.className = "move-select";
+          sel.title = "Move this keyword to another ad group in the same campaign";
+          sel.add(new Option("Move…", ""));
+          for (const g of this.allGroups) {
+            if (g !== groupName && this.canMove(g) && this.campaignOf(g) === this.campaignOf(groupName)) {
+              sel.add(new Option(g.split(" — ").slice(1).join(" — "), g));
+            }
+          }
+          sel.add(new Option("+ New ad group…", "__new__"));
+          sel.addEventListener("change", () => {
+            if (sel.value === "__new__") {
+              const name = (prompt("Name for the new ad group (e.g. Pool Fence Installation):") || "").trim();
+              if (name) this.moveKeyword(row.keyword, `${this.campaignOf(groupName)} — ${name}`);
+              else sel.value = "";
+            } else if (sel.value) {
+              this.moveKeyword(row.keyword, sel.value);
+            }
+          });
+          moveTd.appendChild(sel);
+          cells.push(moveTd);
+        }
+        tr.append(...cells, xTd);
         tbody.appendChild(tr);
       }
 
@@ -232,6 +371,27 @@ class ReviewView {
       this.countsEl.innerHTML =
         `<span><strong>${totalKept}</strong> kept</span><span><strong>${totalAll - totalKept}</strong> excluded</span><span><strong>${totalAll}</strong> total</span>`;
     }
+    if (this.onChange) this.onChange();
+  }
+
+  // Only "<Campaign> — <Ad Group>" sections can be regrouped, and only within their own campaign.
+  canMove(groupName) {
+    return typeof groupName === "string" && groupName.includes(" — ");
+  }
+
+  campaignOf(groupName) {
+    return (groupName || "").split(" — ")[0];
+  }
+
+  moveKeyword(keyword, targetGroup) {
+    const row = this.data.rows.find((r) => r.keyword === keyword);
+    if (!row || this.campaignOf(row.group) !== this.campaignOf(targetGroup)) return;
+    if (targetGroup === row.group) delete this.regrouped[keyword];
+    else this.regrouped[keyword] = targetGroup;
+    try {
+      localStorage.setItem(regroupKey(this.data.project_id, this.data.step), JSON.stringify(this.regrouped));
+    } catch (e) { /* ignore */ }
+    this.render();
   }
 
   toggleKeyword(keyword) {
@@ -260,6 +420,8 @@ class ReviewView {
     this.regrouped = {};
     try { localStorage.removeItem(regroupKey(this.data.project_id, this.data.step)); } catch (e) { /* ignore */ }
     this.excluded = new Set();
+    this.deletedGroups = new Set();
+    this.saveDeleted();
     this.saveExcluded();
     this.render();
   }

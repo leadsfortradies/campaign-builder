@@ -746,3 +746,20 @@ tr.excluded .x-btn {
 }
 
 .lp-actions{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+
+.lp-chat{margin:18px 0;padding:14px;border:1px solid var(--border,#2b3038);border-radius:8px}
+.lp-chat-log{max-height:260px;overflow:auto;margin:8px 0}
+.lp-msg{margin:6px 0;padding:8px 10px;border-radius:8px;max-width:90%}
+.lp-msg.user{background:rgba(61,220,132,.12);margin-left:auto}
+.lp-msg.assistant{background:rgba(255,255,255,.06)}
+.lp-chat-form{display:flex;gap:8px}
+.lp-chat-form .lp-input{flex:1}
+@media (max-width:640px){.lp-chat-form{flex-direction:column}.lp-chat-form button{width:100%}}
+
+.kw-row[draggable="true"]{cursor:grab}
+.kw-row.dragging{opacity:.4}
+.group.drop-target{outline:2px dashed #3ddc84;outline-offset:-2px}
+.move-select{font:inherit;font-size:12px;padding:3px 4px;max-width:160px}
+@media (max-width:640px){.col-move{width:auto}.move-select{max-width:110px}}
+
+.del-group-btn{margin-left:auto;margin-right:10px;font-size:12px;padding:3px 8px}

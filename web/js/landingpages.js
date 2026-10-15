@@ -190,6 +190,7 @@ class LandingPagesView {
         ${(d.warnings || []).map((w) => `<p class="skip-note"><strong>Check:</strong> ${w}</p>`).join("")}
         <p class="muted">Review the pages, then approve. Approving adds each ad group's link to its ad copy and sitelinks.
         To change something, use Request changes and describe it.</p>`;
+      box.appendChild(this.chatPanel(d));
       const rebuildBtn = box.querySelector(".lp-rebuild");
       rebuildBtn.addEventListener("click", async () => {
         if (!confirm("Rebuild all landing pages? This replaces what is currently live on the same Netlify site.")) return;
@@ -267,6 +268,53 @@ class LandingPagesView {
     btn.addEventListener("click", () => this.startBuild(btn));
     box.appendChild(btn);
     this.mountEl.appendChild(box);
+  }
+
+  // Chat for revisions: each message is saved with the project and rebuilds the
+  // pages with every note so far applied (server: POST /api/landing/revise).
+  chatPanel(d) {
+    const wrap = document.createElement("div");
+    wrap.className = "lp-chat";
+    const esc = (t) => String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;");
+    const msgs = (d.chat || [])
+      .map((m) => `<div class="lp-msg ${m.role}"><span>${esc(m.text)}</span>${
+        m.role === "user" && !m.applied ? '<em class="muted"> (not applied yet)</em>' : ""}</div>`)
+      .join("");
+    wrap.innerHTML = `
+      <h3>Ask for changes</h3>
+      <div class="lp-chat-log">${msgs || '<p class="muted">Nothing asked for yet.</p>'}</div>
+      <form class="lp-chat-form">
+        <input type="text" class="lp-input" autocomplete="off"
+          placeholder="e.g. Change the heading on the fencing page, say we cover Feilding too, lead with the driveway photos">
+        <button type="submit" class="primary">Send</button>
+      </form>
+      <p class="muted">Each message rebuilds the pages with all your changes so far (a few minutes). Good for wording,
+      services, areas, page grouping and which photos lead. For a new logo or photos, update Business info and use Rebuild.</p>`;
+    const log = wrap.querySelector(".lp-chat-log");
+    log.scrollTop = log.scrollHeight;
+    wrap.querySelector("form").addEventListener("submit", async (ev) => {
+      ev.preventDefault();
+      const input = wrap.querySelector("input");
+      const btn = wrap.querySelector("button");
+      const message = input.value.trim();
+      if (!message) return;
+      btn.disabled = true;
+      btn.textContent = "Sending…";
+      try {
+        const res = await fetch("/api/landing/revise", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ project_id: d.project_id, message }),
+        });
+        if (!res.ok) throw new Error((await res.json().catch(() => ({}))).detail || `HTTP ${res.status}`);
+        location.reload();
+      } catch (e) {
+        btn.disabled = false;
+        btn.textContent = "Send";
+        this.showStatus(`Couldn't send that: ${e.message}`, false);
+      }
+    });
+    return wrap;
   }
 
   async startBuild(btn) {

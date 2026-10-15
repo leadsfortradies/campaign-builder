@@ -130,7 +130,9 @@ def run(ctx):
     ad_groups = []
     for name, kws in groups.items():
         kws.sort(key=lambda r: -r["avg_monthly_searches"])
-        ad_groups.append(_write_group(ctx, facts, name, kws, note, previous.get(name)))
+        g = _write_group(ctx, facts, name, kws, note, previous.get(name))
+        g["keywords"] = sorted(k["keyword"] for k in kws)  # lets "Update Ad Copy" spot changed ad groups
+        ad_groups.append(g)
         ctx.log(f"Wrote ad copy for {name}")
 
     items = sum(len(g["headlines_pinned"]) + len(g["headlines_benefit"]) + len(g["descriptions"]) + len(g["paths"])

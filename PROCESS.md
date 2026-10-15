@@ -540,6 +540,25 @@ Landing Pages as Step 6. Data keys are unchanged: `step6.json` = sitelinks,
    `gtm_container_id`, ...); otherwise the section is removed, never invented.
 7. **Never use em-dashes or other classic AI-slop tell-tales** in landing page
    copy (the build strips them).
+9. **Plan before build (2026-10-16):** the tab first shows the list of landing
+   pages it will build and which ad groups go on each (`plan` in `step5.json`,
+   made by a `{"plan": true}` job). Nothing is built until the user presses
+   "Build these landing pages"; "Re-plan" regroups with a note. The build uses
+   the saved plan (deleted ad groups dropped, new ones go on the general page).
+10. **Editing ad groups (Step 3, 2026-10-16):** keywords can be dragged or moved
+   by dropdown within a campaign, and an ad group can be deleted with all its
+   keywords. Once ad copy exists, an "Update Ad Copy" button appears next to
+   "Reset exclusions". It re-approves Step 3 as edited (no regeneration), then
+   runs `sync_ad_copy`: deleted ad groups are removed from ad copy, extensions
+   and the landing page list; new ad groups get fresh copy; ad groups whose
+   keywords changed are rewritten; the rest is untouched. `step3.json` is
+   updated to the approved rows (original saved as `step3_original.json`)
+   because the upload reads it. Ad copy and extensions return to review.
+8. **Chat for revisions (2026-10-16):** once pages are built, the tab has an "Ask
+   for changes" chat (`POST /api/landing/revise`). Each message is saved in
+   `step5.json` (`chat`, `revision_notes`) and queues a rebuild that applies
+   every note so far, so earlier changes are never lost. The Rebuild button and
+   the toolbar's "Ask for changes" also apply the saved notes.
 
 ## Step 6 - Writing Sitelinks, Callouts & Structured Snippets Copy For Google Ads — NOT YET IMPLEMENTED
 

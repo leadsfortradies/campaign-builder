@@ -16,7 +16,7 @@ from fastapi.responses import FileResponse, HTMLResponse, JSONResponse, Redirect
 
 from . import auth, config, db, jobs, llm, projects_store
 from .notify import notify
-from .steps import campaigns, step1, step2, step3, step4, step5, step6, link_urls  # noqa: F401 - registers step handlers
+from .steps import campaigns, step1, step2, step3, step4, step5, step6, link_urls, sync_ad_copy  # noqa: F401 - registers step handlers
 from .steps import store
 from . import chat as chat_edit
 from . import cost
@@ -150,11 +150,27 @@ async def approve(request: Request):
     db.log_event("approved", project_id, step, f"{payload.get('total_kept')} kept")
 
     nxt = projects_store.next_step(step)
+    if payload.get("no_advance"):  # re-approval after edits: ad copy is synced separately, not rewritten
+        return {"ok": True, "next_step": None, "job_id": None}
     job_id = db.add_job(project_id, nxt, "run_step", {"after_approval_of": step}) if nxt else None
     if step == "step5":
         # Landing pages approved: quietly add their URLs to the ad copy and sitelinks.
         job_id = db.add_job(project_id, step, "link_landing_pages", {"after_approval_of": step})
     return {"ok": True, "next_step": nxt, "job_id": job_id}
+
+
+@app.post("/api/ad-copy/sync")
+async def ad_copy_sync(request: Request):
+    """Ad groups were edited on Step 3: update ad copy, extensions and the
+    landing page list to match (only what changed)."""
+    body = await request.json()
+    project_id = body.get("project_id")
+    if not any(p["id"] == project_id for p in projects_store.load()):
+        raise HTTPException(404, "Unknown project")
+    if not (store.read(project_id, "step4") or {}).get("ad_groups"):
+        raise HTTPException(400, "There's no ad copy to update yet.")
+    db.log_event("adgroups_changed", project_id, "step3", "ad groups edited; syncing ad copy")
+    return {"ok": True, "job_id": db.add_job(project_id, "step4", "sync_ad_copy", {})}
 
 
 @app.post("/api/landing/start")
@@ -178,6 +194,34 @@ async def landing_start(request: Request):
     projects_store.update_step(project_id, "step5", status="running", step_label=store.STEP_LABELS["step5"],
                                file=f"data/{project_id}/step5.json")
     db.log_event("landing_build_started", project_id, "step5", mode)
+    plan_only = bool(body.get("plan_only"))
+    if plan_only:
+        s5["plan_note"] = (body.get("note") or "").strip()[:1000]
+        store.write(project_id, "step5", s5)
+    payload = {"plan": True} if plan_only else {"build": True}
+    return {"ok": True, "job_id": db.add_job(project_id, "step5", "run_step", payload)}
+
+
+@app.post("/api/landing/revise")
+async def landing_revise(request: Request):
+    """Chat on the built landing pages: save the message, then rebuild with every
+    note so far applied (notes accumulate so earlier changes are never lost)."""
+    body = await request.json()
+    project_id, message = body.get("project_id"), (body.get("message") or "").strip()
+    if not (project_id and message):
+        raise HTTPException(400, "project_id and message required")
+    if not any(p["id"] == project_id for p in projects_store.load()):
+        raise HTTPException(404, "Unknown project")
+    s5 = store.read(project_id, "step5") or {}
+    if s5.get("mode") not in ("build_template", "build_designed") or not s5.get("pages"):
+        raise HTTPException(400, "Build the landing pages first, then ask for changes.")
+    s5.setdefault("chat", []).append({"role": "user", "text": message[:2000], "at": time.strftime("%Y-%m-%d %H:%M"),
+                                      "applied": False})
+    s5["revision_notes"] = (s5.get("revision_notes") or []) + [message[:2000]]
+    store.write(project_id, "step5", s5)
+    projects_store.update_step(project_id, "step5", status="running", step_label=store.STEP_LABELS["step5"],
+                               file=f"data/{project_id}/step5.json")
+    db.log_event("landing_revision_requested", project_id, "step5", message[:200])
     return {"ok": True, "job_id": db.add_job(project_id, "step5", "run_step", {"build": True})}
 
 
