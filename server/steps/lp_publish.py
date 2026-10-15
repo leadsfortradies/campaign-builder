@@ -80,13 +80,14 @@ def ensure_netlify_site(name, existing_id=None):
     token = os.environ["NETLIFY_AUTH_TOKEN"]
     if existing_id:
         s = _api("GET", f"https://api.netlify.com/api/v1/sites/{existing_id}", token)
-        return {"id": s["id"], "name": s["name"], "url": s.get("ssl_url") or s.get("url")}
+        # Netlify reports the custom domain as the site's url once one is attached; links must stay on the netlify.app host.
+        return {"id": s["id"], "name": s["name"], "url": f"https://{s['name']}.netlify.app"}
     acct = os.environ.get("NETLIFY_ACCOUNT_SLUG")
     base = f"https://api.netlify.com/api/v1/{acct}/sites" if acct else "https://api.netlify.com/api/v1/sites"
     for suffix in ("", "-lp", "-lp2", "-lp3"):
         r = _api("POST", base, token, {"name": _slug(name) + suffix}, ok_codes=(422, 409))
         if r.get("id"):
-            return {"id": r["id"], "name": r["name"], "url": r.get("ssl_url") or r.get("url")}
+            return {"id": r["id"], "name": r["name"], "url": f"https://{r['name']}.netlify.app"}
     raise PublishError("Couldn't find a free Netlify site name.")
 
 

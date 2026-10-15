@@ -153,26 +153,38 @@ class LandingPagesView {
     if (built) {
       const d = this.data;
       // Pages built before preview links used Netlify: show the Netlify address until DNS is confirmed.
-      const legacy = !d.preview_base && !d.domain_connected && d.site_host && /\.netlify\.app/.test(d.dns_note || "");
-      const nHost = legacy ? (d.dns_note.match(/at ([\w.-]+\.netlify\.app)/) || [])[1] : "";
-      const shown = (u) => (nHost && u ? u.replace("//" + d.site_host, "//" + nHost) : u);
-      const link = (u, t) => `<a href="${shown(u)}" target="_blank" rel="noopener">${t}</a>`;
-      const rows = d.pages
-        .map((p) => `<li><strong>${link(p.url, p.title || p.name)}</strong><br><span class="muted">${p.ad_groups.join(", ")}</span></li>`)
-        .join("");
+      // Two sets of links: the Netlify address (works now) and the final domain (works once DNS is connected).
+      const nm = (d.dns_note || "").match(/at ([\w.-]+\.netlify\.app)/);
+      const nBase = (d.netlify_base || (/\.netlify\.app/.test(d.preview_base || "") ? d.preview_base : "")
+        || (nm ? "https://" + nm[1] : "") || d.preview_base || "").replace(/\/$/, "");
+      const cBase = (d.custom_base || (d.custom_domain ? "https://" + d.custom_domain : "")).replace(/\/$/, "");
+      const pathOf = (u) => (u || "").replace(/^https?:\/\/[^/]+/, "");
+      const linkTo = (base, u, t) => `<a href="${base}${pathOf(u)}" target="_blank" rel="noopener">${t}</a>`;
+      const set = (base) => {
+        const rows = d.pages
+          .map((p) => `<li><strong>${linkTo(base, p.url, p.title || p.name)}</strong><br><span class="muted">${p.ad_groups.join(", ")}</span></li>`)
+          .join("");
+        const extra = [
+          d.index_url ? linkTo(base, d.index_url, "Index") : "",
+          d.privacy_url ? linkTo(base, d.privacy_url, "Privacy") : "",
+          d.terms_url ? linkTo(base, d.terms_url, "Terms") : "",
+        ].filter(Boolean).join(" · ");
+        return `<ul class="lp-pages">${rows}</ul><p>${extra}${d.repo_url ? (extra ? " · " : "") + `<a href="${d.repo_url}" target="_blank" rel="noopener">GitHub repo</a>` : ""}</p>`;
+      };
+      const netlifySet = `<h3>Netlify links <span class="muted">(live now)</span></h3>${set(nBase)}`;
+      const finalSet = cBase
+        ? `<h3>Final domain links <span class="muted">(${d.domain_connected ? "live" : "work once DNS is connected"})</span></h3>${set(cBase)}`
+        : "";
       box.innerHTML = `
         <div class="group-header"><span class="dot" style="background:#3ddc84"></span><h2>Landing pages built</h2></div>
-        <ul class="lp-pages">${rows}</ul>
-        <p>${d.index_url ? link(d.index_url, "Index") : ""}
-           ${d.privacy_url ? " · " + link(d.privacy_url, "Privacy") : ""}
-           ${d.terms_url ? " · " + link(d.terms_url, "Terms") : ""}
-           ${d.repo_url ? " · " + link(d.repo_url, "GitHub repo") : ""}</p>
+        ${netlifySet}
+        ${finalSet}
         <p class="lp-actions">
           <button type="button" class="btn lp-rebuild">Rebuild landing pages</button>
           ${d.dns_note && !d.domain_connected ? `<button type="button" class="btn lp-dns-done">DNS Settings Updated</button>` : ""}
         </p>
         ${d.dns_note && !d.domain_connected ? `<p class="skip-note"><strong>DNS:</strong> ${d.dns_note}
-          These preview links use the Netlify address until the domain is connected.</p>` : ""}
+          Use the Netlify links to review until the domain is connected.</p>` : ""}
         ${d.domain_connected && d.custom_base ? `<p class="muted">Domain connected. Links use ${d.custom_base.replace("https://", "")}.</p>` : ""}
         ${(d.warnings || []).map((w) => `<p class="skip-note"><strong>Check:</strong> ${w}</p>`).join("")}
         <p class="muted">Review the pages, then approve. Approving adds each ad group's link to its ad copy and sitelinks.

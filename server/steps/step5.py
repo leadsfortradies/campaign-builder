@@ -311,9 +311,10 @@ def build(ctx, s5, s0, ad_groups, note):
             dg = lp_brand.digest(s5["design_source_url"])
             t = _brand_tokens(ctx, dg)
             tokens = {k: t[k] for k in ("accent", "accent_dark", "ink", "steel") if _hex_ok(t.get(k))}
-            hf, bf = t.get("head_font") or t.get("body_font"), t.get("body_font") or t.get("head_font")
-            if not hf and dg["fonts"]:
-                hf = bf = dg["fonts"][0]
+            # Fonts come from the site's CSS, not from Claude (it picks a secondary font as the heading font).
+            # One family for both unless the site styles h1-h3 with a different one.
+            bf = dg["fonts"][0] if dg["fonts"] else (t.get("body_font") or t.get("head_font"))
+            hf = dg.get("heading_font") or bf
             if hf and bf:
                 t["head_font"], t["body_font"] = hf, bf
                 tokens.update(head_font=t["head_font"], body_font=t["body_font"],
@@ -499,7 +500,7 @@ def build(ctx, s5, s0, ad_groups, note):
             "index_url": base + "/", "privacy_url": base + "/privacy-policy" if "privacy" in legal else "",
             "terms_url": base + "/terms" if "terms" in legal else "",
             "repo_url": repo, "netlify_site_id": site["id"], "site_host": host, "dns_note": dns_note,
-            "preview_base": base, "custom_base": custom_base, "domain_connected": False,
+            "preview_base": base, "netlify_base": site["url"], "custom_base": custom_base, "domain_connected": False,
             "warnings": warnings, "built_at": time.strftime("%Y-%m-%d %H:%M"),
         }
     finally:

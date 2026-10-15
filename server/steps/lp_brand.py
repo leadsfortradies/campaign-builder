@@ -74,6 +74,11 @@ def digest(home_url):
     fonts = Counter(clean_font(f) for decl in re.findall(r"font-family\s*:\s*([^;}{]+)", all_css, re.I)
                     for f in decl.split(",")[:1])
     fonts.pop("", None)
+    heading = ""
+    for m in re.finditer(r"(?:^|[},\s])(h[1-3])\s*(?:,\s*h[1-6]\s*)*\{[^{}]*?font-family\s*:\s*([^;}]+)", all_css, re.I):
+        heading = clean_font(m.group(2).split(",")[0])
+        if heading:
+            break
     google = [html.unescape(g) for g in re.findall(r'href=["\'](https://fonts\.googleapis\.com/css[^"\']+)', home, re.I)]
 
     logos = []
@@ -104,13 +109,15 @@ def digest(home_url):
     return {
         "home_html": home, "title": (re.search(r"<title[^>]*>(.*?)</title>", home, re.S | re.I) or [0, ""])[1].strip(),
         "colours": colours, "named_colours": named, "theme_color": theme[:1],
-        "fonts": [f for f, _ in fonts.most_common(6)], "google_fonts": google[:2],
+        "fonts": [f for f, _ in fonts.most_common(6)], "heading_font": heading, "google_fonts": google[:2],
         "logo_candidates": list(dict.fromkeys(logos))[:6], "favicon_candidates": list(dict.fromkeys(icons))[:6], "images": list(dict.fromkeys(images))[:40],
     }
 
 
 def google_fonts_url(head, body):
     fam = lambda n, w: "family=" + urllib.parse.quote_plus(n) + ":wght@" + w
+    if head == body:
+        return "https://fonts.googleapis.com/css2?" + fam(head, "400;600;700;800") + "&display=swap"
     return ("https://fonts.googleapis.com/css2?" + fam(head, "700;800") + "&" + fam(body, "400;600;700")
             + "&display=swap")
 
