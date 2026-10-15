@@ -181,6 +181,9 @@ class ReviewView {
   }
 
   render() {
+    // Re-rendering rebuilds the page: keep the scroll position and which ad groups are minimised.
+    const scrollY = window.scrollY;
+    this.collapsed ||= new Set();
     this.mountEl.innerHTML = "";
 
     const byGroup = {};
@@ -210,7 +213,12 @@ class ReviewView {
         <span class="group-count"></span>
         <span class="chevron">▾</span>
       `;
-      header.addEventListener("click", () => group.classList.toggle("collapsed"));
+      if (this.collapsed.has(groupName)) group.classList.add("collapsed");
+      header.addEventListener("click", () => {
+        group.classList.toggle("collapsed");
+        if (group.classList.contains("collapsed")) this.collapsed.add(groupName);
+        else this.collapsed.delete(groupName);
+      });
       if (this.canMove(groupName)) {
         const del = document.createElement("button");
         del.className = "secondary del-group-btn";
@@ -371,6 +379,7 @@ class ReviewView {
       this.countsEl.innerHTML =
         `<span><strong>${totalKept}</strong> kept</span><span><strong>${totalAll - totalKept}</strong> excluded</span><span><strong>${totalAll}</strong> total</span>`;
     }
+    window.scrollTo(0, scrollY);
     if (this.onChange) this.onChange();
   }
 
