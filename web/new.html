@@ -26,13 +26,14 @@
     <label>Other reasons to choose them <small>guarantees, reviews and rating, awards, process</small><textarea name="other_info" rows="3"></textarea></label>
     <label>Phone<input name="business_phone" type="tel"></label>
     <label>Email<input name="business_email" type="email"></label>
-    <label>Photos of completed work<input type="file" name="work_photos" accept="image/*" multiple></label>
-    <label>Team / other photos<input type="file" name="team_photos" accept="image/*" multiple></label>
+    <label>Photos of completed work <small>images or a zip of them; big photos are shrunk in your browser before upload (max 60)</small><input type="file" name="work_photos" accept="image/*,.zip" multiple></label>
+    <label>Team / other photos<input type="file" name="team_photos" accept="image/*,.zip" multiple></label>
     <label class="check" id="start-row"><input type="checkbox" name="start_now" value="1" checked> Start keyword research straight away</label>
     <button type="submit" class="primary">Create campaign</button>
     <p id="form-msg" class="status-msg" hidden></p>
   </form>
 </main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <script src="js/model.js?v=1"></script>
 <script>
 const editId = new URLSearchParams(location.search).get("id");
@@ -65,16 +66,82 @@ const form = document.getElementById("new-form");
   } catch (e) { /* new/empty project */ }
 })();
 
+// ---- photo prep: unzip, fix rotation, shrink to 1600px JPEG before upload ----
+const MAX_PHOTOS = 60, MAX_EDGE = 1600;
+const IMG_RE = /\.(jpe?g|png|webp|avif|gif)$/i;
+
+async function shrink(blob, name, keepPng) {
+  let bmp;
+  try { bmp = await createImageBitmap(blob, { imageOrientation: "from-image" }); }
+  catch (e) { return null; }  // unreadable (e.g. HEIC): skipped, reported to the user
+  const scale = Math.min(1, MAX_EDGE / Math.max(bmp.width, bmp.height));
+  const c = document.createElement("canvas");
+  c.width = Math.round(bmp.width * scale);
+  c.height = Math.round(bmp.height * scale);
+  const g = c.getContext("2d");
+  if (!keepPng) { g.fillStyle = "#fff"; g.fillRect(0, 0, c.width, c.height); }
+  g.drawImage(bmp, 0, 0, c.width, c.height);
+  bmp.close && bmp.close();
+  const type = keepPng ? "image/png" : "image/jpeg";
+  const out = await new Promise((r) => c.toBlob(r, type, 0.85));
+  const base = name.replace(/^.*\//, "").replace(/\.[^.]+$/, "");
+  return new File([out], base + (keepPng ? ".png" : ".jpg"), { type });
+}
+
+async function prepare(files, keepPng, say, skipped) {
+  const out = [];
+  for (const f of files) {
+    if (out.length >= MAX_PHOTOS) { skipped.push(`${f.name} (over ${MAX_PHOTOS} photos)`); continue; }
+    if (/\.zip$/i.test(f.name)) {
+      if (!window.JSZip) throw new Error("Couldn't load the zip reader; check your connection and try again.");
+      say(`Opening ${f.name}…`);
+      const zip = await JSZip.loadAsync(f);
+      const entries = Object.values(zip.files).filter(
+        (z) => !z.dir && IMG_RE.test(z.name) && !/(^|\/)(__MACOSX|\.)/.test(z.name));
+      let n = 0;
+      for (const z of entries) {
+        if (out.length >= MAX_PHOTOS) { skipped.push(`${z.name} (over ${MAX_PHOTOS} photos)`); continue; }
+        say(`Shrinking ${f.name}: ${++n} of ${entries.length}`);
+        const r = await shrink(await z.async("blob"), z.name, keepPng && /\.png$/i.test(z.name));
+        r ? out.push(r) : skipped.push(z.name);
+      }
+    } else if (/\.svg$/i.test(f.name)) {
+      out.push(f);
+    } else {
+      say(`Shrinking ${f.name}…`);
+      const r = await shrink(f, f.name, keepPng && /\.(png|webp)$/i.test(f.name));
+      r ? out.push(r) : skipped.push(f.name);
+    }
+  }
+  return out;
+}
+
 document.getElementById("new-form").addEventListener("submit", async (e) => {
   e.preventDefault();
   const form = e.target;
   const btn = form.querySelector("button[type=submit]");
   const msg = document.getElementById("form-msg");
-  const data = new FormData(form);
-  if (!editId && !form.start_now.checked) data.set("start_now", "0");
+  const say = (t) => { msg.textContent = t; msg.className = "status-msg ok"; msg.hidden = false; };
+  const idle = editId ? "Update" : "Create campaign";
   btn.disabled = true;
-  btn.textContent = editId ? "Updating…" : "Uploading…";
+  btn.textContent = editId ? "Updating…" : "Working…";
   try {
+    const data = new FormData(form);
+    if (!editId && !form.start_now.checked) data.set("start_now", "0");
+    const skipped = [];
+    for (const [name, keepPng] of [["logo", true], ["work_photos", false], ["team_photos", false]]) {
+      const files = [...form[name].files];
+      data.delete(name);
+      for (const f of await prepare(files, keepPng, say, skipped)) data.append(name, f, f.name);
+    }
+    if (skipped.length) {
+      const go = confirm(`${skipped.length} file(s) couldn't be read and will be left out:\n\n` +
+        skipped.slice(0, 10).join("\n") + (skipped.length > 10 ? "\n…" : "") +
+        "\n\n(HEIC photos need converting to JPG first.) Continue without them?");
+      if (!go) { btn.disabled = false; btn.textContent = idle; msg.hidden = true; return; }
+    }
+    say("Uploading…");
+    btn.textContent = "Uploading…";
     const url = editId ? `/api/projects/${encodeURIComponent(editId)}/info` : "/api/projects";
     const r = await fetch(url, { method: "POST", body: data });
     const body = await r.json().catch(() => ({}));
@@ -85,7 +152,7 @@ document.getElementById("new-form").addEventListener("submit", async (e) => {
     msg.className = "status-msg err";
     msg.hidden = false;
     btn.disabled = false;
-    btn.textContent = editId ? "Update" : "Create campaign";
+    btn.textContent = idle;
   }
 });
 </script>
