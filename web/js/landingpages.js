@@ -167,13 +167,40 @@ class LandingPagesView {
            ${d.privacy_url ? " · " + link(d.privacy_url, "Privacy") : ""}
            ${d.terms_url ? " · " + link(d.terms_url, "Terms") : ""}
            ${d.repo_url ? " · " + link(d.repo_url, "GitHub repo") : ""}</p>
+        <p class="lp-actions">
+          <button type="button" class="btn lp-rebuild">Rebuild landing pages</button>
+          ${d.dns_note && !d.domain_connected ? `<button type="button" class="btn lp-dns-done">DNS Settings Updated</button>` : ""}
+        </p>
         ${d.dns_note && !d.domain_connected ? `<p class="skip-note"><strong>DNS:</strong> ${d.dns_note}
-          These preview links use the Netlify address until the domain is connected.</p>
-          <p><button type="button" class="btn lp-dns-done">DNS Settings Updated</button></p>` : ""}
+          These preview links use the Netlify address until the domain is connected.</p>` : ""}
         ${d.domain_connected && d.custom_base ? `<p class="muted">Domain connected. Links use ${d.custom_base.replace("https://", "")}.</p>` : ""}
         ${(d.warnings || []).map((w) => `<p class="skip-note"><strong>Check:</strong> ${w}</p>`).join("")}
         <p class="muted">Review the pages, then approve. Approving adds each ad group's link to its ad copy and sitelinks.
         To change something, use Request changes and describe it.</p>`;
+      const rebuildBtn = box.querySelector(".lp-rebuild");
+      rebuildBtn.addEventListener("click", async () => {
+        if (!confirm("Rebuild all landing pages? This replaces what is currently live on the same Netlify site.")) return;
+        rebuildBtn.disabled = true;
+        rebuildBtn.textContent = "Starting…";
+        try {
+          const res = await fetch("/api/landing/start", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              project_id: d.project_id,
+              mode: d.mode,
+              design_source_url: d.design_source_url || "",
+              custom_domain: d.custom_domain || "",
+            }),
+          });
+          if (!res.ok) throw new Error((await res.json()).detail || `HTTP ${res.status}`);
+          location.reload();
+        } catch (e) {
+          rebuildBtn.disabled = false;
+          rebuildBtn.textContent = "Rebuild landing pages";
+          this.showStatus(`Couldn't start the rebuild: ${e.message}`, false);
+        }
+      });
       const dnsBtn = box.querySelector(".lp-dns-done");
       if (dnsBtn) {
         dnsBtn.addEventListener("click", async () => {

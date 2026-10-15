@@ -744,3 +744,5 @@ tr.excluded .x-btn {
   .chat-form { flex-direction: column; }
   .chat-form button { width: 100%; }
 }
+
+.lp-actions{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
