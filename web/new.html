@@ -26,7 +26,7 @@
     <label>Other reasons to choose them <small>guarantees, reviews and rating, awards, process</small><textarea name="other_info" rows="3"></textarea></label>
     <label>Phone<input name="business_phone" type="tel"></label>
     <label>Email<input name="business_email" type="email"></label>
-    <label>Photos of completed work <small>images or a zip of them; big photos are shrunk in your browser before upload (max 60)</small><input type="file" name="work_photos" accept="image/*,.zip" multiple></label>
+    <label>Photos of completed work <small>images or a zip of them; big photos are shrunk in your browser before upload (max 150)</small><input type="file" name="work_photos" accept="image/*,.zip" multiple></label>
     <label>Team / other photos<input type="file" name="team_photos" accept="image/*,.zip" multiple></label>
     <label class="check" id="start-row"><input type="checkbox" name="start_now" value="1" checked> Start keyword research straight away</label>
     <button type="submit" class="primary">Create campaign</button>
@@ -67,7 +67,7 @@ const form = document.getElementById("new-form");
 })();
 
 // ---- photo prep: unzip, fix rotation, shrink to 1600px JPEG before upload ----
-const MAX_PHOTOS = 60, MAX_EDGE = 1600;
+const MAX_PHOTOS = 150, MAX_EDGE = 1600;
 const IMG_RE = /\.(jpe?g|png|webp|avif|gif)$/i;
 
 async function shrink(blob, name, keepPng) {
@@ -91,7 +91,7 @@ async function shrink(blob, name, keepPng) {
 async function prepare(files, keepPng, say, skipped) {
   const out = [];
   for (const f of files) {
-    if (out.length >= MAX_PHOTOS) { skipped.push(`${f.name} (over ${MAX_PHOTOS} photos)`); continue; }
+    if (out.length >= MAX_PHOTOS) { skipped.push(`${f.name} (over the ${MAX_PHOTOS} photo limit)`); continue; }
     if (/\.zip$/i.test(f.name)) {
       if (!window.JSZip) throw new Error("Couldn't load the zip reader; check your connection and try again.");
       say(`Opening ${f.name}…`);
@@ -100,7 +100,7 @@ async function prepare(files, keepPng, say, skipped) {
         (z) => !z.dir && IMG_RE.test(z.name) && !/(^|\/)(__MACOSX|\.)/.test(z.name));
       let n = 0;
       for (const z of entries) {
-        if (out.length >= MAX_PHOTOS) { skipped.push(`${z.name} (over ${MAX_PHOTOS} photos)`); continue; }
+        if (out.length >= MAX_PHOTOS) { skipped.push(`${z.name} (over the ${MAX_PHOTOS} photo limit)`); continue; }
         say(`Shrinking ${f.name}: ${++n} of ${entries.length}`);
         const r = await shrink(await z.async("blob"), z.name, keepPng && /\.png$/i.test(z.name));
         r ? out.push(r) : skipped.push(z.name);
@@ -135,7 +135,7 @@ document.getElementById("new-form").addEventListener("submit", async (e) => {
       for (const f of await prepare(files, keepPng, say, skipped)) data.append(name, f, f.name);
     }
     if (skipped.length) {
-      const go = confirm(`${skipped.length} file(s) couldn't be read and will be left out:\n\n` +
+      const go = confirm(`${skipped.length} file(s) will be left out (unreadable, or over the ${MAX_PHOTOS} photo limit):\n\n` +
         skipped.slice(0, 10).join("\n") + (skipped.length > 10 ? "\n…" : "") +
         "\n\n(HEIC photos need converting to JPG first.) Continue without them?");
       if (!go) { btn.disabled = false; btn.textContent = idle; msg.hidden = true; return; }
