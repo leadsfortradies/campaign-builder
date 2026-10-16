@@ -15,9 +15,8 @@
      `GOOGLE_ADS_LOGIN_CUSTOMER_ID`  copy the matching values out of the local
      `google-ads.yaml` (client_id, client_secret, refresh_token, login_customer_id)
    - `GITHUB_TOKEN`  fine-grained token for the `leadsfortradies` account (all repositories; Administration
-     + Contents: read and write). Landing page builds create a private repo per client.
-   - `NETLIFY_AUTH_TOKEN`  Netlify personal access token (User settings > Applications). Landing pages deploy
-     to a new Netlify site per client.
+     + Contents: read and write). Landing page builds create a private repo per client, named after the business (e.g. `hsbuild`).
+   - `NETLIFY_AUTH_TOKEN`  Netlify personal access token (User settings > Applications). Each client gets a new Netlify site linked to its GitHub repo, so every deploy comes from the repo (no CLI deploys). Netlify's GitHub app must be installed on the `leadsfortradies` account (link any one site to GitHub once; or set `NETLIFY_GITHUB_INSTALLATION_ID`).
    - optional: `GITHUB_OWNER` (default `leadsfortradies`), `LP_TEMPLATE_REPO` (default
      `leadsfortradies/site-template`), `NETLIFY_ACCOUNT_SLUG` (team slug if sites should go in a team)
    - optional: `PROJECT_TOKEN_CAP` (default 4,000,000 Claude tokens per campaign),

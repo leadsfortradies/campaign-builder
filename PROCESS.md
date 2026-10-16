@@ -516,8 +516,10 @@ Landing Pages as Step 6. Data keys are unchanged: `step6.json` = sitelinks,
    general page); has Claude caption the client's photos and write the page copy
    from Step 0 facts only; fills the template's `content/lp-master.html`
    (`server/steps/lp_site.py`); checks no template-client text or missing image
-   survives; pushes to a new private GitHub repo (`<project-id>-landing-pages`)
-   and deploys to a new Netlify site; then publishes the links for review.
+   survives; pushes to a new private GitHub repo named after the business (`hsbuild`
+   for "HS Build"), links that repo to a new Netlify site and lets Netlify deploy
+   from it (never a CLI/direct deploy; every later change is a push to `main`);
+   then publishes the links for review.
    Needs `GITHUB_TOKEN` and `NETLIFY_AUTH_TOKEN` (see DEPLOY.md).
 4. Reviews and approval happen in the web app. **Approving the landing pages
    runs the background `link_landing_pages` job**, which copies each ad group's

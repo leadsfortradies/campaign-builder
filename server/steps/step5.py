@@ -373,7 +373,7 @@ def build(ctx, s5, s0, ad_groups, note):
             ctx.log(f"Brand: {tokens}")
 
         # 2. site + deploy target
-        site = lp_publish.ensure_netlify_site(f"{pid}-lp", s5.get("netlify_site_id"))
+        site = lp_publish.ensure_netlify_site(lp_publish.repo_name_for(name), s5.get("netlify_site_id"))
         host = (s5.get("custom_domain") or "").strip().lower() or site["url"].replace("https://", "")
         # Links point at Netlify until the user confirms DNS is connected (custom domain 404s before then).
         base = site["url"]
@@ -532,9 +532,12 @@ def build(ctx, s5, s0, ad_groups, note):
 
         # 8. publish
         ctx.log("Pushing to GitHub")
-        repo = lp_publish.push_repo(out, f"{pid}-landing-pages", f"Landing pages for {name}")
-        ctx.log("Deploying to Netlify")
-        lp_publish.deploy(out, site["id"])
+        prev_repo = s5.get("repo_url") or ""
+        repo, repo_path = lp_publish.push_repo(
+            out, prev_repo.replace("https://github.com/" + lp_publish.OWNER + "/", "") or lp_publish.repo_name_for(name),
+            f"Landing pages for {name}", reuse=bool(prev_repo))
+        ctx.log("Linking the repo to Netlify (deploys from GitHub)")
+        lp_publish.link_repo(site["id"], repo_path)
         if s5.get("custom_domain"):
             try:
                 lp_publish.set_custom_domain(site["id"], host)
