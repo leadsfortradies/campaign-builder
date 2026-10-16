@@ -324,6 +324,9 @@ def fill_page(master, d, page, work_html):
     for k, v in {"{{TITLE}}": E(page["title"]), "{{DESC}}": E(page["desc"]), "{{H1}}": E(page["h1"]),
                  "{{SUB}}": E(page["sub"]), "{{TICKS}}": ticks, "{{FAQ}}": faq_sec}.items():
         p = p.replace(k, v)
+    ex = (page.get("other_example") or "").strip()
+    if ex:  # the "What's the job?" helper text must relate to THIS page's service, not the site-wide example
+        p = p.replace(f'placeholder="{E(d["other_example"])}"', f'placeholder="{E(ex)}"')
     sel = page.get("select") or ""
     if sel:
         p = p.replace('<option value="" disabled selected>Choose a job type</option>',

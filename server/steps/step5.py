@@ -161,6 +161,7 @@ Return JSON:
  "h1":"<Service> in {city}","sub":"one sentence on what the customer gets",
  "ticks":[4 short benefit lines using only facts],
  "faq":[[question, answer] x 10; answers 25-60 words, honest, no prices or invented guarantees],
+ "other_example": "e.g. <a short, realistic job a customer of THIS page's service would type in the 'What's the job?' box; must be that service, never another trade or service>",
  "hero_photo": <index of the best photo for this page>,
  "photo_order": [photo indexes, most relevant to this page first]}}"""
     return llm.complete_json(ctx, COPY_RULES, user, max_tokens=4000)
