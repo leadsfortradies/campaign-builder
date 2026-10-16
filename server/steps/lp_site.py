@@ -198,25 +198,27 @@ def build_master(M, d):
         f'        <div class="why-card"><span class="ic"><svg class="i"><use href="#i-{c["icon"] if c["icon"] in ICONS else "check"}"/></svg></span>'
         f'<div><h3>{E(c["h"])}</h3><p>{E(c["p"])}</p></div></div>\n' for c in w["cards"])
     wp = ph[d["why_photo"]] if ph else None
-    figure = (f'''    <figure class="why-photo" style="margin:0">
-      <img src="img/work-{d["why_photo"]}-900.webp" srcset="img/work-{d["why_photo"]}-480.webp 480w, img/work-{d["why_photo"]}-900.webp 900w" sizes="(min-width:1000px) 460px, 100vw" alt="{E(wp["alt"])}" loading="lazy" width="{wp["w9"]}" height="{wp["h9"]}">
-      <figcaption>{E(wp["label"])}</figcaption>
-    </figure>
+    figure = (f'''      <figure class="why-photo" style="margin:0">
+        <img src="img/work-{d["why_photo"]}-900.webp" srcset="img/work-{d["why_photo"]}-480.webp 480w, img/work-{d["why_photo"]}-900.webp 900w" sizes="(min-width:1000px) 760px, 100vw" alt="{E(wp["alt"])}" loading="lazy" width="{wp["w9"]}" height="{wp["h9"]}">
+        <figcaption>{E(wp["label"])}</figcaption>
+      </figure>
 ''' if wp else "")
+    panel = (f'    <div class="why-panel{" has-stats" if figure and stats else ""}">\n{figure}{stats}    </div>\n'
+             if figure or stats else "")
     p = _between(p, "<!-- 3. WHY WORK WITH US -->", "<!-- 4. TESTIMONIALS -->", f'''<!-- 3. WHY WORK WITH US -->
 <section class="sec" id="why">
-  <div class="wrap why-grid">
-    <div>
+  <div class="wrap">
+    <div class="why-head">
       <div class="sec-head">
         <span class="eyebrow">Why work with us</span>
         <h2>{E(w["heading"])}</h2>
-        <p>{E(w["intro"])}</p>
       </div>
-{stats}      <div class="why-cards">
-{cards}      </div>
-      <div class="why-cta"><a href="#quote" class="btn btn-accent">{E(w.get("cta") or "Book a free quote")}</a></div>
+      <p>{E(w["intro"])}</p>
     </div>
-{figure}  </div>
+{panel}    <div class="why-cards">
+{cards}    </div>
+    <div class="why-cta"><a href="#quote" class="btn btn-accent">{E(w.get("cta") or "Book a free quote")}</a></div>
+  </div>
 </section>
 
 ''')
