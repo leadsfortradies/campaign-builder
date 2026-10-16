@@ -180,6 +180,8 @@ def build_master(M, d):
         f'                <label class="chip"><input type="radio" name="size" value="{E(c["value"])}"><span>{E(c["label"])}'
         f'<small>{E(c["hint"])}</small></span></label>\n' for c in d["size_chips"])
     p = re.sub(r'(<div class="chips">\n)(?:\s*<label class="chip">.*?</label>\n)+', lambda m: m.group(1) + chips, p, flags=re.S)
+    if any("$" in c["value"] for c in d["size_chips"]):  # budget chips: the question is the budget, not the size
+        p = p.replace("<legend>Roughly how big is the job?</legend>", "<legend>What's your budget?</legend>")
     p = p.replace("e.g. Feilding or Kelvin Grove", E(d["suburb_example"]))
     p = p.replace("e.g. a concrete pad for a garden shed", E(d["other_example"]))
 

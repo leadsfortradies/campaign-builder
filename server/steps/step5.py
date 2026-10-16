@@ -107,7 +107,7 @@ photos (index: label - description):
 Write the shared sections of the landing page. Return JSON:
 {{
  "job_options": ["4-8 customer-facing job names from the stated services, then 'Something else' last"],
- "size_chips": [{{"value":"Small (under 25m2)","label":"Small","hint":"under 25m²"}}, 3 more; the last is {{"value":"Not sure","label":"Not sure","hint":"we'll measure"}}; use size terms that suit this trade],
+ "size_chips": [{{"value":"Small (under 25m2)","label":"Small","hint":"under 25m²"}}, 3 more; the last is {{"value":"Not sure","label":"Not sure","hint":"we'll measure"}}; default is m2; but pick the unit the customer would measure THIS trade in: metres for linear jobs (fences, retaining walls, gutters; chips like "Short (under 20m)", hint "under 20m", never m2), m2 for area jobs, and for renovations/bathrooms with no sensible measure use budget chips instead ("Under $10k", "$10k to $20k", "$20k+", then Not sure)],
  "suburb_example": "e.g. <two real towns/suburbs from the service areas>",
  "other_example": "e.g. <a small job in this trade>",
  "trust": [2-4 of {{"num":"12+ yrs","label":"industry experience"}}; ONLY from facts],
